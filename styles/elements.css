@@ -18,3 +18,16 @@
 	width: 1004px;
 	margin: 0 auto;
 }
+
+a{
+	text-decoration: none;
+	color: var(--black-color);
+}
+
+.underline_header{
+	border-bottom: 2px solid var(--opacity-underlane-text-color);
+}
+
+.header_color{
+	color: var(--header-opacity-text-color);
+}
