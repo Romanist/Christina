@@ -1,0 +1,48 @@
+@import "variables.css";
+@import "elements.css";
+
+html, body{
+	font-size: var(--fz);
+	line-height: var(--lh);
+	position: relative;
+}
+
+/*header*/
+.nav__item{
+	color: var(--header-opacity-text-color);
+	text-transform: uppercase;
+	font-size: 13px;
+	display: inline-block;
+	padding: 8px 40px;
+	position: relative;
+}
+
+.nav__item:after{
+	content: '';
+	position: absolute;
+	height: 15px;
+	width: 2px;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	background-color: var(--opacity-underlane-color);
+}
+
+.nav__item:first-child{
+	padding-left: 0;
+}
+
+.nav__item:last-child{
+	padding-right: 0;
+}
+
+.nav__item:last-child:after{
+	display: none;
+}
+
+.header__underline_wr{
+	border-bottom: 2px solid var(--opacity-underlane-color);
+}
