@@ -1,0 +1,18 @@
+
+@font-face {
+  font-family: 'FuturaNewLight-Reg';
+  src: url('../../fonts/FuturaNewLight-Reg.eot?#iefix') format('embedded-opentype'),  url('../../fonts/FuturaNewLight-Reg.otf')  format('opentype'),
+	     url('../../fonts/FuturaNewLight-Reg.woff') format('woff'), url('../../fonts/FuturaNewLight-Reg.ttf')  format('truetype'), url('../../fonts/FuturaNewLight-Reg.svg#FuturaNewLight-Reg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaNewBook-Reg';
+  src: url('../../fonts/FuturaNewBook-Reg.eot?#iefix') format('embedded-opentype'),  url('../../fonts/FuturaNewBook-Reg.otf')  format('opentype'),
+	     url('../../fonts/FuturaNewBook-Reg.woff') format('woff'), url('../../fonts/FuturaNewBook-Reg.ttf')  format('truetype'), url('../../fonts/FuturaNewBook-Reg.svg#FuturaNewBook-Reg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');

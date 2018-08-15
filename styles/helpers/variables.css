@@ -1,0 +1,29 @@
+:root {
+	/*colors*/
+  --header-opacity-text-color: rgba(0, 0, 0, .6);
+  --header-opacity-lane-color: rgba(0, 0, 0, .3);
+  --opacity-underlane-color: rgba(0, 0, 0, .3);
+  --opacity-underlane-text-color: rgba(0, 0, 0, .2);
+  --opacity-slider-dot-color: rgba(0, 0, 0, .2);
+  --opacity-color: rgba(0, 0, 0, .5);
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --hover-product-bg-color: #D9EEFC;
+  --btn-style1-bg-color: #FF8A9F;
+  --bg-color: #F2F2F2;
+  --bg-color1: #E3E6FE;
+  --bg-color2: #FAFAFA;
+  --bg-color3: #FFF1E8;
+  --bg-color4: rgba(0, 0, 0, .02);
+  --bg-color5: #CDFAFF;
+  --bg-color6: #262626;
+  --bg-color7: #FF9E9E;
+  --bg-color8: #42DBEC;
+  /*borders*/
+  --button-border: solid 1px #000000;
+  /*fonts*/
+  --fz: 18px;
+  --fz-small: 16px;
+  --lh: 1.38;
+  --lh-small: 1.25;
+}

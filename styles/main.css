@@ -1,6 +1,12 @@
-@import "variables.css";
-@import "elements.css";
-@import "fonts.css";
+@import "helpers/reset.css";
+/*@import "libraries/owl.theme.default.min.css";*/
+/*@import "libraries/owl.carousel.min.css";*/
+@import "helpers/variables.css";
+@import "helpers/elements.css";
+@import "helpers/fonts.css";
+@import "blocks/header.css";
+@import "blocks/simple-button-content.css";
+@import "blocks/half.css";
 
 html, body{
 	font-size: var(--fz);
@@ -9,100 +15,3 @@ html, body{
 	font-family: 'FuturaNewLight-Reg';
 }
 
-/*header*/
-.header{
-	text-transform: uppercase;
-	font-size: 15px;
-}
-
-.nav__item{
-	font-size: 13px;
-	display: inline-block;
-	padding: 8px 40px;
-	letter-spacing: 1.06px;
-	position: relative;
-}
-
-.nav__link{
-	color: var(--header-opacity-text-color);
-}
-
-.nav__item:after{
-	content: '';
-	position: absolute;
-	height: 15px;
-	width: 2px;
-	right: 0;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	background-color: var(--opacity-underlane-color);
-}
-
-.nav__item:first-child{
-	padding-left: 0;
-}
-
-.nav__item:last-child{
-	padding-right: 0;
-}
-
-.nav__item:last-child:after{
-	display: none;
-}
-
-.header__underline_wr{
-	border-bottom: 2px solid var(--opacity-underlane-color);
-	margin-bottom: 35px;
-}
-
-.header__number{
-	font-size: 25px;
-	font-family: 'FuturaNewBook-Reg';
-	padding-right: 10px;
-}
-
-.header__right{
-	float: right;
-}
-
-.header__left{
-	float: left;
-}
-
-.header__menu{
-	overflow: hidden;
-}
-
-.header__left-top{
-	padding-bottom: 16px;
-}
-
-.header span{
-	vertical-align: top;
-	letter-spacing: 1.4px;
-}
-
-.call_icon{
-	margin-right: 38px;
-	display: inline-block;
-}
-
-.call_icon:first-child{
-	margin-right: 24px;
-}
-
-.header__right img{
-	margin-right: 13px;
-}
-
-.header__right_btns{
-	text-align: right;
-	padding-top: 19px;
-}
-
-.header__right_btns a{
-	display: inline-block;
-}

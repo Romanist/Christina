@@ -1,0 +1,144 @@
+.btn{
+	text-decoration: none;
+	color: var(--black-color);
+	border: var(--button-border);
+	min-width: 224px;
+	height: 50px;
+	text-align: center;
+	padding: 0 28px;
+	display: inline-block;
+	line-height: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.btn:hover{
+	color: var(--black-color);
+}
+
+.max_width{
+	width: 1004px;
+	margin: 0 auto;
+}
+
+a{
+	text-decoration: none;
+	color: var(--black-color);
+}
+
+.underline_header{
+	border-bottom: 2px solid var(--opacity-underlane-text-color);
+}
+
+.header_color{
+	color: var(--header-opacity-text-color);
+}
+
+/*BURGERBUTTON*/
+.burgerbutton {
+    position: absolute;
+    top: 50%;
+	transform: translateY(-50%);
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+.burgerbutton span {
+    width: 100%;
+    transition: .5s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 2px;
+    position: absolute;
+    background-color: #fff;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transform: rotate(0);
+}
+.burgerbutton span:nth-child(1) {
+    top: 0;
+}
+.burgerbutton span:nth-child(2) {
+    top: 44%;
+}
+.burgerbutton span:nth-child(3) {
+    bottom: 0;
+}
+.open .burgerbutton span:nth-child(1) {
+    top: 10px;
+    transform: rotate(-45deg);
+}
+.open .burgerbutton span:nth-child(2) {
+    width: 0%;
+}
+.open .burgerbutton span:nth-child(3) {
+    bottom: 10px;
+    transform: rotate(45deg);
+}
+
+/*//*/
+/*owl*/
+.owl-nav span{
+	display: none;
+}
+
+.owl-prev,
+.owl-next{
+	all: unset;
+	cursor: pointer;
+	background: url(../../images/SliderArrowLeft.svg) center;
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 21px;
+	padding: 5px 18px;
+}
+
+.owl-prev.disabled,
+.owl-next.disabled{
+	opacity: .5;
+	cursor: default;
+}
+
+.owl-next{
+	background-image: url(../../images/SliderArrowRight.svg);
+}
+
+.owl-item{
+	float: left;
+}
+
+.owl-nav,
+.owl-dots{
+	position: absolute;
+}
+
+.owl-stage{
+	overflow: hidden;
+}
+
+.owl-dot{
+	all: unset;
+	padding: 5px 10px;
+	cursor: pointer;
+	/*background-color: var(--opacity-slider-dot-color);*/
+}
+
+.owl-dot span{
+	background-color: var(--opacity-slider-dot-color);
+	display: block;
+	height: 1px;
+	width: 20px;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.owl-dot.active span{
+	background-color: var(--black-color);
+}
+
+@media screen and (max-width: 1023px) {
+	.max_width{
+		width: auto;
+	}
+}

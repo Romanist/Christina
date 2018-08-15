@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+
+.half{
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+
+.half_btn{
+	height: 808px;
+}
+
+.half__block{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+.half__title{
+	position: absolute;
+	left: 50%;
+	width: 710px;
+	top: 68px;
+	transform: translateX(-50%);
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 40px;
+}
+
+.half__btn{
+	bottom: 50px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.half__left{
+	background: var(--bg-color4) url(../../images/half_face_left.svg) no-repeat 0 60px;
+}
+
+.half__right{
+	background: url(../../images/half_face_right.svg) no-repeat right 60px;
+}
+
+.half_btn__form{
+	padding-top: 255px;
+	text-align: left;
+}
+
+.half__right .half_btn__form{
+	text-align: right;
+}
+
+.procedures_form__text{
+	font-size: 18px;
+	line-height: 34px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: var(--opacity-color);
+}
+
+.procedures_form__check_input{
+	display: inline-block;
+	float: left;
+	/*margin-right: 18px;*/
+	width: 0;
+	opacity: 0;
+}
+
+.half__right .procedures_form__check_input{
+	float: right;
+}
+
+.half__left .half_btn__form{
+	padding-left: 230px;
+}
+
+.half__right .half_btn__form{
+	padding-right: 200px;
+}
+
+.procedures_form__inline{
+	position: relative;
+	margin-bottom: 40px;
+	padding-left: 40px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.procedures_form__check_label{
+	cursor: pointer;
+}
+
+.half__right .procedures_form__inline{
+	margin-bottom: 10px;
+	padding-right: 40px;
+	padding-left: 0;
+	margin-left: 10px;
+}
+
+.procedures_form__custom_input{
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	border-radius: 50%;
+}
+
+.half__right .procedures_form__custom_input{
+	right: 0;
+	left: auto;
+}
+
+.procedures_form__custom_input_dot{
+	position: absolute;
+	background-color: var(--black-color);
+	border-radius: 50%;
+	width: 7px;
+	height: 7px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.half__left .procedures_form input:checked~.procedures_form__custom_input .procedures_form__custom_input_dot{
+	background-color: var(--bg-color7);
+}
+
+.half__left .procedures_form input:checked~.procedures_form__custom_input{
+	border: solid 1px var(--bg-color7);
+}
+
+.half__right .procedures_form input:checked~.procedures_form__custom_input .procedures_form__custom_input_dot{
+	background-color: var(--bg-color8);
+}
+
+.half__right .procedures_form input:checked~.procedures_form__custom_input{
+	border: solid 1px var(--bg-color8);
+}
+
+.procedures_form__inline:nth-child(2){
+	margin-left: 42px;
+}
+.procedures_form__inline:nth-child(3){
+	margin-left: 53px;
+}
+.procedures_form__inline:nth-child(4){
+	margin-left: 54px;
+}
+.procedures_form__inline:nth-child(5){
+	margin-left: 42px;
+}
+.procedures_form__inline:nth-child(6){
+	margin-left: 19px;
+}
+
+.half__right .procedures_form__inline:nth-child(2){
+	margin-left: 0;
+	margin-right: 76px;
+}
+.half__right .procedures_form__inline:nth-child(3){
+	margin-left: 0;
+	margin-right: 85px;
+}
+.half__right .procedures_form__inline:nth-child(4){
+	margin-left: 0;
+	margin-right: 89px;
+}
+.half__right .procedures_form__inline:nth-child(5){
+	margin-left: 0;
+	margin-right: 90px;
+}
+.half__right .procedures_form__inline:nth-child(6){
+	margin-left: 0;
+	margin-right: 89px;
+}
+.half__right .procedures_form__inline:nth-child(7){
+	margin-left: 0;
+	margin-right: 83px;
+}
+.half__right .procedures_form__inline:nth-child(8){
+	margin-left: 0;
+	margin-right: 74px;
+}
+.half__right .procedures_form__inline:nth-child(9){
+	margin-left: 0;
+	margin-right: 62px;
+}
+.half__right .procedures_form__inline:nth-child(10){
+	margin-right: 45px;
+	margin-left: 0;
+}
+
+.half__left .procedures_form__text{
+	padding-left: 70px;
+	padding-bottom: 10px;
+}
+
+.half__right .procedures_form__text{
+	padding-right: 90px;
+	padding-bottom: 10px;
+}

@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Christina</title>
-	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/main.css">
+	<script src="scripts/libraries/jquery.js"></script>
+	<script src="scripts/libraries/owl.carousel.min.js"></script>
+	<script src="scripts/main.js"></script>
 </head>
 <body>
+
+
 	<header class="header">
 		<div class="header__underline_wr">
 			<ul class="max_width nav">
@@ -35,10 +40,10 @@
 				</div>
 				<div class="header__left-bot">
 					<a href="#" class="call_icon">
-						<img src="images/WhatsApp.svg" alt="">
+						<img src="images/purple_Black_icon.svg" alt="">
 					</a>
 					<a href="#" class="call_icon">
-						<img src="images/purple_Black_icon.svg" alt="">
+						<img src="images/WhatsApp.svg" alt="">
 					</a>
 					<span class="underline_header">перезвоните мне</span>
 				</div>
@@ -60,17 +65,253 @@
 					</a>
 					<a href="">
 						<img src="images/BasketIcon.svg" alt="">
+						<span class="basket_number">5</span>
 					</a>
 				</div>
 			</div>
-			<div class="header__logo">
-				
+		</div>
+		<div class="header__logo">
+			<!-- <img src="images/logo.svg" alt=""> -->
+			360° вокруг процедуры
+		</div>
+		<div class="header__logo_mob"></div>
+		<div class="navigation_wr">
+			<a class="navigation_wr__toggler burgerbutton">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+			<nav class="max_width navigation">
+				<a class="navigation__item" href="pages/howdoesitwork.html">как это работает</a>
+				<a class="navigation__item" href="pages/diagnotic.html">диагностика кожи</a>
+				<a class="navigation__item" href="pages/consult.html">консультация врача</a>
+				<a class="navigation__item" href="pages/advises.html">советы врачей</a>
+				<a class="navigation__item" href="pages/shop.html">интернет-магазин</a>
+			</nav>
+			<ul class="header__mob_nav">
+				<li class="">
+					<a class="" href="pages/contacts.html">контакты</a>
+				</li>
+				<li class="">
+					<a class="" href="#">найти клинику</a>
+				</li>
+				<li class="">
+					<a class="" href="#">информация для врачей</a>
+				</li>
+				<li class="">
+					<a class="" href="delievery.html">оплата и доставка</a>
+				</li>
+				<li class="">
+					<a class="" href="#">у меня есть промокод</a>
+				</li>
+			</ul>
+			<div class="header__mob_btns">
+				<a href="">
+					<img src="images/SearchIconWhite.svg" alt="">
+				</a>
+				<a href="">
+					<img src="images/UserIconWhite.svg" alt="">
+				</a>
+				<a href="">
+					<img src="images/BasketIconWhite.svg" alt="">
+					<span class="basket_number">5</span>
+				</a>
 			</div>
 		</div>
-		<nav>
-			
-		</nav>
 	</header>
-	<!-- <a href="btn" class="btn">Hui</a> -->
+	<!-- simple-button-content -->
+	<section class="smpl_btn_cont owl-carousel">
+		<div class="block_with_bg">
+			<div class="part_of_bg"></div>
+			<div class="max_width smpl_btn_cont__slider_item">
+				<h2 class="smpl_btn_cont__title after_underline">
+					ProClear Night Cream Repair Brighten
+				</h2>
+				<p class="smpl_btn_cont__desc">
+					Революционный восстанавливающий ночной крем
+				</p>
+				<a href="pages/shop.html" class="btn smpl_btn_cont__btn">Хочу купить</a>
+			</div>
+			<img src="images/ProdCircle.svg" class="smpl_btn_cont__product" alt="">
+		</div>
+		<div class="block_with_bg">
+			<div class="part_of_bg"></div>
+			<div class="max_width smpl_btn_cont__slider_item">
+				<h2 class="smpl_btn_cont__title after_underline">
+					ProClear Night Cream Repair Brighten
+				</h2>
+				<p class="smpl_btn_cont__desc">
+					Революционный восстанавливающий ночной крем
+				</p>
+				<a href="pages/shop.html" class="btn smpl_btn_cont__btn">Хочу купить</a>
+			</div>
+			<img src="images/ProdCircle.svg" class="smpl_btn_cont__product" alt="">
+		</div>
+		<div class="block_with_bg">
+			<div class="part_of_bg"></div>
+			<div class="max_width smpl_btn_cont__slider_item">
+				<h2 class="smpl_btn_cont__title after_underline">
+					ProClear Night Cream Repair Brighten
+				</h2>
+				<p class="smpl_btn_cont__desc">
+					Революционный восстанавливающий ночной крем
+				</p>
+				<a href="pages/shop.html" class="btn smpl_btn_cont__btn">Хочу купить</a>
+			</div>
+			<img src="images/ProdCircle.svg" class="smpl_btn_cont__product" alt="">
+		</div>
+	</section>
+	<!-- half-button -->
+	<section class="half_btn half">
+		<div class="half__block half__left">
+			<form class="half_btn__form procedures_form" action="">
+			<div class="procedures_form__grp">
+				<p class="procedures_form__text">
+					Меня беспокоят
+				</p>
+				<div class="procedures_form__inline">
+					<label class="procedures_form__check_label">
+						<input class="procedures_form__check_input" type="checkbox" value="1" checked="checked">
+						<div class="procedures_form__custom_input">
+							<div class="procedures_form__custom_input_dot"></div>
+						</div>
+						Мимические морщины
+					</label>
+				</div>
+				<div class="procedures_form__inline">
+					<label class="procedures_form__check_label">
+						<input class="procedures_form__check_input" type="checkbox" value="0">
+						<div class="procedures_form__custom_input">
+							<div class="procedures_form__custom_input_dot"></div>
+						</div>
+						Глубокие морщины и потеря объема
+					</label>
+				</div>
+				<div class="procedures_form__inline">
+					<label class="procedures_form__check_label">
+						<input class="procedures_form__check_input" type="checkbox" value="0">
+						<div class="procedures_form__custom_input">
+							<div class="procedures_form__custom_input_dot"></div>
+						</div>
+						Гиперпигментация
+					</label>
+				</div>
+				<div class="procedures_form__inline">
+					<label class="procedures_form__check_label">
+						<input class="procedures_form__check_input" type="checkbox" value="0">
+						<div class="procedures_form__custom_input">
+							<div class="procedures_form__custom_input_dot"></div>
+						</div>
+						Акне и жирность кожи
+					</label>
+				</div>
+				<div class="procedures_form__inline">
+					<label class="procedures_form__check_label">
+						<input class="procedures_form__check_input" type="checkbox" value="0">
+						<div class="procedures_form__custom_input">
+							<div class="procedures_form__custom_input_dot"></div>
+						</div>
+						Сухость, шелушение, зуд
+					</label>
+				</div>
+			</div>
+		</form>
+		</div>
+		<div class="half__block half__right">
+			<form class="half_btn__form procedures_form" action="">
+			<div class="procedures_form__grp">
+				<p class="procedures_form__text">
+					Мне сделали процедуры
+				</p>
+				<div class="procedures_form__inline">
+					<label class="procedures_form__check_label">
+						<input class="procedures_form__check_input" type="checkbox" value="1" checked="checked">
+						<div class="procedures_form__custom_input">
+							<div class="procedures_form__custom_input_dot"></div>
+						</div>
+						Филлеры
+					</label>
+				</div>
+				<div class="procedures_form__inline">
+					<label class="procedures_form__check_label">
+						<input class="procedures_form__check_input" type="checkbox" value="0">
+						<div class="procedures_form__custom_input">
+							<div class="procedures_form__custom_input_dot"></div>
+						</div>
+						Лазеры и другие аппартаные методы
+					</label>
+				</div>
+				<div class="procedures_form__inline">
+					<label class="procedures_form__check_label">
+						<input class="procedures_form__check_input" type="checkbox" value="0">
+						<div class="procedures_form__custom_input">
+							<div class="procedures_form__custom_input_dot"></div>
+						</div>
+						Лечение акне
+					</label>
+				</div>
+				<div class="procedures_form__inline">
+					<label class="procedures_form__check_label">
+						<input class="procedures_form__check_input" type="checkbox" value="0">
+						<div class="procedures_form__custom_input">
+							<div class="procedures_form__custom_input_dot"></div>
+						</div>
+						Мезотерапия
+					</label>
+				</div>
+				<div class="procedures_form__inline">
+					<label class="procedures_form__check_label">
+						<input class="procedures_form__check_input" type="checkbox" value="0">
+						<div class="procedures_form__custom_input">
+							<div class="procedures_form__custom_input_dot"></div>
+						</div>
+						Биоревитализация
+					</label>
+				</div>
+				<div class="procedures_form__inline">
+					<label class="procedures_form__check_label">
+						<input class="procedures_form__check_input" type="checkbox" value="0">
+						<div class="procedures_form__custom_input">
+							<div class="procedures_form__custom_input_dot"></div>
+						</div>
+						Инъекции ботулотоксина
+					</label>
+				</div>
+				<div class="procedures_form__inline">
+					<label class="procedures_form__check_label">
+						<input class="procedures_form__check_input" type="checkbox" value="0">
+						<div class="procedures_form__custom_input">
+							<div class="procedures_form__custom_input_dot"></div>
+						</div>
+						Омоложение нитями
+					</label>
+				</div>
+				<div class="procedures_form__inline">
+					<label class="procedures_form__check_label">
+						<input class="procedures_form__check_input" type="checkbox" value="0">
+						<div class="procedures_form__custom_input">
+							<div class="procedures_form__custom_input_dot"></div>
+						</div>
+						Пилинги
+					</label>
+				</div>
+				<div class="procedures_form__inline">
+					<label class="procedures_form__check_label">
+						<input class="procedures_form__check_input" type="checkbox" value="0">
+						<div class="procedures_form__custom_input">
+							<div class="procedures_form__custom_input_dot"></div>
+						</div>
+						Ещё ничего не делали
+					</label>
+				</div>
+			</div>
+		</form>
+		</div>
+		<h1 class="half__title">
+			Новое поколение косметических средств для усиления и продления эффекта процедур эстетической медицины
+		</h1>
+		
+		<a href="pages/shop.html" class="btn half__btn">Подобрать продукты</a>
+	</section>
 </body>
 </html>
