@@ -7,6 +7,7 @@
 @import "blocks/header.css";
 @import "blocks/simple-button-content.css";
 @import "blocks/half.css";
+@import "blocks/slider.css";
 
 html, body{
 	font-size: var(--fz);

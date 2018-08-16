@@ -7,7 +7,7 @@
 }
 
 .half_btn{
-	height: 808px;
+	/*height: 808px;*/
 }
 
 .half__block{
@@ -44,6 +44,7 @@
 .half_btn__form{
 	padding-top: 255px;
 	text-align: left;
+	padding-bottom: 204px;
 }
 
 .half__right .half_btn__form{
@@ -200,4 +201,191 @@
 .half__right .procedures_form__text{
 	padding-right: 90px;
 	padding-bottom: 10px;
+}
+
+.half__btn_mob,
+.half__title_mob,
+.procedures_form__text_mob{
+	display: none;
+}
+
+@media screen and (max-width: 1279px) {
+	.half__title{
+		top: 48px;
+	}
+}
+
+@media screen and (max-width: 1230px) {
+	.half__left .procedures_form__inline{
+		padding-left: 15px;
+	}
+	.half__right .procedures_form__inline{
+		padding-right: 15px;
+	}
+	.procedures_form__check_label{
+		font-size: 15px;
+	}
+	.half__right .procedures_form__text{
+		padding-right: 60px;
+	}
+	.half__right .procedures_form__text{
+		padding-right: 80px;
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	.half__right{
+		background-image: url(../../images/half_face_right_low.svg);
+	}
+	.half__left{
+		-ms-background-position-x: -42px;
+		background-position-x: -42px;
+	}
+	.half__left .half_btn__form {
+	    padding-left: 189px;
+	}
+	.half__right .half_btn__form {
+	    padding-right: 157px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.half__block{
+		width: 100%;
+	}
+	.half__title{
+		font-size: 35px;
+		line-height: 44px;
+		width: 600px;
+		top: 55px;
+	}
+	.half__left{
+		-ms-background-position-y: 120px;
+		background-position-y: 120px;
+		-ms-background-position-x: left;
+		background-position-x: left;
+		position: relative;
+	}
+	.procedures_form__check_label{
+		font-size: 18px;
+	}
+	.half__right{
+		-ms-background-position-x: right;
+		background-position-x: right;
+		background-image: url(../../images/half_face_right.svg);
+	}
+	.half__left .half_btn__form {
+	    padding-left: 230px;
+	    padding-top: 286px;
+	}
+	.half__right .half_btn__form {
+	    padding-right: 200px;
+	    padding-top: 205px;
+	}
+	.half__left .procedures_form__text{
+		padding-bottom: 40px;
+	}
+	.half__right .procedures_form__text{
+		padding-bottom: 60px;
+	}
+	.half__btn_mob{
+		display: block;
+		position: absolute;
+		bottom: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.half__title{
+		font-size: 30px;
+		width: auto;
+		margin: 72px 25px 0;
+		left: 0;
+		transform: none;
+	}
+	.half__left,
+	.half__right{
+		/*-webkit-background-size: 50%;
+		background-size: 50%;*/
+		/*-webkit-background-size: 280px;
+		background-size: 280px;*/
+		background-image: none;
+		/*-ms-background-position-y: 280px;
+		background-position-y: 280px;*/
+		/*-ms-background-position-y: 420px;
+		background-position-y: 420px;*/
+	}
+	.half__left .procedures_form__inline{
+		margin-left: 0;
+	}
+	.half__right .procedures_form__inline{
+		margin-right: 0;
+	}
+	.half__left .half_btn__form{
+		padding-left: 50%;
+		transform: translateX(-15px);
+		padding-top: 110px;
+	}
+	.half__left .procedures_form__text{
+		padding-left: 15px;
+		transform: translateX(-50%);
+		display: inline-block;
+		font-size: 15px;
+	}
+	.half__title{
+		display: none;
+	}
+	.half__title_mob{
+		display: block;
+		position: relative;
+	}
+	.procedures_form__check_label{
+		font-size: 16px;
+	}
+	.procedures_form__inline{
+		margin-bottom: 20px;
+	}
+	.half__left .procedures_form__inline{
+		padding-left: 20px;
+	}
+	.procedures_form__check_input{
+		position: absolute;
+	}
+	.half_btn__form.procedures_form{
+		background: url(../../images/half_face_left.svg) no-repeat 0 60px;
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
+	.half__right .half_btn__form.procedures_form{
+		background-image: url(../../images/half_face_right.svg);
+		-ms-background-position-x: right;
+		background-position-x: right;
+		padding-right: 50%;
+		transform: translateX(15px);
+	}
+	.half__right .procedures_form .procedures_form__inline{
+		margin-right: 0;
+		padding-right: 20px;
+		margin-bottom: 30px;
+	}
+	.half__right .procedures_form__text{
+		/*padding-right: 15px;
+		transform: translateX(50%);
+		display: inline-block;*/
+		font-size: 15px;
+		text-align: center;
+		padding: 84px 0 0;
+	}
+	.half__right .procedures_form__text{
+		display: none;
+	}
+	.half__right .procedures_form__text_mob{
+		display: block;
+	}
+	.half__right .half_btn__form{
+		padding: 50px 0 100px;
+		margin-bottom: 100px;
+	}
 }

@@ -20,6 +20,7 @@
 .max_width{
 	width: 1004px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 a{
@@ -33,6 +34,20 @@ a{
 
 .header_color{
 	color: var(--header-opacity-text-color);
+}
+
+.after_underline{
+	position: relative;
+}
+
+.after_underline:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 36px;
+	height: 1px;
+	background-color: var(--black-color);
 }
 
 /*BURGERBUTTON*/
