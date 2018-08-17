@@ -25,4 +25,11 @@ $(document).ready(function () {
 	  	}
 	  }
 	});
+
+	var owl = $('.half_slider__owl.owl-carousel').owlCarousel({
+		items: 1,
+		loop: false,
+		dots: false,
+	  nav: true
+	});
 })

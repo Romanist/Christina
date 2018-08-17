@@ -8,6 +8,8 @@
 @import "blocks/simple-button-content.css";
 @import "blocks/half.css";
 @import "blocks/slider.css";
+@import "blocks/columns.css";
+@import "blocks/news.css";
 
 html, body{
 	font-size: var(--fz);
