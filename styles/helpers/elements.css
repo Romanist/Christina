@@ -15,6 +15,24 @@
 	box-sizing: border-box;
 }
 
+.w_arr{
+	position: relative;
+}
+
+.w_arr:after{
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	background-image: url(../../images/after_arrow.svg);
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+
 .btn:hover{
 	color: var(--black-color);
 }
@@ -128,6 +146,10 @@ a{
 .owl-next.disabled{
 	opacity: .5;
 	cursor: default;
+}
+
+.owl-nav.disabled{
+	display: none;
 }
 
 .owl-next{

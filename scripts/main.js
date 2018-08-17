@@ -32,4 +32,19 @@ $(document).ready(function () {
 		dots: false,
 	  nav: true
 	});
+	
+	var owl = $('.owl-carousel.uniq_news__owl').owlCarousel({
+		items: 2,
+		loop: false,
+		dots: false,
+	  nav: false,
+		responsive: {
+			768:{
+				items: 2
+			},
+			1024:{
+				items: 2
+			}
+		}
+	});
 })

@@ -3,10 +3,12 @@
 	color: var(--white-color);
 	position: relative;
 	height: 668px;
+	overflow: hidden;
 }
 
 .columns__col_wr{
-	overflow: hidden;
+	/*overflow: hidden;*/
+	overflow: visible;
 	height: 100%;
 }
 
@@ -24,6 +26,32 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	position: relative;
+}
+
+.columns__column:last-child:before,
+.columns__column:first-child:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 1000px;
+	opacity: 0;
+	background-color: #fff;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.columns__column:last-child:hover:before,
+.columns__column:first-child:hover:before{
+	opacity: 1;
+}
+
+.columns__column:last-child:before{
+	left: 100%;
+}
+.columns__column:first-child:before{
+	right: 100%;
 }
 
 .columns__column:after{
@@ -79,8 +107,36 @@
 	-webkit-transition: all ease .4s;
 	-o-transition: all ease .4s;
 	transition: all ease .4s;
+	padding-right: 10px;
+	position: absolute;
+	bottom: 50px;
 }
 
 .columns__column:hover .column__link{
 	opacity: 1;
+}
+
+@media screen and (max-width: 1023px) {
+	.columns__title{
+		color: var(--white-color);
+		-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+		-webkit-text-stroke-width: 0;
+		-webkit-text-stroke-color: none;
+		position: relative;
+	}
+	.columns__column:hover{
+		background-color: var(--bg-color6);
+		color: var(--white-color);
+	}
+	.columns__column:after{
+		display: none;
+	}
+	.columns__column{
+		width: 100%;
+		text-align: center;
+	}
+	.column__link{
+		opacity: 1;
+		color: var(--white-color);
+	}
 }

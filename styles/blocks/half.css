@@ -542,6 +542,14 @@
 	.half__title{
 		display: none;
 	}
+	.half_slider__title{
+		display: block;
+		width: 100%;
+		margin: 30px 0 0;
+	}
+	.half_slider .owl-nav{
+		top: 340px;
+	}
 	.half__title_mob{
 		display: block;
 		position: relative;
@@ -600,7 +608,8 @@
 		width: 100%;
 	}
 	.half_slider .half__left .half_slider__text{
-		padding-left: 20%;
+		padding-left: 0;
+		text-align: center;
 	}
 	.half_btn2{
 		background-image: url(../../images/bg3_mob.png);
