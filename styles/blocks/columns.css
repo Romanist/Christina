@@ -138,5 +138,7 @@
 	.column__link{
 		opacity: 1;
 		color: var(--white-color);
+		position: static;
+		bottom: 0;
 	}
 }

@@ -144,7 +144,7 @@
 @media screen and (max-width: 767px) {
 	.slider .owl-dots{
 		top: auto;
-		bottom: 120px;
+		bottom: 20px;
 		/*position: static;
 		transform: translateX(-16%);*/
 	}
