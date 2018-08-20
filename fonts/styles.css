@@ -1,8 +1,8 @@
 
 @font-face {
-  font-family: 'FuturaNewBook-Reg';
-  src: url('../fonts/FuturaNewBook-Reg.eot?#iefix') format('embedded-opentype'),  url('../fonts/FuturaNewBook-Reg.otf')  format('opentype'),
-	     url('../fonts/FuturaNewBook-Reg.woff') format('woff'), url('../fonts/FuturaNewBook-Reg.ttf')  format('truetype'), url('../fonts/FuturaNewBook-Reg.svg#FuturaNewBook-Reg') format('svg');
+  font-family: 'FuturaNewLight-Obl';
+  src: url('../../fonts/FuturaNewLight-Obl.eot?#iefix') format('embedded-opentype'),  url('../../fonts/FuturaNewLight-Obl.otf')  format('opentype'),
+	     url('../../fonts/FuturaNewLight-Obl.woff') format('woff'), url('../../fonts/FuturaNewLight-Obl.ttf')  format('truetype'), url('../../fonts/FuturaNewLight-Obl.svg#FuturaNewLight-Obl') format('svg');
   font-weight: normal;
   font-style: normal;
 }

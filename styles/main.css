@@ -12,6 +12,7 @@
 @import "blocks/news.css";
 @import "blocks/footer.css";
 @import "blocks/uniq.css";
+@import "blocks/text.css";
 
 html, body{
 	font-size: var(--fz);
