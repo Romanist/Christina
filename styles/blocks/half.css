@@ -357,6 +357,42 @@
 	margin-bottom: 110px;
 }
 
+.half_slider__mob_contr{
+	display: none;
+}
+
+.half_slider__contr_plus{
+	width: 33px;
+	height: 33px;
+	float: right;
+	line-height: 33px;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.half_slider__contr_minus{
+	width: 33px;
+	height: 33px;
+	float: left;
+	line-height: 33px;
+	color: #fff;
+	background-color: #000;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.plus .half_slider__contr_minus{
+	color: #000;
+	background-color: #fff;
+}
+
+.plus .half_slider__contr_plus{
+	color: #fff;
+	background-color: #000;
+}
+
 @media screen and (max-width: 1279px) {
 	.half__title{
 		top: 48px;
@@ -453,6 +489,7 @@
 	.half_slider__item{
 		background-size: 380px;
 		height: auto;
+		background-image: url(../../images/face_halfed.png)
 	}
 	.half_slider .half__left .half_slider__text{
 		margin-right: 0;
@@ -512,15 +549,7 @@
 	}
 	.half__left,
 	.half__right{
-		/*-webkit-background-size: 50%;
-		background-size: 50%;*/
-		/*-webkit-background-size: 280px;
-		background-size: 280px;*/
 		background-image: none;
-		/*-ms-background-position-y: 280px;
-		background-position-y: 280px;*/
-		/*-ms-background-position-y: 420px;
-		background-position-y: 420px;*/
 	}
 	.half__left .procedures_form__inline{
 		margin-left: 0;
@@ -606,9 +635,12 @@
 	}
 	.half_slider__block{
 		width: 100%;
+		padding-top: 400px;
+		padding-bottom: 20px;
 	}
 	.half_slider .half__left .half_slider__text{
-		padding-left: 20%;
+		padding: 10px 0 10px 20%;
+		font-size: 16px;
 		/*text-align: center;*/
 	}
 	.half_btn2{
@@ -629,6 +661,37 @@
 	}
 	.half_slider__symbol{
 		border: none;
+	}
+	.half_slider__mob_contr{
+		display: block;
+		position: absolute;
+		width: 160px;
+		height: 33px;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 330px;
+	}
+	.half_slider__owl .plus .half__left{
+		display: none;
+	}
+	.half_slider__owl .plus .half__right{
+		display: block;
+		padding-left: 20%;
+		font-size: 16px;
+	}
+	.half_slider__text_wr p{
+		display: inline-block;
+	}
+	.half__right .half_slider__symbol{
+		margin: 0;
+		float: left;
+		line-height: 24px;
+	}
+	.half_slider__text_wr{
+		display: inline;
+	}
+	.half_slider .half__right .half_slider__text{
+		padding: 12px 0;
 	}
 }
 
