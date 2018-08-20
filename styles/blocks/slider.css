@@ -145,6 +145,11 @@
 	.slider .owl-dots{
 		top: auto;
 		bottom: 20px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
 		/*position: static;
 		transform: translateX(-16%);*/
 	}

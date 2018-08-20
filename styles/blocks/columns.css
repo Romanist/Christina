@@ -123,6 +123,10 @@
 	left: 46%;
 }
 
+.column__title{
+	letter-spacing: 1px;
+}
+
 @media screen and (max-width: 1023px) {
 	.columns__title{
 		color: var(--white-color);
@@ -158,11 +162,24 @@
 	.columns__column .column__img{
 		opacity: 0;
 	}
+	.columns_black .column__link:after{
+		background-image: url(../../images/arrow_white.svg);
+		width: 8px;
+    	height: 10px;
+	}
+	.column__link{
+		position: relative;
+		padding-right: 15px;
+	}
 }
 
 @media screen and (max-width: 767px) {
 	.columns__mob_slider_img{
-		top: 250px;
+		top: 200px;
 		left: 38%;
+		width: 25%;
+	}
+	.columns__mob_slider_img .owl-item{
+		text-align: center;
 	}
 }

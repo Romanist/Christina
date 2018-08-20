@@ -242,3 +242,9 @@ a{
 		width: auto;
 	}
 }
+
+@media screen and (max-width: 766px) {
+	.title{
+		font-size: 30px;
+	}
+}

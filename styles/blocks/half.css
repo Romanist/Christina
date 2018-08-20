@@ -139,6 +139,21 @@
 	background-color: var(--bg-color7);
 }
 
+.colored,
+.procedures_form__custom_input_dot{
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.half__left .procedures_form input:checked~.colored{
+	color: var(--color2);
+}
+
+.half__right .procedures_form input:checked~.colored{
+	color: var(--color1);
+}
+
 .half__left .procedures_form input:checked~.procedures_form__custom_input{
 	border: solid 1px var(--bg-color7);
 }
@@ -261,6 +276,9 @@
     line-height: 28px;
     background-color: var(--bg-color2);
     text-align: center;
+    background: var(--white-color) url(../../iamges/minus.svg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .half__right .half_slider__symbol{
@@ -547,6 +565,11 @@
 		left: 0;
 		transform: none;
 	}
+	.procedures_form__custom_input{
+		transform: none;
+		/*top: 15%;*/
+		top: 5px;
+	}
 	.half__left,
 	.half__right{
 		background-image: none;
@@ -585,6 +608,8 @@
 	}
 	.procedures_form__check_label{
 		font-size: 16px;
+	    line-height: 22px;
+    	display: block;
 	}
 	.procedures_form__inline{
 		margin-bottom: 20px;

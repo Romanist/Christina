@@ -47,30 +47,15 @@ $(document).ready(function () {
 		items: 2,
 		loop: false,
 		dots: false,
-	  nav: false,
-		responsive: {
-			768:{
-				items: 2
-			},
-			1024:{
-				items: 2
-			}
-		}
+	  nav: false
+	  // autoWidth: true
 	});
 
 	var owlUniqHist = $('.uniq_history .owl-carousel.uniq_news__owl').owlCarousel({
 		items: 2,
 		loop: false,
 		dots: true,
-	  nav: true,
-		responsive: {
-			768:{
-				items: 2
-			},
-			1024:{
-				items: 2
-			}
-		}
+	  nav: true
 	});
 
 	var owlSliderMob = $('.columns__mob_slider_img.owl-carousel').owlCarousel({

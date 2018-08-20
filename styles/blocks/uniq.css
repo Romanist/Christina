@@ -24,6 +24,7 @@
 .uniq_news__owl_item{
 	width: 200px;
 	height: 100px;
+	padding-right: 200px;
 }
 
 .uniq_news__link{
@@ -65,6 +66,7 @@
 	display: inline-block;
 	padding: 0 5px;
 	color: rgba(0, 0, 0, .7);
+	padding-bottom: 16px;
 }
 
 .uniq_news__owl_link{
