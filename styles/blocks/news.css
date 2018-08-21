@@ -52,6 +52,7 @@
 
 .news__btn{
 	margin-bottom: 103px;
+	font-family: 'FuturaNewBook-Reg';
 }
 
 .news__top{
@@ -115,9 +116,6 @@
 .news__img-big{
 	width: auto;
 	height: 100%;
-}
-
-.news__img-big{
 	float: left;
 }
 
@@ -174,6 +172,10 @@
 	text-align: right;
 }
 
+.news__img_mob{
+	display: none;
+}
+
 @media screen and (max-width: 1023px) {
 	.news__item_small:nth-child(3){
 		display: none;
@@ -186,6 +188,74 @@
 	}
 	.news__wr{
 		margin: 0 auto 40px;
+	}
+	.news__search{
+		width: 100%;
+	}
+	.news{
+		padding: 0 40px;
+	}
+	.news__title{
+		font-size: 40px;
+		display: block;
+		float: none;
+		padding-top: 54px;
+		padding-bottom: 20px;
+		text-align: left;
+	}
+	.news__search_wr{
+		display: block;
+		float: none;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+	.news__item-big{
+		width: 100%;
+		margin-right: 0;
+	}
+	.news__item{
+		width: 48%;
+		margin-right: 4%;
+	}
+	.news__item:last-child, .news__item:nth-child(2){
+		margin-right: 4%;
+	}
+	.news__img-big{
+		width: 48%;
+		height: auto;
+	}
+	.news__item:nth-child(2n + 1){
+		margin-right: 0;
+	}
+	.news__item,
+	.news__item, .news__item-big{
+		height: auto;
+	}
+	.news__name-big{
+		padding-top: 0;
+		padding-left: 30px;
+		width: 240px;
+		font-size: 24px;
+	}
+	.news__desc-big{
+		width: 217px;
+		padding-left: 30px;
+		padding-right: 100px;
+	}
+	.news__link-big{
+		padding-left: 30px;
+	}
+	.news__link{
+		position: relative;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		display: inline-block;
+	}
+	.news__items{
+		padding-bottom: 20px;
+	}
+	.news__btn{
+		margin-bottom: 60px;
 	}
 }
 
@@ -203,5 +273,38 @@
 	}
 	.news_item__img{
 		height: auto;
+	}
+	.news__item{
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	.news__img-big{
+		display: none;
+	}
+	.news__img_mob{
+		display: block;
+	}
+	.news__desc-big,
+	.news__name-big,
+	.news__link-big{
+		padding-left: 0;
+		width: 100%;
+		float: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.news__link{
+		padding-left: 0;
+		float: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.news__title{
+		font-size: 30px;
+	}
+	.news__name-big,
+	.news__name{
+		font-size: 20px;
+		line-height: 30px;
 	}
 }
