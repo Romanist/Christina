@@ -53,8 +53,8 @@
 }
 
 .circle_border{
-	border: 1px solid var(--black-color);
-	border-radius: 50%;
+	/*border: 1px solid var(--black-color);
+	border-radius: 50%;*/
 }
 
 a{

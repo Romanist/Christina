@@ -8,7 +8,7 @@
 .nav__item{
 	font-size: 13px;
 	display: inline-block;
-	padding: 8px 40px;
+	padding: 10px 40px;
 	letter-spacing: 1.06px;
 	position: relative;
 }
@@ -45,7 +45,7 @@
 
 .header__underline_wr{
 	border-bottom: 2px solid var(--opacity-underlane-color);
-	margin-bottom: 35px;
+	margin-bottom: 27px;
 }
 
 .header__number{
@@ -64,14 +64,15 @@
 
 .header__menu{
 	overflow: hidden;
+	padding-bottom: 3px;
 }
 
 .header__left-top{
-	padding-bottom: 16px;
+	padding-bottom: 13px;
 }
 
 .header span{
-	vertical-align: top;
+	vertical-align: middle;
 	letter-spacing: 1.4px;
 }
 
@@ -80,8 +81,12 @@
 	letter-spacing: unset;
 }
 
+.header__left-bot span{
+	vertical-align: top;
+}
+
 .call_icon{
-	margin-right: 38px;
+	margin-right: 26px;
 	display: inline-block;
 }
 
@@ -91,6 +96,11 @@
 
 .header__right img{
 	margin-right: 13px;
+}
+
+.header__right > img{
+	position: relative;
+	top: 5px;
 }
 
 .header__right_btns{
@@ -106,10 +116,11 @@
 	margin-right: 0;
 }
 
-.basket_number{
+a .basket_number{
 	font-size: 18px;
 	font-family: 'FuturaNewBook-Reg';
 	padding-left: 4px;
+	vertical-align: top;
 }
 
 .header__logo{
@@ -155,7 +166,7 @@
 
 .navigation__item{
 	display: inline-block;
-	padding: 16px 30px;
+	padding: 15px 30px;
 	letter-spacing: 1.23px;
 	color: var(--white-color);
 }

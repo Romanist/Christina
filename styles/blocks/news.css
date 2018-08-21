@@ -32,12 +32,146 @@
 .news_item__title{
 	font-size: 22px;
 	line-height: 25px;
-	padding-top: 10px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 .news_item__desc{
 	opacity: .5;
+}
+
+.news{
+	background-color: rgba(0, 0, 0, .02);
+	text-align: center;
+}
+
+.news__items{
+	overflow: hidden;
+	padding-bottom: 90px;
+	text-align: left;
+}
+
+.news__btn{
+	margin-bottom: 103px;
+}
+
+.news__top{
+	overflow: hidden;
+}
+
+.news__search{
+	float: right;
+}
+
+.news__title{
+	padding: 40px 0;
+	float: left;
+	font-size: 50px;
+}
+
+.news__item,
+.news__item-big{
+	width: 32%;
+	margin-right: 2%;
+	float: left;
+	height: 436px;
+	margin-bottom: 16px;
+	position: relative;
+}
+
+.news__item-big{
+	width: 66%;
+}
+
+.news__item:last-child,
+.news__item:nth-child(2){
+	margin-right: 0;
+}
+
+.news__name{
+	font-size: 22px;
+	padding-top: 11px;
+	padding-bottom: 7px;
+	line-height: 30px;
+}
+
+.news__desc{
+	font-size: 16px;
+	line-height: 23px;
+	opacity: .5;
+}
+
+.news__link{
+	font-family: 'FuturaNewBook-Reg';
+	padding-right: 14px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.news__img{
+	width: 100%;
+}
+
+.news__img-big{
+	width: auto;
+	height: 100%;
+}
+
+.news__img-big{
+	float: left;
+}
+
+.news__link-big{
+	position: relative;
+	float: left;
+	padding-left: 20px;
+}
+
+.news__name-big{
+	padding-top: 59px;
+	padding-left: 20px;
+	float: left;
+	width: 220px;
+	padding-bottom: 20px;
+}
+
+.news__desc-big{
+	float: left;
+	padding-left: 20px;
+	width: 220px;
+	padding-bottom: 30px;
+}
+
+.news__search_wr{	
+	margin-top: 40px;
+	display: inline-block;
+	position: relative;
+}
+
+.news__search_wr:before{
+	left: 0;
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-image: url(../../images/search.svg);
+}
+
+.news__search{
+	all: unset;
+	width: 410px;
+	border-bottom: 1px solid rgba(0, 0, 0, .3);
+	text-align: left;
+	padding: 12px 0 12px 30px;
+}
+
+.news__top{
+	text-align: right;
 }
 
 @media screen and (max-width: 1023px) {

@@ -71,6 +71,43 @@ $(document).ready(function () {
 		owlSliderMob2.trigger('to.owl.carousel', e.item.index)
 	});
 
+	owlSliderMob.on('resize.owl.carousel', function (e) {
+		console.log($(window).width())
+		if (($(window).width() <=1023) && ($(window).width() >=767)) {
+			return false
+		}
+		if ($(window).width() <=767) {
+			owlSliderMob.trigger('refresh.owl.carousel')
+		}
+		if ($(window).width() > 1024) {
+			$('.columns__mob_owl.owl-carousel').trigger('destroy.owl.carousel').addClass('off')
+		}		
+	});
+
+	owlUniqNews.on('resize.owl.carousel', function (e) {
+		if (($(window).width() <=1023) && ($(window).width() >=767)) {
+			return false
+		}
+		if ($(window).width() <=767) {
+			owlUniqNews.trigger('refresh.owl.carousel')
+		}
+		if ($(window).width() > 1024) {
+			return false
+		}		
+	});
+
+	owlUniqHist.on('resize.owl.carousel', function (e) {
+		if (($(window).width() <=1023) && ($(window).width() >=767)) {
+			return false
+		}
+		if ($(window).width() <=767) {
+			owlUniqHist.trigger('refresh.owl.carousel')
+		}
+		if ($(window).width() > 1024) {
+			$('.columns__mob_owl.owl-carousel').trigger('destroy.owl.carousel').addClass('off')
+		}		
+	});
+
 	sliderCreateMob();
 	$(window).resize(sliderCreateMob);
 
@@ -81,14 +118,13 @@ $(document).ready(function () {
 	}
 
 	function sliderCreateMob () {
-		if ($(window).width() <=1023) {
+		if ($(window).width() <=1006) {
 			owlSliderMob2 = $('.columns__mob_owl.owl-carousel').owlCarousel({
 				items: 1,
 				loop: false,
 				dots: false,
 			  nav: false
 			});
-			console.log('heh?')
 		}
 		else{
 			$('.columns__mob_owl.owl-carousel').trigger('destroy.owl.carousel').addClass('off')
@@ -106,5 +142,17 @@ $(document).ready(function () {
 		e.preventDefault();
 		var _this = this;
 		navigator (_this);
-	})	
+	});
+
+	$('.columns__column:nth-child(2)').hover(function () {
+		if ($(window).width() >= 1024) {
+			$('.columns__title_cont.left .columns__title').toggleClass('hover');
+		}
+	});
+
+	$('.columns__column:nth-child(3)').hover(function () {
+		if ($(window).width() >= 1024) {
+			$('.columns__title_cont.right .columns__title').toggleClass('hover');
+		}
+	});
 })

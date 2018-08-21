@@ -25,13 +25,13 @@
 
 .slider__title{
 	font-size: 40px;
-	padding: 50px 0 40px;
+	padding: 70px 0 43px;
 	font-family: 'Cormorant Garamond', serif;
 	text-align: left;
 }
 
 .slider__wr{
-	margin-bottom: 50px;
+	margin-bottom: 42px;
 	position: relative;
 }
 
@@ -42,11 +42,11 @@
 .slider .owl-dots{
 	left: 50%;
 	transform: translateX(-50%);
-	top: -82px;
+	top: -89px;
 }
 
 .slider .owl-nav{
-	top: -82px;
+	top: -88px;
     right: 0;
 }
 
@@ -66,7 +66,7 @@
 
 .slider__prod img{
 	margin-top: 18px;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
 .product_wr__name{
@@ -79,7 +79,7 @@
 	text-align: left;
 	font-size: 16px;
 	opacity: .6;
-	padding-bottom: 20px;
+	padding-bottom: 16px;
 }
 
 .product__price{
