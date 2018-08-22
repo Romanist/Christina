@@ -176,6 +176,41 @@
 	display: none;
 }
 
+.news_slider{
+	width: 458px;
+	position: relative;
+}
+
+.news_slider__item{
+	width: 200px;
+	display: inline-block;
+}
+
+.news_slider__img{
+	width: 100%;
+}
+
+.news_slider__wr{
+	overflow-x: hidden;
+}
+
+.news_slider__wr .owl-nav{
+	right: -20px;
+	top: 21px;
+}
+
+.news_slider__title{
+	font-size: 26px;
+	padding-top: 14px;
+	padding-bottom: 30px;
+	font-family: 'FuturaNewBook-Reg';
+}
+
+.news_slider___desc{
+	font-size: 16px;
+	line-height: 23px;
+}
+
 @media screen and (max-width: 1023px) {
 	.news__item_small:nth-child(3){
 		display: none;

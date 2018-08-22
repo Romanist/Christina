@@ -95,6 +95,31 @@
 	overflow: hidden;
 }
 
+
+/*news*/
+.smpl_news_article__road{
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+
+.smpl_news_article__link{
+	font-size: 16px;
+	color: var(--header-opacity-text-color);
+}
+
+.smpl_news_article__title{
+	padding-top: 0;
+	padding-bottom: 117px;
+	width: 484px;
+	font-size: 50px;
+	text-align: left;
+	line-height: 61px;
+}
+
+.smpl_news_article{
+	padding: 0;
+}
+
 @media screen and (max-width: 1440px) {
 	.smpl_btn_cont__product{
 		left: 80%;

@@ -193,4 +193,11 @@
 	.uniq_history .uniq_news__owl_item{
 		padding-right: 60px;
 	}
+	.uniq_history{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.uniq_history .owl-nav{
+		top: 86px;
+	}
 }

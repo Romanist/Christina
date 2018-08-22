@@ -44,6 +44,24 @@
 	position: relative;
 }
 
+.lane_wr{
+	position: relative;
+	display: inline-block;
+	padding-right: 40px;
+	margin-right: 10px;
+}
+
+.lane_wr:after{
+	position: absolute;
+	content: '';
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	height: 1px;
+	width: 26px;
+	background-image: url(../../images/lane.svg);
+}
+
 .title{
 	font-family: 'Cormorant Garamond', serif;
 	font-size: 40px;
