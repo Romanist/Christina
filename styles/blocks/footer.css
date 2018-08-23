@@ -199,8 +199,8 @@ dd .bot_nav__link{
 
 @media screen and (max-width: 1023px) {
 	.footer{
-		padding-left: 5%;
-		padding-right: 5%;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 	.footer__spam_btn{
 		padding-right: 100px;

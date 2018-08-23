@@ -298,7 +298,7 @@ a .basket_number{
 	}
 	.header__right{
 		width: auto;
-		padding: 20px 20px 0 0;
+		padding: 14px 20px 0 0;
 	}
 	.header__left{
 		padding: 14px 0 0 20px;
@@ -315,6 +315,12 @@ a .basket_number{
 	.navigation{
 		padding-top: 45px;
 	}
+	.navigation_wr__toggler{
+		left: 20px;
+	}
+	.header__mob_btns{
+		right: 20px;
+	}
 }
 
 @media screen and (max-width: 580px){
@@ -326,7 +332,8 @@ a .basket_number{
 
 @media screen and (max-width: 370px){
 	.header__number{
-		font-size: 18px;
+		vertical-align: -webkit-baseline-middle;
+		font-size: 16px;
 	}
 	.call_icon:first-child{
 		margin-right: 0;

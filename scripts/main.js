@@ -59,10 +59,15 @@ $(document).ready(function () {
 	});
 
 	var owlUniqHist = $('.news_slider__wr').owlCarousel({
-		items: 2,
+		items: 1,
 		loop: false,
 		dots: false,
-	  nav: true
+	  nav: true,
+	  responsive: {
+	  	768:{
+	  		items: 2
+	  	}
+	  }
 	});
 
 	var owlSliderMob = $('.columns__mob_slider_img.owl-carousel').owlCarousel({
