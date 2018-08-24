@@ -4,6 +4,7 @@
 @import "helpers/variables.css";
 @import "helpers/elements.css";
 @import "helpers/fonts.css";
+@import "blocks/common.css";
 @import "blocks/header.css";
 @import "blocks/simple-button-content.css";
 @import "blocks/half.css";
@@ -13,6 +14,7 @@
 @import "blocks/footer.css";
 @import "blocks/uniq.css";
 @import "blocks/text.css";
+@import "blocks/scroll.css";
 
 html, body{
 	font-size: var(--fz);
@@ -20,7 +22,7 @@ html, body{
 	position: relative;
 	font-family: 'FuturaNewLight-Reg';
 	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
-	width: 100%; 
+	width: 100%;	 
 }
 
 /*html{
@@ -28,5 +30,5 @@ html, body{
 	opacity: .5;
 	-ms-background-position-x: center;
 	background-position-x: center;
-}*/
-
+}
+*/

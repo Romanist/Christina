@@ -4,9 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Christina</title>
+	<link rel="stylesheet" href="../styles/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="../styles/main.css">
 	<script src="../scripts/libraries/jquery.js"></script>
 	<script src="../scripts/libraries/owl.carousel.min.js"></script>
+	<script src="../scripts/libraries/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="../scripts/main.js"></script>
 </head>
 <body>
@@ -119,48 +121,64 @@
 		</div>
 	</header>
 
-	<section class="news">
+	<section class="HDIW">
+		<div class="navigator HDIW__navigator">
+			<h1 class="navigator__title title">Как это работает?</h1>
+			<div class="navigator__menu">
+				<a href="#" data-pos=".scroll_HDIW" class="navigator__btn_wr">
+					<img src="../images/column_icon1_black.svg" class="HDIW__navigator_img" alt="">
+					<span class="navigator__btn">Умные транспортные системы</span></a
+				><a href="#" data-pos=".uniq_history" class="navigator__btn_wr">
+					<img src="../images/column_icon3_black.svg" class="HDIW__navigator_img" alt="">
+					<span class="navigator__btn">Микро-инкапсуляция</span></a
+				><a href="#" data-pos=".text__content_link2" class="navigator__btn_wr">
+					<img src="../images/column_icon4_black.svg" class="HDIW__navigator_img" alt="">
+					<span class="navigator__btn">Пептиды<br> и липосомы</span></a
+				><a href="#" data-pos=".text__content_link2" class="navigator__btn_wr">
+					<img src="../images/column_icon5_black.svg" class="HDIW__navigator_img" alt="">
+					<span class="navigator__btn">SPF- <br> защита</span></a>
+			</div>
+		</div>
+	</section>
+
+	<section class="scroll scroll_HDIW">
 		<div class="max_width">
-			<div class="news__top">
-				<h1 class="news__title title">Статьи</h1>
-				<div class="news__search_wr">
-					<input type="text" placeholder="Найти" class="news__search">
+			<div class="scroll_HDIW__text">
+				<h3 class="title scroll_HDIW__title">«Умные» транспортные системы</h3>
+				<p>«Умная», точно направленная капсула доставляет активные ингредиенты в клетку-мишень. Эта технология, разработанная по типу доставки с помощью дронов, действует только там, где это необходимо, обеспечивая препарату чрезвычайно высокую эффективность.</p>
+			</div>
+			<div class="scroll_HDIW__scr_wr">
+				<div class="scroll_HDIW__links">
+					<a href="#" class="scroll_HDIW__link active">
+						<img src="../images/standart_capsule.svg" class="scroll_HDIW__link_img" alt="">
+						Стандартная капсула
+					</a>
+					<a href="#" class="scroll_HDIW__link">
+						<img src="../images/capsule.svg" width="48" class="scroll_HDIW__link_img" alt="">
+						Х50 + УСНД
+					 </a>
+				</div>
+				<div class="scroll_HDIW__scroll">
+					<div class="scroll_HDIW__cont scroll__cont">
+						<div class="scroll_HDIW__wr">
+							<img src="../images/bg3.png" alt="" class="scroll_HDIW__img">
+							<div class="scroll_HDIW__text_wr">
+								<p>Изначальная концентрация <b>больше</b></p>
+								<p>Эффективная концентрация <b>меньше</b></p>
+								<p>Концентрация в препарате <b>больше</b></p>
+							</div>
+						</div>
+						<div class="scroll_HDIW__wr">
+							<img src="../images/bg4.png" alt="" class="scroll_HDIW__img">
+							<div class="scroll_HDIW__text_wr">
+								<p>Изначальная концентрация <b>больше</b></p>
+								<p>Эффективная концентрация <b>меньше</b></p>
+								<p>Концентрация в препарате <b>больше</b></p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="news__items">
-				<div class="news__item-big">
-					<img src="../images/news0.jpg" alt="" class="news__img news__img-big">
-					<img src="../images/news0_mob.jpg" alt="" class="news__img news__img_mob">
-					<p class="news__name news__name-big">Кристина М. Зехави: «Чем больше вы любите, тем вы счастливее. Вот и всё»</p>
-					<p class="news__desc news__desc-big">Наверно, уже не осталось ни в одном языке мира слов, не сказанных о любви. </p>
-					<a href="news_article.html" class="news__link news__link-big w_arr">Узнать подробнее</a>
-				</div>
-				<div class="news__item">
-					<img src="../images/news1.jpg" alt="" class="news__img">
-					<p class="news__name">В феврале вас посетит Муза</p>
-					<p class="news__desc">Хотите, чтобы холодным ветреным днем вашей кожи вдруг коснулась нежным крылом и согрела теплым дыханием сама Муза?</p>
-					<a href="news_article.html" class="news__link w_arr">Узнать подробнее</a>
-				</div>
-				<div class="news__item">
-					<img src="../images/news2.jpg" alt="" class="news__img">
-					<p class="news__name">В феврале вас посетит Муза</p>
-					<p class="news__desc">Хотите, чтобы холодным ветреным днем вашей кожи вдруг коснулась нежным крылом и согрела теплым дыханием сама Муза?</p>
-					<a href="news_article.html" class="news__link w_arr">Узнать подробнее</a>
-				</div>
-				<div class="news__item">
-					<img src="../images/news3.jpg" alt="" class="news__img">
-					<p class="news__name">Вся правда – в глазах. 20% бонуса при покупке средств для глаз</p>
-					<p class="news__desc">Если вы до сих пор не обзавелись любимой баночкой крема для глаз, самое время исправить положение.</p>
-					<a href="news_article.html" class="news__link w_arr">Узнать подробнее</a>
-				</div>
-				<div class="news__item">
-					<img src="../images/news4.jpg" alt="" class="news__img">
-					<p class="news__name">В феврале вас посетит Муза</p>
-					<p class="news__desc">Хотите, чтобы холодным ветреным днем вашей кожи вдруг коснулась нежным крылом и согрела теплым дыханием сама Муза?</p>
-					<a href="news_article.html" class="news__link w_arr">Узнать подробнее</a>
-				</div>
-			</div>
-			<a href="" class="btn news__btn">Показать ещё</a>
 		</div>
 	</section>
 

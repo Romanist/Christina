@@ -19,6 +19,10 @@
 	position: relative;
 }
 
+b{
+	font-weight: bold;
+}
+
 .w_arr:after{
 	content: '';
 	position: absolute;
