@@ -21,7 +21,7 @@ $(document).ready(function () {
 	  nav: true
 	});
 
-	var owlProd = $('.slider .owl-carousel').owlCarousel({
+	var owlProd = $('.slider_main .owl-carousel').owlCarousel({
 		items: 2,
 		loop: false,
 		dots: true,
@@ -35,6 +35,21 @@ $(document).ready(function () {
 	  	}
 	  }
 	});
+
+	var owlProd = $('.shop_slider__wr .owl-carousel').owlCarousel({
+		items: 2,
+		loop: false,
+		dots: true,
+	  nav: true,
+	  responsive: {
+	  	768:{
+	  		items: 3
+	  	},
+	  	1024:{
+	  		items: 3
+	  	}
+	  }
+	});	
 
 	var owlSlider = $('.half_slider__owl.owl-carousel').owlCarousel({
 		items: 1,

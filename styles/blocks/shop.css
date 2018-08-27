@@ -143,6 +143,46 @@ input:checked + .shop_form__item:after{
 	font-family: 'FuturaNewBook-Reg';
 }
 
+.shop_slider .owl-dots,
+.shop_slider .owl-nav{
+	top: 0;
+}
+
+.shop_slider__wr{
+	overflow: hidden;
+	width: 75%;
+	float: left;
+}
+.shop_slider__about{
+	width: 25%;
+	float: left;
+}
+
+.shop_slider__title{
+	padding-top: 70px;
+	text-align: left;
+	padding-bottom: 38px;
+}
+
+.shop_slider__desc{
+	opacity: .7;
+	/*max-width: 250px;*/
+	padding-bottom: 30px;
+}
+
+.shop_slider__link{
+	padding-right: 10px;
+	font-family: 'FuturaNewBook-Reg';
+}
+
+.shop_slider__wr{
+	margin-top: 80px;
+}
+
+.shop_slider__wr .slider__wr{
+	padding-top: 88px;
+}
+
 @media screen and (max-width: 1279px) {
 	.shop__picker{
 		width: 67%;
