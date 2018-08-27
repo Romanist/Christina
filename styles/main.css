@@ -15,6 +15,7 @@
 @import "blocks/uniq.css";
 @import "blocks/text.css";
 @import "blocks/scroll.css";
+@import "blocks/shop.css";
 
 html, body{
 	font-size: var(--fz);
@@ -26,7 +27,7 @@ html, body{
 }
 
 /*html{
-	background: url(../images/all.jpg);
+	background: url(../images/all3.jpg);
 	opacity: .5;
 	-ms-background-position-x: center;
 	background-position-x: center;

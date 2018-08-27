@@ -199,4 +199,8 @@ $(document).ready(function () {
 		$(".scroll_HDIW__scroll").mCustomScrollbar('scrollTo', 'right');
 		return false;
 	});
+
+	$('.shop__toggle').click(function () {
+		$('.shop__filters').toggleClass('open')
+	});
 })

@@ -144,8 +144,8 @@
 }
 
 .text__content .max_width{
-	width: 1004px;
-	padding-left: 0;
+	/*width: 1004px;
+	padding-left: 0;*/
 	display: block;
 }
 
@@ -195,7 +195,7 @@
 }
 
 .text_news{
-	padding-top: 33px;
+	padding-top: 37px;
 	padding-bottom: 70px;
 	border-bottom: solid 1px rgba(0, 0, 0, .2);
 }
@@ -278,11 +278,11 @@
 }
 
 .text_news__list_item{
-	line-height: 30px;
+	line-height: 33px;
 }
 
 .text_news__list{
-	padding-bottom: 40px;
+	padding-bottom: 24px;
 }
 
 .text_news__author{
@@ -313,7 +313,8 @@
 }
 
 .text_news__socials{
-	padding-bottom: 82px;
+	padding-bottom: 114px;
+	padding-top: 42px;
 	position: relative;
 }
 
@@ -354,7 +355,7 @@
 
 .news_page__low_title{
 	padding-top: 0;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1279px) {

@@ -1,0 +1,228 @@
+.shop__picker{
+	width: 696px;
+	float: left;
+}
+
+.six_items_wr__item{
+	height: 246px;
+	width: 26%;
+	background-color: var(--hover-product-bg-color);
+	margin-bottom: 19px;
+	padding: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.six_items_wr__item:nth-child(2){
+	background-color: var(--bg-color1);
+}
+.six_items_wr__item:nth-child(3){
+	background-color: var(--bg-color10);
+}
+.six_items_wr__item:nth-child(4){
+	background-color: var(--bg-color5);
+}
+.six_items_wr__item:nth-child(5){
+	background-color: var(--bg-color11);
+}
+.six_items_wr__item:nth-child(6){
+	background-color: var(--bg-color3);
+}
+
+.six_items_wr__item-bot{
+	height: 166px;
+}
+
+.shop__title{
+    padding-top: 30px;
+    padding-bottom: 14px;
+	text-align: left;
+	font-size: 50px;
+}
+
+.six_items_wr__item-big{
+	width: 41%;
+}
+
+.shop__filters{
+	float: right;
+	max-width: 288px;
+	margin-left: 16px;
+	background-color: var(--bg-color2);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 22px 36px;
+	line-height: 25px;
+	position: relative;
+	overflow: hidden;
+}
+
+.shop_form__grp_inputs input{
+	position: absolute;
+	z-index: -10;
+}
+
+.shop_form__item{
+	cursor: pointer;
+	margin-right: 20px;
+	position: relative;
+}
+
+.shop_form__item:after{
+	bottom: -1px;
+	left: 0;
+	right: 0;
+	height: 1px;
+	content: '';
+	position: absolute;
+	background-color: #000;
+	display: none;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.shop_form__grp{
+	padding-bottom: 28px;
+}
+
+.shop_form__grp_title{
+	font-family: 'FuturaNewBook-Reg';
+}
+
+input:checked + .shop_form__item:after{
+	/*color: red;*/
+	display: block;
+}
+
+.shop_form__btn{
+	background-color: inherit;
+	cursor: pointer;
+	margin-bottom: 4px;
+	font-family: 'FuturaNewBook-Reg';
+	font-size: 18px;
+	line-height: 0;
+	min-width: 100%;
+}
+
+.shop__picker_name{
+	font-size: 22px;
+	line-height: 24px;
+}
+
+.six_items_wr__item img{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.six_items_wr__item-top.six_items_wr__item-big img{
+	bottom: 30px;
+}
+
+.six_items_wr__item-bot img{
+	left: 60%;
+}
+
+.six_items_wr__item-bot.six_items_wr__item-big img{
+	left: 70%;
+}
+
+.shop__toggle{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--bg-color2);
+	font-family: 'FuturaNewBook-Reg';
+}
+
+@media screen and (max-width: 1279px) {
+	.shop__picker{
+		width: 67%;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.shop__picker{
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		/*padding: 0 40px;*/
+	}
+	.shop{
+		padding: 0 40px;
+	}
+	.shop__filters{
+		margin: 0;
+		width: 100%;
+		max-width: none;
+		margin-bottom: 19px;
+		/*position: absolute;*/
+		max-height: 55px;
+		-webkit-transition: max-height 1s ease;
+		-o-transition: max-height 1s ease;
+		transition: max-height 1s ease;
+	}
+	.open.shop__filters{
+		max-height: 1000px;
+	}
+	.shop__toggle{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		/*-webkit-transition: all ease 1s;
+		-o-transition: all ease 1s;
+		transition: all ease 1s;*/
+	}
+	.open .shop__toggle{
+		position: absolute;
+		bottom: auto;
+		left: auto;
+		right: 20px;
+		top: 20px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.shop{
+		padding: 0 20px;
+	}
+	.six_items_wr__item,
+	.six_items_wr__item-big{
+		width: 48%;
+		height: 123px;
+		margin-bottom: 5px;
+	}
+	.six_items_wr__item{
+		overflow: hidden;
+	}
+	.six_items_wr__item img{
+		width: 100px;
+		right: 10%;
+		transform: none;
+		left: auto;
+	}
+	.six_items_wr__item-bot.six_items_wr__item-big img{
+		left: auto;
+	}
+	.six_items_wr__item-top.six_items_wr__item-big img{
+		bottom: -10px;
+	}
+	.six_items_wr__item-top img{
+		bottom: -30px;
+	}
+	.shop__title{
+		font-size: 30px;
+		line-height: 36px;
+		padding: 21px 0 10px;
+	}
+}

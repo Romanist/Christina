@@ -46,6 +46,10 @@ b{
 	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
+	padding-left: 40px;
+	padding-right: 40px;
+	width: auto;
+    max-width: 1004px;
 }
 
 .lane_wr{
@@ -259,9 +263,17 @@ a{
 	background-color: var(--white-color);
 }
 
+.six_items_wr{
+	overflow: hidden;	
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
 @media screen and (max-width: 1023px) {
 	.max_width{
 		width: auto;
+		padding: 0;
 	}
 }
 

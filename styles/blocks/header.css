@@ -202,8 +202,27 @@ a .basket_number{
 	display: none;
 }
 
+@media screen and (max-width: 1100px) {
+	.nav__item{
+		padding: 10px 30px;
+	}
+	.navigation__item{
+		padding: 15px 20px;
+	}
+	.navigation,
+	.nav{
+		text-align: center;
+	}
+	.header__menu{
+		width: 934px;
+	}
+}
+
 
 @media screen and (max-width: 1023px) {
+	.header__menu{
+		width: auto;
+	}
 	.header__underline_wr{
 		display: none;
 	}
