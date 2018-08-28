@@ -589,6 +589,30 @@
 	background-size: cover;
 }
 
+.propeel_half1{
+	text-align: left;
+}
+
+.propeel_half1__bg-left{
+	width: 55%;
+	background-color: var(--hover-product-bg-color);
+}
+
+.propeel_half1{
+	background-color: var(--bg-color2);
+}
+
+.propeel_half1__title {
+	text-align: left;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.propeel_half1__desc{
+	width: 250px;
+	padding-bottom: 223px;
+}
+
 @media screen and (max-width: 1279px) {
 	.half__title{
 		top: 48px;
