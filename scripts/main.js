@@ -37,15 +37,18 @@ $(document).ready(function () {
 	});
 
 	var owlProd = $('.shop_slider__wr .owl-carousel').owlCarousel({
-		items: 2,
+		items: 1,
 		loop: false,
 		dots: true,
 	  nav: true,
 	  responsive: {
 	  	768:{
-	  		items: 3
+	  		items: 2
 	  	},
 	  	1024:{
+	  		items: 2
+	  	},
+	  	1280:{
 	  		items: 3
 	  	}
 	  }
@@ -57,6 +60,26 @@ $(document).ready(function () {
 		dots: false,
 	  nav: true
 	});
+
+	function createSlider () {
+		if (($(window).width() <=1023) && ($(window).width() >=767) && ($('.shop_results__wr'))){
+			var owlShopResults = $('.shop_results__wr').owlCarousel({
+				items: 3,
+				loop: false,
+				dots: false,
+			  nav: true
+			});
+		}	
+		if ($(window).width() <=767) {
+			$('.shop_results__wr').trigger('destroy.owl.carousel').addClass('off')
+		}
+		if ($(window).width() > 1024) {
+			$('.shop_results__wr').trigger('destroy.owl.carousel').addClass('off')
+		}	
+	}
+
+	$(window).resize(createSlider);
+	createSlider();
 	
 	var owlUniqNews = $('.uniq_news .owl-carousel.uniq_news__owl').owlCarousel({
 		items: 2,
