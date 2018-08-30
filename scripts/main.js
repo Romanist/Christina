@@ -203,15 +203,6 @@ $(document).ready(function () {
 		}
 	});
 
-	$(".scroll_HDIW__scroll").mCustomScrollbar({
-		axis:"x",
-		mouseWheel:{ enable: false },
-		callbacks:{
-        whileScrolling: function(){
-          btnManage(this);
-        }
-    }
-	});
 
 	function btnManage (el) {
 		var percentPos = el.mcs.leftPct
@@ -238,4 +229,16 @@ $(document).ready(function () {
 	$('.shop__toggle').click(function () {
 		$('.shop__filters').toggleClass('open')
 	});
+		
+	if ($(".scroll_HDIW__scroll")) {
+		$(".scroll_HDIW__scroll").mCustomScrollbar({
+			axis:"x",
+			mouseWheel:{ enable: false },
+			callbacks:{
+	        whileScrolling: function(){
+	          btnManage(this);
+	        }
+	    }
+		});
+	}
 })
