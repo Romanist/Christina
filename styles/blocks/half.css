@@ -786,6 +786,43 @@
 	background-repeat: no-repeat;
 }
 
+.propeel_half3__title{
+	text-align: left;
+	padding-bottom: 16px;
+	position: relative;
+	padding-top: 77px;
+	margin-bottom: 25px;
+}
+
+.propeel_half3__desc{
+	opacity: .6;
+	padding-bottom: 17px;
+}
+
+.propeel_half3__text{
+	width: 340px;
+	padding-bottom: 20px;
+}
+
+.propeel_half3__price{
+	font-family: 'FuturaNewBook-Reg';
+	font-size: 24px;
+}
+
+.propeel_half3__right{
+	text-align: left;
+}
+
+.propeel_half3__title::after{
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	height: 1px;
+	width: 36px;
+	background-color: #000;
+}
+
 @media screen and (max-width: 1279px) {
 	.half__title{
 		top: 48px;
