@@ -678,6 +678,47 @@
 	background-color: var(--bg-color12);
 }
 
+.propeel_half2__text{
+	max-height: 0;
+	-webkit-transition: max-height ease .4s;
+	-moz-transition: max-height ease .4s;
+	-ms-transition: max-height ease .4s;
+	-o-transition: max-height ease .4s;
+	transition: max-height ease .4s;	
+	overflow: hidden;
+}
+
+.opened .propeel_half2__text{
+	max-height: 1000px;
+}
+
+.propeel_half2__left{
+	height: 1px;
+}
+
+.propeel_half2__right{
+	text-align: left;
+	background: none;
+}
+
+.propeel_half2__content{
+	padding-top: 143px;	
+}
+
+.propeel_half2__half_bg_left{
+	background: none;
+}
+
+.propeel_half2__title{
+	padding-top: 105px;
+	transform: translateX(-50%);
+	padding-bottom: 0;
+}
+
+.propeel_half2__click{
+	padding-right: 20px;
+}
+
 @media screen and (max-width: 1279px) {
 	.half__title{
 		top: 48px;

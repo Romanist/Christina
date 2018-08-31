@@ -227,9 +227,15 @@ $(document).ready(function () {
 	});
 
 	$('.shop__toggle').click(function () {
-		$('.shop__filters').toggleClass('open')
+		$('.shop__filters').toggleClass('open');
 	});
 		
+	$('.propeel_half2__click').click(function () {
+		// $('.propeel_half2__item').removeClass('opened');
+		$(this).closest('.propeel_half2__item').toggleClass('opened');
+		return false;
+	});
+
 	if ($(".scroll_HDIW__scroll")) {
 		$(".scroll_HDIW__scroll").mCustomScrollbar({
 			axis:"x",
