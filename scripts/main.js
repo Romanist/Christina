@@ -36,6 +36,23 @@ $(document).ready(function () {
 	  }
 	});
 
+	var owlProd = $('.slider_propeel .owl-carousel').owlCarousel({
+		items: 2,
+		loop: true,
+		dots: true,
+	  nav: true,
+	  responsive: {
+	  	768:{
+	  		items: 3,
+				loop: false
+	  	},
+	  	1024:{
+	  		items: 4,
+				loop: false
+	  	}
+	  }
+	});
+
 	var owlProd = $('.shop_slider__wr .owl-carousel').owlCarousel({
 		items: 1,
 		loop: false,

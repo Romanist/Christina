@@ -786,6 +786,10 @@
 	background-repeat: no-repeat;
 }
 
+.propeel_half3{
+	background-color: var(--bg-color2);
+}
+
 .propeel_half3__title{
 	text-align: left;
 	padding-bottom: 16px;
@@ -807,6 +811,7 @@
 .propeel_half3__price{
 	font-family: 'FuturaNewBook-Reg';
 	font-size: 24px;
+	padding-bottom: 22px;
 }
 
 .propeel_half3__right{
@@ -821,6 +826,35 @@
 	height: 1px;
 	width: 36px;
 	background-color: #000;
+}
+
+.propeel_half3__btn{
+	/*display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+	justify-content: center;*/
+	margin-right: 30px;
+	font-family: 'FuturaNewBook-Reg';
+}
+.propeel_half3__btn span{
+	padding-left: 17px;
+}
+
+.propeel_half3__btn img{
+	vertical-align: sub;
+}
+
+.propeel_half3__link{
+	font-family: 'FuturaNewBook-Reg';
+	padding-right: 14px;
+}
+
+.propeel_half3__img{
+	padding-top: 80px;
+	padding-bottom: 134px;
+	width: 300px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -1139,6 +1173,21 @@
     .propeel_half2__content{
     	padding: 78px 10% 60vw;
     }
+	.propeel_half3__img{
+		width: 210px;
+	}
+	.propeel_half3__left,
+	.propeel_half3__right{
+		width: 50%;
+		font-size: 16px;
+	}
+	.propeel_half3__title{
+		padding-top: 61px;
+	}
+	.propeel_half3__link{
+		display: inline-block;
+		margin: 28px 40px 60px 0;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -1462,6 +1511,29 @@
 		-ms-transform: translateY(-50%);
 		-o-transform: translateY(-50%);
 		transform: translateY(-50%);
+	}
+	.propeel_half3__left,
+	.propeel_half3__right{
+		width: 100%;
+		text-align: center;
+	}
+	.propeel_half3__img{
+		padding: 73px 20px 0;
+	}
+	.propeel_half3__title{
+		padding-top: 0;
+		text-align: center;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.propeel_half3__title::after,
+	.propeel_half3__text{
+		display: none;
+	}
+	.propeel_half3__btn,
+	.propeel_half3__link{
+		margin-right: 20px;
+		margin-left: 20px;
 	}
 }
 
