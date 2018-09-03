@@ -219,7 +219,7 @@
 .small_baner__title{
 	font-size: 26px;
 	font-family: 'FuturaNewBook-Reg';
-	padding-bottom: 30px;
+	padding-bottom: 4px;
 }
 
 .small_baner__item{
@@ -230,6 +230,7 @@
 	display: block;
 	margin: 0 auto;
 	padding-bottom: 10px;
+	width: 86%;
 }
 
 .small_baner__btn{
@@ -343,11 +344,12 @@
 
 .text_news__list_item{
 	position: relative;
-	padding-left: 20px;
+	/*padding-left: 20px;*/
+	margin-left: -17px;
 }
 
 .text_news__list_item:before{
-	position: absolute;
+	/*position: absolute;*/
 	content: '•';
 	left: 0;
 	top: 2px;
@@ -405,7 +407,7 @@
 		padding-bottom: 20px;
 	}
 	.text__low_title{
-		padding: 20px 0;
+		padding: 12px 0;
 	}
 	.text__side{
 		width: auto;
@@ -428,6 +430,12 @@
 	.text__side_article{
 		vertical-align: top;
 		margin: 120px 60px 0 50px;
+	}
+	.text_news__side .text__side_article{
+		padding-bottom: 25px;
+	}
+	.text__top_cont{
+		padding-bottom: 30px;
 	}
 	.text__low_title{
 		padding-top: 0;
@@ -481,6 +489,10 @@
 	.news_padleft{
 		padding-left: 40px;
 	}
+	.text_news__socials{
+		padding-top: 0;
+		padding-bottom: 70px;
+	}
 	.text_news .text__opacity_article{
 		margin-left: 40px;
 	}
@@ -495,11 +507,14 @@
 	}
 	.smpl_news_article__road{
 		text-align: left;
+		padding-top: 29px;
+		padding-bottom: 62px;
 	}
 	.smpl_news_article__title{
 		font-size: 40px;
 		width: 388px;
 		line-height: 48px;
+		padding-bottom: 154px;
 	}
 	.news_page .smpl_news_article__road{
 		padding-left: 40px;
@@ -662,6 +677,10 @@
 		width: auto;
 		padding-left: 20px;
 		margin-right: 20px;
+	}
+	.text_news__low_title,
+	.small_baner__title{
+		font-size: 25px;
 	}
 }
 

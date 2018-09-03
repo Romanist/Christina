@@ -434,12 +434,13 @@
 }
 
 .half_simple__title{
-	padding: 88px 0 56px;
+	padding: 86px 0 41px;
 	text-align: left;
 }
 
 .half_simple__text{
-	padding-bottom: 75px;
+	padding-bottom: 82px;
+	line-height: 25px;
 }
 
 .half_black{
@@ -478,7 +479,8 @@
 
 .half_black__title{
 	font-size: 26px;
-	padding-bottom: 43px;
+	padding-bottom: 37px;
+	padding-top: 20px;
 }
 
 .half_black__text{
@@ -510,8 +512,9 @@
 }
 
 .half_simple2__title{
-	padding-top: 100px;
-	padding-bottom: 20px;
+	padding-top: 98px;
+	line-height: 50px;
+	padding-bottom: 23px;
 }
 
 .half_simple3{
@@ -536,7 +539,7 @@
 }
 
 .half_simple3__img{
-	padding: 152px 30px 50px 0;
+    padding: 173px 60px 63px 0;
 	width: 442px;
 	height: 442px;
 }
@@ -546,7 +549,7 @@
 }
 
 .half_simple3__title{
-	top: 67px;
+	top: 69px;
 	padding: 0;
 }
 
@@ -559,19 +562,20 @@
 }
 
 .half_simple3__left_title{
-	padding-top: 260px;
-	text-transform: uppercase;
-	font-family: 'FuturaNewBook-Reg';
-	display: inline-block;
-	padding-bottom: 50px;
-	letter-spacing: 3px;
+    padding-top: 263px;
+    text-transform: uppercase;
+    font-family: 'FuturaNewBook-Reg';
+    display: inline-block;
+    padding-bottom: 28px;
+    letter-spacing: 1.8px;
+    font-size: 24px;
 }
 
 .half_simple3__item{
 	position: relative;
 	text-transform: uppercase;
 	padding-left: 40px;
-	line-height: 34px;
+	line-height: 44px;
 	letter-spacing: 3px;
 	color: rgba(0, 0, 0, .5);
 }
@@ -895,6 +899,9 @@
 	}
 	.half__right .procedures_form__text{
 		padding-right: 80px;
+	}
+	.half_simple2__text{
+		width: 95%;
 	}
 }
 
