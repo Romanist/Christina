@@ -80,11 +80,11 @@
 	color: var(--white-color);
 	z-index: 10;
 	padding: 0;
-	top: 80px;
+	top: 74px;
 }
 
 .column__img{
-	margin-bottom: 6px;
+	margin-bottom: 10px;
 	height: 60px;
 }
 
@@ -98,7 +98,7 @@
 	width: 50%;
 	overflow: hidden;
 	position: absolute;
-	top: 80px;
+	top: 74px;
 	height: 60px;
 	left: 0;
 	/*z-index: -1;*/
@@ -130,9 +130,10 @@
 }
 
 .column__title{
-	font-size: 26px;
-	padding-bottom: 20px;
-	min-height: 70px;
+	font-size: 24px;
+	padding-bottom: 30px;
+	/*min-height: 70px;*/
+	line-height: 28px;
 }
 
 .column__desc{
@@ -158,8 +159,13 @@
 .columns__mob_slider_img{
 	display: none;
 	position: absolute;
-	top: 200px;
+	top: 156px;
 	left: 46%;
+	width: 20%;
+}
+
+.columns__mob_slider_img .owl-stage-outer{
+	overflow: visible;
 }
 
 .column__title{
@@ -173,6 +179,10 @@
 		-webkit-text-stroke-width: 0;
 		-webkit-text-stroke-color: none;
 		position: relative;
+		top: 62px;
+	}
+	.columns_black{
+		height: 508px;
 	}
 	.columns__column:hover{
 		background-color: var(--bg-color6);
@@ -184,6 +194,7 @@
 	.columns__column{
 		width: 100%;
 		text-align: center;
+		padding-top: 206px;
 	}
 	.column__link{
 		opacity: 1;
@@ -200,15 +211,42 @@
 	}
 	.columns__column .column__img{
 		opacity: 0;
+		display: none;
+	}
+	.columns__column:first-child{
+		padding-left: 40px;
 	}
 	.columns_black .column__link:after{
 		background-image: url(../../images/arrow_white.svg);
 		width: 8px;
     	height: 10px;
 	}
+	.column__img{
+		-webkit-transform: scale(.8, .8);
+		-ms-transform: scale(.8, .8);
+		-o-transform: scale(.8, .8);
+		transform: scale(.8, .8);
+		-webkit-transition: all ease .6s;
+		-o-transition: all ease .6s;
+		transition: all ease .6s;
+	}
+	.active .column__img{
+		transform: none;
+	}
+	.column__title{
+		letter-spacing: 0;
+		padding-bottom: 26px;
+	}
+	.column__desc{
+		max-width: 390px;
+		margin: 0 auto;
+		font-size: 16px;
+		padding-bottom: 45px;
+	}
 	.column__link{
 		position: relative;
 		padding-right: 15px;
+		font-size: 16px;
 	}
 	.columns__column:hover .column__img_mob,
 	.columns__column:hover .column__img{
@@ -228,11 +266,25 @@
 
 @media screen and (max-width: 767px) {
 	.columns__mob_slider_img{
-		top: 200px;
+		top: 148px;
 		left: 38%;
 		width: 25%;
 	}
 	.columns__mob_slider_img .owl-item{
 		text-align: center;
+	}
+	.columns__column{
+		padding-top: 189px;
+	}
+	.column__title{
+	    padding: 0 14px 36px;
+	}
+	.column__desc{
+		max-width: 240px;
+		line-height: 22px;
+		padding-bottom: 36px;
+	}
+	.columns_black{
+		height: 569px;
 	}
 }

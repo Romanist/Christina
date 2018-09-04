@@ -86,12 +86,12 @@
 }
 
 .call_icon{
-	margin-right: 26px;
+	margin-right: 30px;
 	display: inline-block;
 }
 
 .call_icon:first-child{
-	margin-right: 24px;
+	margin-right: 18px;
 }
 
 .header__right img{
@@ -218,7 +218,7 @@ a .basket_number{
 		padding-bottom: 10px;
 	}
 	.header__logo{
-		height: 95px;
+		height: 93px;
 	}
 }
 
@@ -232,7 +232,7 @@ a .basket_number{
 		display: none;
 	}
 	.header__left-top{
-		width: 210px;
+		width: 207px;
 		float: left;
 	}
 	.header__left-bot{
@@ -242,12 +242,18 @@ a .basket_number{
 	.header__left-bot span{
 		display: none;
 	}
+	.call_icon:first-child{
+		margin-right: 9px;
+	}
+	.header__right .header_color:nth-child(2){
+		vertical-align: text-bottom;
+	}
 	.header__left{
 		padding: 20px 0 0 40px; 
 	}
 	.header__right{
 		padding: 26px 40px 0 0;
-		width: 200px;
+		width: 170px;
 		text-align: right;
 	}
 	.header__right_btns{
@@ -307,6 +313,12 @@ a .basket_number{
 		color: rgba(255,255,255,.7);
 		letter-spacing: .8px;
 	}
+	.header__logo{
+		height: 97px;
+	}
+	.header__right img{
+		margin-right: 5px;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -315,6 +327,9 @@ a .basket_number{
 	.header__right span:nth-child(2),
 	.header__logo{
 		display: none;
+	}
+	.header_color{
+		font-size: 13px;
 	}
 	.header__menu{
 		padding-bottom: 3px;

@@ -27,7 +27,8 @@ html, body{
 }
 
 html{
-	background: url(../images/all5.jpg);
+	background: url(../images/all.jpg);
+	background-position-y: 86px;
 	opacity: .5;
 	-ms-background-position-x: center;
 	background-position-x: center;

@@ -13,24 +13,26 @@
 	width: 590px;
 	font-size: 16px;
 	vertical-align: middle;
-	padding: 50px 30px 50px 50px;
+	padding: 48px 62px 54px 45px;
 }
 
 .consult__btn{
 	vertical-align: middle;
 	font-family: 'FuturaNewBook-Reg';
+	padding: 0 23px;
 }
 
 @media screen and (max-width: 1279px) {
 	.consult__info{
 		width: 530px;
+		padding: 26px 53px 39px 53px;
 	}
 }
 
 @media screen and (max-width: 1023px) {
 	.consult__info{
-		width: 44%;
-		padding: 28px;
+		width: 49%;
+    	padding: 26px 19px 26px 24px;
 	}
 	.consult{
 		padding-left: 40px;
@@ -45,6 +47,7 @@
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
+		padding: 20px 0px 29px;
 	}
 	.consult{
 		text-align: center;
@@ -52,7 +55,7 @@
 		padding-right: 5%;
 	}
 	.consult__btn{
-		margin-bottom: 46px;
+		margin-bottom: 6px;
 	}
 	.consult__icon{
 		margin-top: 35px;
@@ -78,18 +81,20 @@
 
 dt .bot_nav__link{
 	text-transform: uppercase;
-	padding-bottom: 12px;
+	padding-bottom: 8px;
+	letter-spacing: .6px;
 	display: inline-block;
 }
 
 dd .bot_nav__link{
-	padding-bottom: 12px;
-	display: inline-block;
-	opacity: .5;
+    padding-bottom: 12px;
+    display: inline-block;
+    opacity: .5;
+    line-height: 21px;
 }
 
 .bot_nav__list_item{
-	padding-bottom: 40px;
+	padding-bottom: 27px;
 	vertical-align: top;
 }
 
@@ -98,11 +103,11 @@ dd .bot_nav__link{
 		display: none;
 	}
 	.bot_nav__list_item{
-		padding-bottom: 10px;
+		padding-bottom: 3px;
 		text-align: center;
 	}
 	.bot_nav{
-		padding-top: 30px;
+		padding-top: 24px;
 		/*padding-left: 5%;*/
 	}
 	.bot_nav__list{
@@ -151,8 +156,8 @@ dd .bot_nav__link{
 	width: 54%;
 }
 .footer__spam_btn{
-	padding: 10px 172px 10px 20px;
-	margin: 10px 0 30px;
+	padding: 8px 172px 8px 20px;
+	margin: 5px 0 20px;
 	border: 1px solid rgba(255, 255, 255, .4);
 	display: inline-block;
 	color: rgba(255, 255, 255, .7);
@@ -183,8 +188,12 @@ dd .bot_nav__link{
     box-sizing: border-box;
     float: right;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 4px;
     position: relative;
+}
+
+.footer__social:nth-child(2){
+	margin-right: 17px;
 }
 
 .footer__social img{
@@ -209,20 +218,39 @@ dd .bot_nav__link{
 }
 
 .footer__dev{
-	padding-top: 30px;
+	padding-top: 19px;
 }
 
 .footer__data_mob{
 	display: none;
 }
 
+@media screen and (max-width: 1279px) {
+	.footer__right{
+		width: 57%;
+	}
+	.footer__left{
+		width: 42%;
+	}
+}
+
 @media screen and (max-width: 1023px) {
 	.footer{
-		padding-left: 40px;
-		padding-right: 40px;
+		padding: 32px 40px 40px;
 	}
 	.footer__spam_btn{
-		padding-right: 100px;
+		padding-right: 170px;
+		margin-top: 14px;
+	}
+	.footer__left{
+		width: 50%;
+	}
+	.footer__right{
+	    width: 46%;
+    	margin-left: 4%;
+	}
+	.footer__desc{
+		padding-top: 50px;
 	}
 }
 
