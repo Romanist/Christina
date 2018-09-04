@@ -32,7 +32,7 @@
 @media screen and (max-width: 1023px) {
 	.consult__info{
 		width: 49%;
-    	padding: 26px 19px 26px 24px;
+    	padding: 26px 12px 26px 24px;
 	}
 	.consult{
 		padding-left: 40px;
@@ -129,11 +129,15 @@ dd .bot_nav__link{
 	}
 	.bot_nav{
 		margin-top: 40px;
-		padding-bottom: 20px;
+		padding-bottom: 18px;
+		padding-top: 35px;
 	}
 	.bot_nav__list{
 		-ms-text-align-last: auto;
 		text-align-last: auto;
+	}
+	dt .bot_nav__link{
+		padding-bottom: 13px;
 	}
 }
 
@@ -256,17 +260,24 @@ dd .bot_nav__link{
 
 @media screen and (max-width: 767px) {
 	.footer__spam_btn{
-		padding-right: 20px;
-		width: 176px;
+		padding-right: 30px;
+		width: 134px;
+		padding-left: 11px;
+		margin-bottom: 27px;
 	}
 	.footer__right{
 		float: left;
 		width: 100%;
+		margin-left: 0;
 	}
 	.footer__socials_title{
 		text-align: left;
 		padding-top: 0px;
-		padding-bottom: 20px;
+		padding-bottom: 12px;
+	}
+	.footer__desc{
+		padding-top: 28px;
+		width: 90%;
 	}
 	.footer__social{
 		float: left;
@@ -279,5 +290,14 @@ dd .bot_nav__link{
 	.footer__data_mob{
 		display: block;
 		padding-top: 20px;
+	}
+	.footer{
+		padding: 25px 20px 10px;
+	}
+	.footer__left{
+		width: 70%;
+	}
+	.footer__dev{
+		padding-top: 10px;
 	}
 }
