@@ -76,7 +76,7 @@ $(document).ready(function () {
 	});
 
 	function createSlider () {
-		console.log($(window).width())
+		// console.log($(window).width())
 		if (($(window).width() <=1023) && ($(window).width() >=767) && ($('.shop_results__wr'))){
 			var owlShopResults = $('.shop_results__wr').owlCarousel({
 				items: 3,
@@ -131,6 +131,7 @@ $(document).ready(function () {
 	});
 
 	var owlSliderMob2;
+	// sliderCreateMob();
 
 	owlSliderMob.on('dragged.owl.carousel', function (e) {
 		owlSliderMob2.trigger('to.owl.carousel', e.item.index)
@@ -149,17 +150,17 @@ $(document).ready(function () {
 		}		
 	});
 
-	owlUniqNews.on('resize.owl.carousel', function (e) {
-		if (($(window).width() <=1023) && ($(window).width() >=767)) {
-			return false
-		}
-		if ($(window).width() <=767) {
-			owlUniqNews.trigger('refresh.owl.carousel')
-		}
-		if ($(window).width() > 1024) {
-			return false
-		}		
-	});
+	// owlUniqNews.on('resize.owl.carousel', function (e) {
+	// 	if (($(window).width() <=1023) && ($(window).width() >=767)) {
+	// 		return false
+	// 	}
+	// 	if ($(window).width() <=767) {
+	// 		owlUniqNews.trigger('refresh.owl.carousel')
+	// 	}
+	// 	if ($(window).width() > 1024) {
+	// 		return false
+	// 	}		
+	// });
 
 	// owlUniqHist.on('resize.owl.carousel', function (e) {
 	// 	if (($(window).width() <=1023) && ($(window).width() >=767)) {
@@ -176,6 +177,10 @@ $(document).ready(function () {
 	sliderCreateMob();
 	$(window).resize(sliderCreateMob);
 
+	// owlSliderMob2.on('dragged.owl.carousel', function (e) {
+	// 	owlSliderMob.trigger('to.owl.carousel', e.item.index)
+	// });
+
 	if (owlSliderMob2) {
 		owlSliderMob2.on('dragged.owl.carousel', function (e) {
 			owlSliderMob.trigger('to.owl.carousel', e.item.index)
@@ -190,6 +195,9 @@ $(document).ready(function () {
 				dots: false,
 			  nav: false
 			});
+			owlSliderMob2.on('dragged.owl.carousel', function (e) {
+				owlSliderMob.trigger('to.owl.carousel', e.item.index)
+			})
 		}
 		else{
 			$('.columns__mob_owl.owl-carousel').trigger('destroy.owl.carousel').addClass('off')

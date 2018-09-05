@@ -141,8 +141,11 @@
 	.slider__btn{
 		margin-bottom: 83px;
 	}
+	.slider__prod{
+		width: 236px;
+	}
 }
-@media screen and (max-width: 1088px) {
+@media screen and (max-width: 1023px) {
 	.slider__title, 
 	.slider__wr{
 		/*padding-left: 40px;*/
@@ -177,9 +180,6 @@
 	.slider_propeel{
 		/*margin-bottom: 60px;*/
 	}
-}
-
-@media screen and (max-width: 1023px) {
 	.slider_main{
 		padding: 0 40px;
 	}

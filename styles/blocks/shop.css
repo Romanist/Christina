@@ -407,6 +407,12 @@ input:checked + .shop_form__item:after{
 		width: 256px;
 		height: 396px;
 	}
+	.sculp-slider .slider__prod{
+		background-color: var(--bg-color1);
+	}
+	.clear-slider .slider__prod {
+	    background-color: var(--bg-color11);
+	}
 	.shop_slider .owl-dots{
 		top: auto;
 		bottom: 0;
