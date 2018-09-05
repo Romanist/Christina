@@ -230,8 +230,8 @@ a{
 }
 
 .navigator__title{
-	padding-top: 53px;
-	padding-bottom: 63px;
+	padding-top: 48px;
+	padding-bottom: 59px;
 	border-bottom: solid 1px var(--opacity-underlane-text-color);
 }
 
@@ -245,7 +245,7 @@ a{
 	font-size: 12px;
 	line-height: 18px;
 	text-transform: uppercase;
-	max-width: 290px;
+	max-width: 282px;
 	display: inline-block;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -294,5 +294,14 @@ a{
 	}
 	.btn{
 		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.open .burgerbutton span:nth-child(3){
+		bottom: 7px;
+	}
+	.open .burgerbutton span:nth-child(1){
+		top: 7px;
 	}
 }

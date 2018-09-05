@@ -1426,7 +1426,9 @@
 	}
 	.half_btn__form.procedures_form{
 		background: url(../../images/half_face_left.svg) no-repeat 0 23px;
-	    background-size: 81%;
+	    /*background-size: 81%;*/
+	    -webkit-background-size: 256px;
+	    background-size: 256px;
 	    padding-bottom: 97px;
 	}
 	.half__btn_mob{
@@ -1456,7 +1458,7 @@
 		display: none;
 	}
 	.half_btn .half__btn{
-		bottom: 93px;
+		bottom: 20px;
 		margin-bottom: 65px;
 	}
 	.half__right .procedures_form__text_mob{

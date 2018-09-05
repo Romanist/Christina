@@ -62,7 +62,7 @@ $(document).ready(function () {
 	  	768:{
 	  		items: 2
 	  	},
-	  	1124:{
+	  	1024:{
 	  		items: 3
 	  	}
 	  }
