@@ -873,6 +873,10 @@
 	width: 300px;
 }
 
+.columns__column:first-child{
+	padding-left: 0;
+}
+
 @media screen and (max-width: 1279px) {
 	.half__title{
 		top: 66px;
@@ -932,9 +936,6 @@
 	}
 	.half_slider{
 		height: 684px;
-	}
-	.columns__column:first-child{
-		padding-left: 0;
 	}
 	.half_btn2 .half__right{
 		padding-left: 70px;

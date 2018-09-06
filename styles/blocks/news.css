@@ -367,6 +367,9 @@
 		vertical-align: top;
 		float: none;
 	}
+	.news_small .news_item{
+		width: 314px;
+	}
 	.news_small__btn{
 		margin-bottom: 75px;
 	}

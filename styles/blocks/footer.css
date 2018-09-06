@@ -13,7 +13,7 @@
 	width: 590px;
 	font-size: 16px;
 	vertical-align: middle;
-	padding: 48px 62px 54px 45px;
+	padding: 51px 62px 51px 45px;
 }
 
 .consult__btn{
@@ -25,7 +25,7 @@
 @media screen and (max-width: 1279px) {
 	.consult__info{
 		width: 530px;
-		padding: 26px 53px 39px 53px;
+		padding: 33px 53px 33px 53px;
 	}
 }
 

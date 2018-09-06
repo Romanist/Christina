@@ -212,8 +212,12 @@
 	}
 	.slider__prod{
 		width: 235px;
+		background-color: var(--hover-product-bg-color);
 	}
 	.slider_propeel .max_width{
+		overflow: visible;
+	}
+	.slider_main .max_width{
 		overflow: visible;
 	}
 }
