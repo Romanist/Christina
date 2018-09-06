@@ -247,8 +247,8 @@ input:checked + .shop_form__item:after{
 		width: 217px;
 	}
 	.shop_results .slider__prod{
-		/*width: 232px;*/
-		width: 25%;
+		width: 232px;
+		/*width: 25%;*/
 	}
 }
 
@@ -325,7 +325,7 @@ input:checked + .shop_form__item:after{
 		padding: 0 40px 40px;
 	}
 	.shop_results .slider__prod{
-		width: auto;
+		width: 220px;
 	}
 	.shop_results__wr{
 		overflow: visible;

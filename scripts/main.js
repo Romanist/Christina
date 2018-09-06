@@ -77,7 +77,7 @@ $(document).ready(function () {
 
 	function createSlider () {
 		// console.log($(window).width())
-		if (($(window).width() <=1023) && ($(window).width() >=767) && ($('.shop_results__wr'))){
+		if (($(window).width() <=1023) && ($(window).width() >=751) && ($('.shop_results__wr'))){
 			var owlShopResults = $('.shop_results__wr').owlCarousel({
 				items: 3,
 				loop: false,
@@ -85,7 +85,7 @@ $(document).ready(function () {
 			  nav: true
 			});
 		}	
-		if ($(window).width() < 767) {
+		if ($(window).width() < 751) {
 			$('.shop_results__wr').trigger('destroy.owl.carousel').addClass('off')
 		}
 		if ($(window).width() > 1024) {
