@@ -719,9 +719,13 @@
 	transition: all linear .1s;
 }*/
 
-.propeel_half2__item.opened{
-	padding-bottom: 24px;
-}
+/*.propeel_half2__item.opened + .propeel_half2__item{
+	margin-top: 24px;
+}*/
+
+/*.opened{
+	margin-bottom: 24px;
+}*/
 
 .propeel_half2__left{
 	height: 1px;

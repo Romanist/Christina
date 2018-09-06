@@ -350,6 +350,7 @@ input:checked + .shop_form__item:after{
 	.shop_slider{
 		padding-left: 20px;
 		padding-right: 20px;
+		overflow: hidden;
 	}
 	.shop{
 		padding: 0 20px;
