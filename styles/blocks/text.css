@@ -382,6 +382,201 @@
 	padding-right: 40px;
 }
 
+.prod_inf{
+	background-color: var(--bg-color1);
+}
+
+.prod_inf-bdtp{
+	border-top: 1px solid  rgba(0, 0, 0, .2);
+}
+
+.prod_inf__nav_btn_wr{
+	width: 20%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.prod_inf__nav_btn{
+	padding: 0;
+}
+
+.prod_inf__head{
+	text-align: left;
+	overflow: hidden;
+}
+
+.prod_inf__title_mob{
+	display: none;
+}
+
+.prod_inf__title{
+	/*padding-top: 20px;*/
+	display: inline-block;
+	text-align: left;
+	/*padding-bottom: 7px;*/
+	margin-bottom: 13px;
+	font-size: 50px;
+	padding: 24px 123px 14px 0;
+	line-height: 61px;
+}
+
+.prod_inf__abs_wr{
+	display: inline-block;
+	position: relative;
+}
+
+.bot_after{
+	position: relative;
+}
+
+.bot_after::after{
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 36px;
+	height: 1px;
+	background-color: #000;
+}
+
+.prod_inf__abs{
+	position: absolute;
+	text-transform: uppercase;
+	letter-spacing: 3.2px;
+	font-size: 15px;
+	padding: 2px 13px;
+	background-color: var(--bg-color13);
+	color: var(--white-color);
+	left: 70%;
+	bottom: 24px;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.prod_inf__abs-top{
+	bottom: 58px;
+	letter-spacing: 2.5px;
+}
+
+.prod_inf__desc{
+	font-size: 26px;
+	max-width: 273px;
+	line-height: 32px;
+	padding-bottom: 18px;
+}
+
+.prod_inf__opac{
+	opacity: .6;
+	padding-bottom: 40px;
+}
+
+.inf_list__title{
+	font-size: 22px;
+	font-family: 'FuturaNewBook-Reg';
+	padding-bottom: 8px;
+}
+
+.prod_inf__list{
+	max-width: 340px;
+	padding-bottom: 34px;
+}
+
+.prod_inf__right{
+	float: left;
+	width: 260px;
+	padding-top: 100px;
+	position: relative;
+	margin-left: 83px;
+}
+
+.prod_inf__right .owl-dots{
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.inf_list__item{
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 10px;
+	display: inline-block;
+	margin-right: 28px;
+	border-bottom: 1px solid rgba(0,0,0,.2);	
+}
+
+.prod_inf__left{
+	float: left;
+}
+
+.prod_inf__count_wr{
+    float: right;
+    padding-top: 171px;
+}
+
+.counter{
+	height: 50px;
+	padding: 0 20px;
+	border-bottom: 1px solid  #000;
+}
+
+.counter__number{
+	border: 1px solid  #000;
+	border-bottom: none;
+}
+
+.counter__btn{
+	height: 100%;
+	width: 60px;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	/*vertical-align: middle;*/
+}
+
+.prod_inf__price{
+    padding-top: 14px;
+    padding-bottom: 27px;
+	font-size: 31px;
+	font-family: 'FuturaNewBook-Reg';
+	text-align: center;
+}
+
+.prod_inf__nav{
+	height: 107px;
+	line-height: 14px;
+}
+
+.prod_inf__nav_btn_wr{
+	height: 100%;
+}
+
+.prod_inf__icon{
+	margin: 16px auto;
+	display: block;
+	max-height: 40px;
+}
+
+.prod_inf__btn img{
+	margin-top: 10px;
+	margin-right: 17px;
+}
+
+.prod_inf__btn span{
+	vertical-align: top;
+}
+
 @media screen and (max-width: 1279px) {
 	.news_padleft{
 		padding-left: 91px;
@@ -422,6 +617,58 @@
 	}
 	.text__top_cont .text_news__side{
 		margin: 0;
+	}
+	.prod_inf__title{
+		padding-top: 0;
+		font-size: 40px;
+		line-height: 48px;
+		margin-bottom: 0;
+		padding-bottom: 10px;
+	}
+	.prod_inf .smpl_news_article__road{
+		padding-bottom: 20px;
+	}
+	.bot_after::after{
+		display: none;
+	}
+	.prod_inf__desc{
+		font-size: 20px;
+		line-height: 30px;
+		max-width: 250px;
+		padding-bottom: 16px;
+	}
+	.prod_inf__opac{
+		padding-bottom: 20px;
+	}
+	.prod_slider__item{
+		width: 100%;
+	}
+	.prod_inf__right{
+		margin-left: 31px;
+		padding-top: 112px;
+		width: 206px;
+		text-align: center;
+	}
+	.prod_inf__right .owl-dots{
+		left: 0;
+		display: inline-block;
+		-webkit-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+		position: static;
+	}
+	.prod_inf__count_wr{
+		padding-top: 126px;
+	}
+	.prod_inf__list{
+		padding-bottom: 46px;
+	}
+	.prod_inf__abs{
+		bottom: 0;
+	}
+	.prod_inf__abs-top{
+		bottom: 34px;
 	}
 }
 
@@ -580,6 +827,77 @@
 	.text_news{
 		padding-top: 15px;
 	}
+	.prod_inf-bdtp{
+		display: none;
+	}
+	.prod_inf{
+		/*padding: 0 40px;*/
+		-webkit-box-shadow: 0px -41px 58px 56px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px -41px 58px 56px rgba(0,0,0,0.75);
+		box-shadow: 0px -51px 58px 56px rgba(0,0,0,0.15);
+	}
+	.prod_inf__left{
+		padding-left: 40px;
+	}
+	.prod_inf__count_wr{
+		float: left;
+		width: 100%;
+		padding-top: 0px;
+		background-color: #fff;
+	}
+	.prod_inf .smpl_news_article__road{
+		padding-bottom: 30px;
+	}
+	.prod_inf__title{
+		font-size: 35px;
+		line-height: 42px;
+		padding-bottom: 16px;
+	}
+	.prod_inf__desc{
+		font-size: 18px;
+		line-height: 30px;
+		max-width: 230px;
+		padding-bottom: 12px;
+	}
+	.prod_inf__opac{
+		font-size: 16px;
+		padding-bottom: 18px;
+	}
+	.inf_list__title{
+		font-size: 20px;
+	}
+	.prod_inf__right {
+	    margin-left: 15px;
+	    padding-top: 108px;
+	}
+	.prod_inf__right .owl-dots{
+		padding-top: 28px;
+	}
+	.counter,
+	.prod_inf__price{
+		display: inline-block;
+	}
+	.prod_inf__btn{
+		float: right;
+		margin-right: 40px;
+		margin-top: 11px;
+	}
+	.prod_inf__counter{
+		margin-left: 40px;
+		padding: 0;
+		border: none;
+	}
+	.counter__btn{
+		border: none;
+		width: 34px;
+	}
+	.prod_inf__price{
+		padding-bottom: 14px;
+		padding-left: 23%;
+	}
+	.prod_inf__list{
+		padding-bottom: 58px;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -680,11 +998,14 @@
 		width: auto;
 		font-size: 20px;
 		line-height: 30px;
-		margin: 30px 20px 0;
+		margin: 0px 20px 10px;
 		padding: 70px 0 20px;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
+	}
+	.text_news__list_item{
+		margin-left: -11px;
 	}
 	.text_news__side{
 		width: 100%;

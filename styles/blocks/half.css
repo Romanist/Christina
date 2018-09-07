@@ -705,11 +705,29 @@
 	-moz-transition: max-height ease .4s;
 	-ms-transition: max-height ease .4s;
 	-o-transition: max-height ease .4s;
-	transition: max-height ease .5s;
+	transition: max-height ease .4s;
+}
+
+.propeel_half2__item{
+	position: relative;	
+}
+
+.propeel_half2__item :after{
+	content: '';
+	position: static;
+	display: block;
+	height: 0;
+	-webkit-transition: all ease .5s;
+	-o-transition: all ease .5s;
+	transition: all ease .4s;
+}
+
+.opened .propeel_half2__text:after{
+	height: 24px;
 }
 
 .opened .propeel_half2__text{
-	max-height: 1000px;	
+	max-height: 200px;	
 	/*padding-bottom: 48px;*/
 }
 /*
