@@ -231,7 +231,9 @@ input:checked + .shop_form__item:after{
 	overflow: hidden;
 }
 
-
+.prod_page_slider{
+	border-bottom: none;
+}
 
 @media screen and (max-width: 1279px) {
 	.shop__picker{

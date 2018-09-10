@@ -134,6 +134,139 @@
 	padding-bottom: 50px;
 }
 
+.prod_comments__right{
+	float: right;
+	position: relative;
+	text-align: left;
+}
+
+.prod_comments__right .owl-nav{
+	top: 16px;
+	right: 0;
+}
+
+.prod_comments .max_width{
+	padding-top: 84px;
+	padding-bottom: 70px;
+}
+
+.prod_comments__left_bg{
+	position: absolute;
+	width: 50%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background-color: var(--bg-color2);
+}
+
+.prod_comments__slider{
+	text-align: left;
+	padding-left: 80px;
+}
+
+.prod_comments__title{
+	text-align: left;
+	display: inline-block;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	padding-top: 0;
+}
+
+.prod_comments__right_bg{
+	position: absolute;
+	width: 50%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background-color: var(--bg-color1);
+}
+
+.prod_comments__item{
+	width: 100%;
+	display: inline-block;
+}
+
+.prod_comments__left{
+	text-align: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 80px;
+}
+
+.prod_comments__rating{
+	padding-top: 64px;
+	font-size: 26px;
+	padding-bottom: 6px;
+}
+
+.prod_comments__reviews_numb{
+	padding-bottom: 26px;
+}
+
+.review__name{
+	font-family: 'FuturaNewBook-Reg';
+	background-color: var(--bg-color2);
+	position: relative;
+	padding-right: 10px;
+}
+
+.review__top{
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.review__top::before{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background-color: var(--bg-color14);
+	content: '';
+}
+
+.review__rait{
+	float: right;
+	display: inline-block;
+	width: 110px;
+	background-color: var(--bg-color2);
+	padding-left: 10px;
+	position: relative;
+}
+
+.review__info{
+	font-size: 14px;
+	opacity: .5;
+	padding-bottom: 20px;
+	display: block;
+}
+
+.review__comment{
+	padding-bottom: 18px;
+    display: inline-block;
+	line-height: 26px;
+}
+
+.review__rating span{
+	font-size: 14px;
+	padding-right: 10px;
+}
+
+.review__rating{
+	margin-bottom: 32px;
+	opacity: .5;
+}
+
+.prod_comments__link{
+	/*padding: 0 20px 0 98px;*/
+	padding-right: 20px;
+	float: right;
+	line-height: 46px;
+}
+
 @media screen and (max-width: 1279px) {
 	.slider__title{
 		padding-top: 66px;

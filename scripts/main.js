@@ -137,6 +137,13 @@ $(document).ready(function () {
 	  nav: false
 	});
 
+	var owlSliderProdPage = $('.prod_comments__slider').owlCarousel({
+		items: 1,
+		loop: true,
+		dots: false,
+	  nav: true
+	});	
+
 	var owlSliderMob2;
 	// sliderCreateMob();
 
