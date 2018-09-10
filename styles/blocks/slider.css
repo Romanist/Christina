@@ -142,7 +142,7 @@
 
 .prod_comments__right .owl-nav{
 	top: 16px;
-	right: 0;
+	right: -19px;
 }
 
 .prod_comments .max_width{
@@ -231,10 +231,14 @@
 .review__rait{
 	float: right;
 	display: inline-block;
-	width: 60px;
+	/*width: 60px;*/
 	background-color: var(--bg-color2);
 	padding-left: 10px;
 	position: relative;
+}
+
+.review__rait img{
+	margin: 0 5px;
 }
 
 .review__info{
@@ -273,6 +277,12 @@
 
 .prod_comments .news_slider__name{
 	padding-top: 10px;
+	font-size: 26px;
+}
+
+.review__rating_link{
+	padding: 2px 5px;
+	font-size: 24px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -449,6 +459,9 @@
 @media screen and (max-width: 767px) {
 	.slider_propeel{
 		padding: 0 20px 50px;
+	}
+	.prod_comments__right .owl-nav{
+		right: 1px;
 	}
 	.slider .owl-dots{
 		top: auto;
