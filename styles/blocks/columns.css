@@ -367,7 +367,9 @@
 	.columns_black{
 		height: 569px;
 	}
-	.prod_columns__item{
+	.prod_columns__item,
+	.prod_columns__item:last-child,
+	.prod_columns__item:first-child{
 		width: 100%;
 		padding-left: 20px;
 		padding-right: 20px;

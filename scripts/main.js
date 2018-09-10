@@ -164,6 +164,11 @@ $(document).ready(function () {
 		}		
 	});
 
+	$('.consult_wr__trigger').click(function () {
+		$(this).closest('.comment').toggleClass('close');
+		return false;
+	})
+
 	// owlUniqNews.on('resize.owl.carousel', function (e) {
 	// 	if (($(window).width() <=1023) && ($(window).width() >=767)) {
 	// 		return false

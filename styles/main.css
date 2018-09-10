@@ -16,6 +16,7 @@
 @import "blocks/text.css";
 @import "blocks/scroll.css";
 @import "blocks/shop.css";
+@import "blocks/consult.css";
 
 html, body{
 	font-size: var(--fz);
@@ -27,9 +28,8 @@ html, body{
 }
 
 /*html{
-	background: url(../images/all4.jpg);
+	background: url(../images/allnew3.jpg);
 	opacity: .5;
 	-ms-background-position-x: center;
 	background-position-x: center;
-	background-position-y: 381px;
 }*/

@@ -1,0 +1,176 @@
+.consult_wr__filters{
+	max-width: 100%;
+	width: 100%;
+}
+
+.consult_wr__btn{
+	min-width: 217px;
+}
+
+.consult_wr__title{
+	padding-top: 51px;
+	padding-bottom: 34px;
+}
+
+.comment__date{
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+
+.consult_wr__title_small{
+	padding-top: 42px;
+	font-size: 26px;
+	padding-bottom: 48px;
+	clear: both;
+}
+
+.comment__name{
+	font-family: 'FuturaNewBook-Reg';
+	padding-bottom: 10px;
+}
+
+.comment.close .review__comment{
+	text-overflow: ellipsis;
+	width: 400px;
+	white-space: nowrap;
+    overflow: hidden;
+}
+
+.comment__text,
+.consult_wr .review__comment{
+	max-width: 827px;
+	line-height: 26px;
+}
+
+.comment__answer{
+	padding: 20px 0 20px 20px;
+	margin: 26px 0 20px 31px;
+	border-left: 1px solid var(--bg-color12);
+}
+
+.comment__rating{
+	margin-bottom: 0;
+}
+
+.comment__top{
+	max-width: 460px;
+	margin-bottom: 3px;
+}
+
+.consult_wr__comments .review__info,
+.consult_wr__comments .review__comment{
+	padding-bottom: 18px;
+}
+
+.consult_wr__trigger{
+	margin-bottom: 46px;
+	display: inline-block;
+	padding-right: 20px;
+	margin-left: 31px;
+	font-family: 'FuturaNewBook-Reg';
+}
+
+.consult_wr__comment{
+	border-bottom: 1px solid var(--bg-color14);
+	margin-bottom: 48px;
+}
+
+.consult_wr .review__rait,
+.consult_wr .review__name{
+	background-color: #fff;
+}
+
+.close .consult_wr__trigger-close{
+	display: none;
+}
+
+.consult_wr__trigger-open{
+	display: none;
+}
+
+.close .consult_wr__trigger-open{
+	display: inline-block;
+}
+
+.consult_wr__trigger-close{
+	padding-left: 20px;
+	padding-right: 0;
+}
+
+.consult_wr__trigger-close:after{
+	left: 0;
+	-webkit-transform: rotate(180deg) translateY(50%);
+	-ms-transform: rotate(180deg) translateY(50%);
+	-o-transform: rotate(180deg) translateY(50%);
+	transform: rotate(180deg) translateY(50%);
+}
+
+.consult_wr__comment:nth-last-child(2){
+	border-bottom: none;
+}
+
+.comment__btn{
+	display: block;
+	width: 217px;
+	margin: 0 auto 111px;
+}
+
+.consult_wr{
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+@media screen and (max-width: 1023px) {
+	.consult_wr{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.comment__top{
+		max-width: inherit;
+		margin-bottom: 5px;
+	}
+	.comment__answer{
+		padding-left: 0;
+		margin-left: 0;
+		border-left: none;
+	}
+	.consult_wr__trigger{
+		margin-left: 0;
+	}
+	.consult_wr__title {
+	    padding-top: 46px;
+	    padding-bottom: 16px;
+	}
+	.consult_wr__title_small {
+	    padding-top: 18px;
+	    font-size: 26px;
+	    padding-bottom: 16px;
+	    border-bottom: 1px solid rgba(0, 0, 0, .2);
+	    margin-bottom: 20px;
+	}
+	.comment__answer{
+		margin-top: 10px;
+		padding-bottom: 0;
+		margin-bottom: 11px;
+	}
+	.consult_wr__comments .review__info, .consult_wr__comments .review__comment{
+		padding-bottom: 21px;
+	}
+	.consult_wr__trigger{
+		margin-bottom: 35px;
+	}
+	.consult_wr__comment{
+		margin-bottom: 43px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.consult_wr{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.consult_wr__title_small,
+	.comment__text,
+	.consult_wr .review__comment{
+		font-size: 16px;
+	}
+}
