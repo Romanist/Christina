@@ -223,6 +223,68 @@ $(document).ready(function () {
 		}
 	}
 
+	$(document).on ('click', '.table__remove', function () {
+		$(this).closest('tr').remove();
+		return false;
+	});
+
+	$('.adress__btn').click(function () {
+		var index = $('#index').val();
+		var city = $('#city').val();
+		var adress = $('#adress').val();
+		$('.adress__table tbody').append('<tr><td class="table__left"><p class="table__bold">' + city + '</p><p class="table__op">' + index + '</p><p>' + adress + '</p></td><td class="table__center"><a href="#" class="table__link w_arr">Изменить</a></td><td class="table__right"><a href="#" class="table__remove"><span></span><span></span></a></td></tr>')
+		return false;
+	});
+
+	$('.input').focusout(function () {
+		$(this).removeClass('has_cont');
+		if ($(this).val()) {
+			$(this).addClass('has_cont');
+		}
+	});
+
+	function minHeightPers (elem1, elem2) {
+		elem1.addClass('min_height');
+		elem2.addClass('min_height');
+		elem1.on('transitionend, webkitTransitionEnd', function () {
+			elem1.removeClass('min_height');
+			elem2.removeClass('min_height');
+		});
+		// if (!elem1.hasClass('min_height')) {
+		// 	elem1.addClass('min_height');
+		// 	elem2.addClass('min_height');
+		// }
+		// else {
+		// 	elem1.on('transitionend, webkitTransitionEnd', function () {
+		// 		elem1.removeClass('min_height');
+		// 		elem2.removeClass('min_height');
+		// 	});
+		// }
+	}
+
+	function person (_this) {
+		if (!$(_this).hasClass('past')) {
+			$('.active').removeClass('active').addClass('past');
+			$(_this).removeClass('past').addClass('active');
+			minHeightPers($('.active'), $(_this));
+		}
+		// if ($('.active').index() < $(_this).index()) {
+		// 	$('.active').removeClass('active').addClass('past');
+		// 	$(_this).removeClass('past').addClass('active');
+		// }
+		else {
+			$('.active').removeClass('active');
+			$(_this).removeClass('past').addClass('active');
+			minHeightPers($('.active'), $(_this));
+		}
+	}
+
+	$('.perNavBtn').click(function (e) {
+		var _this = $(this).data('pos');
+		person(_this);
+		return false;
+	})
+
 	function navigator (_this) {
 		var scrollPos = $(_this).data('pos');
 		$('html, body').animate({
@@ -230,7 +292,7 @@ $(document).ready(function () {
     }, 2000);
 	}
 
-	$('.navigator__btn_wr').click(function (e) {
+	$('.navigator__btn_wr:not(.perNavBtn)').click(function (e) {
 		e.preventDefault();
 		var _this = this;
 		navigator (_this);
@@ -300,6 +362,13 @@ $(document).ready(function () {
 		}
 		return false;
 	});
+
+	if (($(".person")) && ($(window).width() < 1024)) {
+		$(".person .navigator__menu").mCustomScrollbar({
+			axis:"x",
+			mouseWheel:{ enable: true }
+		});
+	}
 
 	if ($(".scroll_HDIW__scroll")) {
 		$(".scroll_HDIW__scroll").mCustomScrollbar({

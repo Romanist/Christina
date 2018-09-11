@@ -17,6 +17,7 @@
 @import "blocks/scroll.css";
 @import "blocks/shop.css";
 @import "blocks/consult.css";
+@import "blocks/person.css";
 
 html, body{
 	font-size: var(--fz);
