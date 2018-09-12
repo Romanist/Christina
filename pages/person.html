@@ -138,7 +138,7 @@
 	</section>
 
 	<div class="wrapper">
-		<section class="common person_item min_height">
+		<section class="common active person_item">
 			<div class="max_width">
 				<h2 class="title common__title">Данные для покупок</h2>
 				<p class="common__desc">Используется для оформления заказов. Никогда и ни при каких обстоятельствах не передаётся третьим лицам.</p>
@@ -220,6 +220,7 @@
 									<span></span>
 									<span></span>
 								</a>
+								<a href="#" class="table__remove_mob table__remove w_arr">Удалить</a>
 							</td>
 						</tr>
 						<tr>
@@ -236,6 +237,7 @@
 									<span></span>
 									<span></span>
 								</a>
+								<a href="#" class="table__remove_mob table__remove w_arr">Удалить</a>
 							</td>
 						</tr>
 					</tbody>
@@ -390,10 +392,167 @@
 						</tr>
 					</tbody>
 				</table>
+				<table class="active__table_mob table">
+					<tbody>
+						<tr>
+							<td class="">
+								<p class="table-bold">№ 4567890</p>
+								<p>12.12.2018</p>
+							</td>
+							<td class="">
+								<p class="table-bold">1578 ₽</p>
+								<p>157</p>
+							</td>
+							<td class="">
+								<p>Статус</p>
+								<p>принят</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="">
+								<p class="table-bold">№ 4567890</p>
+								<p>12.12.2018</p>
+							</td>
+							<td class="">
+								<p class="table-bold">1578 ₽</p>
+								<p>157</p>
+							</td>
+							<td class="">
+								<p>Статус</p>
+								<p>в обработке</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="">
+								<p class="table-bold">№ 4567890</p>
+								<p>12.12.2018</p>
+							</td>
+							<td class="">
+								<p class="table-bold">1578 ₽</p>
+								<p>157</p>
+							</td>
+							<td class="">
+								<p>Статус</p>
+								<p>доставлен</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
 			</div>
 		</section>
 
-		<section class="person_item tests"></section>
+		<section class="person_item tests">
+			<div class="max_width">
+				<h2 class="title common__title">Мои тесты</h2>
+				<table class="active__table table">
+					<tbody>
+						<tr class="table__title">
+							<td class="">
+								Дата
+							</td>
+							<td class="">
+								Номер заказа
+							</td>
+							<td class="">
+								Сумма
+							</td>
+							<td class="">
+								Начислено бонусов
+							</td>
+							<td class="">
+								Статус
+							</td>
+						</tr>
+						<tr>
+							<td class="table-op">
+								12.12.2018
+							</td>
+							<td class="table-bold">
+								4567890
+							</td>
+							<td class="table-bold">
+								1578 ₽
+							</td>
+							<td class="table-op">
+								157
+							</td>
+							<td class="table-op">
+								Принят
+							</td>
+						</tr>
+						<tr>
+							<td class="table-op">
+								12.12.2018
+							</td>
+							<td class="table-bold">
+								4567890
+							</td>
+							<td class="table-bold">
+								1578 ₽
+							</td>
+							<td class="table-op">
+								157
+							</td>
+							<td class="table-op">
+								Принят
+							</td>
+						</tr>
+						<tr>
+							<td class="table-op">
+								12.12.2018
+							</td>
+							<td class="table-bold">
+								4567890
+							</td>
+							<td class="table-bold">
+								1578 ₽
+							</td>
+							<td class="table-op">
+								157
+							</td>
+							<td class="table-op">
+								Принят
+							</td>
+						</tr>
+						<tr>
+							<td class="table-op">
+								12.12.2018
+							</td>
+							<td class="table-bold">
+								4567890
+							</td>
+							<td class="table-bold">
+								1578 ₽
+							</td>
+							<td class="table-op">
+								157
+							</td>
+							<td class="table-op">
+								Принят
+							</td>
+						</tr>
+						<tr>
+							<td class="table-op">
+								12.12.2018
+							</td>
+							<td class="table-bold">
+								4567890
+							</td>
+							<td class="table-bold">
+								1578 ₽
+							</td>
+							<td class="table-op">
+								157
+							</td>
+							<td class="table-op">
+								Принят
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
 
 		<section class="person_item answers">
 			<div class="max_width">
@@ -542,17 +701,26 @@
 			</div>			
 		</section>
 
-		<section class="person_item active reviews">
+		<section class="person_item reviews">
 			<div class="max_width">
 				<h2 class="title common__title">Мои отзывы</h2>
 				<h7 class="common__title_low">Вы оставили 2 отзыва</h7>
-				<table class="adress__table table">
+				<table class="adress__table reviews__table table">
 					<tbody>
 						<tr>
 							<td class="table__left">
-								<p class="table__bold">г.Москва</p>
-								<p class="table__op">127221</p>
-								<p>ул. Сухонская, д.13, кв.123</p>
+								<div class="review__top comment__top">
+									<span class="review__name">Мошенская Алена отвечает</span>
+									<div class="review__rait">
+										<img src="../images/rat_icon.svg" alt="">
+										<img src="../images/rat_icon.svg" alt="">
+										<img src="../images/rat_icon.svg" alt="">
+										<img src="../images/rat_icon.svg" alt="">
+										<img width="8px" height="8px" src="../images/rat_icon_empty.svg" alt="">
+									</div>
+								</div>
+								<p class="table__op">Отзыв оставлен 22.12.2014, в 16:55</p>
+								<p>Очень понравился крем. Легкая текстура, и увлажняет на целый день. Твёрдая 5!</p>
 							</td>
 							<td class="table__center">
 								<a href="#" class="table__link w_arr">Посмотреть</a>
@@ -566,9 +734,18 @@
 						</tr>
 						<tr>
 							<td class="table__left">
-								<p class="table__bold">г.Москва</p>
-								<p class="table__op">127221</p>
-								<p>ул. Сухонская, д.13, кв.123</p>
+								<div class="review__top comment__top">
+									<span class="review__name">Мошенская Алена отвечает</span>
+									<div class="review__rait">
+										<img src="../images/rat_icon.svg" alt="">
+										<img src="../images/rat_icon.svg" alt="">
+										<img src="../images/rat_icon.svg" alt="">
+										<img src="../images/rat_icon.svg" alt="">
+										<img width="8px" height="8px" src="../images/rat_icon_empty.svg" alt="">
+									</div>
+								</div>
+								<p class="table__op">Отзыв оставлен 22.12.2014, в 16:55</p>
+								<p>Очень люблю бренд Christina, но в данном случае тоник не подошел. После одного дня его использования появились першение в горле и насморк. Сначала не связала применение тоника с данными недугами, а симптомы только усиливались. После отмены средства постепенно все прошло. Ни высыпаний, ни покраснений тоник на коже не вызвал.</p>
 							</td>
 							<td class="table__center">
 								<a href="#" class="table__link w_arr">Посмотреть</a>
@@ -586,7 +763,12 @@
 		</section>
 
 		<section class="person_item subs">
-			
+			<div class="max_width">
+				<h2 class="title common__title">Мои подписки</h2>
+				<h7 class="common__title_low">Будьте в курсе последних новостей и событий</h7>				
+				<p class="common__desc">Наша e-mail рассылка отправляется один раз в неделю. Подписавшись, Вы всегда будете в курсе последних событий, акций, интересных новостей и статей по уходу за кожей. Это бесплатно! От рассылки всегда можно отписаться.</p>
+				<a href="#" class="btn subs__btn">Подписаться</a>
+			</div>
 		</section>
 	</div>
 

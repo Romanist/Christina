@@ -378,6 +378,41 @@ tr.table__title{
 	border-bottom: none;
 }
 
+.reviews .review__rait,
+.reviews .review__name{
+	background-color: #fff;
+}
+
+.reviews .table__left p:last-child{
+	padding-right: 170px;
+}
+
+.table__center{
+	font-family: 'FuturaNewBook-Reg';
+}
+
+.reviews__table{
+	margin-bottom: 200px;
+}
+
+.subs__btn{
+	margin-bottom: 123px;
+}
+
+.table__remove_mob{
+	display: none;
+}
+
+.avtive__table_mob{
+	display: none;
+}
+
+@media screen and (max-width: 1279px) {
+	.min_height{
+		min-height: 100vh;
+	}
+}
+
 @media screen and (max-width: 1023px) {
 	.person__navigator{
 		padding-bottom: 30px;
@@ -411,6 +446,7 @@ tr.table__title{
 	}
 	.common__inputs{
 		padding-bottom: 40px;
+		max-width: 451px;
 	}
 	.common__btn{
 		margin: 20px auto 72px;
@@ -419,6 +455,44 @@ tr.table__title{
 		font-size: 40px;
 		text-align: left;
 		padding: 40px 0 54px 40px;
+	}
+	.table__left{
+		display: block;
+		padding-bottom: 10px;
+	}
+	.table__center,
+	.table__right{
+		display: inline-block;
+		margin-bottom: 35px;
+	}
+	.table__remove{
+		display: none;
+	}
+	.table__remove_mob{
+		display: inline-block;
+		width: auto;
+		padding-right: 20px;
+		height: auto;
+		font-family: 'FuturaNewBook-Reg';
+		margin-left: 80px;
+	}
+	.answers .consult_wr{
+		padding: 0;
+	}
+	.answers .comment__answer{
+		padding-left: 0;
+		margin-left: 0;
+	}
+	.answers .slider__wr{
+		margin-left: 0;
+	}
+	.common__title_low{
+		display: block;
+		padding-bottom: 20px;
+		margin-bottom: 40px;
+	}
+	.answers .common__title_low{
+		border-bottom: solid 1px #AEAEAE;		
 	}
 }
 
@@ -434,5 +508,63 @@ tr.table__title{
 	.person_item{
 		padding: 0 20px;
 	}
-
+	.common__title{
+		padding-top: 12px;
+		padding-bottom: 23px;
+	}
+	.person_item{
+		font-size: 16px;
+	}
+	.common__desc{
+		padding-bottom: 25px;
+	}
+	.common__radio_title{
+		font-size: 20px;
+		padding-bottom: 24px;
+	}
+	.common__title_low{
+		font-size: 16px;
+		padding-bottom: 12px;
+	}
+	.table__left{
+		padding-top: 25px;
+	}
+	.table__center, .table__right{
+		margin-bottom: 25px;
+	}
+	.table__center .table__link{
+		display: inline-block;
+	}
+	.active__table{
+		display: none;
+	}
+	.avtive__table_mob{
+		display: table;
+	}
+	.active__table_mob tr:last-child{
+		border-bottom: none;
+	}
+	.active__table_mob p:first-child{
+		padding-bottom: 4px;
+	}
+	.active__table_mob tr{
+		height: 103px;
+	}
+	.active__table_mob td:last-child{
+		width: 24%;
+	}
+	.common__title_low{
+		margin-bottom: 25px;
+		padding-bottom: 10px;
+	}
+	.answers .owl-nav {
+	    top: -57px;
+	    right: -19px;
+	}
+	.recomend__btn{
+		margin-top: 40px;
+	}
+	.reviews .table__left p:last-child{
+		padding-right: 0;
+	}
 }
