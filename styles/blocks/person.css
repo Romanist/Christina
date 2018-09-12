@@ -285,6 +285,98 @@
 	z-index: 5;
 }
 
+.perNavBtn.active{
+	background-color: var(--white-color);
+}
+
+tr.table__title{
+	border-top: none;
+	font-size: 22px;
+}
+
+.active__table tr{
+	height: 60px;
+}
+
+.active__table td{
+	width: 24%;
+	text-align: center;
+}
+
+.active__table td:first-child{
+	text-align: left;
+	width: 14%;
+}
+
+.active__table td:last-child{
+	text-align: right;
+	width: 14%;
+}
+
+.active__table{
+	margin-bottom: 200px;
+}
+
+.table-op{
+	opacity: .6;
+}
+
+.table-bold{
+	font-family: 'FuturaNewBook-Reg';
+}
+
+.answers .comment__answer{
+	padding-left: 40px;
+	margin-left: 40px;
+}
+
+.answers .shop_slider__wr{
+	width: 100%;
+	margin: 0;
+	float: none;
+	overflow: visible;
+}
+
+.answers .owl-nav{
+	top: -62px;
+	right: 0;
+}
+
+.answers .owl-dots{
+	display: none;
+}
+
+.answers__recomend{
+	max-width: 827px;
+}
+
+.answers .review__comment{
+	padding-bottom: 0;
+}
+
+.answers .slider__wr{
+	padding-top: 0;
+}
+
+.recomend__btn{
+	margin-bottom: 66px;
+}
+
+.comment.close .answers__recomend{
+	display: none;
+}
+
+.answers .consult_wr__comment:nth-last-child(2){
+	border-bottom: 1px solid #AEAEAE;
+}
+
+.answers .consult_wr__comment:last-child{
+	border-bottom: none;
+}
+
+.answers .consult_wr{
+	border-bottom: none;
+}
 
 @media screen and (max-width: 1023px) {
 	.person__navigator{

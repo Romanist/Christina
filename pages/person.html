@@ -125,20 +125,20 @@
 		<div class="navigator person__navigator">
 			<h1 class="navigator__title person__title title">Личный кабинет</h1>
 			<div class="navigator__menu">
-				<a href="#" data-pos=".common" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Личная информация</span></a
+				<a href="#" data-pos=".common" class="perNavBtn active navigator__btn_wr"><span class="navigator__btn">Личная информация</span></a
 				><a href="#" data-pos=".adress" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Адреса</span></a
 				><a href="#" data-pos=".password" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Смена пароля</span></a
-				><a href="#" data-pos="" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Мои заказы</span></a
-				><a href="#" data-pos="" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Пройденные тесты</span></a
-				><a href="#" data-pos="" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">вопросы косметологу</span></a
-				><a href="#" data-pos="" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Мои отзывы</span></a
-				><a href="#" data-pos="" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Мои подписки</span></a>
+				><a href="#" data-pos=".order" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Мои заказы</span></a
+				><a href="#" data-pos=".tests" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Пройденные тесты</span></a
+				><a href="#" data-pos=".answers" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">вопросы косметологу</span></a
+				><a href="#" data-pos=".reviews" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Мои отзывы</span></a
+				><a href="#" data-pos=".subs" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Мои подписки</span></a>
 			</div>
 		</div>
 	</section>
 
 	<div class="wrapper">
-		<section class="common person_item active min_height">
+		<section class="common person_item min_height">
 			<div class="max_width">
 				<h2 class="title common__title">Данные для покупок</h2>
 				<p class="common__desc">Используется для оформления заказов. Никогда и ни при каких обстоятельствах не передаётся третьим лицам.</p>
@@ -279,6 +279,314 @@
 				</div>
 				<button class="btn password__btn common__btn">Сохранить изменения</button>
 			</div>
+		</section>
+
+		<section class="person_item order">
+			<div class="max_width">
+				<h2 class="title common__title">Мои заказы</h2>
+				<table class="active__table table">
+					<tbody>
+						<tr class="table__title">
+							<td class="">
+								Дата
+							</td>
+							<td class="">
+								Номер заказа
+							</td>
+							<td class="">
+								Сумма
+							</td>
+							<td class="">
+								Начислено бонусов
+							</td>
+							<td class="">
+								Статус
+							</td>
+						</tr>
+						<tr>
+							<td class="table-op">
+								12.12.2018
+							</td>
+							<td class="table-bold">
+								4567890
+							</td>
+							<td class="table-bold">
+								1578 ₽
+							</td>
+							<td class="table-op">
+								157
+							</td>
+							<td class="table-op">
+								Принят
+							</td>
+						</tr>
+						<tr>
+							<td class="table-op">
+								12.12.2018
+							</td>
+							<td class="table-bold">
+								4567890
+							</td>
+							<td class="table-bold">
+								1578 ₽
+							</td>
+							<td class="table-op">
+								157
+							</td>
+							<td class="table-op">
+								Принят
+							</td>
+						</tr>
+						<tr>
+							<td class="table-op">
+								12.12.2018
+							</td>
+							<td class="table-bold">
+								4567890
+							</td>
+							<td class="table-bold">
+								1578 ₽
+							</td>
+							<td class="table-op">
+								157
+							</td>
+							<td class="table-op">
+								Принят
+							</td>
+						</tr>
+						<tr>
+							<td class="table-op">
+								12.12.2018
+							</td>
+							<td class="table-bold">
+								4567890
+							</td>
+							<td class="table-bold">
+								1578 ₽
+							</td>
+							<td class="table-op">
+								157
+							</td>
+							<td class="table-op">
+								Принят
+							</td>
+						</tr>
+						<tr>
+							<td class="table-op">
+								12.12.2018
+							</td>
+							<td class="table-bold">
+								4567890
+							</td>
+							<td class="table-bold">
+								1578 ₽
+							</td>
+							<td class="table-op">
+								157
+							</td>
+							<td class="table-op">
+								Принят
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class="person_item tests"></section>
+
+		<section class="person_item answers">
+			<div class="max_width">
+				<h2 class="title common__title">Вопросы косметологу</h2>
+				<h7 class="common__title_low">Всего вопросов 2 </h7>
+				<div class="consult_wr">					
+					<div class="consult_wr__comment comment">
+						<p class="comment__name">Вы спросили</p>
+						<p class="comment__date">27.05.2018</p>
+						<p class="comment__text">Помогите выбрать средства по уходу вокруг глаз. Мне 26 лет</p>
+						<div class="prod_comments__review comment__answer review">
+							<div class="review__top comment__top">
+								<span class="review__name">Мошенская Алена отвечает</span>
+								<div class="review__rait">
+									<img src="../images/rat_icon.svg" alt="">
+									<img src="../images/rat_icon.svg" alt="">
+									<img src="../images/rat_icon.svg" alt="">
+									<img src="../images/rat_icon.svg" alt="">
+									<img width="8px" height="8px" src="../images/rat_icon_empty.svg" alt="">
+								</div>
+							</div>
+							<span class="review__info">тренер-косметолог</span>
+							<span class="review__comment">
+								Добрый день, Катя! <br>
+								Для области вокруг глаз: 1. Гель для кожи вокруг глаз Lumiere — препарат эффективно увлажняет кожу вокруг глаз, разглаживает мелкие морщинки; легкая гелевая текстура быстро впитывается, не оставляя липкости. Препарат обладает также противовоспалительным и омолаживающим действиями. 2. Осветляющий крем для кожи вокруг глаз BioPhyto — увлажняет, смягчает, укрепляет сосуды и обладает лифтинг-эффектом. 3. Маска для разглаживания кожи вокруг глаз Forever Young — убирает темные круги и отеки вокруг глаз, разглаживает морщины, увлажняет кожу, содержит омолаживающие компоненты. 1 или 2 средство на выбор — ежедневно, утром и вечером. 3 препарат 2 раза в неделю. <br>
+								Также ближе к 30 годам можно использовать Крем с ретинолом для зрелой кожи вокруг глаз — это препарат с выраженным омолаживающим эффектом (улучшает текстуру — разглаживает морщины, уплотняет кожу, осветляет), используются в вечернее время, наносятся тонким слоем, 1 − 2 раза в неделю (в остальные ночи другой препарат, не содержащий ретинол). Днем применяйте солнцезащитное средство. Важно: не используйте это средство в период беременности и лактации!
+							</span>
+							<div class="answers__recomend recomend">
+								<h2 class="title common__title">Вопросы косметологу</h2>
+								<div class="slider shop_slider__wr">
+									<div class="owl-carousel slider__wr">
+										<div class="slider__prod product__wr">
+											<img src="../images/prod1.png" alt="">
+											<p class="product_wr__new">
+												новинка
+											</p>
+											<p class="product_wr__name">
+												ProPeel, resurfacer
+											</p>
+											<p class="product_wr__dec">
+												Сывортка для усиления действия пилинга
+											</p>
+											<p class="product__price">
+												1578 ₽
+											</p>
+											<a href="#" class="product__basket">
+												<img src="../images/BasketIcon.svg" alt="">
+											</a>
+										</div>
+										<div class="slider__prod product__wr">
+											<img src="../images/prod1.png" alt="">
+											<p class="product_wr__new">
+												новинка
+											</p>
+											<p class="product_wr__name">
+												ProPeel, resurfacer
+											</p>
+											<p class="product_wr__dec">
+												Сывортка для усиления действия пилинга
+											</p>
+											<p class="product__price">
+												1578 ₽
+											</p>
+											<a href="#" class="product__basket">
+												<img src="../images/BasketIcon.svg" alt="">
+											</a>
+										</div>
+										<div class="slider__prod product__wr">
+											<img src="../images/prod1.png" alt="">
+											<p class="product_wr__new">
+												новинка
+											</p>
+											<p class="product_wr__name">
+												ProPeel, resurfacer
+											</p>
+											<p class="product_wr__dec">
+												Сывортка для усиления действия пилинга
+											</p>
+											<p class="product__price">
+												1578 ₽
+											</p>
+											<a href="#" class="product__basket">
+												<img src="../images/BasketIcon.svg" alt="">
+											</a>
+										</div>
+										<div class="slider__prod product__wr">
+											<img src="../images/prod1.png" alt="">
+											<p class="product_wr__new">
+												новинка
+											</p>
+											<p class="product_wr__name">
+												ProPeel, resurfacer
+											</p>
+											<p class="product_wr__dec">
+												Сывортка для усиления действия пилинга
+											</p>
+											<p class="product__price">
+												1578 ₽
+											</p>
+											<a href="#" class="product__basket">
+												<img src="../images/BasketIcon.svg" alt="">
+											</a>
+										</div>
+									</div>				
+								</div>
+								<a href="#" class="btn recomend__btn">Добавить всё в корзину</a>
+							</div>
+							<div class="review__rating comment__rating">
+								<span>Полезен отзыв?</span>
+								<a href="#" class="review__rating_link" data-sign="-">-</a>
+								<a href="#" class="review__rating_link" data-sign="+">+</a>
+							</div>
+						</div>
+						<a href="#" class="w_arr consult_wr__trigger consult_wr__trigger-open">Читать полностью</a>
+						<a href="#" class="w_arr consult_wr__trigger consult_wr__trigger-close">Скрыть ответ</a>
+					</div>
+					<div class="consult_wr__comment comment close">
+						<p class="comment__name">Вы спросили</p>
+						<p class="comment__date">27.05.2018</p>
+						<p class="comment__text">Добрый день! Хотела бы получить примерную программу ухода. 26 лет. Лечилась эффезелом, в данный момент применяю базирон 5%. Высыпания есть. Кожа жирная, шелушения, постакне пятна, рельеф ровный, цвет лица тусклый. Раз в неделю использую пилинг с витамином Е. Средства желательно безспиртовые и пилинг для более частого применения, если это возможно.</p>
+						<div class="prod_comments__review comment__answer review">
+							<div class="review__top comment__top">
+								<span class="review__name">Мошенская Алена отвечает</span>
+								<div class="review__rait">
+									<img src="../images/rat_icon.svg" alt="">
+									<img src="../images/rat_icon.svg" alt="">
+									<img src="../images/rat_icon.svg" alt="">
+									<img src="../images/rat_icon.svg" alt="">
+									<img width="8px" height="8px" src="../images/rat_icon_empty.svg" alt="">
+								</div>
+							</div>
+							<span class="review__info">тренер-косметолог</span>
+							<span class="review__comment">
+								Сначала выберите очищающее средство. Для демакияжа и повседневного очищения кожи утром и вечером можно использовать рН нейтральный гель или пенку. Любое из этих средств подойдет для зоны вокруг глаз.
+							</span>
+							<div class="review__rating comment__rating">
+								<span>Полезен отзыв?</span>
+								<a href="#" class="review__rating_link" data-sign="-">-</a>
+								<a href="#" class="review__rating_link" data-sign="+">+</a>
+							</div>
+						</div>
+						<a href="#" class="w_arr consult_wr__trigger consult_wr__trigger-open">Читать полностью</a>
+						<a href="#" class="w_arr consult_wr__trigger consult_wr__trigger-close">Скрыть ответ</a>
+					</div>
+				</div>
+			</div>			
+		</section>
+
+		<section class="person_item active reviews">
+			<div class="max_width">
+				<h2 class="title common__title">Мои отзывы</h2>
+				<h7 class="common__title_low">Вы оставили 2 отзыва</h7>
+				<table class="adress__table table">
+					<tbody>
+						<tr>
+							<td class="table__left">
+								<p class="table__bold">г.Москва</p>
+								<p class="table__op">127221</p>
+								<p>ул. Сухонская, д.13, кв.123</p>
+							</td>
+							<td class="table__center">
+								<a href="#" class="table__link w_arr">Посмотреть</a>
+							</td>
+							<td class="table__right">
+								<a href="#" class="table__remove">
+									<span></span>
+									<span></span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="table__left">
+								<p class="table__bold">г.Москва</p>
+								<p class="table__op">127221</p>
+								<p>ул. Сухонская, д.13, кв.123</p>
+							</td>
+							<td class="table__center">
+								<a href="#" class="table__link w_arr">Посмотреть</a>
+							</td>
+							<td class="table__right">
+								<a href="#" class="table__remove">
+									<span></span>
+									<span></span>
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class="person_item subs">
+			
 		</section>
 	</div>
 

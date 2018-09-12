@@ -250,16 +250,6 @@ $(document).ready(function () {
 			elem1.removeClass('min_height');
 			elem2.removeClass('min_height');
 		});
-		// if (!elem1.hasClass('min_height')) {
-		// 	elem1.addClass('min_height');
-		// 	elem2.addClass('min_height');
-		// }
-		// else {
-		// 	elem1.on('transitionend, webkitTransitionEnd', function () {
-		// 		elem1.removeClass('min_height');
-		// 		elem2.removeClass('min_height');
-		// 	});
-		// }
 	}
 
 	function person (_this) {
@@ -282,8 +272,10 @@ $(document).ready(function () {
 	$('.perNavBtn').click(function (e) {
 		var _this = $(this).data('pos');
 		person(_this);
+		$('.perNavBtn').removeClass('active');
+		$(this).addClass('active');
 		return false;
-	})
+	});
 
 	function navigator (_this) {
 		var scrollPos = $(_this).data('pos');
