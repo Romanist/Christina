@@ -208,3 +208,123 @@
 .basket_table{
 	text-align: left;
 }
+
+@media screen and (max-width: 1023px) {
+	.basket{
+		padding: 0 40px;
+	}
+	.basket_table__row .basket_table__c{
+		display: none;
+	}
+	.basket_table__l{
+		width: 40%;
+		float: left;
+	}
+	.basket_table__row{
+		display: block;
+		height: auto;
+		overflow: hidden;
+		position: relative;
+	}
+	.basket_table__title{
+		display: none;
+	}
+	.basket_table__l-c{
+		width: 50%;
+		float: left;
+		padding-bottom: 20px;
+	}
+	.basket_table__c-r{
+		width: 20%;
+		margin-right: 30%;
+		float: left;
+		text-align: left;
+	}
+	.basket .prod_inf__counter{
+		margin-left: 0;
+	}
+	.basket_table__r{
+		text-align: left;
+		padding-top: 15px;
+	}
+	.basket .table__remove{
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 0;
+	}
+	.basket .table__remove_mob{
+		display: none;
+	}
+	.baasket_title{
+		font-size: 40px;
+	}
+	.basket__low_title{
+		font-size: 32px;
+		padding-bottom: 26px;
+	}
+	.basket_table__l-c p{
+		padding: 2px 40% 2px 0;
+		font-size: 16px;
+	}
+	.table-bold{
+		font-size: 18px;
+	}
+	.basket_table__pr,
+	.basket_table__pr2{
+		padding-top: 50px;
+	}
+	.basket_table__pr .basket_table__c,
+	.basket_table__pr2 .basket_table__c{
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 50px;
+	}
+	.basket_table__pr .basket_table__l-c,
+	.basket_table__pr2 .basket_table__l-c{
+		padding-top: 40px;
+	}
+	.basket__desc{
+		display: block;
+		text-align: center;
+	}
+	.basket_table__pr .basket_table__r, .basket_table__pr2 .basket_table__r{
+		padding-top: 0;
+	}
+	.basket_table__l img{
+		margin-bottom: 5%;
+		margin-top: 5%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.baasket_title{
+		font-size: 30px;
+		padding-top: 30px;
+	}
+	.basket{
+		padding: 0 20px;
+	}
+	.basket__low_title{
+		font-size: 26px;
+		padding-bottom: 30px;
+	}
+	.basket_table__l-c p{
+		padding-right: 0;
+	}
+	.basket_table__l-c,
+	.basket_table__r{
+		width: 58%;
+	}
+	.basket_table__c-r{
+		margin-right: 0;
+		width: 56%;
+	}
+	.basket_table__l img{
+		height: 60%;
+	}
+}
