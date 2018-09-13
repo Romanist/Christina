@@ -9,6 +9,7 @@
 	<script src="../scripts/libraries/jquery.js"></script>
 	<script src="../scripts/libraries/owl.carousel.min.js"></script>
 	<script src="../scripts/libraries/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../scripts/libraries/v8n.min.js"></script>
 	<script src="../scripts/main.js"></script>
 </head>
 <body>
@@ -145,28 +146,34 @@
 				<form action="" autocomplete="off" class="common__form">
 					<div class="inputs common__inputs">
 						<div class="input_wr w_ph">
-							<input id="surname" type="text" class="input">
+							<input id="surname" name="name" type="text" class="input">
 							<label class="ph" for="surname" class="">Фамилия</label>
+							<p class="warning">неверная фамилия</p>
 						</div>
 						<div class="input_wr w_ph">
-							<input id="name" type="text" class="input">
+							<input id="name" name="name" type="text" class="input">
 							<label class="ph" for="name" class="">Имя</label>
+							<p class="warning">неверное имя</p>
 						</div>
 						<div class="input_wr w_ph">
-							<input id="name2" type="text" class="input">
+							<input id="name2" name="name" type="text" class="input">
 							<label class="ph" for="name2" class="">Отчество</label>
+							<p class="warning">неверное отчество</p>
 						</div>
 						<div class="input_wr w_ph">
-							<input id="date" type="text" class="input">
+							<input id="date" name="date" type="text" class="input">
 							<label class="ph" for="date" class="">Дата рождения</label>
+							<p class="warning">неверная дата</p>
 						</div>
 						<div class="input_wr w_ph">
-							<input id="mail" type="text" class="input">
+							<input id="mail" name="mail" type="text" class="input">
 							<label class="ph" for="mail" class="">E-mail</label>
+							<p class="warning">неверный e-mail</p>
 						</div>
 						<div class="input_wr w_ph">
-							<input id="tel" type="text" class="input">
+							<input id="tel" name="tel" type="text" class="input">
 							<label class="ph" for="tel" class="">Телефон</label>
+							<p class="warning">неверный телефон</p>
 						</div>
 					</div>
 					<div class="common__radios">
@@ -208,9 +215,9 @@
 					<tbody>
 						<tr>
 							<td class="table__left">
-								<p class="table__bold">г.Москва</p>
-								<p class="table__op">127221</p>
-								<p>ул. Сухонская, д.13, кв.123</p>
+								<p data-form="#city" class="table__bold">г.Москва</p>
+								<p data-form="#index" class="table__op">127221</p>
+								<p data-form="#adress">ул. Сухонская, д.13, кв.123</p>
 							</td>
 							<td class="table__center">
 								<a href="#" class="table__link w_arr">Изменить</a>
@@ -225,9 +232,9 @@
 						</tr>
 						<tr>
 							<td class="table__left">
-								<p class="table__bold">г.Москва</p>
-								<p class="table__op">127221</p>
-								<p>ул. Сухонская, д.13, кв.123</p>
+								<p data-form="#city" class="table__bold">г.Москва</p>
+								<p data-form="#index" class="table__op">127221</p>
+								<p data-form="#adress">ул. Сухонская, д.13, кв.123</p>
 							</td>
 							<td class="table__center">
 								<a href="#" class="table__link w_arr">Изменить</a>
@@ -245,16 +252,19 @@
 				<h2 class="title common__title">Добавить новый адрес</h2>
 				<div class="inputs common__inputs adress__inputs">
 					<div class="input_wr w_ph">
-						<input id="index" type="text" class="input">
+						<input data-form="#index" id="index" name="number" type="text" class="input">
 						<label class="ph" for="index" class="">Индекс</label>
+						<p class="warning">неверный индекс</p>
 					</div>
 					<div class="input_wr w_ph">
-						<input id="city" type="text" class="input">
+						<input data-form="#city" id="city" name="text" type="text" class="input">
 						<label class="ph" for="city" class="">Город</label>
+						<p class="warning">неверный город</p>
 					</div>
 					<div class="input_wr w_ph">
-						<input id="adress" type="text" class="input">
+						<input data-form="#adress" id="adress" name="text" type="text" class="input">
 						<label class="ph" for="adress" class="">Адрес</label>
+						<p class="warning">неверный Адрес</p>
 					</div>
 				</div>
 				<a href="#" class="btn adress__btn">Добавить</a>

@@ -239,7 +239,9 @@
 }
 
 .review__rait img{
-	margin: 0 5px;
+	margin: 5px;
+	width: 8px;
+	vertical-align: middle;
 }
 
 .review__info{
