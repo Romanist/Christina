@@ -83,6 +83,10 @@
 	top: 74px;
 }
 
+.columns__column:hover{
+	color: #000;
+}
+
 .column__img{
 	margin-bottom: 10px;
 	height: 60px;

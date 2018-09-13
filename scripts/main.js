@@ -15,68 +15,9 @@ $(document).ready(function () {
 
 	$(document).on ('click', '.table__remove', function () {
 		$(this).closest('tr').remove();
+		$(this).closest('.basket_table__row').remove();
 		return false;
 	});
-
-	function validate (_this, trigger) {
-		var ck_name = /^[А-Яа-яA-Za-z\s]{1,20}$/;
-	    var ck_text = /^[А-Яа-яA-Za-z0-9,.!?\s]{1,5000}$/;
-	    var ck_tel = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
-	    var ck_number = /^\d+$/;
-	    var ck_date = /^(\d{1,2}).(\d{1,2}).(\d{2}|\d{4})$/;
-	    var ck_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-
-	    var type = $(_this).attr('name');
-	    console.log(type)
-	    if (type == 'number') {
-	    	if (!ck_number.test($(_this).val())){
-	    		return false;
-	    	}
-	    	else {
-	    		return true;
-	    	}
-	    }
-	    if (type == 'text') {
-	    	if (!ck_text.test($(_this).val())){
-	    		return false;
-	    	}
-	    	else {
-	    		return true;
-	    	}
-	    }
-	    if (type == 'date') {
-	    	if (!ck_date.test($(_this).val())){
-	    		return false;
-	    	}
-	    	else {
-	    		return true;
-	    	}
-	    }
-	    if (type == 'mail') {
-	    	if (!ck_email.test($(_this).val())){
-	    		return false;
-	    	}
-	    	else {
-	    		return true;
-	    	}
-	    }
-	    if (type == 'tel') {
-	    	if (!ck_tel.test($(_this).val())){
-	    		return false;
-	    	}
-	    	else {
-	    		return true;
-	    	}
-	    }
-	    if (type == 'name') {
-	    	if (!ck_name.test($(_this).val())){
-	    		return false;
-	    	}
-	    	else {
-	    		return true;
-	    	}
-	    }
-	}
 
 	$('.adress__btn').click(function () {
 		var index = $('#index').val();
@@ -93,10 +34,6 @@ $(document).ready(function () {
 				$(this).closest('.input_wr').addClass('wrong');
 				trigger = false;
 			}
-			// if ($(this).val().length < 4) {
-			// 	$(this).closest('.input_wr').addClass('wrong');
-			// 	trigger = false;
-			// }
 		});
 
 		if ((trigger == true) && (!changeTrig)) {
@@ -141,7 +78,6 @@ $(document).ready(function () {
 		$(this).closest('tr').addClass('changing');
 		$('.adress .adress__btn').addClass('changing');
 		$(this).closest('tr').find('.table__left p').each(function (index) {
-			// console.log($(this).text(), $(this).data('form'))
 			var dataForm = $(this).data('form');
 			var valueForm = $(this).text();
 			$(dataForm).val(valueForm).addClass('has_cont');
@@ -171,10 +107,6 @@ $(document).ready(function () {
 			$(_this).removeClass('past').addClass('active');
 			minHeightPers($('.active'), $(_this));
 		}
-		// if ($('.active').index() < $(_this).index()) {
-		// 	$('.active').removeClass('active').addClass('past');
-		// 	$(_this).removeClass('past').addClass('active');
-		// }
 		else {
 			$('.active').removeClass('active');
 			$(_this).removeClass('past').addClass('active');
@@ -255,15 +187,15 @@ $(document).ready(function () {
 
 	$('.counter__btn').click(function () {
 		var sign = $(this).data('sign');
-		var count = $('.counter__number').data('counter');
+		var count = $(this).closest('.prod_inf__counter').find('.counter__number').data('counter');
 		if (sign == "+") {
-			$('.counter__number').text(count + 1);
-			$('.counter__number').data('counter', count + 1);
+			$(this).closest('.prod_inf__counter').find('.counter__number').text(count + 1);
+			$(this).closest('.prod_inf__counter').find('.counter__number').data('counter', count + 1);
 		}
 		else {
 			if (!count) return false;
-			$('.counter__number').text(count - 1);
-			$('.counter__number').data('counter', count - 1);
+			$(this).closest('.prod_inf__counter').find('.counter__number').text(count - 1);
+			$(this).closest('.prod_inf__counter').find('.counter__number').data('counter', count - 1);
 		}
 		return false;
 	});
@@ -281,28 +213,74 @@ $(document).ready(function () {
 		var imgSrc = $(this).attr('src');
 		for (var i = 0; i <= ratingComp; i++) {
 			$(this).closest('.review__rait').find('img').eq(i).attr('src', '../images/rat_icon.svg')
-			// $('.review__rait img').eq(i).attr('src', '../images/rat_icon.svg')
 		}
 		for (var i = ratingClick; i <= 5; i++) {
 			$(this).closest('.review__rait').find('img').eq(i).attr('src', '../images/rat_icon_empty.svg')
-			// $('.review__rait img').eq(i).attr('src', '../images/rat_icon_empty.svg')
 		}
 	});
 
 
 	// validation
 
-	// function validate (_this, trigger) {
-	// 	var ck_name = /^[А-Яа-яA-Za-z\s]{1,20}$/;
-	//     var ck_text = /^[А-Яа-яA-Za-z0-9,.!?\s]{1,5000}$/;
-	//     var ck_tel = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
-	//     var ck_number = /^\d+$/;
-	//     var ck_date = /^(\d{1,2}).(\d{1,2}).(\d{2}|\d{4})$/;
-	//     var ck_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+	function validate (_this, trigger) {
+		var ck_name = /^[А-Яа-яA-Za-z\s]{1,20}$/;
+	    var ck_text = /^[А-Яа-яA-Za-z0-9,.!?\s]{1,5000}$/;
+	    var ck_tel = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+	    var ck_number = /^\d+$/;
+	    var ck_date = /^(\d{1,2}).(\d{1,2}).(\d{2}|\d{4})$/;
+	    var ck_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
 
-	//     var type = $(_this).attr('type');
-	//     console.log(type)
-	// }
+	    var type = $(_this).attr('name');
+	    console.log(type)
+	    if (type == 'number') {
+	    	if (!ck_number.test($(_this).val())){
+	    		return false;
+	    	}
+	    	else {
+	    		return true;
+	    	}
+	    }
+	    if (type == 'text') {
+	    	if (!ck_text.test($(_this).val())){
+	    		return false;
+	    	}
+	    	else {
+	    		return true;
+	    	}
+	    }
+	    if (type == 'date') {
+	    	if (!ck_date.test($(_this).val())){
+	    		return false;
+	    	}
+	    	else {
+	    		return true;
+	    	}
+	    }
+	    if (type == 'mail') {
+	    	if (!ck_email.test($(_this).val())){
+	    		return false;
+	    	}
+	    	else {
+	    		return true;
+	    	}
+	    }
+	    if (type == 'tel') {
+	    	if (!ck_tel.test($(_this).val())){
+	    		return false;
+	    	}
+	    	else {
+	    		return true;
+	    	}
+	    }
+	    if (type == 'name') {
+	    	if (!ck_name.test($(_this).val())){
+	    		return false;
+	    	}
+	    	else {
+	    		return true;
+	    	}
+	    }
+	}
 
 
 	// sliders
