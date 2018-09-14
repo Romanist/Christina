@@ -177,11 +177,12 @@
 	font-size: 16px;
 }
 
-.basket__summ span:nth-child(2){
+.removed_price{
 	position: relative;
+	opacity: .6;
 }
 
-.basket__summ span:nth-child(2)::after{
+.removed_price::after{
 	content: '';
 	position: absolute;
 	left: 0;
@@ -189,7 +190,7 @@
 	height: 1px;
 	top: 50%;
 	background-color: #000;
-	opacity: .5;
+	/*opacity: .5;*/
 }
 
 .bold{
@@ -250,8 +251,9 @@
 	.basket .table__remove{
 		display: block;
 		position: absolute;
-		top: 20px;
+		top: 0;
 		right: 0;
+		margin: 20px 0 20px 20px;
 	}
 	.basket .table__remove_mob{
 		display: none;

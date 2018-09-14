@@ -219,6 +219,15 @@ $(document).ready(function () {
 		}
 	});
 
+	$('.input').on('input', function () {
+		$(this).closest('.input_wr').removeClass('wrong');
+	});
+
+	$('.basket_form .check_hid').change(function () {
+		$('.check_hid').prop('checked', false);
+		$(this).prop('checked', true);
+	});
+
 
 	// validation
 

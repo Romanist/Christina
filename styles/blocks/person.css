@@ -455,6 +455,51 @@ tr.table__title{
 	display: none;
 }
 
+.basket_form .procedures_form__custom_input{
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+	top: 4px;
+}
+
+.basket_form{
+	background-color: var(--bg-color2);
+}
+
+.basket_form__title{
+	padding: 96px 0 50px;
+	font-size: 26px;
+}
+
+.radio_wr__desc{
+	font-size: 16px;
+}
+
+.basket_form .radio_wr{
+	margin-bottom: 20px;
+}
+
+.basket_form__low_title,
+.basket_form .common__radio_title{
+	font-family: 'FuturaNewLight-Reg';
+	font-size: 22px;
+	padding-top: 0;
+	padding-bottom: 20px;
+}
+
+.basket_form .btn{
+	margin-top: 110px;
+	margin-bottom: 80px;
+	background-color: var(--bg-color2);
+}
+
+.auth{
+	position: relative;
+	padding-bottom: 3px;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
 @media screen and (max-width: 1279px) {
 	.min_height{
 		min-height: 100vh;
@@ -542,6 +587,12 @@ tr.table__title{
 	.answers .common__title_low{
 		border-bottom: solid 1px #AEAEAE;		
 	}
+	.basket_form{
+		padding: 0 40px;
+	}
+	.basket_form__title{
+		padding-top: 50px;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -614,5 +665,15 @@ tr.table__title{
 	}
 	.reviews .table__left p:last-child{
 		padding-right: 0;
+	}
+	.basket_form{
+		padding: 0 20px;
+	}
+	.basket_form__title{
+		font-size: 24px;
+	}
+	.basket_form .btn{
+		margin-top: 50px;
+		margin-bottom: 70px;
 	}
 }
