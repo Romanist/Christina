@@ -256,6 +256,11 @@
 	height: 530px;
 }
 
+.delivery_columns{
+	background-color: var(--bg-color2);
+	border-bottom: none;
+}
+
 @media screen and (max-width: 1023px) {
 	.columns__title{
 		color: var(--white-color);
@@ -386,6 +391,9 @@
 	}
 	.partner_columns{
 		height: auto;
+	}
+	.delivery_columns .columns__mob_slider_img{
+		top: 150px;
 	}
 }
 

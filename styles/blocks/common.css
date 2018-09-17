@@ -192,6 +192,74 @@
 	opacity: .5;
 }
 
+.delivery_head{
+	background-color: var(--bg-color1);
+}
+
+.delivery_head__title{
+	font-size: 64px;
+	padding-top: 80px;
+	padding-bottom: 6px;
+}
+
+.delivery_head__title_low{
+	text-align: center;
+	padding-bottom: 46px;
+}
+
+.delievery_scroll .max_width{
+	padding: 40px 40px 100px;	
+}
+
+.delivery-bold{
+	font-family: 'FuturaNewBook-Reg';
+}
+
+.delivery__item p{
+	margin-bottom: 5px;
+}
+
+.delievery_scroll .scroll_HDIW__scr_wr{
+	width: 100%;
+}
+
+.delievery_scroll .mCSB_scrollTools.mCSB_scrollTools_horizontal{
+	right: 30%;
+}
+
+.delievery_scroll .scroll_HDIW__links{
+	width: 70%;
+}
+
+.delivery__item{
+	padding-left: 20px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.delivery__item::before{
+	content: '';
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #000;
+	left: 0;
+	top: 9px;
+}
+
+.delivery__item a{
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.delivery_bot{
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.delivery_bot__desc{
+	padding: 47px 0 107px;
+}
+
 @media screen and (max-width: 1279px) {
 	.contacts_map .max_width{
 		padding-right: 0;
@@ -257,6 +325,25 @@
 		padding-top: 40px;
 		padding-bottom: 0;
 	}
+	.delivery_bot{
+		padding-left: 40px;
+	}
+	.delivery_head__title{
+		font-size: 40px;
+		padding-top: 70px;
+	}
+	.delivery_head__title_low{
+		padding-bottom: 70px;
+	}
+	.delievery_scroll .scroll_HDIW__links{
+		width: 100%;
+	}
+	.delievery_scroll .mCSB_scrollTools.mCSB_scrollTools_horizontal{
+		right: 0;
+	}
+	.delievery_scroll .max_width{
+		padding-bottom: 0;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -318,5 +405,32 @@
 	}
 	.contacts .scroll_HDIW__scr_wr{
 		padding: 0 20px;
+	}
+	.delivery_head__title{
+		text-align: left;
+		font-size: 30px;
+		padding-left: 20px;
+		padding-top: 30px;
+	}
+	.delivery_head__title_low{
+		font-size: 16px;
+		text-align: left;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 35px;
+	}
+	.delivery{
+		font-size: 16px;
+	}
+	.delivery .scroll_HDIW__link{
+		font-size: 12px;
+	}
+	.delivery_bot__desc{
+		font-size: 16px;
+		padding: 26px 20px 50px;
+		text-align: center;
+	}
+	.delivery_bot{
+		padding-left: 0;
 	}
 }
