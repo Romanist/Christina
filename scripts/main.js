@@ -19,6 +19,20 @@ $(document).ready(function () {
 		return false;
 	});
 
+	$('.partner_form__btn').click(function () {
+		var trigger = true;
+
+		$('.partner_form .input').each(function( index ) {
+			var _this = this;
+			if (!validate(_this, trigger)) {
+				$(this).closest('.input_wr').addClass('wrong');
+				trigger = false;
+			}
+		});
+
+		if (!trigger) return false;
+	});
+
 	$('.adress__btn').click(function () {
 		var index = $('#index').val();
 		var city = $('#city').val();
@@ -125,8 +139,8 @@ $(document).ready(function () {
 	function navigator (_this) {
 		var scrollPos = $(_this).data('pos');
 		$('html, body').animate({
-        scrollTop: $(scrollPos).offset().top
-    }, 2000);
+        	scrollTop: $(scrollPos).offset().top
+    	}, 2000);
 	}
 
 	$('.navigator__btn_wr:not(.perNavBtn)').click(function (e) {

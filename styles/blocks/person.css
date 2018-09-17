@@ -500,6 +500,28 @@ tr.table__title{
 	border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 
+.partner_form{
+	background-color: var(--bg-color2);
+}
+
+.partner_form__title{
+	padding-top: 63px;
+	font-size: 30px;
+}
+
+.partner_form .common__inputs{
+	margin: 0 auto;
+	float: none;
+	padding-bottom: 50px;
+}
+
+.partner_form__btn{
+	background-color: var(--bg-color2);
+	font-size: 18px;
+	display: block;
+	margin: 0 auto 70px;
+}
+
 @media screen and (max-width: 1279px) {
 	.min_height{
 		min-height: 100vh;
@@ -675,5 +697,8 @@ tr.table__title{
 	.basket_form .btn{
 		margin-top: 50px;
 		margin-bottom: 70px;
+	}
+	.partner_form{
+		padding: 0 20px;
 	}
 }
