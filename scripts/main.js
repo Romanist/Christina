@@ -161,16 +161,30 @@ $(document).ready(function () {
 		}
 	});
 
+	$('.contacts .scroll_HDIW__link').click(function () {
+		var dataMap = $(this).data('map');
+		$('.scroll_HDIW__text iframe').hide();
+		$(dataMap).show();
+	})
+
 
 	function btnManage (el) {
 		var percentPos = el.mcs.leftPct
 		if (percentPos >= 50) {
 			$('.scroll_HDIW__link').removeClass('active');
-			$('.scroll_HDIW__link:nth-child(2)').addClass('active')
+			$('.scroll_HDIW__link:nth-child(2)').addClass('active');
+			if ($('.contacts')) {
+				$('.scroll_HDIW__text iframe').hide();
+				$('.contacts_map__peter').show()
+			}
 		}
 		else{
 			$('.scroll_HDIW__link').removeClass('active');
-			$('.scroll_HDIW__link:nth-child(1)').addClass('active')
+			$('.scroll_HDIW__link:nth-child(1)').addClass('active');
+			if ($('.contacts')) {
+				$('.scroll_HDIW__text iframe').hide();
+				$('.contacts_map__moscow').show()
+			}
 		}
 	}
 
