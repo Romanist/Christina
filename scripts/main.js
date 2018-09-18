@@ -261,6 +261,13 @@ $(document).ready(function () {
 		return false;
 	});
 
+	$('.patients__rec_btn').click(function () {
+		var prodArr = []
+		$('.product__wr.confirmed').each(function( index ) {
+			prodArr.push($(this).data('id'))
+		});
+		return false;
+	});
 
 	// validation
 
@@ -273,7 +280,6 @@ $(document).ready(function () {
 	    var ck_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
 
 	    var type = $(_this).attr('name');
-	    console.log(type)
 	    if (type == 'number') {
 	    	if (!ck_number.test($(_this).val())){
 	    		return false;
