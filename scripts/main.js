@@ -256,6 +256,11 @@ $(document).ready(function () {
 		$(this).prop('checked', true);
 	});
 
+	$('.patients__slider .product__basket').click(function () {
+		$(this).closest('.product__wr').toggleClass('confirmed');
+		return false;
+	});
+
 
 	// validation
 

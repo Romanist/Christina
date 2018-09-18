@@ -554,6 +554,32 @@ tr.table__title{
 	padding: 0;
 }
 
+.patients__promo_btn{
+	background-color: #fff;
+	font-size: 18px;
+	margin-right: 30px;
+	margin-bottom: 65px;
+	display: inline-block;
+}
+
+.patients .common__inputs{
+	float: none;
+	padding-bottom: 40px;
+}
+
+.patients__promo_desc{
+	font-size: 26px;
+}
+
+.patients .news__search_wr{
+	margin-top: 20px;
+	width: 50%;
+}
+
+.patients .news__search{
+	width: 100%;
+}
+
 @media screen and (max-width: 1279px) {
 	.min_height{
 		min-height: 100vh;
@@ -695,10 +721,10 @@ tr.table__title{
 	.table__center .table__link{
 		display: inline-block;
 	}
-	.active__table{
+	.order .active__table{
 		display: none;
 	}
-	.avtive__table_mob{
+	.order .active__table_mob{
 		display: table;
 	}
 	.active__table_mob tr:last-child{
@@ -739,5 +765,27 @@ tr.table__title{
 	}
 	.partner_form{
 		padding: 0 20px;
+	}
+	.patients__promo_btn{
+		width: 100%;
+		display: block;
+		height: auto;
+		padding-left: 0;
+		padding-right: 0;
+		margin-bottom: 20px;
+	}
+	.patients__promo_btn:last-child{
+		margin-bottom: 50px;
+	}
+	.patients .common__inputs{
+		max-width: 100%;
+	}
+	.patients__promo_desc{
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.patients .news__search_wr{
+		width: 100%;
+		margin-bottom: 0;
 	}
 }

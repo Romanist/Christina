@@ -371,6 +371,28 @@
 	top: -126px;
 }
 
+.patients__slider .owl-dots{
+	top: -88px;
+	left: 65%;
+}
+
+.patients__slider .product__wr .product__basket img{
+	opacity: 0;
+}
+
+.patients__slider .confirmed .product__basket img{
+	opacity: 1;
+}
+
+.patients__slider .confirmed .product__basket{
+	opacity: 1;
+}
+
+.patients__rec_btn{
+	margin-bottom: 85px;
+	margin-top: 30px;
+}
+
 @media screen and (max-width: 1279px) {
 	.slider__title{
 		padding-top: 66px;
@@ -558,6 +580,21 @@
 	.slider_basket2 .slider__prod{
 		background-color: var(--hover-product-bg-color);
 	}
+	.patients .slider_propeel{
+		padding: 0 0 10px;
+		overflow: visible;
+	}
+	.patients .owl-nav{
+		top: 65px;
+		right: -19px;
+	}
+	.patients .owl-dots{
+		top: 65px;
+	}
+	.patients_table{
+		margin: 0 -40px;
+		padding: 0 40px;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -728,6 +765,15 @@
 	}
 	.slider_basket .owl-nav{
 		top: 74px;
+	}
+	.patients .owl-nav{
+		top: 65px;
+	}
+	.patients__slider .owl-dots{
+		left: 50%;
+	}
+	.patients__slider:last-child .owl-dots{
+		bottom: 200px;
 	}
 }
 

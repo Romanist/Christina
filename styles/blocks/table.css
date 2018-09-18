@@ -210,6 +210,34 @@
 	text-align: left;
 }
 
+.patients_table{
+	background-color: var(--bg-color2);
+}
+
+.patients__table td:first-child{
+	width: 40%;
+}
+
+.patients__title{
+	padding: 60px 0 47px;
+	text-align: left;
+}
+
+.patients__btn{
+	margin-bottom: 20px;
+}
+
+.patients__table{
+	margin-bottom: 45px;
+}
+
+.patients__more{
+	font-family: 'FuturaNewBook-Reg';
+	padding-right: 20px;
+	margin-bottom: 65px;
+	display: inline-block;
+}
+
 @media screen and (max-width: 1023px) {
 	.basket{
 		padding: 0 40px;
@@ -328,5 +356,24 @@
 	}
 	.basket_table__l img{
 		height: 60%;
+	}
+	.patients__table td{
+		display: block;
+		width: auto;
+		text-align: left;
+		opacity: 1;
+	}
+	.patients__table td:last-child{
+		text-align: left;
+		padding-bottom: 23px;
+		width: auto;
+	}
+	.patients__table td:first-child{
+		padding-top: 23px;
+		padding-bottom: 10px;
+		width: auto;
+	}
+	.patients__table .table__title{
+		display: none;
 	}
 }
