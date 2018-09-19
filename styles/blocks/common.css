@@ -260,6 +260,20 @@
 	padding: 47px 0 107px;
 }
 
+.find_md__title{
+	padding: 60px 0 0;
+    text-align: left;
+}
+
+.find_md__input_wr{
+	margin-bottom: 30px;
+}
+
+.find_md__title_low{
+	font-size: 22px;
+	padding-bottom: 22px;
+}
+
 @media screen and (max-width: 1279px) {
 	.contacts_map .max_width{
 		padding-right: 0;

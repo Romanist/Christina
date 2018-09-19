@@ -553,4 +553,92 @@ $(document).ready(function () {
 	    }
 		});
 	}
+
+	// map + api
+	 ymaps.ready(init);
+    function init(){ 
+        
+        var myMap = new ymaps.Map('map', {
+            center: [55.76, 37.64],
+            zoom: 10,
+            controls: ['zoomControl']
+        });
+
+		var city = 'москва';
+		var geoServer = 'https://geocode-maps.yandex.ru/1.x/?format=json&geocode=';
+		var variable = 'станция метро пушкинская';
+		var doctAdress = [
+			'Юго-Западный административный округ, район Южное Бутово, москва',
+			'станция метро сухаревская, москва',
+			'станция метро трубная, москва',
+			'станция метро курская, москва',
+			'козицкий переулок 1а, москва'
+		];
+		var coordinateA = '';
+		var coordinateB = '';
+
+		$.ajax({
+		  	url: geoServer + ',' + city + ',' + variable
+		}).done(function(data) {
+			var str = data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos;
+			var res = str.split(" ");
+		  	coordinateA = res[0];
+		  	coordinateB = res[1];
+
+		  	
+		  	var geoObj = new ymaps.GeoObject({
+			    geometry: {
+			        type: 'Point', 
+			        coordinates: [coordinateB, coordinateA]
+			    }
+			});
+			myMap.geoObjects.add(geoObj);
+		});
+
+		function docCoords() {
+			jQuery.each(doctAdress, function(index, item) {
+				ymaps.route([variable + ' ' + city, item]).then(
+			        function (route) {
+			        	var distance = route.getLength();
+			        	// check if near
+			        	if (distance <= 3900) {
+			        		$.ajax({
+							  	url: geoServer + ',' + item
+							}).done(function(data) {
+								// get coords of every doctor to set point at map
+								var str = data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos;
+								var res = str.split(" ");
+							  	coordinateA = res[0];
+							  	coordinateB = res[1];
+
+							  	// setting point
+							  	var geoObj = new ymaps.GeoObject({
+								    geometry: {
+								        type: 'Point',
+								        coordinates: [coordinateB, coordinateA]
+								    }
+								});
+
+								myMap.geoObjects.add(geoObj);
+							});
+			        	}
+			      	},
+				    function (error) {
+				        console.log('Ошибка: ' + error.message); 
+				    }
+			    );
+			});
+		}
+
+		docCoords();
+
+	 //    ymaps.route([variable + ' ' + city, doctAdress], {
+		//     multiRoute: true
+		// }).done(function (route) {
+		//     route.options.set("mapStateAutoApply", true);
+		//     myMap.geoObjects.add(route);
+		// }, function (err) {
+		//     throw err;
+		// }, this);
+    }
 })

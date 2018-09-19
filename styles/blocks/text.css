@@ -510,6 +510,7 @@
 
 .prod_inf__left{
 	float: left;
+	width: 432px;
 }
 
 .prod_inf__count_wr{
@@ -1307,6 +1308,7 @@
 		padding-right: 20px;
 		text-align: center;
 		float: none;
+		width: auto;
 	}
 	.prod_inf__title{
 		display: none;
