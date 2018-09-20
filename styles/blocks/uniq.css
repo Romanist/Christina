@@ -61,7 +61,8 @@
 	position: absolute;
 	top: 212px;
 	left: 49.5%;
-	width: 63%;
+	/*width: 63%;*/
+	width: 44%;
 }
 
 .uniq_news__owl_date{
@@ -418,6 +419,12 @@
 
 .prod_circle__tablet{
 	display: none;
+}
+
+@media screen and (max-width: 1440px) {
+	.uniq_news__owl{
+		width: 63%;
+	}
 }
 
 @media screen and (max-width: 1279px) {

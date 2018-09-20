@@ -15,6 +15,13 @@
 
 .nav__link{
 	color: var(--header-opacity-text-color);
+	-webkit-transition: all ease .3s;
+	-o-transition: all ease .3s;
+	transition: all ease .3s;
+}
+
+.nav__link:hover{
+	color: #000;
 }
 
 .nav__item:after{
@@ -52,6 +59,9 @@
 	font-size: 25px;
 	font-family: 'FuturaNewBook-Reg';
 	padding-right: 10px;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
 }
 
 .header__right{
@@ -88,6 +98,14 @@
 .call_icon{
 	margin-right: 30px;
 	display: inline-block;
+	-webkit-transition: all ease .3s;
+	-o-transition: all ease .3s;
+	transition: all ease .3s;
+}
+
+.call_icon:hover,
+.header__number:hover{
+	opacity: .6;
 }
 
 .call_icon:first-child{
@@ -110,6 +128,13 @@
 
 .header__right_btns a{
 	display: inline-block;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.header__right_btns a:hover{
+	opacity: .6;
 }
 
 .header__right_btns a:last-child img{
@@ -168,7 +193,14 @@ a .basket_number{
 	display: inline-block;
 	padding: 15px 30px;
 	letter-spacing: 1.23px;
+	-webkit-transition: all ease .3s;
+	-o-transition: all ease .3s;
+	transition: all ease .3s;
 	color: var(--white-color);
+}
+
+.navigation__item:hover{
+	opacity: .6;
 }
 
 .navigation__item:first-child{

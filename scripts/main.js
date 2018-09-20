@@ -228,12 +228,17 @@ $(document).ready(function () {
 		return false;
 	});
 
-	if (($(".person")) && ($(window).width() < 1024)) {
-		$(".person .navigator__menu").mCustomScrollbar({
-			axis:"x",
-			mouseWheel:{ enable: true }
-		});
+	function scrollCont() {
+		if (($(".person")) && ($(window).width() < 1024)) {
+			$(".person .navigator__menu").mCustomScrollbar({
+				axis:"x",
+				mouseWheel:{ enable: true }
+			});
+		}
 	}
+
+	scrollCont();
+	$(window).resize(scrollCont);
 
 	$('.review__rait img').click(function () {
 		var ratingComp = $(this).index();
@@ -555,7 +560,20 @@ $(document).ready(function () {
 	}
 
 	// map + api
-	 ymaps.ready(init);
+	$('.input_drop__toggle').click(function () {
+		$(this).closest('.input_drop').toggleClass('open');
+		return false;
+	});
+
+	$('.input_drop__item').click(function () {
+		var dataCont = $(this).data('cont');
+		console.log(dataCont)
+		$(this).closest('.input_drop').find('.input_drop__toggle').text(dataCont)
+		$(this).closest('.input_drop').find('.input_drop__hdn').val(dataCont)
+		return false;
+	});
+
+	ymaps.ready(init);
     function init(){ 
         
         var myMap = new ymaps.Map('map', {

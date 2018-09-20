@@ -129,6 +129,61 @@
 				<input type="text" placeholder="Введите адрес" class="news__search find_md__input">
 			</div>
 			<p class="find_md__title_low">Или выберите вручную</p>
+			<div class="input_drop drop_city">
+				<input type="text" class="input_drop__hdn">
+				<p class="input_drop__desc">город</p>
+				<a href="#" class="input_drop__toggle">Москва</a>
+				<div class="input_drop__down">
+					<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+					<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+					<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+					<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+					<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+					<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+					<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+					<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+					<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+					<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+					<div class="input_drop__op"></div>
+				</div>				
+			</div>
+			<form class="shop__filters shop_form find_md__form">
+				<div class="shop_form__grp">
+					<p class="shop_form__grp_title">Тип средства</p>
+					<div class="shop_form__grp_inputs">
+						<input type="checkbox" name="prod_type1" id="prod_type1">
+						<label for="prod_type1" class="shop_form__item">
+							тональный крем
+						</label>
+						<input type="checkbox" name="prod_type2" id="prod_type2">
+						<label for="prod_type2" class="shop_form__item">
+							сыворотка
+						</label>
+						<input type="checkbox" name="prod_type3" id="prod_type3">
+						<label for="prod_type3" class="shop_form__item">
+							бальзам
+						</label>
+						<input type="checkbox" name="prod_type4" id="prod_type4">
+						<label for="prod_type4" class="shop_form__item">
+							корректор
+						</label>
+						<input type="checkbox" name="prod_type5" id="prod_type5">
+						<label for="prod_type5" class="shop_form__item">
+							пилинг
+						</label>
+						<input type="checkbox" name="prod_type6" id="prod_type6">
+						<label for="prod_type6" class="shop_form__item">
+							очищающий гель
+						</label>
+						<input type="checkbox" name="prod_type7" id="prod_type7">
+						<label for="prod_type7" class="shop_form__item">
+							крем
+						</label>
+					</div>
+				</div>
+				<button class="btn shop_form__btn">Показать<span>10</span></button>
+				<div class="shop__toggle">Фильтр</div>
+			</form>
 		</div>
 	</section>
 
@@ -222,9 +277,11 @@
 						<p class="footer__socials_title">Присоединяйтесь:</p>
 						<a href="#" class="footer__social">
 							<img src="../images/footer_social2.svg" alt="">
+							<img class="hov" src="../images/footer_social2_hov.svg" alt="">
 						</a>
 						<a href="#" class="footer__social">
 							<img src="../images/footer_social1.svg" alt="">
+							<img class="hov" src="../images/footer_social1_hov.svg" alt="">
 						</a>
 					</div>
 					<div class="footer__desc">

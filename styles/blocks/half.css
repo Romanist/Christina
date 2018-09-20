@@ -443,6 +443,10 @@
 	background: linear-gradient(rgba(227, 230, 254,.5),rgba(227, 230, 254, .5)), url(../../images/bg5.png) no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .half_simple__title{

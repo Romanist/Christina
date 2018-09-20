@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
 
+b{
+	font-weight: bold;
+}
+
 .btn{
 	text-decoration: none;
 	color: var(--black-color);
@@ -14,14 +18,21 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	font-family: 'FuturaNewBook-Reg';
+	-webkit-transition: all ease .3s;
+	-o-transition: all ease .3s;
+	transition: all ease .3s;
+}
+
+.btn:hover{
+	background-color: var(--bg-color6);
+	color: var(--white-color);
 }
 
 .w_arr{
 	position: relative;
-}
-
-b{
-	font-weight: bold;
+	-webkit-transition: all ease .3s;
+	-o-transition: all ease .3s;
+	transition: all ease .3s;
 }
 
 .w_arr:after{
@@ -41,8 +52,8 @@ b{
 	background-size: contain;
 }
 
-.btn:hover{
-	color: var(--black-color);
+.w_arr:hover{
+	color: var(--bg-color13);
 }
 
 .max_width{
@@ -94,6 +105,14 @@ a{
 
 .underline_header{
 	border-bottom: 2px solid var(--opacity-underlane-text-color);
+	-webkit-transition: all ease .3s;
+	-o-transition: all ease .3s;
+	transition: all ease .3s;
+}
+
+.underline_header:hover{
+	border-color: #000;
+	cursor: pointer;
 }
 
 .header_color{
@@ -170,6 +189,13 @@ a{
 	width: 10px;
 	height: 21px;
 	padding: 5px 18px;
+	-webkit-transition: all ease .3s;
+	-o-transition: all ease .3s;
+	transition: all ease .3s;
+}
+
+.owl-prev:hover{
+	background-image: url(../../images/SliderArrowLeft_hov.svg);
 }
 
 .owl-prev.disabled,
@@ -178,12 +204,24 @@ a{
 	cursor: default;
 }
 
+.owl-prev.disabled:hover{
+	background-image: url(../../images/SliderArrowLeft.svg)
+}
+
+.owl-next.disabled{
+	background-image: url(../../images/SliderArrowRight.svg);
+}
+
 .owl-nav.disabled{
 	display: none;
 }
 
 .owl-next{
 	background-image: url(../../images/SliderArrowRight.svg);
+}
+
+.owl-next:hover{
+	background-image: url(../../images/SliderArrowRight_hov.svg);
 }
 
 .owl-item{

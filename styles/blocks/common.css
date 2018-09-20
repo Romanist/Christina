@@ -1,3 +1,9 @@
+body,
+html{
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
 .HDIW .navigator__title{
 	padding-top: 160px;
     padding-bottom: 142px;
@@ -9,6 +15,10 @@
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .HDIW__navigator .navigator__btn{
 	text-align: center;	
@@ -272,6 +282,111 @@
 .find_md__title_low{
 	font-size: 22px;
 	padding-bottom: 22px;
+}
+
+.input_drop{
+	max-width: 410px;
+	width: 100%;
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.input_drop__hdn{
+	all: unset;
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.input_drop__desc{
+	font-size: 12px;
+	opacity: .7;
+	position: absolute;
+	z-index: 4;
+}
+
+.input_drop__toggle{
+	position: relative;
+	padding: 18px 0 12px;
+	border-bottom: 1px solid #000;
+	display: block;
+	z-index: 3;
+}
+
+.input_drop__toggle::after{
+	background-image: url(../../images/arrow_down.svg);
+	width: 10px;
+	height: 8px;
+	top: 30px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	content: '';
+	position: absolute;
+	right: 6px;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.open .input_drop__toggle::after{
+	-webkit-transform: translateY(-50%) rotate(180deg);
+	-ms-transform: translateY(-50%) rotate(180deg);
+	-o-transform: translateY(-50%) rotate(180deg);
+	transform: translateY(-50%) rotate(180deg);
+}
+
+.input_drop__down{
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+	position: absolute;
+	z-index: 2;
+	background-color: #fff;
+	width: 110%;
+    margin-left: -5%;
+    padding-top: 80px;
+    margin-top: -60px;
+}
+
+.open .input_drop__down{
+	height: 253px;
+	/*box-shadow: 20px 21px 50px -10px rgba(0,0,0,0.1);*/
+	-webkit-box-shadow: 10px 10px 67px -10px rgba(0,0,0,0.1);
+	box-shadow: 10px 10px 67px -10px rgba(0,0,0,0.1);
+}
+
+.input_drop__item{
+	display: block;
+	opacity: .5;
+	padding: 7px 0 7px 5%;
+}
+
+.index_half{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.find_md .find_md__form{
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 100px;
+}
+
+.input_drop__op{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	background-color: rgba(255, 255, 255, .6);
 }
 
 @media screen and (max-width: 1279px) {
