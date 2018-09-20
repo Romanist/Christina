@@ -124,32 +124,49 @@
 	
 	<section class="find_md">
 		<div class="max_width">
-			<h2 class="title find_md__title">Найти врача</h2>
-			<div class="news__search_wr find_md__input_wr">
-				<input type="text" placeholder="Введите адрес" class="news__search find_md__input">
-			</div>
-			<p class="find_md__title_low">Или выберите вручную</p>
-			<div class="input_drop drop_city">
-				<input type="text" class="input_drop__hdn">
-				<p class="input_drop__desc">город</p>
-				<a href="#" class="input_drop__toggle">Москва</a>
-				<div class="input_drop__down">
-					<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
-					<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
-					<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
-					<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
-					<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
-					<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
-					<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
-					<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
-					<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
-					<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
-					<div class="input_drop__op"></div>
-				</div>				
-			</div>
-			<form class="shop__filters shop_form find_md__form">
+			<form action="" class="find_md__form shop__filters">
+				<h2 class="title find_md__title">Найти врача</h2>
+				<div class="news__search_wr find_md__input_wr">
+					<input type="text" placeholder="Введите адрес" class="news__search find_md__input">
+				</div>
+				<p class="find_md__title_low">Или выберите вручную</p>
+				<div class="input_drop drop_city">
+					<input type="text" class="input_drop__hdn">
+					<p class="input_drop__desc">город</p>
+					<a href="#" class="input_drop__toggle">Москва</a>
+					<div class="input_drop__down">
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<div class="input_drop__op"></div>
+					</div>				
+				</div>
+				<div class="input_drop drop_adress">
+					<input type="text" class="input_drop__hdn">
+					<p class="input_drop__desc">станция метро</p>
+					<a href="#" class="input_drop__toggle">Академическая</a>
+					<div class="input_drop__down">
+						<a href="#" data-cont="Бабушкинская" class="input_drop__item">Бабушкинская</a>
+						<a href="#" data-cont="Владыкино" class="input_drop__item">Владыкино</a>
+						<a href="#" data-cont="Выхино" class="input_drop__item">Выхино</a>
+						<a href="#" data-cont="пушкинская" class="input_drop__item">пушкинская</a>
+						<a href="#" data-cont="Дмитровская" class="input_drop__item">Дмитровская</a>
+						<a href="#" data-cont="Домодедовская" class="input_drop__item">Домодедовская</a>
+						<a href="#" data-cont="Добрынинская" class="input_drop__item">Добрынинская</a>
+						<a href="#" data-cont="Добрынинская" class="input_drop__item">Добрынинская</a>
+						<div class="input_drop__op"></div>
+					</div>				
+				</div>
+			<!-- <form class="shop__filters shop_form find_md__form"> -->
 				<div class="shop_form__grp">
-					<p class="shop_form__grp_title">Тип средства</p>
+					<p class="shop_form__grp_title">Фильтр поиска</p>
 					<div class="shop_form__grp_inputs">
 						<input type="checkbox" name="prod_type1" id="prod_type1">
 						<label for="prod_type1" class="shop_form__item">
@@ -181,7 +198,7 @@
 						</label>
 					</div>
 				</div>
-				<button class="btn shop_form__btn">Показать<span>10</span></button>
+				<button class="btn shop_form__btn findMDBtn">Найти</button>
 				<div class="shop__toggle">Фильтр</div>
 			</form>
 		</div>

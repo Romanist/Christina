@@ -289,6 +289,7 @@ html{
 	width: 100%;
 	position: relative;
 	margin-bottom: 60px;
+	display: inline-block;
 }
 
 .input_drop__hdn{
@@ -297,6 +298,10 @@ html{
 	width: 0;
 	height: 0;
 	opacity: 0;
+}
+
+.drop_adress{
+	margin-left: 110px;
 }
 
 .input_drop__desc{
@@ -367,6 +372,17 @@ html{
 	display: block;
 	opacity: .5;
 	padding: 7px 0 7px 5%;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.ymaps-2-1-68-controls__toolbar{
+	display: none;
+}
+
+.input_drop__item:hover{
+	opacity: 1;
 }
 
 .index_half{
@@ -377,7 +393,10 @@ html{
 .find_md .find_md__form{
 	width: 100%;
 	max-width: 100%;
-	margin-bottom: 100px;
+	float: none;
+	background-color: #fff;
+	padding: 0;
+	overflow: visible;
 }
 
 .input_drop__op{
@@ -386,7 +405,25 @@ html{
 	left: 0;
 	right: 0;
 	height: 40px;
-	background-color: rgba(255, 255, 255, .6);
+	/*background-color: rgba(255, 255, 255, .6);*/
+	background: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .6));
+}
+
+.find_md__form .shop_form__grp{
+	background-color: var(--bg-color2);
+	padding: 38px;
+}
+
+.find_md__form .shop_form__grp_title{
+	font-size: 24px;
+	padding-bottom: 30px;
+}
+
+.find_md__form .shop_form__btn{
+	min-width: 217px;
+	width: 217px;
+	margin: 40px auto;
+	display: block;
 }
 
 @media screen and (max-width: 1279px) {

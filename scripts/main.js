@@ -567,9 +567,9 @@ $(document).ready(function () {
 
 	$('.input_drop__item').click(function () {
 		var dataCont = $(this).data('cont');
-		console.log(dataCont)
-		$(this).closest('.input_drop').find('.input_drop__toggle').text(dataCont)
-		$(this).closest('.input_drop').find('.input_drop__hdn').val(dataCont)
+		$(this).closest('.input_drop').find('.input_drop__toggle').text(dataCont);
+		$(this).closest('.input_drop').find('.input_drop__hdn').val(dataCont);
+		$(this).closest('.input_drop').removeClass('open');
 		return false;
 	});
 
@@ -582,9 +582,20 @@ $(document).ready(function () {
             controls: ['zoomControl']
         });
 
+        var searchControl = new ymaps.control.SearchControl({
+		        options: {
+		            // Будет производиться поиск и по топонимам и по организациям.
+		            provider: 'yandex#search'
+		        }
+		    });
+
+		// Добавляем элемент управления на карту.
+		myMap.controls.add(searchControl);
+
 		var city = 'москва';
 		var geoServer = 'https://geocode-maps.yandex.ru/1.x/?format=json&geocode=';
-		var variable = 'станция метро пушкинская';
+		var variable = 'пушкинская';
+		var metro = 'станция метро'
 		var doctAdress = [
 			'Юго-Западный административный округ, район Южное Бутово, москва',
 			'станция метро сухаревская, москва',
@@ -595,27 +606,31 @@ $(document).ready(function () {
 		var coordinateA = '';
 		var coordinateB = '';
 
-		$.ajax({
-		  	url: geoServer + ',' + city + ',' + variable
-		}).done(function(data) {
-			var str = data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos;
-			var res = str.split(" ");
-		  	coordinateA = res[0];
-		  	coordinateB = res[1];
+		// $.ajax({
+		//   	url: geoServer + ',' + city + ',' + variable
+		// }).done(function(data) {
+		// 	var str = data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos;
+		// 	var res = str.split(" ");
+		//   	coordinateA = res[0];
+		//   	coordinateB = res[1];
 
 		  	
-		  	var geoObj = new ymaps.GeoObject({
-			    geometry: {
-			        type: 'Point', 
-			        coordinates: [coordinateB, coordinateA]
-			    }
-			});
-			myMap.geoObjects.add(geoObj);
-		});
+		//   	var geoObj = new ymaps.GeoObject({
+		// 	    geometry: {
+		// 	        type: 'Point', 
+		// 	        coordinates: [coordinateB, coordinateA]
+		// 	    }
+		// 	});
+		// 	myMap.geoObjects.add(geoObj);
+		// });
+
+		var myCollection = new ymaps.GeoObjectCollection();
 
 		function docCoords() {
+			searchControl.search(variable);
+			myCollection.removeAll();
 			jQuery.each(doctAdress, function(index, item) {
-				ymaps.route([variable + ' ' + city, item]).then(
+				ymaps.route([metro + ' ' + variable + ' ' + city, item]).then(
 			        function (route) {
 			        	var distance = route.getLength();
 			        	// check if near
@@ -637,8 +652,11 @@ $(document).ready(function () {
 								    }
 								});
 
-								myMap.geoObjects.add(geoObj);
+							  	myCollection.add(geoObj);
+								myMap.geoObjects.add(myCollection);
 							});
+			        	} else {
+
 			        	}
 			      	},
 				    function (error) {
@@ -649,6 +667,17 @@ $(document).ready(function () {
 		}
 
 		docCoords();
+
+		$('.findMDBtn').click(function () {
+			if ($('.drop_city .input_drop__hdn').val().length) {
+				city = $('.drop_city .input_drop__hdn').val();
+			}
+			if ($('.drop_adress .input_drop__hdn').val().length) {
+				variable = $('.drop_adress .input_drop__hdn').val();
+			}
+			docCoords();
+			return false;
+		});
 
 	 //    ymaps.route([variable + ' ' + city, doctAdress], {
 		//     multiRoute: true

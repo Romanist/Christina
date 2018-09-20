@@ -50,10 +50,17 @@ b{
 	background-repeat: no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
 }
 
 .w_arr:hover{
 	color: var(--bg-color13);
+}
+
+.w_arr:hover:after{
+	background-image: url(../../images/after_arrow_hov.svg);
 }
 
 .max_width{
