@@ -559,6 +559,23 @@ $(document).ready(function () {
 		});
 	}
 
+	if ($(".input_drop__down")) {
+		$(".input_drop__down").mCustomScrollbar({
+			axis:"y",
+			mouseWheel:{ enable: true },
+			callbacks:{
+	        whileScrolling: function(){
+	          btnManage(this);
+	        }
+	    }
+		});
+	}
+
+	$('.find_md__filters_toggle').click(function () {
+		$('.find_md__form .shop_form__grp').toggleClass('open');
+		return false;
+	});
+
 	// map + api
 	$('.input_drop__toggle').click(function () {
 		$(this).closest('.input_drop').toggleClass('open');
@@ -645,12 +662,22 @@ $(document).ready(function () {
 							  	coordinateB = res[1];
 
 							  	// setting point
-							  	var geoObj = new ymaps.GeoObject({
-								    geometry: {
-								        type: 'Point',
-								        coordinates: [coordinateB, coordinateA]
-								    }
+							 //  	var geoObj = new ymaps.GeoObject({
+								//     geometry: {
+								//         type: 'Point',
+								//         coordinates: [coordinateB, coordinateA],
+								//     },
+								//     fillImageHref: '/images/icon.svg',
+								//     fillOpacity: .5
+								// });
+
+								var geoObj = new ymaps.Placemark([coordinateB, coordinateA], {}, {
+							      	iconLayout: 'default#image',
+								    iconImageHref: '../images/circle.svg',
+								    iconImageSize: [24, 24],
+								    iconImageOffset: [0, 0]
 								});
+
 
 							  	myCollection.add(geoObj);
 								myMap.geoObjects.add(myCollection);

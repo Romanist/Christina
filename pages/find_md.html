@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Christina</title>
+	<link rel="stylesheet" href="../styles/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="../styles/main.css">
 	<script src="../scripts/libraries/jquery.js"></script>
 	<script src="../scripts/libraries/owl.carousel.min.js"></script>
@@ -164,53 +165,82 @@
 						<div class="input_drop__op"></div>
 					</div>				
 				</div>
-			<!-- <form class="shop__filters shop_form find_md__form"> -->
+				<div class="find_md__filters find_md__filters-mob">
+					<input type="checkbox" name="find_md__filter1" id="find_md__filter1">
+					<label for="find_md__filter1" class="find_md__filter_text">
+						Косметологи
+					</label>
+					<input type="checkbox" name="find_md__filter2" id="find_md__filter2">
+					<label for="find_md__filter2" class="find_md__filter_text">
+						Косметические салоны
+					</label>
+				</div>
 				<div class="shop_form__grp">
 					<p class="shop_form__grp_title">Фильтр поиска</p>
+					<div class="find_md__filters">
+						<input type="checkbox" name="find_md__filter1" id="find_md__filter1">
+						<label for="find_md__filter1" class="find_md__filter_text">
+							Косметологи
+						</label>
+						<input type="checkbox" name="find_md__filter2" id="find_md__filter2">
+						<label for="find_md__filter2" class="find_md__filter_text">
+							Косметические салоны
+						</label>
+					</div>
 					<div class="shop_form__grp_inputs">
 						<input type="checkbox" name="prod_type1" id="prod_type1">
 						<label for="prod_type1" class="shop_form__item">
-							тональный крем
+							чистка лица
 						</label>
 						<input type="checkbox" name="prod_type2" id="prod_type2">
 						<label for="prod_type2" class="shop_form__item">
-							сыворотка
+							осветление кожи 
 						</label>
 						<input type="checkbox" name="prod_type3" id="prod_type3">
 						<label for="prod_type3" class="shop_form__item">
-							бальзам
+							криотерапия
 						</label>
 						<input type="checkbox" name="prod_type4" id="prod_type4">
 						<label for="prod_type4" class="shop_form__item">
-							корректор
+							инъекции ГК
 						</label>
 						<input type="checkbox" name="prod_type5" id="prod_type5">
 						<label for="prod_type5" class="shop_form__item">
-							пилинг
-						</label>
-						<input type="checkbox" name="prod_type6" id="prod_type6">
-						<label for="prod_type6" class="shop_form__item">
-							очищающий гель
-						</label>
-						<input type="checkbox" name="prod_type7" id="prod_type7">
-						<label for="prod_type7" class="shop_form__item">
-							крем
+							инъекции ботулического токсина
 						</label>
 					</div>
+					<a href="#" class="find_md__filters_toggle w_arr">Фильтр по услугам</a>
 				</div>
 				<button class="btn shop_form__btn findMDBtn">Найти</button>
-				<div class="shop__toggle">Фильтр</div>
 			</form>
 		</div>
-	</section>
-
-	<!-- <ymaps class="ymaps-2-1-68-searchbox-input ymaps-2-1-68-_clear-button-is-visible">
-		<input class="ymaps-2-1-68-searchbox-input__input">
-	</ymaps> -->
-	
+	</section>	
 	
 	<div id="map" style="width: 100%; height: 421px"></div>
 
+	<section class="find_md_results">
+		<div class="max_width">
+			<h2 class="find_md_results__title title">Результат поиска</h2>
+			<div class="find_me_results_wr">
+				<div class="find_me_results__item">
+					<img src="../images/doctor.jpg" alt="" class="find_me_results__img">
+					<p class="find_me_results__name">Мария Цатурова</p>
+					<p class="find_me_results__desc">г. Москва, косметолог в салоне (Медицинский Центр «Андролог»)</p>
+					<p class="find_me_results__desc">Оказывает следующие виды процедур: чистка лица, осветление кожи, инъекции гк.</p>
+					<p class="find_me_results__desc">Высшее медицинское образование. Опыт работы косметологом 9 лет.</p>
+					<a href="#" class="find_me_results__link w_arr">Подробнее</a>
+				</div>
+				<div class="find_me_results__item">
+					<img src="../images/doctor2.jpg" alt="" class="find_me_results__img">
+					<p class="find_me_results__name">Анастасия Власова</p>
+					<p class="find_me_results__desc">г. Москва, косметолог в салоне (Медицинский Центр «Андролог»)</p>
+					<p class="find_me_results__desc">Оказывает следующие виды процедур: чистка лица, осветление кожи, инъекции гк.</p>
+					<p class="find_me_results__desc">Высшее медицинское образование. Опыт работы косметологом 9 лет.</p>
+					<a href="#" class="find_me_results__link w_arr">Подробнее</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<footer>
 		<div class="consult">

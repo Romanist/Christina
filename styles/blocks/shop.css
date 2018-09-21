@@ -79,7 +79,8 @@
 	content: '';
 	position: absolute;
 	background-color: #000;
-	display: none;
+	/*display: none;*/
+	opacity: 0;
 	-webkit-transition: all ease .4s;
 	-o-transition: all ease .4s;
 	transition: all ease .4s;
@@ -95,7 +96,8 @@
 
 input:checked + .shop_form__item:after{
 	/*color: red;*/
-	display: block;
+	/*display: block;*/
+	opacity: 1;
 }
 
 .shop_form__btn{

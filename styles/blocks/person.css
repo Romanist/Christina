@@ -11,6 +11,10 @@
 	position: relative;
 }
 
+.person_md .person__navigator{
+	background-color: var(--bg-color3);
+}
+
 .person__title{
 	padding: 30px 0 35px;
 	font-size: 64px;

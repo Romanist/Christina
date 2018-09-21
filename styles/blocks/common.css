@@ -359,6 +359,9 @@ html{
     margin-left: -5%;
     padding-top: 80px;
     margin-top: -60px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .open .input_drop__down{
@@ -377,8 +380,14 @@ html{
 	transition: all ease .4s;
 }
 
-.ymaps-2-1-68-controls__toolbar{
+.ymaps-2-1-68-controls__toolbar,
+.ymaps-2-1-68-map-copyrights-promo,
+.ymaps-2-1-68-copyright__wrap{
 	display: none;
+}
+
+#map{
+	filter: saturate(0.32) brightness(79%) hue-rotate(207deg);
 }
 
 .input_drop__item:hover{
@@ -397,6 +406,7 @@ html{
 	background-color: #fff;
 	padding: 0;
 	overflow: visible;
+	margin-left: 0;
 }
 
 .input_drop__op{
@@ -424,6 +434,147 @@ html{
 	width: 217px;
 	margin: 40px auto;
 	display: block;
+}
+
+.find_me_results__item{
+	float: left;
+	width: 33%;
+	padding-right: 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.find_me_results__item:nth-child(3n){
+	padding-right: 0;
+}
+
+.find_me_results_wr{
+	overflow: hidden;
+	padding-bottom: 90px;
+}
+
+.find_me_results__img{
+	width: 100%;
+	margin-bottom: 26px;
+}
+
+.find_me_results__name{
+	font-size: 24px;
+}
+
+.find_me_results__desc{
+	padding-top: 16px;
+	font-size: 16px;
+}
+
+.find_me_results__link{
+	display: inline-block;
+	padding-right: 20px;
+	margin-top: 16px;
+	font-family: 'FuturaNewBook-Reg';
+}
+
+.find_md_results{
+	background-color: rgba(227, 230, 254, .3);
+}
+
+.find_md_results__title{
+	padding-bottom: 34px;
+	padding-top: 50px;
+	text-align: left;
+}
+
+.find_md__filters{
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.find_md__filter_text{
+	cursor: pointer;
+	position: relative;
+	padding-left: 23px;
+	margin-right: 25px;
+}
+
+.find_md__filter_text::before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 13px;
+	height: 13px;
+	left: 0;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, .7);
+}
+
+.find_md__filter_text::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 8px;
+	height: 6px;
+	left: 4px;
+	background-image: url(../../images/check.svg);
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	opacity: 0;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.find_md .mCSB_scrollTools .mCSB_draggerRail{
+	width: 4px;
+}
+
+.find_md .mCSB_scrollTools{
+	right: 15px;
+	bottom: 15px;
+}
+
+.find_md .mCSB_scrollTools .mCSB_dragger{
+	border-radius: 50%;
+}
+
+input:checked + .find_md__filter_text:after{
+	opacity: 1;
+}
+
+.find_md__filters input{
+	width: 0;
+	height: 0;
+	position: absolute;
+	opacity: 0;
+}
+
+.find_md .shop_form__item{
+	opacity: .5;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.find_md__filters-mob{
+	display: none;
+}
+
+input:checked + .shop_form__item{
+	opacity: 1;
+}
+
+.find_md__filters_toggle{
+	display: none;
 }
 
 @media screen and (max-width: 1279px) {
@@ -509,6 +660,114 @@ html{
 	}
 	.delievery_scroll .max_width{
 		padding-bottom: 0;
+	}
+	.find_md .find_md__form{
+		max-height: inherit;
+	}
+	.find_md .shop__toggle{
+		display: none;
+	}
+	.find_md{
+		padding: 0 40px;
+	}
+	.drop_adress{
+		margin-left: 0;
+	}
+	.drop_city{
+		margin-right: 100px;
+	}
+	.input_drop__down{
+		position: static;
+	}
+	.find_md__title{
+		padding-bottom: 20px;
+	}
+	.find_md .news__search{
+		width: 410px;
+	}
+	.input_drop{
+		margin-bottom: 20px;
+	}
+	.find_md__filters{
+		display: none;
+	}
+	.find_md__filters-mob{
+		display: block;
+	}
+	.find_md__filter_text{
+		display: block;
+		margin-bottom: 10px;
+	}
+	.find_md__filters_toggle{
+		display: block;
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translateY(-50%) translateX(-50%);
+		-ms-transform: translateY(-50%) translateX(-50%);
+		-o-transform: translateY(-50%) translateX(-50%);
+		transform: translateY(-50%) translateX(-50%);
+		padding-right: 40px;
+		left: 50%;
+		font-family: 'FuturaNewBook-Reg';
+		-webkit-transition: all ease .4s;
+		-o-transition: all ease .4s;
+		transition: all ease .4s;
+	}
+	.find_md__filters_toggle:hover{
+		color: #000;
+	}
+	.find_md__filters_toggle:hover::after{
+		background-image: url(../../images/after_arrow.svg);
+	}
+	.open .find_md__filters_toggle::after{
+		display: none;
+	}
+	.find_md__form .shop_form__grp{
+		max-height: 55px;
+		overflow: hidden;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 25px;
+		position: relative;
+		-webkit-transition: all .4s ease;
+		-o-transition: all .4s ease;
+		transition: all .4s ease;
+	}
+	.find_md__form .shop_form__grp.open{
+		max-height: 300px;
+	}
+	.find_md__form .shop_form__grp_title{
+		opacity: 0;
+	}
+	.find_md__form .open .shop_form__grp_title{
+		opacity: 1;
+	}
+	.open .find_md__filters_toggle{
+		-webkit-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+		top: 25px;
+		right: 25px;
+		padding-right: 0;
+		left: auto;
+	}
+	.find_md_results{
+		padding: 0 40px;
+	}
+	.find_md_results__title{
+		padding: 40px 0;
+	}
+	.find_me_results__item{
+		width: 50%;
+	}
+	.find_me_results__item:nth-child(2n){
+		padding-right: 0;
+		padding-left: 20px;
+	}
+	.find_me_results__item:nth-child(3n){
+		padding-right: 20px;
 	}
 }
 
@@ -598,5 +857,42 @@ html{
 	}
 	.delivery_bot{
 		padding-left: 0;
+	}
+	.find_md{
+		padding: 0 20px;
+	}
+	.find_md__title{
+		padding-top: 30px;
+	}
+	.find_md__filters_toggle{
+		padding-right: 18px;
+	}
+	.find_md__form .open .shop_form__grp_title{
+		display: none;
+	}
+	.find_md__form .shop_form__grp_inputs{
+		padding-top: 30px;
+	}
+	.find_md .shop_form__item{
+		display: block;
+		margin-bottom: 4px;
+	}
+	.find_md input:checked + .shop_form__item:after{
+		display: none;
+	}
+	.find_md_results{
+		padding: 0 20px;
+	}
+	.find_me_results__item{
+		width: 100%;
+		margin-bottom: 40px;
+		padding: 0;
+	}
+	.find_me_results__item:nth-child(2n),
+	.find_me_results__item:nth-child(3n){
+		padding: 0;
+	}
+	.find_me_results_wr{
+		padding-bottom: 40px;
 	}
 }
