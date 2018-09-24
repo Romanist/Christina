@@ -274,6 +274,18 @@ $(document).ready(function () {
 		return false;
 	});
 
+	// registr
+
+	$('.regTog').click(function () {
+		$('html, body').addClass('registration')
+		return false;
+	});
+
+	$('.close_reg_form').click(function () {
+		$('html, body').removeClass('registration')
+		return false;
+	});
+
 	// validation
 
 	function validate (_this, trigger) {
@@ -294,6 +306,14 @@ $(document).ready(function () {
 	    	}
 	    }
 	    if (type == 'text') {
+	    	if (!ck_text.test($(_this).val())){
+	    		return false;
+	    	}
+	    	else {
+	    		return true;
+	    	}
+	    }
+	    if (type == 'password') {
 	    	if (!ck_text.test($(_this).val())){
 	    		return false;
 	    	}

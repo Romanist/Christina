@@ -4,9 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Christina</title>
+	<link rel="stylesheet" href="../styles/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="../styles/main.css">
 	<script src="../scripts/libraries/jquery.js"></script>
 	<script src="../scripts/libraries/owl.carousel.min.js"></script>
+	<script src="../scripts/libraries/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<script src="../scripts/main.js"></script>
 </head>
 <body>
@@ -59,7 +62,7 @@
 					<a href="">
 						<img src="../images/SearchIcon.svg" alt="">
 					</a>
-					<a href="">
+					<a class="regTog" href="">
 						<img src="../images/UserIcon.svg" alt="">
 					</a>
 					<a href="">
@@ -108,7 +111,7 @@
 				<a href="">
 					<img src="../images/SearchIconWhite.svg" alt="">
 				</a>
-				<a href="">
+				<a class="regTog" href="">
 					<img src="../images/UserIconWhite.svg" alt="">
 				</a>
 				<a href="">
@@ -557,6 +560,166 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="registr_op_wrapper">
+		<div class="registr_form">
+			<div class="registr_form__bg">
+				<div class="registr_form__head">
+					<a href="#" data-pos=".registr_form__auth" class="regBtn perNavBtn active">Авторизация</a
+					><a href="#" data-pos=".registr_form__reg" class="regBtn perNavBtn">Регистрация</a
+					><a href="#" data-pos=".registr_form__reg_md" class="regBtn perNavBtn">Регистрация врача</a>
+				</div>
+				<a href="#" class="close_reg_form">
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+			<div class="registr_form__content">
+				<div class="person_item registr_form__auth active">
+					<form action="">
+						<div class="registr_form__inputs">
+							<div class="input_wr w_ph">
+								<input id="login" name="login" type="text" class="input">
+								<label class="ph" for="login" class="">Логин</label>
+								<p class="warning">неверный Логин </p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="pass" name="pass" type="text" class="input">
+								<label class="ph" for="pass" class="">Пароль </label>
+								<p class="warning">неверный Пароль  </p>
+							</div>
+						</div>
+						<button class="btn registr_form__auth_btn">Войти</button>
+					</form>
+					<a href="#" class="registr_form__forget_pass">Забыли пароль?</a>
+					<p class="registr_form__text_abs_wr">
+						<span>или</span>
+					</p>
+					<p>Авторизуйтесь через социальную сеть</p>
+					<div class="registr_form__socials">
+						<a href="#" class="footer__social">
+							<img src="../images/footer_social2.svg" alt="">
+							<img class="hov" src="../images/footer_social2_hov.svg" alt="">
+						</a>
+						<a href="#" class="footer__social">
+							<img src="../images/footer_social1.svg" alt="">
+							<img class="hov" src="../images/footer_social1_hov.svg" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="person_item registr_form__reg">
+					<form action="">
+						<div class="registr_form__inputs">
+							<div class="input_wr w_ph">
+								<input id="reg__name" name="reg__name" type="text" class="input">
+								<label class="ph" for="reg__name" class="">Имя</label>
+								<p class="warning">неверное имя</p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="reg__surname" name="reg__surname" type="text" class="input">
+								<label class="ph" for="reg__surname" class="">Фамилия</label>
+								<p class="warning">неверная фамилия</p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="reg__mail" name="reg__mail" type="text" class="input">
+								<label class="ph" for="reg__mail" class="">E-mail</label>
+								<p class="warning">неверный e-mail</p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="reg__tel" name="reg__tel" type="text" class="input">
+								<label class="ph" for="reg__tel" class="">Телефон</label>
+								<p class="warning">неверный телефон</p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="reg__new_pass" name="reg__new_pass" type="password" class="input">
+								<label class="ph" for="reg__new_pass" class="">Пароль </label>
+								<p class="warning">слабый Пароль  </p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="reg__check_new_pass" name="reg__check_new_pass" type="password" class="input">
+								<label class="ph" for="reg__check_new_pass" class="">Повторите пароль </label>
+								<p class="warning">пароли не совпадают  </p>
+							</div>
+						</div>
+						<p>Защита от автоматической регистрации</p>
+						<div class="g-recaptcha" data-sitekey="6Lfx3XEUAAAAACjIjZ42ktvx9h1WjMExu-BskDXy"></div>
+						<div class="find_md__filters registr_form__reg_checks">
+							<input type="checkbox" name="find_md__filter1-mob" id="find_md__filter1-mob">
+							<label for="find_md__filter1-mob" class="find_md__filter_text">
+								Я хотел бы получать информационные e-mail рассылки
+							</label>
+							<input type="checkbox" name="find_md__filter2-mob" id="find_md__filter2-mob">
+							<label for="find_md__filter2-mob" class="find_md__filter_text">
+								 Я хотел бы получать sms-уведомления об акциях
+							</label>
+						</div>
+						<button class="btn registr_form__reg_btn">Зарегистрироваться</button>
+					</form>
+				</div>
+				<div class="person_item registr_form__reg_md">
+					<form action="">
+						<div class="registr_form__inputs">
+							<div class="input_wr w_ph">
+								<input id="reg_md__name" name="reg_md__name" type="text" class="input">
+								<label class="ph" for="reg_md__name" class="">Имя</label>
+								<p class="warning">неверное имя</p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="reg_md__surname" name="reg_md__surname" type="text" class="input">
+								<label class="ph" for="reg_md__surname" class="">Фамилия</label>
+								<p class="warning">неверная фамилия</p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="reg_md__mail" name="reg_md__mail" type="text" class="input">
+								<label class="ph" for="reg_md__mail" class="">E-mail</label>
+								<p class="warning">неверный e-mail</p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="reg_md__metro" name="reg_md__metro" type="text" class="input">
+								<label class="ph" for="reg_md__metro" class="">Ближайшая к работе станция метро</label>
+								<p class="warning">неверная станция</p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="reg_md__tel" name="reg_md__tel" type="text" class="input">
+								<label class="ph" for="reg_md__tel" class="">Телефон</label>
+								<p class="warning">неверный телефон</p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="reg_md__new_pass" name="reg_md__new_pass" type="password" class="input">
+								<label class="ph" for="reg_md__new_pass" class="">Пароль </label>
+								<p class="warning">слабый Пароль  </p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="reg_md__check_new_pass" name="reg_md__check_new_pass" type="password" class="input">
+								<label class="ph" for="reg_md__check_new_pass" class="">Повторите пароль </label>
+								<p class="warning">пароли не совпадают  </p>
+							</div>
+						</div>
+						<div class="find_md__filters registr_form__reg_checks">
+							<input type="checkbox" name="reg_md__club" id="reg_md__club">
+							<label for="reg_md__club" class="find_md__filter_text">
+								У меня есть клубная карта 
+							</label>
+						</div>
+						<p>Защита от автоматической регистрации</p>
+						<div class="g-recaptcha" data-sitekey="6Lfx3XEUAAAAACjIjZ42ktvx9h1WjMExu-BskDXy"></div>
+						<div class="find_md__filters registr_form__reg_checks">
+							<input type="checkbox" name="reg_md__em1" id="reg_md__em1">
+							<label for="reg_md__em1" class="find_md__filter_text">
+								Я хотел бы получать информационные e-mail рассылки
+							</label>
+							<input type="checkbox" name="reg_md__em2" id="reg_md__em2">
+							<label for="reg_md__em2" class="find_md__filter_text">
+								 Я хотел бы получать sms-уведомления об акциях
+							</label>
+						</div>
+						<p>Если Вы являетесь косметологом и хотели бы стать членом клуба «НикОль», необходимо <a href="nickol.ru" class="laned">подать заявку на сайте nickol.ru</a> .</p>
+						<button class="btn registr_form__reg_btn">Зарегистрироваться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>

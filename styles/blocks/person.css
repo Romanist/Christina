@@ -588,6 +588,254 @@ tr.table__title{
 	width: 100%;
 }
 
+.registr_form{
+	width: 630px;
+	/*height: 400px;*/
+	position: absolute;
+	background-color: #fff;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: -1;
+	opacity: 0;
+	-webkit-transition: all ease 1s;
+	-o-transition: all ease 1s;
+	transition: all ease 1s;
+	overflow: hidden;
+}
+
+.registr_op_wrapper{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .2);
+	z-index: -1;
+	opacity: 0;
+	-webkit-transition: all ease 1s;
+	-o-transition: all ease 1s;
+	transition: all ease 1s;
+}
+
+.registration{
+	/*overflow: hidden;*/
+	/*position: relative;*/
+}
+
+.registration .registr_op_wrapper{
+/*.registr_op_wrapper{*/
+	opacity: 1;
+	z-index: 99;
+}
+
+.registration .registr_form{
+/*.registr_form{	*/
+	z-index: 100;
+	opacity: 1;
+	text-align: center;
+}
+
+.registr_form .person_item{
+	width: 100%;
+	min-height: 100px;
+	padding-top: 51px;
+	-webkit-transform: translateX(250%);
+	-ms-transform: translateX(250%);
+	-o-transform: translateX(250%);
+	transform: translateX(250%);
+}
+
+.registr_form .person_item.active{
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+}
+
+.registr_form .person_item.past{
+	-webkit-transform: translateX(-250%);
+	-ms-transform: translateX(-250%);
+	-o-transform: translateX(-250%);
+	transform: translateX(-250%);
+}
+
+.registr_form__content{
+	max-width: 388px;
+	margin: 0 auto;
+	position: relative;
+	/*text-align: left;*/
+}
+
+.registr_form .input{
+	left: 0;
+	text-align: left;
+}
+
+.registr_form__head{
+	padding-top: 100px;
+	/*padding: 100px 80px 0;*/
+	display: inline-block;
+}
+
+.registr_form__bg{
+	background-color: var(--bg-color2);
+}
+
+.regBtn{
+	display: inline-block;
+	width: auto;
+	padding: 0 16px 20px;
+	margin: 0 15px;
+	opacity: .6;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.regBtn.active{
+	background-color: var(--bg-color2);
+	border-bottom: 1px solid black;
+	-webkit-transform: scale(1.2, 1.2);
+	-ms-transform: scale(1.2, 1.2);
+	-o-transform: scale(1.2, 1.2);
+	transform: scale(1.2, 1.2);
+	opacity: 1;
+}
+
+.registr_form__inputs{
+	padding-bottom: 54px;
+}
+
+.registr_form__auth_btn,
+.registr_form__reg_btn{
+	font-size: 18px;
+	background-color: #fff;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.registr_form__reg {
+	text-align: left;
+}
+
+.registr_form__forget_pass{
+	font-size: 16px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	display: inline-block;
+}
+
+.registr_form__text_abs_wr{
+	position: relative;
+	margin-bottom: 23px;
+}
+
+.registr_form__text_abs_wr::before{
+	top: 50%;
+	left: -200px;
+	right: -200px;
+	height: 1px;
+	content: '';
+	position: absolute;
+	background-color: rgba(0, 0, 0, .2);
+}
+
+.registr_form__text_abs_wr span{
+	background-color: #fff;
+	display: inline-block;
+	padding: 0 20px;
+	position: relative;
+	z-index: 2;
+}
+
+.registr_form .footer__social{
+	float: none;
+	margin: 10px 10px 40px;
+	border: 1px solid rgba(0, 0, 0, .4);
+}
+
+.registr_form .footer__social img.hov{
+	opacity: 1;
+}
+
+.registr_form .footer__social:hover{
+	background-color: #000;
+}
+
+.registr_form .footer__social:hover img{
+	opacity: 1;
+}
+
+.registr_form .footer__social:hover img.hov{
+	opacity: 0;
+}
+
+.g-recaptcha{
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+.registr_form__reg_checks{
+	display: block;
+}
+
+.registr_form__reg_checks .find_md__filter_text{
+	display: block;
+	font-size: 16px;
+	margin-right: 0;
+	margin-bottom: 10px;
+}
+
+.registr_form__reg_btn{
+	margin: 0 auto 100px;
+	display: block;
+}
+
+.registr_form__reg_md{
+	text-align: left;
+}
+
+.registr_form p{
+	font-size: 16px;
+}
+
+.registr_form p:nth-last-child(2){
+	margin-bottom: 47px;
+}
+
+.close_reg_form{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	display: block;
+	top: 30px;
+	right: 30px;
+}
+
+.close_reg_form span{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background-color: #000;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.close_reg_form span:last-child{
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
 @media screen and (max-width: 1279px) {
 	.min_height{
 		min-height: 100vh;
@@ -795,5 +1043,23 @@ tr.table__title{
 	.patients .news__search_wr{
 		width: 100%;
 		margin-bottom: 0;
+	}
+	.registr_form{
+		width: 100%;
+	}
+	.regBtn{
+		font-size: 16px;
+		padding: 0 4px 10px;
+		margin: 0 6px;
+	}
+	.registr_form__head{
+		padding-top: 90px;
+	}
+	.regBtn.active{
+		border-width: 3px;
+		font-family: 'FuturaNewBook-Reg';
+	}
+	.registr_form__reg_btn{
+		margin-bottom: 60px;
 	}
 }
