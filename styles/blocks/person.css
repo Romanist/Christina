@@ -499,6 +499,10 @@ tr.table__title{
 	background-color: var(--bg-color2);
 }
 
+.basket_form .btn:hover{
+    background-color: var(--bg-color6);
+}
+
 .auth{
 	position: relative;
 	padding-bottom: 3px;

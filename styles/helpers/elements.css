@@ -50,9 +50,9 @@ b{
 	background-repeat: no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
-	-webkit-transition: all ease .4s;
-	-o-transition: all ease .4s;
-	transition: all ease .4s;
+	-webkit-transition: all ease .3s;
+	-o-transition: all ease .3s;
+	transition: all ease .3s;
 }
 
 .w_arr:hover{

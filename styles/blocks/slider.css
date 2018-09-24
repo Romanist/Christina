@@ -393,6 +393,84 @@
 	margin-top: 30px;
 }
 
+.doctor_slider{
+	background-color: var(--bg-color2);
+}
+
+.doctor_slider__title{
+	padding-top: 48px;
+	padding-bottom: 33px;
+	text-align: left;
+}
+
+.doctor_slider__filters{
+	padding-right: 80px;
+}
+
+.doctor_slider__wr{
+	padding-top: 70px;
+	padding-bottom: 104px;
+	position: relative;
+}
+
+.doctor_slider__head{
+	font-size: 24px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	/*justify-content: center;*/
+}
+
+.doctor_slider__head_half{
+	width: 50%;
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+
+.doctor_slider__head_half:first-child{
+	text-align: right;
+	position: relative;
+	border-right: 1px solid black;
+}
+
+.doctor_slider__img{
+	width: 100%;
+}
+
+.doctor_slider__text{
+	padding: 35px 30px 20px;
+	font-size: 16px;
+	min-height: 90px;
+}
+
+.doctor_slider__item{
+	width: 322px;
+}
+
+.doctor_slider .owl-nav{
+	top: -30px;
+	right: 0;
+}
+
+.doctor_slider__layout{
+	background-color: #fff;
+}
+
+.doctor_slider__wr ul{
+	list-style: initial;
+	list-style-position: inside;
+	line-height: 30px;
+}
+
+.doctor_slider .shop_form__item{
+	opacity: .5;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
 @media screen and (max-width: 1279px) {
 	.slider__title{
 		padding-top: 66px;
@@ -402,6 +480,9 @@
 	}
 	.slider__prod{
 		width: 236px;
+	}
+	.doctor_slider__item{
+		width: 300px;
 	}
 }
 @media screen and (max-width: 1023px) {
@@ -595,6 +676,22 @@
 		margin: 0 -40px;
 		padding: 0 40px;
 	}
+	.doctor_slider{
+		padding: 0 40px;
+	}
+	.doctor_slider__wr{
+		padding-bottom: 44px;
+		padding-top: 40px;
+	}
+	.doctor_slider .owl-nav{
+		top: 50px;
+	}
+	.doctor_slider__wr{
+		position: static;
+	}
+	.doctor_slider__title{
+		padding-top: 38px;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -774,6 +871,17 @@
 	}
 	.patients__slider:last-child .owl-dots{
 		bottom: 200px;
+	}
+	.doctor_slider{
+		padding: 0 20px;
+	}
+	.doctor_slider__wr{
+		max-width: 330px;
+		margin: 0 auto;
+	}
+	.doctor_slider__item{
+		width: 100%;
+		margin-bottom: 40px;
 	}
 }
 

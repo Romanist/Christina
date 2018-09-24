@@ -4,13 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Christina</title>
-	<link rel="stylesheet" href="../styles/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="../styles/main.css">
 	<script src="../scripts/libraries/jquery.js"></script>
 	<script src="../scripts/libraries/owl.carousel.min.js"></script>
 	<script src="../scripts/libraries/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
-    </script>
 	<script src="../scripts/main.js"></script>
 </head>
 <body>
@@ -123,120 +120,113 @@
 		</div>
 	</header>
 	
-	<section class="find_md">
+	<section class="doctor">
 		<div class="max_width">
-			<form action="" class="find_md__form shop__filters">
-				<h2 class="title find_md__title">Найти врача</h2>
-				<div class="news__search_wr find_md__input_wr">
-					<input type="text" placeholder="Введите адрес" class="news__search find_md__input">
+			<div class="smpl_news_article__road">
+				<a href="list_of_articles.html" class="smpl_news_article__link lane_wr">Найти врача</a>
+				<a href="list_of_articles.html" class="smpl_news_article__link">Анастасия Власова</a>
+			</div>
+			<div class="doctor__wr">
+				<img src="../images/doctor3.jpg" alt="" class="doctor__photo">
+				<img src="../images/doctor3_tabl.jpg" alt="" class="doctor__photo doctor__photo_tablet">
+				<img src="../images/doctor3_mob.jpg" alt="" class="doctor__photo doctor__photo_mob">
+				<div class="doctor__about">
+					<h1 class="doctor__title title">Анастасия Власова</h1>
+					<p class="doctor__item">г. Москва, косметолог в салоне (Медицинский Центр «Андролог»)</p>
+					<p class="doctor__item">Оказывает следующие виды процедур: <br> чистка лица, осветление кожи, инъекции гк.</p>
+					<p class="doctor__item">Высшее медицинское образование. Опыт работы косметологом 9 лет.</p>
+					<a href="#" class="btn doctor__btn">Запросить промо-код</a>
 				</div>
-				<p class="find_md__title_low">Или выберите вручную</p>
-				<div class="input_drop drop_city">
-					<input type="text" class="input_drop__hdn">
-					<p class="input_drop__desc">город</p>
-					<a href="#" class="input_drop__toggle">Москва</a>
-					<div class="input_drop__down">
-						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
-						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
-						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
-						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
-						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
-						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
-						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
-						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
-						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
-						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
-						<div class="input_drop__op"></div>
-					</div>				
-				</div>
-				<div class="input_drop drop_adress">
-					<input type="text" class="input_drop__hdn">
-					<p class="input_drop__desc">станция метро</p>
-					<a href="#" class="input_drop__toggle">Академическая</a>
-					<div class="input_drop__down">
-						<a href="#" data-cont="Бабушкинская" class="input_drop__item">Бабушкинская</a>
-						<a href="#" data-cont="Владыкино" class="input_drop__item">Владыкино</a>
-						<a href="#" data-cont="Выхино" class="input_drop__item">Выхино</a>
-						<a href="#" data-cont="пушкинская" class="input_drop__item">пушкинская</a>
-						<a href="#" data-cont="Дмитровская" class="input_drop__item">Дмитровская</a>
-						<a href="#" data-cont="Домодедовская" class="input_drop__item">Домодедовская</a>
-						<a href="#" data-cont="Добрынинская" class="input_drop__item">Добрынинская</a>
-						<a href="#" data-cont="Добрынинская" class="input_drop__item">Добрынинская</a>
-						<div class="input_drop__op"></div>
-					</div>				
-				</div>
-				<div class="find_md__filters find_md__filters-mob">
-					<input type="checkbox" name="find_md__filter1-mob" id="find_md__filter1-mob">
-					<label for="find_md__filter1-mob" class="find_md__filter_text">
-						Косметологи
-					</label>
-					<input type="checkbox" name="find_md__filter2-mob" id="find_md__filter2-mob">
-					<label for="find_md__filter2-mob" class="find_md__filter_text">
-						Косметические салоны
-					</label>
-				</div>
-				<div class="shop_form__grp">
-					<p class="shop_form__grp_title">Фильтр поиска</p>
-					<div class="find_md__filters">
-						<input type="checkbox" name="find_md__filter1" id="find_md__filter1">
-						<label for="find_md__filter1" class="find_md__filter_text">
-							Косметологи
-						</label>
-						<input type="checkbox" name="find_md__filter2" id="find_md__filter2">
-						<label for="find_md__filter2" class="find_md__filter_text">
-							Косметические салоны
-						</label>
-					</div>
-					<div class="shop_form__grp_inputs">
-						<input type="checkbox" name="prod_type1" id="prod_type1">
-						<label for="prod_type1" class="shop_form__item">
-							чистка лица
-						</label>
-						<input type="checkbox" name="prod_type2" id="prod_type2">
-						<label for="prod_type2" class="shop_form__item">
-							осветление кожи 
-						</label>
-						<input type="checkbox" name="prod_type3" id="prod_type3">
-						<label for="prod_type3" class="shop_form__item">
-							криотерапия
-						</label>
-						<input type="checkbox" name="prod_type4" id="prod_type4">
-						<label for="prod_type4" class="shop_form__item">
-							инъекции ГК
-						</label>
-						<input type="checkbox" name="prod_type5" id="prod_type5">
-						<label for="prod_type5" class="shop_form__item">
-							инъекции ботулического токсина
-						</label>
-					</div>
-					<a href="#" class="find_md__filters_toggle w_arr">Фильтр по услугам</a>
-				</div>
-				<button class="btn shop_form__btn findMDBtn">Найти</button>
-			</form>
+			</div>
 		</div>
-	</section>	
-	
-	<div id="map" style="width: 100%; height: 421px"></div>
+	</section>
 
-	<section class="find_md_results">
+	<section class="doctor_slider">
 		<div class="max_width">
-			<h2 class="find_md_results__title title">Результат поиска</h2>
-			<div class="find_me_results_wr">
-				<div class="find_me_results__item">
-					<img src="../images/doctor.jpg" alt="" class="find_me_results__img">
-					<p class="find_me_results__name">Мария Цатурова</p>
-					<p class="find_me_results__desc">г. Москва, косметолог в салоне (Медицинский Центр «Андролог»)</p>
-					<p class="find_me_results__desc">Оказывает следующие виды процедур: чистка лица, осветление кожи, инъекции гк.</p>
-					<p class="find_me_results__desc">Высшее медицинское образование. Опыт работы косметологом 9 лет.</p>
-					<a href="#" class="find_me_results__link w_arr">Подробнее</a>
+			<h2 class="doctor_slider__title title">Работы</h2>
+			<div class="doctor_slider__filters">
+				<p class="shop_form__grp_title">Отсортировать по услугам</p>
+				<div class="shop_form__grp_inputs">
+					<input type="checkbox" name="prod_type0" id="prod_type0">
+					<label for="prod_type0" class="shop_form__item">
+						всё
+					</label>
+					<input type="checkbox" name="prod_type1" id="prod_type1">
+					<label for="prod_type1" class="shop_form__item">
+						чистка лица
+					</label>
+					<input type="checkbox" name="prod_type2" id="prod_type2">
+					<label for="prod_type2" class="shop_form__item">
+						осветление кожи 
+					</label>
+					<input type="checkbox" name="prod_type3" id="prod_type3">
+					<label for="prod_type3" class="shop_form__item">
+						криотерапия
+					</label>
+					<input type="checkbox" name="prod_type4" id="prod_type4">
+					<label for="prod_type4" class="shop_form__item">
+						инъекции ГК
+					</label>
+					<input type="checkbox" name="prod_type5" id="prod_type5">
+					<label for="prod_type5" class="shop_form__item">
+						инъекции ботулического токсина
+					</label>
 				</div>
-				<div class="find_me_results__item">
-					<img src="../images/doctor2.jpg" alt="" class="find_me_results__img">
-					<p class="find_me_results__name">Анастасия Власова</p>
-					<p class="find_me_results__desc">г. Москва, косметолог в салоне (Медицинский Центр «Андролог»)</p>
-					<p class="find_me_results__desc">Оказывает следующие виды процедур: чистка лица, осветление кожи, инъекции гк.</p>
-					<p class="find_me_results__desc">Высшее медицинское образование. Опыт работы косметологом 9 лет.</p>
-					<a href="#" class="find_me_results__link w_arr">Подробнее</a>
+			</div>
+			<div class="doctor_slider__wr">
+				<div class="doctor_slider__item">
+					<div class="doctor_slider__head">
+						<div class="doctor_slider__head_half">До</div>
+						<div class="doctor_slider__head_half">После</div>
+					</div>
+					<div class="doctor_slider__layout">
+						<img src="../images/md_slider1.jpg" alt="" class="doctor_slider__img">
+						<div class="doctor_slider__text">
+							<ul>
+								<li>Чистка лица</li>
+								<li>Криотерапия</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="doctor_slider__item">
+					<div class="doctor_slider__head">
+						<div class="doctor_slider__head_half">До</div>
+						<div class="doctor_slider__head_half">После</div>
+					</div>
+					<div class="doctor_slider__layout">
+						<img src="../images/md_slider2.jpg" alt="" class="doctor_slider__img">
+						<div class="doctor_slider__text">
+							Для избавления от синяков под глазами и выравнивания цвета кожи были сделаны две процедуры: мезотерапия и чистка лица 
+						</div>
+					</div>
+				</div>
+				<div class="doctor_slider__item">
+					<div class="doctor_slider__head">
+						<div class="doctor_slider__head_half">До</div>
+						<div class="doctor_slider__head_half">После</div>
+					</div>
+					<div class="doctor_slider__layout">
+						<img src="../images/md_slider3.jpg" alt="" class="doctor_slider__img">
+						<div class="doctor_slider__text">
+							<ul>
+								<li>Чистка лица</li>
+								<li>Инъекция ботулического токсина</li>
+							</ul> 
+						</div>
+					</div>
+				</div>
+				<div class="doctor_slider__item">
+					<div class="doctor_slider__head">
+						<div class="doctor_slider__head_half">До</div>
+						<div class="doctor_slider__head_half">После</div>
+					</div>
+					<div class="doctor_slider__layout">
+						<img src="../images/md_slider1.jpg" alt="" class="doctor_slider__img">
+						<div class="doctor_slider__text">
+							Для избавления от синяков под глазами и выравнивания цвета кожи были сделаны две процедуры: мезотерапия и чистка лица 
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -470,8 +470,37 @@ $(document).ready(function () {
 		items: 1,
 		loop: true,
 		dots: false,
-	  nav: true
+	  	nav: true
 	});	
+
+	
+
+	function sliderDoct() {
+		if ($(window).width() >= 768) {
+			var doctorSlider = $('.doctor_slider__wr').owlCarousel({
+				items: 2,
+				loop: false,
+				dots: false,
+			  	nav: true,
+			  	responsive: {
+			  		1024: {
+			  			items: 3
+			  		}
+			  	}
+			});	
+		} else {
+			$('.doctor_slider__wr').trigger('destroy.owl.carousel').addClass('off')
+		}
+	}
+
+	sliderDoct()
+	$(window).resize(sliderDoct)
+
+	// doctorSlider.on('resize.owl.carousel', function (e) {
+	// 	if ($(window).width() < 768) {
+	// 		$('.doctor_slider__wr').trigger('destroy.owl.carousel').addClass('off')
+	// 	}		
+	// });
 
 	var owlSliderMob2;
 	// sliderCreateMob();
