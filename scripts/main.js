@@ -277,13 +277,46 @@ $(document).ready(function () {
 	// registr
 
 	$('.regTog').click(function () {
-		$('html, body').addClass('registration')
+		$('html, body').addClass('registration');
+		regPopHeight();
 		return false;
 	});
 
 	$('.close_reg_form').click(function () {
-		$('html, body').removeClass('registration')
+		$('html, body').removeClass('registration');
 		return false;
+	});
+
+	$('.regBtn').click(function () {
+		regPopHeight();
+		return false;
+	});
+
+	function regPopHeight () {
+		var windHeight = $(window).height();
+		var popUpHeight = $('.registr_form').height();
+		$('.registr_form').removeClass('center');
+		if (popUpHeight >= windHeight) {
+			$('body, html').height(popUpHeight);
+		} else{
+			$('body, html').height(windHeight);
+			$('.registr_form').addClass('center');
+		}
+	}
+
+	$('.registr_form .btn').click(function () {
+		var trigger = true;
+		var form = $(this).closest('form')
+		console.log($(form).find('.input'))
+		$(form).find('.input').each(function( index ) {
+			var _this = this;
+			if (!validate(_this, trigger)) {
+				$(this).closest('.input_wr').addClass('wrong');
+				trigger = false;
+			}
+		});
+
+		if (!trigger) return false;
 	});
 
 	// validation
@@ -297,6 +330,7 @@ $(document).ready(function () {
 	    var ck_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
 
 	    var type = $(_this).attr('name');
+	    console.log(type)
 	    if (type == 'number') {
 	    	if (!ck_number.test($(_this).val())){
 	    		return false;

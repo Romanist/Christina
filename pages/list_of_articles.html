@@ -289,12 +289,12 @@
 					<form action="">
 						<div class="registr_form__inputs">
 							<div class="input_wr w_ph">
-								<input id="login" name="login" type="text" class="input">
+								<input id="login" name="text" type="text" class="input">
 								<label class="ph" for="login" class="">Логин</label>
 								<p class="warning">неверный Логин </p>
 							</div>
 							<div class="input_wr w_ph">
-								<input id="pass" name="pass" type="text" class="input">
+								<input id="pass" name="password" type="text" class="input">
 								<label class="ph" for="pass" class="">Пароль </label>
 								<p class="warning">неверный Пароль  </p>
 							</div>
@@ -321,32 +321,32 @@
 					<form action="">
 						<div class="registr_form__inputs">
 							<div class="input_wr w_ph">
-								<input id="reg__name" name="reg__name" type="text" class="input">
+								<input id="reg__name" name="text" type="text" class="input">
 								<label class="ph" for="reg__name" class="">Имя</label>
 								<p class="warning">неверное имя</p>
 							</div>
 							<div class="input_wr w_ph">
-								<input id="reg__surname" name="reg__surname" type="text" class="input">
+								<input id="reg__surname" name="text" type="text" class="input">
 								<label class="ph" for="reg__surname" class="">Фамилия</label>
 								<p class="warning">неверная фамилия</p>
 							</div>
 							<div class="input_wr w_ph">
-								<input id="reg__mail" name="reg__mail" type="text" class="input">
+								<input id="reg__mail" name="mail" type="text" class="input">
 								<label class="ph" for="reg__mail" class="">E-mail</label>
 								<p class="warning">неверный e-mail</p>
 							</div>
 							<div class="input_wr w_ph">
-								<input id="reg__tel" name="reg__tel" type="text" class="input">
+								<input id="reg__tel" name="tel" type="text" class="input">
 								<label class="ph" for="reg__tel" class="">Телефон</label>
 								<p class="warning">неверный телефон</p>
 							</div>
 							<div class="input_wr w_ph">
-								<input id="reg__new_pass" name="reg__new_pass" type="password" class="input">
+								<input id="reg__new_pass" name="password" type="password" class="input">
 								<label class="ph" for="reg__new_pass" class="">Пароль </label>
 								<p class="warning">слабый Пароль  </p>
 							</div>
 							<div class="input_wr w_ph">
-								<input id="reg__check_new_pass" name="reg__check_new_pass" type="password" class="input">
+								<input id="reg__check_new_pass" name="password" type="password" class="input">
 								<label class="ph" for="reg__check_new_pass" class="">Повторите пароль </label>
 								<p class="warning">пароли не совпадают  </p>
 							</div>
@@ -370,37 +370,55 @@
 					<form action="">
 						<div class="registr_form__inputs">
 							<div class="input_wr w_ph">
-								<input id="reg_md__name" name="reg_md__name" type="text" class="input">
+								<input id="reg_md__name" name="text" type="text" class="input">
 								<label class="ph" for="reg_md__name" class="">Имя</label>
 								<p class="warning">неверное имя</p>
 							</div>
 							<div class="input_wr w_ph">
-								<input id="reg_md__surname" name="reg_md__surname" type="text" class="input">
+								<input id="reg_md__surname" name="text" type="text" class="input">
 								<label class="ph" for="reg_md__surname" class="">Фамилия</label>
 								<p class="warning">неверная фамилия</p>
 							</div>
 							<div class="input_wr w_ph">
-								<input id="reg_md__mail" name="reg_md__mail" type="text" class="input">
+								<input id="reg_md__mail" name="mail" type="text" class="input">
 								<label class="ph" for="reg_md__mail" class="">E-mail</label>
 								<p class="warning">неверный e-mail</p>
 							</div>
+							<div class="input_drop drop_city">
+								<input type="text" class="input_drop__hdn">
+								<p class="input_drop__desc">город</p>
+								<a href="#" class="input_drop__toggle">Москва</a>
+								<div class="input_drop__down">
+									<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+									<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+									<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+									<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+									<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+									<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+									<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+									<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+									<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+									<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+									<div class="input_drop__op"></div>
+								</div>				
+							</div>
 							<div class="input_wr w_ph">
-								<input id="reg_md__metro" name="reg_md__metro" type="text" class="input">
+								<input id="reg_md__metro" name="text" type="text" class="input">
 								<label class="ph" for="reg_md__metro" class="">Ближайшая к работе станция метро</label>
 								<p class="warning">неверная станция</p>
 							</div>
 							<div class="input_wr w_ph">
-								<input id="reg_md__tel" name="reg_md__tel" type="text" class="input">
+								<input id="reg_md__tel" name="tel" type="text" class="input">
 								<label class="ph" for="reg_md__tel" class="">Телефон</label>
 								<p class="warning">неверный телефон</p>
 							</div>
 							<div class="input_wr w_ph">
-								<input id="reg_md__new_pass" name="reg_md__new_pass" type="password" class="input">
+								<input id="reg_md__new_pass" name="password" type="password" class="input">
 								<label class="ph" for="reg_md__new_pass" class="">Пароль </label>
 								<p class="warning">слабый Пароль  </p>
 							</div>
 							<div class="input_wr w_ph">
-								<input id="reg_md__check_new_pass" name="reg_md__check_new_pass" type="password" class="input">
+								<input id="reg_md__check_new_pass" name="password" type="password" class="input">
 								<label class="ph" for="reg_md__check_new_pass" class="">Повторите пароль </label>
 								<p class="warning">пароли не совпадают  </p>
 							</div>

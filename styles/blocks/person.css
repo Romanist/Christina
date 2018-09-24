@@ -607,6 +607,14 @@ tr.table__title{
 	overflow: hidden;
 }
 
+.registr_form.center{
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
 .registr_op_wrapper{
 	position: absolute;
 	left: 0;
@@ -624,6 +632,11 @@ tr.table__title{
 .registration{
 	/*overflow: hidden;*/
 	/*position: relative;*/
+    overflow-x: hidden;
+}
+
+body.registration{
+	overflow: hidden;
 }
 
 .registration .registr_op_wrapper{
@@ -834,6 +847,11 @@ tr.table__title{
 	-ms-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
+}
+
+.registr_form .input_drop{
+	margin-bottom: 0;
+	margin-top: 10px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -1061,5 +1079,10 @@ tr.table__title{
 	}
 	.registr_form__reg_btn{
 		margin-bottom: 60px;
+	}
+	.registr_form .input_drop__down{
+		margin-top: 0;
+		padding-top: 0;
+		margin-bottom: -6px;
 	}
 }
