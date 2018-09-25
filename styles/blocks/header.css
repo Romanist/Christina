@@ -358,6 +358,10 @@ a .basket_number{
 	bottom: 10px;
 }
 
+.mob_sel{
+	display: none;
+}
+
 @media screen and (max-width: 1100px) {
 	.nav__item{
 		padding: 10px 32px;
@@ -484,7 +488,7 @@ a .basket_number{
     	text-align: right;
 	}
 	.header__right .input_drop.open{
-		left: -100px;
+		/*left: -100px;*/
 		width: 230px;	
 		text-align: left;	
 	}
@@ -563,11 +567,27 @@ a .basket_number{
 		clear: both;
 	}
 	.header__right .drop_city{
-		max-width: 115px;
+		max-width: 62px;
 		/*white-space: nowrap;*/
 		text-overflow: ellipsis; 
 		max-height: 20px;
 		display: inline-block;
+	}
+	.header__right .input_drop__down{
+		height: 320px;
+	}
+	.header__right .input_drop__toggle::after{
+		display: none;
+	}
+	.header__right .input_drop__toggle,
+	.input_drop__down{
+		display: none;
+	}
+	.mob_sel{
+		all: unset;
+		display: block;
+		width: 100%;
+		text-align: right;
 	}
 }
 
