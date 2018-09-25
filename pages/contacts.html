@@ -10,6 +10,7 @@
 	<script src="../scripts/libraries/owl.carousel.min.js"></script>
 	<script src="../scripts/libraries/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="../scripts/main.js"></script>
 </head>
 <body>
@@ -55,13 +56,36 @@
 				<span class="header_color">
 					ваш город: 
 				</span>
-				<span class="header_color underline_header">
+				<!-- <a href="#" class="header_color underline_header">
 					москва
-				</span>
+				</a> -->
+				<div class="input_drop drop_city">
+					<a href="#" class="input_drop__toggle">Москва</a>
+					<div class="input_drop__down">
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Петропавловск-Камчатский" class="input_drop__item">Петропавловск-Камчатский</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<div class="input_drop__op"></div>
+					</div>				
+				</div>
 				<div class="header__right_btns">
-					<a href="">
-						<img src="../images/SearchIcon.svg" alt="">
-					</a>
+					<div class="header__search_wr">
+						<a class="header__search_toggle" href="#">
+							<img src="../images/SearchIcon.svg" alt="">
+						</a>
+						<input type="text" placeholder="Найти" class="header__search">
+						<a href="#" class="close_reg_form header__search_close">
+							<span></span>
+							<span></span>
+						</a>
+					</div>
 					<a class="regTog" href="">
 						<img src="../images/UserIcon.svg" alt="">
 					</a>
@@ -108,9 +132,19 @@
 				</li>
 			</ul>
 			<div class="header__mob_btns">
-				<a href="">
+				<!-- <a href="">
 					<img src="../images/SearchIconWhite.svg" alt="">
-				</a>
+				</a> -->
+				<div class="header__search_wr">
+					<a class="header__search_toggle" href="#">
+						<img src="../images/SearchIconWhite.svg" alt="">
+					</a>
+					<input type="text" placeholder="Найти" class="header__search">
+					<a href="#" class="close_reg_form header__search_close">
+						<span></span>
+						<span></span>
+					</a>
+				</div>
 				<a class="regTog" href="">
 					<img src="../images/UserIconWhite.svg" alt="">
 				</a>
@@ -174,8 +208,10 @@
 				<a href="#" class="contacts__data laned">Ознакомиться с реквизитами</a>
 			</div>
 			<div class="scroll_HDIW__text">
-				<iframe class="contacts_map__moscow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577336.7638984495!2d36.82513038949304!3d55.5807480820225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sby!4v1537189842974" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				<iframe class="contacts_map__peter" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255542.61620286488!2d29.659494418738213!3d59.975650318450356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sby!4v1537190071350" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<!-- <iframe class="contacts_map__moscow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577336.7638984495!2d36.82513038949304!3d55.5807480820225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sby!4v1537189842974" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+				<iframe id="map" class="contacts_map__moscow" src="https://yandex.by/map-widget/v1/-/CBBVj-feXC" width="100%" height="450" frameborder="1" allowfullscreen="true"></iframe>
+				<!-- <iframe class="contacts_map__peter" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255542.61620286488!2d29.659494418738213!3d59.975650318450356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sby!4v1537190071350" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+				<iframe id="map" class="contacts_map__peter" src="https://yandex.by/map-widget/v1/-/CBBVjTfXCC" width="100%" height="450" frameborder="1" allowfullscreen="true"></iframe>
 			</div>
 		</div>
 	</section>
@@ -456,6 +492,49 @@
 						</div>
 						<p>Если Вы являетесь косметологом и хотели бы стать членом клуба «НикОль», необходимо <a href="nickol.ru" class="laned">подать заявку на сайте nickol.ru</a> .</p>
 						<button class="btn registr_form__reg_btn">Зарегистрироваться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup_op_wrapper">
+		<div class="registr_form">
+			<div class="registr_form__bg">
+				<div class="registr_form__head">
+					<h3 class="pop_up__title title">Связаться с нами</h3>
+				</div>
+				<a href="#" class="close_reg_form">
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+			<div class="registr_form__content">
+				<div class="person_item registr_form__mess active">
+					<form action="">
+						<div class="registr_form__inputs">
+							<div class="input_wr w_ph">
+								<input id="reg__name" name="text" type="text" class="input">
+								<label class="ph" for="reg__name" class="">ФИО</label>
+								<p class="warning">неверное ФИО</p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="reg__mail" name="mail" type="text" class="input">
+								<label class="ph" for="reg__mail" class="">E-mail</label>
+								<p class="warning">неверный e-mail</p>
+							</div>
+							<div class="input_wr w_ph textarea_wr">
+								<!-- <input id="reg__tel" name="tel" type="text" class="input">
+								<label class="ph" for="reg__tel" class="">Телефон</label>
+								<p class="warning">неверный телефон</p> -->
+								<textarea name="text" class="input textarea" id="mess" cols="30" rows="10"></textarea>
+								<label class="ph" for="mess" class="">Сообщение</label>
+								<p class="warning">введите сообщение</p>
+							</div>
+						</div>
+						<p>Защита от спама</p>
+						<div class="g-recaptcha" data-sitekey="6Lfx3XEUAAAAACjIjZ42ktvx9h1WjMExu-BskDXy"></div>
+						<button class="btn registr_form__reg_btn">Отправить</button>
 					</form>
 				</div>
 			</div>

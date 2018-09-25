@@ -615,7 +615,8 @@ tr.table__title{
 	transform: translate(-50%, -50%);
 }
 
-.registr_op_wrapper{
+.registr_op_wrapper,
+.popup_op_wrapper{
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -629,23 +630,27 @@ tr.table__title{
 	transition: all ease 1s;
 }
 
-.registration{
+.registration,
+.pop_up{
 	/*overflow: hidden;*/
 	/*position: relative;*/
     overflow-x: hidden;
 }
 
-body.registration{
+body.registration,
+body.pop_up{
 	overflow: hidden;
 }
 
-.registration .registr_op_wrapper{
+.registration .registr_op_wrapper,
+.pop_up .popup_op_wrapper{
 /*.registr_op_wrapper{*/
 	opacity: 1;
 	z-index: 99;
 }
 
-.registration .registr_form{
+.registration .registr_form,
+.pop_up .registr_form{
 /*.registr_form{	*/
 	z-index: 100;
 	opacity: 1;
@@ -852,6 +857,99 @@ body.registration{
 .registr_form .input_drop{
 	margin-bottom: 0;
 	margin-top: 10px;
+}
+
+.pop_up__title{
+	font-size: 40px;
+	padding-bottom: 40px;
+	padding-top: 0;
+}
+
+.pop_up .g-recaptcha{
+	padding-bottom: 60px;
+}
+
+.textarea{
+	height: 88%;
+}
+
+.textarea_wr{
+	height: 150px;
+}
+
+.textarea + .ph,
+.textarea_wr.wrong:after{
+	top: 84%;
+}
+
+.registr_form .registr_form__mess.person_item{
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+	position: relative;
+}
+
+.registr_form__mess,
+.registr_form__promo{
+	text-align: left;
+}
+
+.drag_wr{
+	/*position: absolute;
+	left: 0;
+	right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);*/
+    height: 15px;
+    /*background-color: red;*/
+    margin-top: 20px;
+    position: relative;
+}
+
+.drag_wr::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 1px;
+	top: 7px;
+	background-color: rgba(0, 0, 0, .2);
+}
+
+.mark__drag{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #000;
+	top: 0;
+	left: calc(50% - 7.5px);
+	z-index: 101;
+	/*-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);*/
+}
+
+.drag_inp{
+	border-bottom: none;
+	padding-top: 10px;
+}
+
+.drag_inp__mark{
+	float: right;
+}
+
+.hid{
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	z-index: -2;
 }
 
 @media screen and (max-width: 1279px) {
@@ -1084,5 +1182,8 @@ body.registration{
 		margin-top: 0;
 		padding-top: 0;
 		margin-bottom: -6px;
+	}
+	.pop_up__title{
+		font-size: 30px;
 	}
 }

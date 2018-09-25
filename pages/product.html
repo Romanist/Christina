@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../styles/main.css">
 	<script src="../scripts/libraries/jquery.js"></script>
 	<script src="../scripts/libraries/owl.carousel.min.js"></script>
+	<script src="../scripts/libraries/jquery-ui.js"></script>
 	<script src="../scripts/libraries/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<script src="../scripts/main.js"></script>
@@ -55,13 +56,36 @@
 				<span class="header_color">
 					ваш город: 
 				</span>
-				<span class="header_color underline_header">
+				<!-- <a href="#" class="header_color underline_header">
 					москва
-				</span>
+				</a> -->
+				<div class="input_drop drop_city">
+					<a href="#" class="input_drop__toggle">Москва</a>
+					<div class="input_drop__down">
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Петропавловск-Камчатский" class="input_drop__item">Петропавловск-Камчатский</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<div class="input_drop__op"></div>
+					</div>				
+				</div>
 				<div class="header__right_btns">
-					<a href="">
-						<img src="../images/SearchIcon.svg" alt="">
-					</a>
+					<div class="header__search_wr">
+						<a class="header__search_toggle" href="#">
+							<img src="../images/SearchIcon.svg" alt="">
+						</a>
+						<input type="text" placeholder="Найти" class="header__search">
+						<a href="#" class="close_reg_form header__search_close">
+							<span></span>
+							<span></span>
+						</a>
+					</div>
 					<a class="regTog" href="">
 						<img src="../images/UserIcon.svg" alt="">
 					</a>
@@ -108,9 +132,19 @@
 				</li>
 			</ul>
 			<div class="header__mob_btns">
-				<a href="">
+				<!-- <a href="">
 					<img src="../images/SearchIconWhite.svg" alt="">
-				</a>
+				</a> -->
+				<div class="header__search_wr">
+					<a class="header__search_toggle" href="#">
+						<img src="../images/SearchIconWhite.svg" alt="">
+					</a>
+					<input type="text" placeholder="Найти" class="header__search">
+					<a href="#" class="close_reg_form header__search_close">
+						<span></span>
+						<span></span>
+					</a>
+				</div>
 				<a class="regTog" href="">
 					<img src="../images/UserIconWhite.svg" alt="">
 				</a>
@@ -733,6 +767,59 @@
 						</div>
 						<p>Если Вы являетесь косметологом и хотели бы стать членом клуба «НикОль», необходимо <a href="nickol.ru" class="laned">подать заявку на сайте nickol.ru</a> .</p>
 						<button class="btn registr_form__reg_btn">Зарегистрироваться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup_op_wrapper">
+		<div class="registr_form">
+			<div class="registr_form__bg">
+				<div class="registr_form__head">
+					<h3 class="pop_up__title title">Написать отзыв</h3>
+				</div>
+				<a href="#" class="close_reg_form">
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+			<div class="registr_form__content">
+				<div class="person_item registr_form__promo active">
+					<form action="">
+						<div class="registr_form__inputs">
+							<div class="input_wr w_ph">
+								<input id="reg__name" name="text" type="text" class="input">
+								<label class="ph" for="reg__name" class="">ФИО</label>
+								<p class="warning">неверное ФИО</p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="reg__mail" name="mail" type="text" class="input">
+								<label class="ph" for="reg__mail" class="">E-mail</label>
+								<p class="warning">неверный e-mail</p>
+							</div>
+							<div class="input_wr w_ph textarea_wr">
+								<!-- <input id="reg__tel" name="tel" type="text" class="input">
+								<label class="ph" for="reg__tel" class="">Телефон</label>
+								<p class="warning">неверный телефон</p> -->
+								<textarea name="text" class="input textarea" id="mess" cols="30" rows="10"></textarea>
+								<label class="ph" for="mess" class="">Отзыв</label>
+								<p class="warning">введите Отзыв</p>
+							</div>
+							<div class="input_wr drag_inp w_ph">
+								<!-- <input id="reg__mail" name="mail" type="text" class="input"> -->
+								<input type="number" class="hid">
+								<!-- <label class="ph" for="reg__mail" class="">Ваша оценка препарата</label> -->
+								<p>Ваша оценка препарата <span class="drag_inp__mark">2.5</span></p>
+								<div class="drag_wr mark">
+									<a href="#" class="mark__drag"></a>
+								</div>
+								<p class="warning">поставьте оценку</p>
+							</div>
+						</div>
+						<p>Защита от спама</p>
+						<div class="g-recaptcha" data-sitekey="6Lfx3XEUAAAAACjIjZ42ktvx9h1WjMExu-BskDXy"></div>
+						<button class="btn registr_form__reg_btn">Отправить</button>
 					</form>
 				</div>
 			</div>

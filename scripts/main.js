@@ -274,27 +274,76 @@ $(document).ready(function () {
 		return false;
 	});
 
+	// search
+
+	$('.header__search_toggle').click(function () {
+		$('.header__search_wr').addClass('active');
+		return false;
+	});
+
+	$('.header__search_close').click(function () {
+		$('.header__search_wr').removeClass('active');
+		return false;
+	});
+
 	// registr
+
+	$('.contacts__communicate').click(function () {
+		$('html, body').addClass('pop_up');
+		var _this = '.pop_up__title';
+		regPopHeight(_this);
+		return false;
+	});
+
+	$('.doctor__btn').click(function () {
+		$('html, body').addClass('pop_up');
+		var _this = '.pop_up__title';
+		regPopHeight(_this);
+		return false;
+	});
+
+	$('.prod_comments__btn').click(function () {
+		$('html, body').addClass('pop_up');
+		var _this = '.pop_up__title';
+		regPopHeight(_this);
+		return false;
+	});
+
+	if($( ".mark__drag" ).length) {
+		$( ".mark__drag" ).draggable({
+		  addClasses: false,
+		  axis: "x",
+		  containment: ".drag_wr",
+		  drag: function( event, ui ) {
+		  	var tenh = $('.drag_wr').width()/10;
+		  	$('.drag_inp__mark').text(Math.round(ui.position.left/tenh)/2);
+		  	$('.drag_inp .hid').val(Math.round(ui.position.left/tenh)/2);
+		  }
+		});
+	}
 
 	$('.regTog').click(function () {
 		$('html, body').addClass('registration');
-		regPopHeight();
+		var _this = '.person_item.active';
+		regPopHeight(_this);
 		return false;
 	});
 
 	$('.close_reg_form').click(function () {
-		$('html, body').removeClass('registration');
+		$('html, body').removeClass('registration pop_up');
 		return false;
 	});
 
 	$('.regBtn').click(function () {
-		regPopHeight();
+		var _this = this;
+		regPopHeight(_this);
 		return false;
 	});
 
-	function regPopHeight () {
+	function regPopHeight (_this) {
 		var windHeight = $(window).height();
-		var popUpHeight = $('.registr_form').height();
+		// var popUpHeight = $('.registr_form').height();
+		var popUpHeight = $(_this).closest('.registr_form').height();
 		$('.registr_form').removeClass('center');
 		if (popUpHeight >= windHeight) {
 			$('body, html').height(popUpHeight);
@@ -564,7 +613,7 @@ $(document).ready(function () {
 	});
 
 	owlSliderMob.on('resize.owl.carousel', function (e) {
-		console.log($(window).width())
+		// console.log($(window).width())
 		if (($(window).width() <=1023) && ($(window).width() >=767)) {
 			return false
 		}

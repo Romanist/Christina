@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Christina</title>
+	<link rel="stylesheet" href="styles/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="styles/main.css">
 	<script src="scripts/libraries/jquery.js"></script>
 	<script src="scripts/libraries/owl.carousel.min.js"></script>
@@ -54,13 +55,36 @@
 				<span class="header_color">
 					ваш город: 
 				</span>
-				<span class="header_color underline_header">
+				<!-- <a href="#" class="header_color underline_header">
 					москва
-				</span>
+				</a> -->
+				<div class="input_drop drop_city">
+					<a href="#" class="input_drop__toggle">Москва</a>
+					<div class="input_drop__down">
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Петропавловск-Камчатский" class="input_drop__item">Петропавловск-Камчатский</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<div class="input_drop__op"></div>
+					</div>				
+				</div>
 				<div class="header__right_btns">
-					<a href="">
-						<img src="images/SearchIcon.svg" alt="">
-					</a>
+					<div class="header__search_wr">
+						<a class="header__search_toggle" href="#">
+							<img src="images/SearchIcon.svg" alt="">
+						</a>
+						<input type="text" placeholder="Найти" class="header__search">
+						<a href="#" class="close_reg_form header__search_close">
+							<span></span>
+							<span></span>
+						</a>
+					</div>
 					<a class="regTog" href="">
 						<img src="images/UserIcon.svg" alt="">
 					</a>
@@ -72,7 +96,7 @@
 			</div>
 		</div>
 		<div class="header__logo">
-			<!-- <img src="images/logo.svg" alt=""> -->
+			<!-- <img src="../images/logo.svg" alt=""> -->
 			360° вокруг процедуры
 		</div>
 		<div class="header__logo_mob"></div>
@@ -107,9 +131,19 @@
 				</li>
 			</ul>
 			<div class="header__mob_btns">
-				<a href="">
-					<img src="images/SearchIconWhite.svg" alt="">
-				</a>
+				<!-- <a href="">
+					<img src="../images/SearchIconWhite.svg" alt="">
+				</a> -->
+				<div class="header__search_wr">
+					<a class="header__search_toggle" href="#">
+						<img src="images/SearchIconWhite.svg" alt="">
+					</a>
+					<input type="text" placeholder="Найти" class="header__search">
+					<a href="#" class="close_reg_form header__search_close">
+						<span></span>
+						<span></span>
+					</a>
+				</div>
 				<a class="regTog" href="">
 					<img src="images/UserIconWhite.svg" alt="">
 				</a>
@@ -120,7 +154,6 @@
 			</div>
 		</div>
 	</header>
-
 	<!-- simple-button-content -->
 	<section class="smpl_btn_cont owl-carousel">
 		<div class="block_with_bg">

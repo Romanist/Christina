@@ -66,6 +66,7 @@
 
 .header__right{
 	float: right;
+	text-align: right;
 }
 
 .header__left{
@@ -73,8 +74,15 @@
 }
 
 .header__menu{
-	overflow: hidden;
+	overflow: visible;
+	position: relative;
 	padding-bottom: 3px;
+}
+
+.header__menu::after{
+	content: '';
+	clear: both;
+	display: table;
 }
 
 .header__left-top{
@@ -234,6 +242,122 @@ a .basket_number{
 	display: none;
 }
 
+.header__search{
+	all: unset;
+	width: 0;
+	/*position: absolute;*/
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+	text-align: left;
+	/*float: right;*/
+	vertical-align: top;
+}
+
+.active .header__search{
+	width: 160px;
+	height: 30px;
+	/*margin-top: -28px;*/
+	/*position: static;*/
+}
+
+.active.header__search_wr{
+	/*width: 200px;*/
+	border-bottom: 1px solid #000;
+}
+
+.active .header__search_toggle{
+	/*position: absolute;
+	left: 0;
+	top: 0;*/
+}
+
+.header__search_wr{
+	display: inline-block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.header__search_wr .header__search_close{
+	top: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.header__right_btns .header__search_close:hover{
+	opacity: 0;
+}
+
+.header__search_wr.active .header__search_close{
+	opacity: 1;
+}
+
+.header__right .input_drop{
+	top: 0;
+	right: 0;
+	margin-bottom: 0;
+	text-align: left;
+	overflow: hidden;
+	vertical-align: middle;
+	width: auto;
+	max-width: 240px;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.header__right .input_drop.open{
+	width: 300px;
+	max-width: 300px;
+	overflow: visible;
+	margin-left: 30px;
+}
+
+.header__right .input_drop__toggle{
+	padding: 0;
+	display: inline-block;
+	color: var(--header-opacity-text-color);
+	border-color: var(--opacity-underlane-text-color);
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.header__right .input_drop__toggle:hover{
+	border-color: #000;
+}
+
+.header__right .input_drop__toggle::after{
+	top: 12px;
+	opacity: 0;
+}
+
+.header__right .open .input_drop__toggle::after{
+	opacity: 1;
+}
+
+.header__right .open .input_drop__toggle{
+	display: block;
+	padding-bottom: 15px;
+	margin-bottom: -15px;
+	border-color: #000;
+}
+
+.header__right .input_drop__down{
+    padding-top: 57px;
+    margin-top: -37px;
+    height: 220px;
+}
+
+.header__right .mCSB_scrollTools{
+	bottom: 10px;
+}
+
 @media screen and (max-width: 1100px) {
 	.nav__item{
 		padding: 10px 32px;
@@ -285,7 +409,7 @@ a .basket_number{
 	}
 	.header__right{
 		padding: 26px 40px 0 0;
-		width: 170px;
+		/*width: 170px;*/
 		text-align: right;
 	}
 	.header__right_btns{
@@ -351,6 +475,31 @@ a .basket_number{
 	.header__right img{
 		margin-right: 5px;
 	}
+	.header__right .input_drop__down{
+		position: absolute;
+	}
+	.header__right .drop_city{
+		margin-right: 0;
+		display: block;
+    	text-align: right;
+	}
+	.header__right .input_drop.open{
+		left: -100px;
+		width: 230px;	
+		text-align: left;	
+	}
+	.active .header__search{
+		height: 24px;
+		font-size: 16px;
+		color: #fff;
+	}
+	.header__search_toggle{
+		position: relative;
+		z-index: 2;
+	}
+	.header .close_reg_form span{
+		background-color: #fff;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -395,6 +544,31 @@ a .basket_number{
 	.header__mob_btns{
 		right: 20px;
 	}
+	.header__right .input_drop.open{
+		left: auto;
+		width: 114px;
+		margin-left: 0;
+	}
+	.header__right .open .input_drop__toggle{
+		margin-bottom: -5px;
+		padding-bottom: 5px;
+	}
+	.header{
+		overflow: visible;
+		position: relative;
+	}
+	.header::after{
+		content: '';
+		display: table;
+		clear: both;
+	}
+	.header__right .drop_city{
+		max-width: 115px;
+		/*white-space: nowrap;*/
+		text-overflow: ellipsis; 
+		max-height: 20px;
+		display: inline-block;
+	}
 }
 
 @media screen and (max-width: 580px){
@@ -423,6 +597,15 @@ a .basket_number{
 	}
 	.call_icon:first-child{
 		margin-right: 0;
+	}
+	.active .header__search{
+		width: 120px;
+	}
+	.header__right .drop_city{
+		max-width: 96px;
+	}
+	.header__right .input_drop.open{
+		width: 98px;
 	}
 }
 

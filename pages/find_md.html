@@ -56,14 +56,37 @@
 				<span class="header_color">
 					ваш город: 
 				</span>
-				<span class="header_color underline_header">
+				<!-- <a href="#" class="header_color underline_header">
 					москва
-				</span>
+				</a> -->
+				<div class="input_drop drop_city">
+					<a href="#" class="input_drop__toggle">Москва</a>
+					<div class="input_drop__down">
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Санкт-Петербург" class="input_drop__item">Санкт-Петербург</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<a href="#" data-cont="Петропавловск-Камчатский" class="input_drop__item">Петропавловск-Камчатский</a>
+						<a href="#" data-cont="Минск" class="input_drop__item">Минск</a>
+						<div class="input_drop__op"></div>
+					</div>				
+				</div>
 				<div class="header__right_btns">
-					<a href="">
-						<img src="../images/SearchIcon.svg" alt="">
-					</a>
-					<a class="regTog"  href="">
+					<div class="header__search_wr">
+						<a class="header__search_toggle" href="#">
+							<img src="../images/SearchIcon.svg" alt="">
+						</a>
+						<input type="text" placeholder="Найти" class="header__search">
+						<a href="#" class="close_reg_form header__search_close">
+							<span></span>
+							<span></span>
+						</a>
+					</div>
+					<a class="regTog" href="">
 						<img src="../images/UserIcon.svg" alt="">
 					</a>
 					<a href="">
@@ -109,10 +132,20 @@
 				</li>
 			</ul>
 			<div class="header__mob_btns">
-				<a href="">
+				<!-- <a href="">
 					<img src="../images/SearchIconWhite.svg" alt="">
-				</a>
-				<a class="regTog"  href="">
+				</a> -->
+				<div class="header__search_wr">
+					<a class="header__search_toggle" href="#">
+						<img src="../images/SearchIconWhite.svg" alt="">
+					</a>
+					<input type="text" placeholder="Найти" class="header__search">
+					<a href="#" class="close_reg_form header__search_close">
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+				<a class="regTog" href="">
 					<img src="../images/UserIconWhite.svg" alt="">
 				</a>
 				<a href="">
