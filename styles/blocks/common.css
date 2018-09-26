@@ -152,8 +152,19 @@ html{
 	width: 50%;
 }
 
+.contacts_map__moscow.hide,
+.contacts_map__peter.hide{
+	display: none!important;
+}
+
+.contacts_map__moscow,
 .contacts_map__peter{
-	display: none;
+	filter: saturate(0.32) brightness(79%) hue-rotate(207deg);
+}
+
+.ymaps-2-1-68-copyright__wrap,
+.ymaps-2-1-68-controls__control{
+	display: none!important;
 }
 
 .contacts_map__desc{
@@ -409,10 +420,10 @@ html{
 	opacity: 1;
 }
 
-.index_half{
+/*.index_half{
 	max-width: 1280px;
 	margin: 0 auto;
-}
+}*/
 
 .find_md .find_md__form{
 	width: 100%;

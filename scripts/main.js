@@ -163,13 +163,14 @@ $(document).ready(function () {
 
 	$('.contacts .scroll_HDIW__link').click(function () {
 		var dataMap = $(this).data('map');
-		$('.scroll_HDIW__text iframe').hide();
-		$(dataMap).show();
+		$('.contacts_map .scroll_HDIW__text > div').addClass('hide');
+		$(dataMap).removeClass('hide');
 	})
 
 
 	function btnManage (el) {
 		var percentPos = el.mcs.leftPct
+		$('.scroll_HDIW__wr').removeClass('opacity');
 		if (percentPos >= 50) {
 			$('.scroll_HDIW__link').removeClass('active');
 			$('.scroll_HDIW__link:nth-child(2)').addClass('active');
@@ -185,6 +186,9 @@ $(document).ready(function () {
 				$('.scroll_HDIW__text iframe').hide();
 				$('.contacts_map__moscow').show()
 			}
+		}
+		if ((percentPos >= 2) && (percentPos <= 98)) {
+			$('.scroll_HDIW__wr').addClass('opacity');
 		}
 	}
 
@@ -722,7 +726,45 @@ $(document).ready(function () {
 		return false;
 	});
 
-	ymaps.ready(init);
+	if ($('.contacts_map__moscow').length)  ymaps.ready(init2);
+	function init2(){
+		var myCollection = new ymaps.GeoObjectCollection();
+		var myCollection2 = new ymaps.GeoObjectCollection();
+
+        var myMap2 = new ymaps.Map('contacts_map__moscow', {
+            center: [55.749674, 37.502292],
+            zoom: 16,
+            controls: ['zoomControl']
+        });
+
+        var myMap3 = new ymaps.Map('contacts_map__peter', {
+            center: [59.84, 30.25],
+            zoom: 16,
+            controls: ['zoomControl']
+        });
+
+        var geoObj = new ymaps.Placemark([55.749674, 37.502292], {}, {
+	      	iconLayout: 'default#image',
+		    iconImageHref: '../images/circle.svg',
+		    iconImageSize: [24, 24],
+		    iconImageOffset: [0, 0]
+		});
+
+		 var geoObj2 = new ymaps.Placemark([59.84, 30.25], {}, {
+	      	iconLayout: 'default#image',
+		    iconImageHref: '../images/circle.svg',
+		    iconImageSize: [24, 24],
+		    iconImageOffset: [0, 0]
+		});
+
+
+	  	myCollection.add(geoObj);
+	  	myCollection2.add(geoObj2);
+		myMap2.geoObjects.add(myCollection);
+		myMap3.geoObjects.add(myCollection2);
+	}
+
+	if ($('.find_md').length) ymaps.ready(init);
     function init(){ 
         
         var myMap = new ymaps.Map('map', {

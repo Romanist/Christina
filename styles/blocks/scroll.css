@@ -4,6 +4,14 @@
 	overflow: hidden;
 }
 
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	border-radius: 0;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{
+	margin: 4px 0 8px;
+}
+
 .scroll .mCSB_container{
 	width: 200% !important;
 }
@@ -25,3 +33,21 @@
 .mCSB_horizontal{
 	padding-top: 40px;
 }
+
+.mCSB_container.left{
+	left: 0 !important;
+}
+
+.scroll_HDIW__wr.opacity{
+	opacity: 0;
+}
+
+.scroll_HDIW__wr{
+	-webkit-transition: all ease .1s;
+	-o-transition: all ease .1s;
+	transition: all ease .1s;
+}
+
+/*.ymaps-2-1-65-controls__control_toolbar{
+	display: none !important;
+}*/

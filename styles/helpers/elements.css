@@ -124,7 +124,7 @@ a{
 }
 
 .underline_header{
-	border-bottom: 2px solid var(--opacity-underlane-text-color);
+	border-bottom: 1px solid var(--opacity-underlane-text-color);
 	-webkit-transition: all ease .3s;
 	-o-transition: all ease .3s;
 	transition: all ease .3s;

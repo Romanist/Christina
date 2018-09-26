@@ -918,6 +918,26 @@
 	left: 0;
 }
 
+@media screen and (min-width: 1280px) {
+	.half__left{
+		background: var(--bg-color4) url(../../images/bg_face_left.svg) no-repeat right 202px top 0px;
+	}
+	.half__right {
+	    background: url(../../images/bg_face_right.svg) no-repeat left 188px top 0px;
+	}
+	.half__left .half_btn__form{
+		float: right;
+	    padding-right: 56px;
+	    padding-left: 0;
+	}
+	.half__right .half_btn__form {
+	    padding-right: 200px;
+	    float: left;
+	    padding-left: 50px;
+	    padding-right: 0;
+	}
+}
+
 @media screen and (max-width: 1279px) {
 	.half__title{
 		top: 66px;

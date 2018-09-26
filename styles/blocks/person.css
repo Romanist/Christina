@@ -180,8 +180,19 @@
 	width: 0;
 }
 
-.check_hid:checked + .procedures_form__custom_input{
+.check_hid + .procedures_form__custom_input{
 	border: 1px solid black;
+}
+
+.procedures_form__custom_input_dot{
+	opacity: 0;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.check_hid:checked + .procedures_form__custom_input .procedures_form__custom_input_dot{
+	opacity: 1;
 }
 
 .radio_wr{

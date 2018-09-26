@@ -28,7 +28,7 @@
 	content: '';
 	position: absolute;
 	height: 15px;
-	width: 2px;
+	width: 1px;
 	right: 0;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -51,7 +51,7 @@
 }
 
 .header__underline_wr{
-	border-bottom: 2px solid var(--opacity-underlane-color);
+	border-bottom: 1px solid var(--opacity-underlane-color);
 	margin-bottom: 27px;
 }
 
