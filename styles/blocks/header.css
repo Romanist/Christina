@@ -141,9 +141,37 @@
 	transition: all ease .4s;
 }
 
-.header__right_btns a:hover{
-	opacity: .6;
+.header__right_btns > a{
+	position: relative;
 }
+
+.header__right_btns > a img,
+.header__right_btns .header__search_toggle img{
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.header__right_btns > a:hover img,
+.header__right_btns .header__search_toggle:hover img{
+	opacity: 0;
+}
+
+.header__right_btns > a:hover .hov,
+.header__right_btns .header__search_toggle:hover .hov{
+	opacity: 1;
+}
+
+.header__right_btns .hov{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+/*.header__right_btns a:hover{
+	opacity: .6;
+}*/
 
 .header__right_btns a:last-child img{
 	margin-right: 0;

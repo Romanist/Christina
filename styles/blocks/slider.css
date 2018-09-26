@@ -471,6 +471,10 @@
 	transition: all ease .4s;
 }
 
+.patients__slider .product__wr{
+	cursor: pointer;
+}
+
 @media screen and (max-width: 1279px) {
 	.slider__title{
 		padding-top: 66px;

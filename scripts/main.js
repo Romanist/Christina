@@ -261,8 +261,8 @@ $(document).ready(function () {
 		$(this).prop('checked', true);
 	});
 
-	$('.patients__slider .product__basket').click(function () {
-		$(this).closest('.product__wr').toggleClass('confirmed');
+	$('.patients__slider .product__wr').click(function () {
+		$(this).toggleClass('confirmed');
 		return false;
 	});
 

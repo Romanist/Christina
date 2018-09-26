@@ -84,6 +84,10 @@
 	margin-right: 20px;
 	position: relative;
 	white-space: nowrap;
+	opacity: .6;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
 }
 
 .shop_form__item:after{

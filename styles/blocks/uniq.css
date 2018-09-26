@@ -245,6 +245,13 @@
 	left: 2.5%;
 	text-decoration: underline;
 	text-decoration-color: rgba(0, 0, 0, .2);
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.circle_wr__text:hover{
+	text-decoration-color: rgba(0, 0, 0, 0);
 }
 
 .circle_wr__text:after{

@@ -4,6 +4,10 @@ b{
 	font-weight: bold;
 }
 
+.mCSB_scrollTools_horizontal .mCSB_draggerRail{
+	height: 1px !important;
+}
+
 .btn{
 	text-decoration: none;
 	color: var(--black-color);
@@ -33,6 +37,15 @@ b{
 	-webkit-transition: all ease .3s;
 	-o-transition: all ease .3s;
 	transition: all ease .3s;
+}
+
+.w_arr:before{
+	background-image: url(url(../../images/after_arrow_hov.svg);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
 }
 
 .w_arr:after{
