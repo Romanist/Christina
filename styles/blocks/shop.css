@@ -13,6 +13,20 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	position: relative;
+	overflow: hidden;
+}
+
+.six_items_wr__item img{
+	-webkit-transition: all ease .6s;
+	-o-transition: all ease .6s;
+	transition: all ease .6s;
+}
+
+.six_items_wr__item:hover img{
+	-webkit-transform: scale(1.2, 1.2) translate(-20%, 20%);
+	-ms-transform: scale(1.2, 1.2) translate(-20%, 20%);
+	-o-transform: scale(1.2, 1.2) translate(-20%, 20%);
+	transform: scale(1.2, 1.2) translate(-20%, 20%);
 }
 
 .six_items_wr__item:nth-child(2){
@@ -211,7 +225,7 @@ input:checked + .shop_form__item:after{
 	transition: all ease .8s;
 }
 
-.shop_slider .slider__prod:hover > img{
+.slider__prod:hover > img{
 	transform: translateX(30%) scale(1.1,1.1);
 }
 

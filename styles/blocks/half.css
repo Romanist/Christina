@@ -716,7 +716,7 @@
 	position: relative;	
 }
 
-.propeel_half2__item :after{
+/*.propeel_half2__item :after{
 	content: '';
 	position: static;
 	display: block;
@@ -724,7 +724,7 @@
 	-webkit-transition: all ease .5s;
 	-o-transition: all ease .5s;
 	transition: all ease .4s;
-}
+}*/
 
 .opened .propeel_half2__text:after{
 	height: 24px;
@@ -826,6 +826,17 @@
 	background-image: url(../../images/plus.svg);
 	background-color: inherit;
 	background-repeat: no-repeat;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.propeel_half2__click:hover::before{
+	background-image: url(../../images/plus_black.svg);
+}
+
+.opened .propeel_half2__click::before{
+	background-image: url(../../images/minus.svg);
 }
 
 .propeel_half3{
