@@ -797,6 +797,16 @@
 	opacity: 1;
 }
 
+/*//changes//*/
+
+.text__side{
+	right: 58%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 @media screen and (max-width: 1279px) {
 	.news_padleft{
 		padding-left: 91px;
