@@ -834,6 +834,7 @@
 	-webkit-transition: all ease .4s;
 	-o-transition: all ease .4s;
 	transition: all ease .4s;
+	opacity: 1;
 }
 
 .propeel_half2__click:hover::before{
@@ -940,6 +941,10 @@
 	    float: left;
 	    padding-left: 50px;
 	    padding-right: 0;
+	}
+	.half_btn2{
+		-webkit-background-size: contain;
+		background-size: contain;
 	}
 }
 

@@ -51,3 +51,9 @@
 /*.ymaps-2-1-65-controls__control_toolbar{
 	display: none !important;
 }*/
+
+@media screen and (max-width: 767px) {
+	.scroll_HDIW__wr.opacity{
+		opacity: 1;
+	}
+}

@@ -518,6 +518,13 @@ tr.table__title{
 	position: relative;
 	padding-bottom: 3px;
 	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.auth:hover{
+	border-bottom-color: rgba(0, 0, 0, 0);
 }
 
 .partner_form{
@@ -961,6 +968,10 @@ body.pop_up{
 	height: 0;
 	opacity: 0;
 	z-index: -2;
+}
+
+.forgot{
+	display: none;
 }
 
 @media screen and (max-width: 1279px) {

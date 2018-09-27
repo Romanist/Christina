@@ -902,7 +902,7 @@
 			</div>
 			<div class="registr_form__content">
 				<div class="person_item registr_form__auth active">
-					<form action="">
+					<form class="auth_form" action="">
 						<div class="registr_form__inputs">
 							<div class="input_wr w_ph">
 								<input id="login" name="text" type="text" class="input">
@@ -916,6 +916,16 @@
 							</div>
 						</div>
 						<button class="btn registr_form__auth_btn">Войти</button>
+					</form>
+					<form class="forgot" action="">
+						<div class="registr_form__inputs">
+							<div class="input_wr w_ph">
+								<input id="forgot_pass" name="text" type="text" class="input">
+								<label class="ph" for="forgot_pass" class="">Введите логин или пароль</label>
+								<p class="warning">Такой пользователь не найден</p>
+							</div>
+						</div>
+						<button class="btn registr_form__auth_btn">Получить пароль</button>
 					</form>
 					<a href="#" class="registr_form__forget_pass">Забыли пароль?</a>
 					<p class="registr_form__text_abs_wr">

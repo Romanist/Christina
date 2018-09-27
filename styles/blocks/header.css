@@ -608,7 +608,7 @@ a .basket_number{
 		display: none;
 	}
 	.header__right .input_drop__toggle,
-	.input_drop__down{
+	.header .input_drop__down{
 		display: none;
 	}
 	.mob_sel{

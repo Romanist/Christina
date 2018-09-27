@@ -370,6 +370,7 @@
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	max-width: 415px;
 }
 
 .text_news__list_item:before{

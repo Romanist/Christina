@@ -187,8 +187,8 @@ $(document).ready(function () {
 				$('.contacts_map__moscow').show()
 			}
 		}
-		if ((percentPos >= 2) && (percentPos <= 98)) {
-			$('.scroll_HDIW__wr').addClass('opacity');
+		if ((percentPos >= 1) && (percentPos <= 99)) {
+			$('.scroll_HDIW_op .scroll_HDIW__wr').addClass('opacity');
 		}
 	}
 
@@ -370,6 +370,19 @@ $(document).ready(function () {
 		});
 
 		if (!trigger) return false;
+	});
+
+	$('.registr_form__forget_pass').click(function () {
+		if ($(this).hasClass('backToAuth')) {
+			$('.registr_form__auth .forgot').hide();
+			$('.registr_form__auth .auth_form').show();
+			$(this).text('Забыли пароль?').removeClass('backToAuth');
+		} else {
+			$('.registr_form__auth .forgot').show();
+			$('.registr_form__auth .auth_form').hide();
+			$(this).text('Вернуться').addClass('backToAuth');
+		}
+		return false
 	});
 
 	// validation
