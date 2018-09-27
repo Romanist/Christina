@@ -172,6 +172,10 @@
 	border: solid 1px var(--bg-color8);
 }
 
+.half__right .procedures_form__custom_input_dot, .half__left .procedures_form__custom_input_dot{
+	opacity: 1;
+}
+
 .procedures_form__inline:nth-child(2){
 	margin-left: 46px;
 }
@@ -640,6 +644,7 @@
 	left: 50%;
 	top: 81px;
 	transform: translateX(-50%);
+	width: 530px;
 }
 
 .propeel_half1__circle_wr{
@@ -919,10 +924,10 @@
 }
 
 @media screen and (min-width: 1280px) {
-	.half__left{
+	.index_half .half__left{
 		background: var(--bg-color4) url(../../images/bg_face_left.svg) no-repeat right 202px top 0px;
 	}
-	.half__right {
+	.index_half .half__right {
 	    background: url(../../images/bg_face_right.svg) no-repeat left 188px top 0px;
 	}
 	.half__left .half_btn__form{
