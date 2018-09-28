@@ -945,6 +945,7 @@
 	.half_btn2{
 		-webkit-background-size: contain;
 		background-size: contain;
+	    background-position-x: center;
 	}
 }
 

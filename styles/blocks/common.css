@@ -109,6 +109,10 @@ html{
     transition: all ease .4s;
 }
 
+.scroll_HDIW__link:hover{
+	opacity: .85;
+}
+
 .scroll_HDIW__link:last-child{
 	margin-left: 3%;
 }
@@ -156,12 +160,12 @@ html{
 .contacts_map__peter.hide{
 	display: none!important;
 }
-
+/*
 .contacts_map__moscow,
 .contacts_map__peter{
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-}
+}*/
 
 .ymaps-2-1-68-copyright__wrap,
 .ymaps-2-1-68-controls__control{

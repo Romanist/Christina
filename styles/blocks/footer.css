@@ -84,6 +84,13 @@ dt .bot_nav__link{
 	padding-bottom: 8px;
 	letter-spacing: .6px;
 	display: inline-block;
+    -webkit-transition: all ease .4s;
+    -o-transition: all ease .4s;
+    transition: all ease .4s;
+}
+
+dt .bot_nav__link:hover{
+	opacity: .5;
 }
 
 dd .bot_nav__link{
@@ -203,8 +210,16 @@ dd .bot_nav__link:hover{
 
 .footer__spam_btn:hover::before{
 	background-color: #000;
-	top: 0;
-	bottom: 0;
+}
+
+.dev{
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.dev:hover{
+	opacity: .8;
 }
 
 .footer__spam_btn:after{

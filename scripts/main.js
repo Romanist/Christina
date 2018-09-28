@@ -750,22 +750,26 @@ $(document).ready(function () {
             controls: ['zoomControl']
         });
 
+        myMap2.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
+
         var myMap3 = new ymaps.Map('contacts_map__peter', {
             center: [59.84, 30.25],
             zoom: 16,
             controls: ['zoomControl']
         });
+        
+        myMap3.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
 
         var geoObj = new ymaps.Placemark([55.749674, 37.502292], {}, {
 	      	iconLayout: 'default#image',
-		    iconImageHref: '../images/circle.svg',
+		    iconImageHref: '../images/circle_viol.svg',
 		    iconImageSize: [24, 24],
 		    iconImageOffset: [0, 0]
 		});
 
 		 var geoObj2 = new ymaps.Placemark([59.84, 30.25], {}, {
 	      	iconLayout: 'default#image',
-		    iconImageHref: '../images/circle.svg',
+		    iconImageHref: '../images/circle_viol.svg',
 		    iconImageSize: [24, 24],
 		    iconImageOffset: [0, 0]
 		});
