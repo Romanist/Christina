@@ -379,7 +379,9 @@
 }
 
 .half_btn2 .half__btn{
-	position: static;
+	position: relative;
+	left: auto;
+	bottom: auto;
 	transform: none;
 }
 

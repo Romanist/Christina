@@ -1,5 +1,14 @@
-<svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11 18.5V0.5H14.5V18.5H11Z" stroke="black"/>
-<rect y="9" width="9.6" height="0.8" fill="black"/>
-<path d="M7 6L10.2 9.58823L7 13.2" stroke="black"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="19px" viewBox="0 0 15 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>exit</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="exit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M14,1 L14,0 L15,1 L14,1 Z M14,1 L11,1 L11,0 L15,0 L15,19 L11,19 L11,18 L14,18 L14,1 Z M14,18 L15,18 L14,19 L14,18 Z M14,18 L15,18 L14,19 L14,18 Z M14,18 L14,1 L11,1 L11,0 L15,0 L15,19 L11,19 L11,18 L14,18 Z M14,1 L14,0 L15,1 L14,1 Z" id="Rectangle-8" fill="#000000" fill-rule="nonzero"></path>
+            <rect id="Rectangle" fill="#000000" x="0" y="9" width="9.6" height="1"></rect>
+            <polyline id="Path-2-Copy" stroke="#000000" points="7 6 10.2 9.58823497 7 13.2"></polyline>
+        </g>
+    </g>
 </svg>

@@ -111,6 +111,7 @@
 
 .shop_form__grp_title{
 	font-family: 'FuturaNewBook-Reg';
+	padding-bottom: 10px;
 }
 
 input:checked + .shop_form__item:after{

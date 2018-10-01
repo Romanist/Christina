@@ -265,6 +265,16 @@
 .review__rating{
 	margin-bottom: 32px;
 	opacity: .5;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+
+.prod_comments__link::after{
+	top: 50%;
 }
 
 .prod_comments__link{

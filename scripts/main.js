@@ -19,6 +19,9 @@ $(document).ready(function () {
 		return false;
 	});
 
+	$('.input[name="date"]').mask('00/00/0000');
+	$('.input[name="tel"]').mask('(000) 000 0000');
+
 	$('.partner_form__btn').click(function () {
 		var trigger = true;
 
@@ -422,6 +425,7 @@ $(document).ready(function () {
 	    	}
 	    }
 	    if (type == 'date') {
+	    	console.log('date')
 	    	if (!ck_date.test($(_this).val())){
 	    		return false;
 	    	}
@@ -757,7 +761,7 @@ $(document).ready(function () {
             zoom: 16,
             controls: ['zoomControl']
         });
-        
+
         myMap3.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
 
         var geoObj = new ymaps.Placemark([55.749674, 37.502292], {}, {
@@ -789,6 +793,8 @@ $(document).ready(function () {
             zoom: 10,
             controls: ['zoomControl']
         });
+        // myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
+        myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
 
         var searchControl = new ymaps.control.SearchControl({
 		        options: {
@@ -864,7 +870,7 @@ $(document).ready(function () {
 
 								var geoObj = new ymaps.Placemark([coordinateB, coordinateA], {}, {
 							      	iconLayout: 'default#image',
-								    iconImageHref: '../images/circle.svg',
+								    iconImageHref: '../images/circle_viol.svg',
 								    iconImageSize: [24, 24],
 								    iconImageOffset: [0, 0]
 								});

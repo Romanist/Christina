@@ -283,6 +283,13 @@ html{
 
 .delivery__item a{
 	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	-webkit-transition: all ease .3s;
+	-o-transition: all ease .3s;
+	transition: all ease .3s;
+}
+
+.delivery__item a:hover{
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 
 .delivery_bot{
@@ -417,9 +424,9 @@ html{
 	display: none;
 }
 
-#map{
-	filter: saturate(0.32) brightness(79%) hue-rotate(207deg);
-}
+/*#map{
+	filter: saturate(0.32) brightness(100%) hue-rotate(207deg);
+}*/
 
 .input_drop__item:hover{
 	opacity: 1;
