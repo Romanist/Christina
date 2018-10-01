@@ -19,8 +19,6 @@ $(document).ready(function () {
 		return false;
 	});
 
-	$('.input[name="date"]').mask('00/00/0000');
-	$('.input[name="tel"]').mask('(000) 000 0000');
 
 	$('.partner_form__btn').click(function () {
 		var trigger = true;
@@ -728,6 +726,10 @@ $(document).ready(function () {
 		$('.find_md__form .shop_form__grp').toggleClass('open');
 		return false;
 	});
+
+	
+	$('.input[name="date"]').mask('00/00/0000');
+	$('.input[name="tel"]').mask('(000) 000 0000');
 
 	// map + api
 	$('.input_drop__toggle').click(function () {
