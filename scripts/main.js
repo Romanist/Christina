@@ -32,6 +32,8 @@ $(document).ready(function () {
 		});
 
 		if (!trigger) return false;
+
+		$('.input').val('');
 	});
 
 	$('.adress__btn').click(function () {
@@ -373,6 +375,8 @@ $(document).ready(function () {
 		});
 
 		if (!trigger) return false;
+
+		$('.input').val('');
 	});
 
 	$('.registr_form__forget_pass').click(function () {
