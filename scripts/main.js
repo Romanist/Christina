@@ -223,11 +223,13 @@ $(document).ready(function () {
 		var count = $(this).closest('.prod_inf__counter').find('.counter__number').data('counter');
 		if (sign == "+") {
 			$(this).closest('.prod_inf__counter').find('.counter__number').text(count + 1);
+			$('.hid_inp').val(count+1);
 			$(this).closest('.prod_inf__counter').find('.counter__number').data('counter', count + 1);
 		}
 		else {
 			if (!count) return false;
 			$(this).closest('.prod_inf__counter').find('.counter__number').text(count - 1);
+			$('.hid_inp').val(count+1);
 			$(this).closest('.prod_inf__counter').find('.counter__number').data('counter', count - 1);
 		}
 		return false;
