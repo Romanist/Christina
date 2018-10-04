@@ -196,6 +196,13 @@ a .basket_number{
 	color: var(--header-opacity-text-color);
 	letter-spacing: 1.4px;
 	font-size: 13px;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.header__logo:hover{
+	opacity: .6;
 }
 
 .header__logo_mob{

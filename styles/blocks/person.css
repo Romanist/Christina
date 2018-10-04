@@ -619,9 +619,9 @@ tr.table__title{
 	transform: translateX(-50%);
 	z-index: -1;
 	opacity: 0;
-	-webkit-transition: all ease 1s;
+	/*-webkit-transition: all ease 1s;
 	-o-transition: all ease 1s;
-	transition: all ease 1s;
+	transition: all ease 1s;*/
 	overflow: hidden;
 }
 
