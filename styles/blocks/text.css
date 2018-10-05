@@ -509,7 +509,8 @@
 	width: 260px;
 	padding-top: 100px;
 	position: relative;
-	margin-left: 83px;
+	/*margin-left: 83px;*/
+	margin-left: 50px;
 }
 
 .prod_inf__right .owl-dots{
@@ -821,6 +822,10 @@
 	background-color: inherit;
 	font-size: 100%;
 	cursor: pointer;
+}
+
+.prod_inf__navigator .prod_slider__item{
+	width: 100%;
 }
 
 @media screen and (max-width: 1279px) {
