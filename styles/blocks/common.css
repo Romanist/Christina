@@ -664,6 +664,35 @@ input:checked + .shop_form__item{
 	z-index: 100;
 }
 
+.big_banner{
+	height: 200px;
+	overflow: hidden;
+}
+
+.big_banner .smpl_btn_cont__title{
+	font-size: 40px;
+	line-height: 48px;
+	width: 360px;
+	padding-top: 30px;
+	padding-bottom: 0;
+}
+
+.big_banner .smpl_btn_cont__desc{
+	font-size: 18px;
+}
+
+.big_banner .smpl_btn_cont__product{
+	width: 300px;
+	top: 20px;
+	height: 300px;
+}
+
+.big_banner .big_banner__close{
+	top: 20px;
+	position: absolute;
+	right: 40px;
+}
+
 @media screen and (max-width: 1279px) {
 	.contacts_map .max_width{
 		padding-right: 0;
@@ -868,6 +897,9 @@ input:checked + .shop_form__item{
 	.not_found__title{
 		padding-top: 100px;
 	}
+	.big_banner .big_banner__close{
+		display: block;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -1007,5 +1039,26 @@ input:checked + .shop_form__item{
 	.not_found__text{
 		font-size: 18px;
 		line-height: 20px;
+	}
+	.big_banner{
+		height: 220px;
+	}
+	.big_banner .smpl_btn_cont__product{
+		top: 116px;
+		width: 230px;
+		height: 230px;
+	}
+	.big_banner .smpl_btn_cont__title{
+		font-size: 26px;
+		line-height: 31px;
+		width: 240px;
+	}
+	.big_banner .smpl_btn_cont__desc{
+		font-size: 16px;
+		width: auto;
+	}
+	.big_banner .big_banner__close{
+		right: 20px;
+		top: 180px;
 	}
 }

@@ -280,6 +280,11 @@ $(document).ready(function () {
 		return false;
 	});
 
+	$('.big_banner__close').click(function () {
+		$('.big_banner').hide();
+		return false;
+	});
+
 	$('.patients__slider .product__wr').click(function () {
 		$(this).toggleClass('confirmed');
 		return false;
