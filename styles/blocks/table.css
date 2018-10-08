@@ -200,6 +200,9 @@
 
 .basket__btn{
 	margin-bottom: 90px;
+	background-color: #fff;
+	font-size: 100%;
+	cursor: pointer;
 }
 
 .basket{
