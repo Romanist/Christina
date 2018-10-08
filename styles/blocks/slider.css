@@ -235,7 +235,7 @@
 	background-color: var(--bg-color2);
 	padding-left: 10px;
 	position: relative;
-	cursor: pointer;
+	/*cursor: pointer;*/
 }
 
 .review__rait img{

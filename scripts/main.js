@@ -251,17 +251,17 @@ $(document).ready(function () {
 	scrollCont();
 	$(window).resize(scrollCont);
 
-	$('.review__rait img').click(function () {
-		var ratingComp = $(this).index();
-		var ratingClick = $(this).index() + 1;
-		var imgSrc = $(this).attr('src');
-		for (var i = 0; i <= ratingComp; i++) {
-			$(this).closest('.review__rait').find('img').eq(i).attr('src', '../images/rat_icon.svg')
-		}
-		for (var i = ratingClick; i <= 5; i++) {
-			$(this).closest('.review__rait').find('img').eq(i).attr('src', '../images/rat_icon_empty.svg')
-		}
-	});
+	// $('.review__rait img').click(function () {
+	// 	var ratingComp = $(this).index();
+	// 	var ratingClick = $(this).index() + 1;
+	// 	var imgSrc = $(this).attr('src');
+	// 	for (var i = 0; i <= ratingComp; i++) {
+	// 		$(this).closest('.review__rait').find('img').eq(i).attr('src', '../images/rat_icon.svg')
+	// 	}
+	// 	for (var i = ratingClick; i <= 5; i++) {
+	// 		$(this).closest('.review__rait').find('img').eq(i).attr('src', '../images/rat_icon_empty.svg')
+	// 	}
+	// });
 
 	$('.input').on('input', function () {
 		$(this).closest('.input_wr').removeClass('wrong');
