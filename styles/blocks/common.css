@@ -643,6 +643,27 @@ input:checked + .shop_form__item{
 	line-height: 25px;
 }
 
+.basket_warn{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	height: 80px;
+	background-color: var(--bg-color2);
+	line-height: 80px;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+	opacity: 0;
+	z-index: -10;
+}
+
+.basket_warn.active{
+	opacity: 1;
+	z-index: 100;
+}
+
 @media screen and (max-width: 1279px) {
 	.contacts_map .max_width{
 		padding-right: 0;

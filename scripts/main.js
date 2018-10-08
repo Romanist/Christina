@@ -272,6 +272,14 @@ $(document).ready(function () {
 		$(this).prop('checked', true);
 	});
 
+	$('.link_wr_prod, .product__basket, .prod_inf__btn').click(function () {
+		if (!$('.basket_warn').hasClass('active')) {
+			$('.basket_warn').addClass('active');
+			setTimeout(function() { $('.basket_warn').removeClass('active') }, 2000);
+		}
+		return false;
+	});
+
 	$('.patients__slider .product__wr').click(function () {
 		$(this).toggleClass('confirmed');
 		return false;
