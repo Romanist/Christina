@@ -333,9 +333,9 @@ $(document).ready(function () {
 		return false;
 	});
 
-	$('.header__left-bot .underline_header').click(function () {
+	$('.header__left-bot .underline_header, .call_icon').click(function () {
 		$('html, body').addClass('call_back');
-		var _this = '.pop_up__title';
+		var _this = '.call_back_form__title';
 		regPopHeight(_this);
 		return false;
 	});
@@ -352,6 +352,12 @@ $(document).ready(function () {
 		  }
 		});
 	}
+
+	$(window).on('load', function(){
+		$('#preloader').fadeOut(1000);
+	});
+
+	// setTimeout(function() { $('#preloader').fadeOut(1000); }, 2000);
 
 	$('.regTog').click(function () {
 		$('html, body').addClass('registration');

@@ -50,11 +50,11 @@
 }
 
 .half__left{
-	background: var(--bg-color4) url(../../images/half_face_left.svg) no-repeat 0 60px;
+	background: var(--bg-color4) url(../../images/half_face_left.png) no-repeat 0 60px;
 }
 
 .half__right{
-	background: url(../../images/half_face_right.svg) no-repeat right 60px;
+	background: url(../../images/half_face_right.png) no-repeat right 60px;
 }
 
 .half_btn__form{
