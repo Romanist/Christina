@@ -649,14 +649,16 @@ tr.table__title{
 }
 
 .registration,
-.pop_up{
+.pop_up,
+.call_back{
 	/*overflow: hidden;*/
 	/*position: relative;*/
     overflow-x: hidden;
 }
 
 body.registration,
-body.pop_up{
+body.pop_up,
+body.call_back{
 	overflow: hidden;
 }
 
@@ -667,8 +669,19 @@ body.pop_up{
 	z-index: 99;
 }
 
+.pop_up .call_back_form{
+	opacity: 0;
+	z-index: -1;
+}
+
+.call_back .call_back_form{
+	opacity: 1;
+	z-index: 99;	
+}
+
 .registration .registr_form,
-.pop_up .registr_form{
+.pop_up .registr_form,
+.call_back .registr_form{
 /*.registr_form{	*/
 	z-index: 100;
 	opacity: 1;
