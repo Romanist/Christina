@@ -933,7 +933,7 @@
 	max-width: 1327px;
 	margin: 0 auto;
 	position: relative;
-	overflow: visible;
+	/*overflow: visible;*/
 }
 
 .index_half::before{

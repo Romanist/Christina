@@ -240,7 +240,7 @@
 
 .review__rait img{
 	margin: 5px;
-	width: 8px;
+	max-width: 10px;
 	vertical-align: middle;
 }
 
@@ -540,6 +540,7 @@
 	}
 	.slider_main{
 		padding: 0 40px;
+		overflow: hidden;
 	}
 	.slider__title{
 		font-size: 35px;

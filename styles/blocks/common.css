@@ -387,7 +387,7 @@ html{
 	background-color: #fff;
 	width: 110%;
     margin-left: -5%;
-    padding-top: 80px;
+    padding-top: 72px;
     margin-top: -60px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -685,12 +685,22 @@ input:checked + .shop_form__item{
 	width: 300px;
 	top: 20px;
 	height: 300px;
+	/*left: 65%;*/
 }
 
 .big_banner .big_banner__close{
 	top: 20px;
 	position: absolute;
 	right: 40px;
+}
+
+@media screen and (min-width: 1280px) {
+	.big_banner .smpl_btn_cont__product{
+		left: 65%;
+	}
+	.big_banner .part_of_bg{
+		left: 65%;
+	}
 }
 
 @media screen and (max-width: 1279px) {

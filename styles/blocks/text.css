@@ -826,6 +826,8 @@
 
 .prod_inf__navigator .prod_slider__item{
 	width: 100%;
+	-webkit-filter: drop-shadow(20px 10px 5px rgba(0, 0, 0, .1));
+	filter: drop-shadow(20px 10px 5px rgba(0, 0, 0, .1));
 }
 
 @media screen and (max-width: 1279px) {

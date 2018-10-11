@@ -502,7 +502,7 @@ a .basket_number{
 	}
 	.header__mob_nav a{
 		color: var(--white-color);
-		text-transform: capitalize;
+		text-transform: none;
 		font-size: 16px;
 		padding: 0;
 		color: rgba(255,255,255,.7);

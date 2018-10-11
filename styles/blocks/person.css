@@ -692,10 +692,19 @@ body.call_back{
 	width: 100%;
 	min-height: 100px;
 	padding-top: 51px;
-	-webkit-transform: translateX(250%);
+	/*-webkit-transform: translateX(250%);
 	-ms-transform: translateX(250%);
 	-o-transform: translateX(250%);
-	transform: translateX(250%);
+	transform: translateX(250%);*/
+	opacity: 0;
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+	-webkit-transition: all ease .5s;
+	-o-transition: all ease .5s;
+	transition: all ease .5s;
+	z-index: -100;
 }
 
 .registr_form .person_item.active{
@@ -703,13 +712,24 @@ body.call_back{
 	-ms-transform: none;
 	-o-transform: none;
 	transform: none;
+	opacity: 1;
+	-webkit-transition: all ease .5s .3s;
+	-o-transition: all ease .5s .3s;
+	transition: all ease .5s .3s;
+	z-index: 100;
 }
 
 .registr_form .person_item.past{
-	-webkit-transform: translateX(-250%);
+	/*-webkit-transform: translateX(-250%);
 	-ms-transform: translateX(-250%);
 	-o-transform: translateX(-250%);
-	transform: translateX(-250%);
+	transform: translateX(-250%);*/
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+	opacity: 0;
+	z-index: -100;
 }
 
 .registr_form__content{
