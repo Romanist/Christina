@@ -234,6 +234,9 @@ input:checked + .shop_form__item:after{
 .slider__prod:hover > img,
 .slider__prod:hover .link_wr_prod img{
 	transform: translateX(30%) scale(1.1,1.1);
+	min-height: 180px;
+    max-width: 160px;
+    object-fit: contain;
 }
 
 .shop_results .slider__prod{
