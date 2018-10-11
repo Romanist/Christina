@@ -344,6 +344,9 @@
 .slider_basket .slider__prod img{
 	margin: 18px auto 60px;
 	display: block;
+	min-height: 200px;
+    max-width: 160px;
+    object-fit: contain;
 }
 
 .slider_basket .slider__title{
