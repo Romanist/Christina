@@ -31,6 +31,8 @@
 .basket_table__l img{
 	height: 80%;
 	margin-top: 10%;
+	max-width: 100%;
+    object-fit: contain;
 }
 
 .basket_table__l-c{
