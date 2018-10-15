@@ -732,6 +732,10 @@ body.call_back{
 	z-index: -100;
 }
 
+.form_wr_ov-h{
+	overflow: hidden;
+}
+
 .registr_form__content{
 	max-width: 388px;
 	margin: 0 auto;

@@ -163,60 +163,62 @@
 	
 	<section class="consult_wr">
 		<div class="max_width">
-			<div class="news__top">
-				<h1 class="news__title consult_wr__title title">Консультация врача</h1>
-				<div class="news__search_wr">
-					<input type="text" placeholder="Найти" class="news__search">
+			<form class="form_wr_ov-h" action="">
+				<div class="news__top">
+					<h1 class="news__title consult_wr__title title">Консультация врача</h1>
+					<div class="news__search_wr">
+						<input type="text" placeholder="Найти" class="news__search">
+					</div>
+				</div>               
+				<div class="shop__filters consult_wr__filters shop_form">
+					<div class="shop_form__grp">
+						<p class="shop_form__grp_title">Проблемы</p>
+						<div class="shop_form__grp_inputs">						
+							<input type="checkbox" name="skin_type1" id="skin_type1">
+							<label for="skin_type1" class="shop_form__item">сухая кожа</label>
+							<input type="checkbox" name="skin_type2" id="skin_type2">
+							<label for="skin_type2" class="shop_form__item">жирная кожа</label>
+							<input type="checkbox" name="skin_type3" id="skin_type3">
+							<label for="skin_type3" class="shop_form__item">комбинированная кожа</label>
+							<input type="checkbox" name="skin_type4" id="skin_type4">
+							<label for="skin_type4" class="shop_form__item">прыщи</label>
+							<input type="checkbox" name="skin_type5" id="skin_type5">
+							<label for="skin_type5" class="shop_form__item">черные точки</label>
+							<input type="checkbox" name="skin_type6" id="skin_type6">
+							<label for="skin_type6" class="shop_form__item">пигментация</label>
+						</div>
+					</div>       
+					<div class="shop_form__grp">
+						<p class="shop_form__grp_title">Теги</p>
+						<div class="shop_form__grp_inputs">
+							<input type="checkbox" name="prod_type1" id="prod_type1">
+							<label for="prod_type1" class="shop_form__item">акне</label>
+							<input type="checkbox" name="prod_type2" id="prod_type2">
+							<label for="prod_type2" class="shop_form__item"></label>
+							<input type="checkbox" name="prod_type3" id="prod_type3">
+							<label for="prod_type3" class="shop_form__item">пигментация</label>
+							<input type="checkbox" name="prod_type4" id="prod_type4">
+							<label for="prod_type4" class="shop_form__item">жирная кожа</label>
+							<input type="checkbox" name="prod_type5" id="prod_type5">
+							<label for="prod_type5" class="shop_form__item">рубцы</label>
+							<input type="checkbox" name="prod_type6" id="prod_type6">
+							<label for="prod_type6" class="shop_form__item">очищающий гель</label>
+							<input type="checkbox" name="prod_type7" id="prod_type7">
+							<label for="prod_type7" class="shop_form__item">крем</label>
+						</div>
+					</div>          
+					<div class="shop_form__grp">
+						<p class="shop_form__grp_title">Показать сначала</p>
+						<div class="shop_form__grp_inputs">
+							<input type="checkbox" name="first_1" id="first_1">
+							<label for="first_1" class="shop_form__item">полезные</label>
+							<input type="checkbox" name="first_2" id="first_2">
+							<label for="first_2" class="shop_form__item">новые</label>
+						</div>
+					</div>
+					<button class="btn shop_form__btn consult_wr__btn">Показать<span>10</span></button>
+					<div class="shop__toggle">Фильтр</div>
 				</div>
-			</div>               
-			<form class="shop__filters consult_wr__filters shop_form">
-				<div class="shop_form__grp">
-					<p class="shop_form__grp_title">Проблемы</p>
-					<div class="shop_form__grp_inputs">						
-						<input type="checkbox" name="skin_type1" id="skin_type1">
-						<label for="skin_type1" class="shop_form__item">сухая кожа</label>
-						<input type="checkbox" name="skin_type2" id="skin_type2">
-						<label for="skin_type2" class="shop_form__item">жирная кожа</label>
-						<input type="checkbox" name="skin_type3" id="skin_type3">
-						<label for="skin_type3" class="shop_form__item">комбинированная кожа</label>
-						<input type="checkbox" name="skin_type4" id="skin_type4">
-						<label for="skin_type4" class="shop_form__item">прыщи</label>
-						<input type="checkbox" name="skin_type5" id="skin_type5">
-						<label for="skin_type5" class="shop_form__item">черные точки</label>
-						<input type="checkbox" name="skin_type6" id="skin_type6">
-						<label for="skin_type6" class="shop_form__item">пигментация</label>
-					</div>
-				</div>       
-				<div class="shop_form__grp">
-					<p class="shop_form__grp_title">Теги</p>
-					<div class="shop_form__grp_inputs">
-						<input type="checkbox" name="prod_type1" id="prod_type1">
-						<label for="prod_type1" class="shop_form__item">акне</label>
-						<input type="checkbox" name="prod_type2" id="prod_type2">
-						<label for="prod_type2" class="shop_form__item"></label>
-						<input type="checkbox" name="prod_type3" id="prod_type3">
-						<label for="prod_type3" class="shop_form__item">пигментация</label>
-						<input type="checkbox" name="prod_type4" id="prod_type4">
-						<label for="prod_type4" class="shop_form__item">жирная кожа</label>
-						<input type="checkbox" name="prod_type5" id="prod_type5">
-						<label for="prod_type5" class="shop_form__item">рубцы</label>
-						<input type="checkbox" name="prod_type6" id="prod_type6">
-						<label for="prod_type6" class="shop_form__item">очищающий гель</label>
-						<input type="checkbox" name="prod_type7" id="prod_type7">
-						<label for="prod_type7" class="shop_form__item">крем</label>
-					</div>
-				</div>          
-				<div class="shop_form__grp">
-					<p class="shop_form__grp_title">Показать сначала</p>
-					<div class="shop_form__grp_inputs">
-						<input type="checkbox" name="first_1" id="first_1">
-						<label for="first_1" class="shop_form__item">полезные</label>
-						<input type="checkbox" name="first_2" id="first_2">
-						<label for="first_2" class="shop_form__item">новые</label>
-					</div>
-				</div>
-				<button class="btn shop_form__btn consult_wr__btn">Показать<span>10</span></button>
-				<div class="shop__toggle">Фильтр</div>
 			</form>
 
 			<div class="consult_wr__comments">
