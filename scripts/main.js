@@ -286,7 +286,7 @@ $(document).ready(function () {
 		$(this).prop('checked', true);
 	});
 
-	$('.link_wr_prod, .product__basket, .prod_inf__btn').click(function () {
+	$('.link_wr_prod, .prod_inf__btn').click(function () {
 		if (!$('.basket_warn').hasClass('active')) {
 			$('.basket_warn').addClass('active');
 			setTimeout(function() { $('.basket_warn').removeClass('active') }, 2000);
