@@ -610,7 +610,8 @@ tr.table__title{
 	display: inline-block;
 }
 
-.patients .common__inputs{
+.patients .common__inputs,
+.answers .common__inputs{
 	float: none;
 	padding-bottom: 40px;
 }

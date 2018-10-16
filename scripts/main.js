@@ -100,6 +100,11 @@ $(document).ready(function () {
 		return false;
 	});
 
+	$('.patients__generate').click(function () {
+		$("html, body").animate({ scrollTop: $('.patients__promo').offset().top }, 1000);
+		return false;
+	});
+
 	$(document).on('click', '.adress .table__link', function () {
 		$(this).closest('tr').addClass('changing');
 		$('.adress .adress__btn').addClass('changing');
