@@ -463,6 +463,28 @@ tr.table__title{
 	margin-bottom: 123px;
 }
 
+.active_sub .subs__btn{
+	display: none;
+}
+
+.sub_act{
+	margin-bottom: 123px;
+	height: 50px;
+	display: none;
+	font-family: 'FuturaNewBook-Reg';
+}
+
+.active_sub .sub_act{
+	display: block;
+}
+
+.sub_act__link{
+	display: inline-block;
+	margin-left: 32px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
 .table__remove_mob{
 	display: none;
 }

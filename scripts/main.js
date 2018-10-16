@@ -95,6 +95,11 @@ $(document).ready(function () {
 		}
 	});
 
+	$('.subs__btn').click(function () {
+		$('.subs').addClass('active_sub');
+		return false;
+	});
+
 	$(document).on('click', '.adress .table__link', function () {
 		$(this).closest('tr').addClass('changing');
 		$('.adress .adress__btn').addClass('changing');
