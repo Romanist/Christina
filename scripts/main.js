@@ -36,9 +36,12 @@ $(document).ready(function () {
 		$('.input').val('');
 	});
 
-	if ($('.input').val().length) {
-		$(this).addClass('has_cont');
-	}
+	$('.input').each(function( index ) {
+		if ($(this).val().length) {
+			$(this).addClass('has_cont');
+		}
+	});
+		
 
 	$('.adress__btn').click(function () {
 		var index = $('#index').val();
