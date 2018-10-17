@@ -299,6 +299,11 @@ $(document).ready(function () {
 		return false;
 	});
 
+	$('.shop_form__btn').click(function (e) {
+		// e.preventDefault();
+		$("html, body").animate({ scrollTop: $('.shop_results').offset().top }, 2000);
+	});
+
 	$('.patients__slider .product__wr').click(function () {
 		$(this).toggleClass('confirmed');
 		return false;
