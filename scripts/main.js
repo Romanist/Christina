@@ -381,7 +381,7 @@ $(document).ready(function () {
 
 	// setTimeout(function() { $('#preloader').fadeOut(1000); }, 2000);
 
-	$('.regTog').click(function () {
+	$('.regTog, .consult_write_form__link').click(function () {
 		$('html, body').addClass('registration');
 		var _this = '.person_item.active';
 		regPopHeight(_this);
@@ -427,6 +427,21 @@ $(document).ready(function () {
 		if (!trigger) return false;
 
 		$('.input').val('');
+	});
+
+	$('.consult_write_form__btn').click(function () {
+		var trigger = true;
+		var form = $(this).closest('form');
+		// console.log($(form).find('.input'))
+		$(form).find('.input').each(function( index ) {
+			var _this = this;
+			if (!validate(_this, trigger)) {
+				$(this).closest('.input_wr').addClass('wrong');
+				trigger = false;
+			}
+		});
+
+		if (!trigger) return false;
 	});
 
 	$('.registr_form__forget_pass').click(function () {

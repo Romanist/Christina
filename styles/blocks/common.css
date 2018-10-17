@@ -376,6 +376,14 @@ html{
 	transform: translateY(-50%) rotate(180deg);
 }
 
+.consult_write_form .textarea{
+	width: 100%;
+}
+
+.consult_write_form .common__inputs{
+	width: 50%;
+}
+
 .input_drop__down{
 	height: 0;
 	overflow: hidden;
@@ -694,6 +702,10 @@ input:checked + .shop_form__item{
 	right: 40px;
 }
 
+.consult_write_form-dis{
+	margin-bottom: 40px;
+}
+
 @media screen and (min-width: 1280px) {
 	.big_banner .smpl_btn_cont__product{
 		left: 65%;
@@ -723,6 +735,10 @@ input:checked + .shop_form__item{
 }
 
 @media screen and (max-width: 1023px) {
+	.consult_write_form .common__inputs{
+		width: 100%;
+		max-width: 100%;
+	}
 	.HDIW__navigator .navigator__btn_wr{
 		width: 170px;
 	}
