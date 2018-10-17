@@ -1013,6 +1013,10 @@ body.call_back{
 	transform: translateX(-50%);*/
 }
 
+.review__rating_link span{
+	display: none;
+}
+
 .drag_inp{
 	border-bottom: none;
 	padding-top: 10px;
