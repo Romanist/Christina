@@ -344,7 +344,8 @@
 .slider_basket .slider__prod img{
 	margin: 18px auto 60px;
 	display: block;
-	min-height: 200px;
+	/*
+.slider__prod > img, .slider__prod .link_wr_prod img{min-height: 200px;*/
     max-width: 160px;
     object-fit: contain;
 }
@@ -747,7 +748,8 @@
 		margin-bottom: 50px;
 		padding: 0 17px;
 	}
-	.slider__prod > img{
+	/*.slider__prod > img{*/
+	.slider__prod > img, .slider__prod .link_wr_prod img{
 		position: absolute;
 		top: 30px;
 		right: 0;

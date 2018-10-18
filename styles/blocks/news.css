@@ -356,6 +356,7 @@
 .news_page__img{
 	padding-bottom: 24px;
 	padding-top: 18px;
+	width: 100%;
 }
 
 .news_page .text_news__socials:after{

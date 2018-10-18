@@ -229,7 +229,8 @@ input:checked + .shop_form__item:after{
 	-webkit-transition: all ease .8s;
 	-o-transition: all ease .8s;
 	transition: all ease .8s;
-	min-height: 195px;
+	/*min-height: 195px;*/
+	height: 195px;
     max-width: 160px;
 }
 
@@ -369,6 +370,9 @@ input:checked + .shop_form__item:after{
 }
 
 @media screen and (max-width: 767px) {
+	.slider__prod > img, .slider__prod .link_wr_prod img{
+		height: auto;
+	}
 	.shop_results__wr{
 		overflow: hidden;
 	}

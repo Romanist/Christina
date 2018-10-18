@@ -333,6 +333,7 @@
 	.basket_table__l img{
 		margin-bottom: 5%;
 		margin-top: 5%;
+		max-height: 200px;
 	}
 }
 
