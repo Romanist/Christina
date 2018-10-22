@@ -383,21 +383,23 @@ $(document).ready(function () {
 		e.preventDefault();
 	});
 
-	$(".slide_drag__drag").slider({
-	  value: 0,
-	  min: 0,
-	  max: 3,
-	  step: 1,
-	  slide: function( event, ui ) {
-	    $( "#amount" ).val( "$" + ui.value );
-	    if ($(window).width() < 1024) {
-	    	console.log(ui.value)
-	    	$('.slide_drag__desc_mob .slide_drag__desc').removeClass('mob_active');
-	    	$('.slide_drag__desc_mob .slide_drag__desc').eq(ui.value).addClass('mob_active');
-	    }
-	  }
-	});
-	$( "#amount" ).val( "$" + $( ".slide_drag__drag" ).slider( "value" ) );
+	if ($(".slide_drag__drag").length) {
+		$(".slide_drag__drag").slider({
+		  value: 0,
+		  min: 0,
+		  max: 3,
+		  step: 1,
+		  slide: function( event, ui ) {
+		    $( "#amount" ).val( "$" + ui.value );
+		    if ($(window).width() < 1024) {
+		    	console.log(ui.value)
+		    	$('.slide_drag__desc_mob .slide_drag__desc').removeClass('mob_active');
+		    	$('.slide_drag__desc_mob .slide_drag__desc').eq(ui.value).addClass('mob_active');
+		    }
+		  }
+		});
+		$( "#amount" ).val( "$" + $( ".slide_drag__drag" ).slider( "value" ) );
+	}
 
 	$(window).on('load', function(){
 		$('#preloader').fadeOut(1000);
@@ -451,6 +453,21 @@ $(document).ready(function () {
 		if (!trigger) return false;
 
 		$('.input').val('');
+	});
+
+	$('.test_form__btn').click(function () {
+		var trigger = true;
+		var form = $(this).closest('form');
+		// console.log($(form).find('.input'))
+		$(form).find('.input').each(function( index ) {
+			var _this = this;
+			if (!validate(_this, trigger)) {
+				$(this).closest('.input_wr').addClass('wrong');
+				trigger = false;
+			}
+		});
+
+		if (!trigger) return false;
 	});
 
 	$('.consult_write_form__btn').click(function () {
@@ -574,6 +591,24 @@ $(document).ready(function () {
 		}	
 	}
 
+	function createSlider2 () {
+		// console.log($(window).width())
+		if ($(window).width() <= 767){
+			var owlShopResults = $('.rcmdts_prod_wr').owlCarousel({
+				items: 2,
+				loop: false,
+				dots: true,
+			  	nav: true
+			});
+		}	
+		else {
+			$('.rcmdts_prod_wr').trigger('destroy.owl.carousel').addClass('off')
+		}	
+	}
+
+	createSlider2();
+	$(window).resize(createSlider2);
+
 	$('.consult_wr__trigger').click(function () {
 		$(this).closest('.comment').toggleClass('close');
 		return false;
@@ -585,6 +620,64 @@ $(document).ready(function () {
 		dots: true,
 	  nav: true
 	});
+
+	var owlTest = $('.test_slider_wr').owlCarousel({
+		items: 1,
+		loop: false,
+		dots: true,
+	  	nav: true,
+	  	mouseDrag: false,
+	  	touchDrag: false,
+	  	pullDrag: false,
+	  	autoHeight: true
+	});
+
+	var boolTogle = false;
+
+	$('.slide_drag__btn').click(function (e) {
+		e.preventDefault();
+		if (!boolTogle) owlTest.trigger('next.owl.carousel');
+		else{
+			$('.tests').hide();
+			$('.results_section').show();
+			$("html, body").animate({ scrollTop: $('.results_section').offset().top }, 1000);
+		}
+	});
+
+	$('.test_slider_wr .owl-next').addClass('disabled');
+	$('.test_slider_wr .owl-nav').append('<div class="clickBlock"></div>');	
+
+	$('.slide_blocks__btn').click(function () {
+		if ($('.active .slide_blocks__block.choosen').length > 0) {
+			$('.clickBlock').addClass('allow');
+			$('.test_slider_wr .owl-next').removeClass('disabled');
+		}
+		return false;
+	});
+
+	owlTest.on('changed.owl.carousel', function(event) {
+		var count1 = event.page.index;
+		var count2 = event.page.count;
+		count2 = count2 - 1;
+		if (count1 == count2) boolTogle = true;
+		setTimeout(function() {
+			var findBG = $('.owl-item.active .tests__slide').data('background');
+			$('.tests').css('background-image', findBG);
+			$('.clickBlock').removeClass('allow');
+			$('.test_slider_wr .owl-next').addClass('disabled');
+			if ($('.active .slide_drag').length) {
+				$('.clickBlock').addClass('allow');
+				$('.test_slider_wr .owl-next').removeClass('disabled');
+			}
+			if ($('.active .choosen').length) {
+				$('.clickBlock').addClass('allow');
+				$('.test_slider_wr .owl-next').removeClass('disabled');				
+			}
+		}, 10);
+	});
+
+	var dataBG = $('.tests__slide').data('background');
+	$('.tests').css('background-image', dataBG);
 
 	var owlProd = $('.slider_main .owl-carousel').owlCarousel({
 		items: 2,

@@ -258,6 +258,10 @@ a{
 	background-image: url(../../images/SliderArrowRight.svg);
 }
 
+.owl-next.disabled:hover{
+	background-image: url(../../images/SliderArrowRight.svg);
+}
+
 .owl-nav.disabled{
 	display: none;
 }
