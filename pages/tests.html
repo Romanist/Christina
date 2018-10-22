@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="../styles/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="../styles/main.css">
 	<script src="../scripts/libraries/jquery.js"></script>
+	<script src="../scripts/libraries/jquery-ui.min.js"></script>
 	<script src="../scripts/libraries/owl.carousel.min.js"></script>
 	<script src="../scripts/libraries/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
@@ -81,6 +82,7 @@
 					<div class="header__search_wr">
 						<a class="header__search_toggle" href="#">
 							<img src="../images/SearchIcon.svg" alt="">
+							<img src="../images/SearchIcon_hov.svg" class="hov" alt="">
 						</a>
 						<input type="text" placeholder="Найти" class="header__search">
 						<a href="#" class="close_reg_form header__search_close">
@@ -90,19 +92,21 @@
 					</div>
 					<a class="regTog" href="">
 						<img src="../images/UserIcon.svg" alt="">
+						<img src="../images/UserIcon_hov.svg" class="hov" alt="">
 					</a>
 					<a href="">
 						<img src="../images/BasketIcon.svg" alt="">
+						<img src="../images/BasketIcon_hov.svg" class="hov" alt="">
 						<span class="basket_number">5</span>
 					</a>
 				</div>
 			</div>
 		</div>
-		<div class="header__logo">
+		<a href="../index.html" class="header__logo">
 			<!-- <img src="../images/logo.svg" alt=""> -->
 			360° вокруг процедуры
-		</div>
-		<div class="header__logo_mob"></div>
+		</a>
+		<a href="../index.html" class="header__logo_mob"></a>
 		<div class="navigation_wr">
 			<a class="navigation_wr__toggler burgerbutton">
 				<span></span>
@@ -118,19 +122,19 @@
 			</nav>
 			<ul class="header__mob_nav">
 				<li class="">
-					<a class="" href="pages/contacts.html">контакты</a>
+					<a class="" href="pages/contacts.html">Контакты</a>
 				</li>
 				<li class="">
-					<a class="" href="#">найти клинику</a>
+					<a class="" href="#">Найти клинику</a>
 				</li>
 				<li class="">
-					<a class="" href="#">информация для врачей</a>
+					<a class="" href="#">Информация для врачей</a>
 				</li>
 				<li class="">
-					<a class="" href="delievery.html">оплата и доставка</a>
+					<a class="" href="delievery.html">Оплата и доставка</a>
 				</li>
 				<li class="">
-					<a class="" href="#">у меня есть промокод</a>
+					<a class="" href="#">У меня есть промокод</a>
 				</li>
 			</ul>
 			<div class="header__mob_btns">
@@ -158,7 +162,68 @@
 		</div>
 	</header>
 	
-		
+	<section class="tests">
+		<div class="tests__slide slide_blocks">
+			<h3 class="slide_blocks__title title">Ваш образ жизни</h3>
+			<p class="slide_blocks__title_desc">(по желанию выберите несколько пунктов)</p>
+			<div class="slide_blocks__cont">
+				<div class="slide_blocks__block slide_blocks__block-third">
+					<a href="#" class="tests__check"></a>
+					<p class="slide_blocks__desc">Люблю ЗОЖ <br> и правильное питание</p>
+				</div>
+				<div class="slide_blocks__block slide_blocks__block-third">
+					<a href="#" class="tests__check"></a>
+					<p class="slide_blocks__desc">Работаю в офисе <br> с сухим воздухом</p>
+				</div>
+				<div class="slide_blocks__block slide_blocks__block-third">
+					<a href="#" class="tests__check"></a>
+					<p class="slide_blocks__desc">Курю и/или увлекаюсь <br>  алкоголем</p>
+				</div>
+				<div class="slide_blocks__block slide_blocks__block-third">
+					<a href="#" class="tests__check"></a>
+					<p class="slide_blocks__desc">Люблю ЗОЖ <br> и правильное питание</p>
+				</div>
+				<div class="slide_blocks__block slide_blocks__block-third">
+					<a href="#" class="tests__check"></a>
+					<p class="slide_blocks__desc">Люблю ЗОЖ <br> и правильное питание</p>
+				</div>
+				<div class="slide_blocks__block slide_blocks__block-third">
+					<a href="#" class="tests__check"></a>
+					<p class="slide_blocks__desc">Люблю ЗОЖ <br> и правильное питание</p>
+				</div>
+			</div>
+			<a href="#" class="slide_blocks__btn btn">Ответить</a>
+		</div>
+		<div class="tests__slide slide_drag">
+			<div class="slide_drag__title title">Вы считаете свою кожу упругой?</div>
+			<div class="slide_drag__cont">
+				<div class="slide_drag__drag"></div>
+				<div class="slide_drag__points">
+					<div class="slide_drag__point"></div>
+					<div class="slide_drag__desc">Да, достаточно упругая</div>
+				</div>
+				<div class="slide_drag__points">
+					<div class="slide_drag__point"></div>
+					<div class="slide_drag__desc">Есть участки, которые нельзя назвать упругими</div>
+				</div>
+				<div class="slide_drag__points">
+					<div class="slide_drag__point"></div>
+					<div class="slide_drag__desc">Не такая упругая, как год назад</div>
+				</div>
+				<div class="slide_drag__points">
+					<div class="slide_drag__point"></div>
+					<div class="slide_drag__desc">Овал лица опустился</div>
+				</div>
+				<div class="slide_drag__desc_mob">
+					<div class="slide_drag__desc mob_active">Да, достаточно упругая</div>
+					<div class="slide_drag__desc">Есть участки, которые нельзя назвать упругими</div>
+					<div class="slide_drag__desc">Не такая упругая, как год назад</div>
+					<div class="slide_drag__desc">Овал лица опустился</div>					
+				</div>
+			</div>
+			<a href="#" class="btn slide_drag__btn">Следующий вопрос</a>
+		</div>
+	</section>		
 
 	<footer>
 		<div class="consult">
@@ -234,7 +299,7 @@
 						<p>ООО «Кристина Клиникал»</p>
 						<p>ОГРН: 2563456354635</p>
 						<p>г. Москва, ул. Большая Филевская, 16</p>
-						<p class="footer__dev">Разработано CATZWOLF DIGITAL</p>
+						<p class="footer__dev">Разработано <a href="https://catzwolf.ru/" class="dev"><img src="../images/dev.svg" alt=""></a></p>
 					</div>
 				</div>
 				<div class="footer__right">
@@ -257,7 +322,7 @@
 						<p>ООО «Кристина Клиникал»</p>
 						<p>ОГРН: 2563456354635</p>
 						<p>г. Москва, ул. Большая Филевская, 16</p>
-						<p class="footer__dev">Разработано CATZWOLF DIGITAL</p>
+						<p class="footer__dev">Разработано <a href="https://catzwolf.ru/" class="dev"><img src="../images/dev.svg" alt=""></a></p>
 					</div>
 				</div>
 			</div>
@@ -441,6 +506,54 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="popup_op_wrapper call_back_form">
+		<div class="registr_form">
+			<div class="registr_form__bg">
+				<div class="registr_form__head">
+					<h3 class="pop_up__title title">Обратный звонок</h3>
+				</div>
+				<a href="#" class="close_reg_form">
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+			<div class="registr_form__content">
+				<div class="person_item registr_form__promo active">
+					<form action="">
+						<div class="registr_form__inputs">
+							<div class="input_wr w_ph">
+								<input id="lock_name" name="text" type="text" class="input">
+								<label class="ph" for="lock_name" class="">ФИО</label>
+								<p class="warning">неверное ФИО</p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="lock_tel" name="tel" type="text" class="input">
+								<label class="ph" for="lock_tel" class="">Телефон</label>
+								<p class="warning">неверный телефон</p>
+							</div>
+							<div class="input_wr w_ph">
+								<input id="lock_text" name="text" type="text" class="input">
+								<label class="ph" for="lock_text" class="">Страна и город</label>
+								<p class="warning">введите Страну и город</p>
+							</div>
+						</div>
+						<p>Защита от спама</p>
+						<div class="g-recaptcha" data-sitekey="6Lfx3XEUAAAAACjIjZ42ktvx9h1WjMExu-BskDXy"></div>
+						<button class="btn registr_form__reg_btn">Заказать звонок</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="basket_warn">
+		Товар(ы) был(и) добавлен(ы)
+	</div>
+
+	<!-- <div id="preloader">
+		<div id="loader"></div>
+	</div> -->
 
 </body>
 </html>

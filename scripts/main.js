@@ -375,6 +375,30 @@ $(document).ready(function () {
 		});
 	}
 
+	$('.slide_blocks__block').click(function () {
+		$(this).toggleClass('choosen');
+	});
+
+	$('.tests__check').click(function (e) {
+		e.preventDefault();
+	});
+
+	$(".slide_drag__drag").slider({
+	  value: 0,
+	  min: 0,
+	  max: 3,
+	  step: 1,
+	  slide: function( event, ui ) {
+	    $( "#amount" ).val( "$" + ui.value );
+	    if ($(window).width() < 1024) {
+	    	console.log(ui.value)
+	    	$('.slide_drag__desc_mob .slide_drag__desc').removeClass('mob_active');
+	    	$('.slide_drag__desc_mob .slide_drag__desc').eq(ui.value).addClass('mob_active');
+	    }
+	  }
+	});
+	$( "#amount" ).val( "$" + $( ".slide_drag__drag" ).slider( "value" ) );
+
 	$(window).on('load', function(){
 		$('#preloader').fadeOut(1000);
 	});
