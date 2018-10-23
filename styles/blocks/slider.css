@@ -883,7 +883,25 @@
 		width: 300px;
 	}
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {	
+	.slide_blocks__block:hover{
+		background-color: inherit;
+	}
+	.slide_blocks__block.choosen{
+		background-color: #262626;
+	}
+	.slide_blocks__block:hover .tests__check{
+		border-color: inherit;
+	}
+	.slide_blocks__block.choosen .tests__check{	
+		border-color: #fff;
+	}
+	.slide_blocks__block:hover .slide_blocks__desc{
+		color: inherit;
+	}
+	.slide_blocks__block.choosen .slide_blocks__desc{
+		color: #fff;
+	}
 	.slider__title, 
 	.slider__wr{
 		/*padding-left: 40px;*/
