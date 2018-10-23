@@ -477,6 +477,8 @@ $(document).ready(function () {
 		});
 
 		if (!trigger) return false;
+
+		$('.rcmdts__form').addClass('sent');
 	});
 
 	$('.consult_write_form__btn').click(function () {

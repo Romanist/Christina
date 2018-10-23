@@ -848,6 +848,57 @@
 .test_form .textarea_wr{
 	position: relative;
 	margin-top: 16px;
+	height: 50px;
+	margin-bottom: 64px;
+}
+
+.test_form textarea{
+	height: 50%;
+}
+
+.test_form__sent{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	padding: 0 16px;
+	font-family: 'FuturaNewBook-Reg';
+	font-size: 22px;
+	left: 0;
+	right: 0;
+	z-index: -10;
+	opacity: 0;
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.test_form .textarea_wr.wrong:after,
+.test_form .textarea + .ph{
+	top: 50%;
+}
+
+.test_form.sent{
+	position: relative;
+	text-align: center;
+}
+
+.test_form > *{
+	-webkit-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+
+.sent.test_form .test_form__sent{
+	opacity: 1;
+	z-index: 1;
+}
+
+.sent.test_form > *{
+	opacity: 0;
+	z-index: -2;
 }
 
 .test_form__btn{
