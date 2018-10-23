@@ -389,10 +389,10 @@ $(document).ready(function () {
 		  min: 0,
 		  max: 3,
 		  step: 1,
+		  animate: true,
 		  slide: function( event, ui ) {
 		    $( "#amount" ).val( "$" + ui.value );
 		    if ($(window).width() < 1024) {
-		    	console.log(ui.value)
 		    	$('.slide_drag__desc_mob .slide_drag__desc').removeClass('mob_active');
 		    	$('.slide_drag__desc_mob .slide_drag__desc').eq(ui.value).addClass('mob_active');
 		    }
@@ -400,6 +400,15 @@ $(document).ready(function () {
 		});
 		$( "#amount" ).val( "$" + $( ".slide_drag__drag" ).slider( "value" ) );
 	}
+
+	$('.slide_drag__points').click(function () {
+		var dataNumber = $(this).data('number');
+		$(".slide_drag__drag").slider( "option", "value", dataNumber );
+		if ($(window).width() < 1024) {
+	    	$('.slide_drag__desc_mob .slide_drag__desc').removeClass('mob_active');
+	    	$('.slide_drag__desc_mob .slide_drag__desc').eq(dataNumber).addClass('mob_active');
+	    }
+	});
 
 	$(window).on('load', function(){
 		$('#preloader').fadeOut(1000);
@@ -642,15 +651,18 @@ $(document).ready(function () {
 			$('.results_section').show();
 			$("html, body").animate({ scrollTop: $('.results_section').offset().top }, 1000);
 		}
+		$(".slide_drag__drag").slider( "option", "value", 0 );
 	});
 
 	$('.test_slider_wr .owl-next').addClass('disabled');
 	$('.test_slider_wr .owl-nav').append('<div class="clickBlock"></div>');	
+	$('.test_slider_wr .owl-dots').append('<div class="clickBlockDots"></div>');
 
 	$('.slide_blocks__btn').click(function () {
 		if ($('.active .slide_blocks__block.choosen').length > 0) {
 			$('.clickBlock').addClass('allow');
 			$('.test_slider_wr .owl-next').removeClass('disabled');
+			owlTest.trigger('next.owl.carousel');
 		}
 		return false;
 	});
@@ -660,6 +672,7 @@ $(document).ready(function () {
 		var count2 = event.page.count;
 		count2 = count2 - 1;
 		if (count1 == count2) boolTogle = true;
+		$('.test_slider_wr .owl-dots').append('<div class="clickBlockDots"></div>');
 		setTimeout(function() {
 			var findBG = $('.owl-item.active .tests__slide').data('background');
 			$('.tests').css('background-image', findBG);
