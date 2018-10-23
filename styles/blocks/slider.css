@@ -728,6 +728,9 @@
 	display: block;
 	width: 224px;
 	margin: 0 auto 70px;
+	background-color: initial;
+	font-size: 100%;
+	cursor: pointer;
 }
 
 .slide_drag__desc_mob{
