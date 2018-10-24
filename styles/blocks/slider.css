@@ -782,20 +782,29 @@
 	padding: 0 0 25px;
 	margin-bottom: 30px;
 	max-width: 600px;
+	line-height: 50px;
 }
 
 .results_wr__text{
 	max-width: 490px;
 	padding-bottom: 120px;
+	line-height: 28px;
 }
 
 .tests_result{
 	background-color: #CDFAFF;
-	background-image: url(../../images/bg11.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
 	background-position: right;
+}
+
+.results_wr{	
+	background-image: url(../../images/bg11.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+    background-position: right 40px top 0;
 }
 
 .tests_rcmdts{
@@ -938,6 +947,9 @@
 	}
 	.doctor_slider__item{
 		width: 300px;
+	}
+	.results_wr{
+		background: none;
 	}
 }
 @media screen and (max-width: 1023px) {	
@@ -1213,9 +1225,11 @@
 	.results_wr__title{
 		max-width: 340px;
 		font-size: 30px;
+		line-height: 40px;
 	}
 	.results_wr__text{
 		max-width: 385px;
+		line-height: 25px;
 	}
 	.tests_result{
 		background-image: url(../../images/bg11_tabl.png);
