@@ -362,6 +362,13 @@ $(document).ready(function () {
 		return false;
 	});
 
+	$('.promo_link').click(function () {
+		$('html, body').addClass('call_back promo');
+		var _this = '.call_back_form__title';
+		regPopHeight(_this);
+		return false;
+	});
+
 	if($( ".mark__drag" ).length) {
 		$( ".mark__drag" ).draggable({
 		  addClasses: false,
@@ -424,7 +431,7 @@ $(document).ready(function () {
 	});
 
 	$('.close_reg_form').click(function () {
-		$('html, body').removeClass('registration pop_up call_back');
+		$('html, body').removeClass('registration pop_up call_back promo');
 		return false;
 	});
 

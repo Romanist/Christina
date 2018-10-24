@@ -799,12 +799,29 @@
 	background-position: right;
 }
 
+@media screen and (min-width: 1280px) {
+	.tests_result{
+		position: relative;
+	}
+	.tests_result::after{
+		position: absolute;
+		content: '';
+		right: 0;
+		left: 50%;
+		top: 0;
+		bottom: 0;
+		z-index: 0;
+		background-color: #fff;
+	}
+}
+
 .results_wr{	
 	background-image: url(../../images/bg11.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: contain;
 	background-size: contain;
     background-position: right 40px top 0;
+    z-index: 1;
 }
 
 .tests_rcmdts{
