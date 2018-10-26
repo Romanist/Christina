@@ -19,6 +19,10 @@ $(document).ready(function () {
 		return false;
 	});
 
+	if(window.location.href.indexOf("email") > -1) {
+       person('.subs')
+       $('.navigator__btn_wr[data-pos=".subs"]').addClass('active');
+    }
 
 	$('.partner_form__btn').click(function () {
 		var trigger = true;
