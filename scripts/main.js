@@ -443,7 +443,7 @@ $(document).ready(function () {
 	});
 
 	$('.close_reg_form').click(function () {
-		$('html, body').removeClass('registration pop_up call_back promo');
+		$('html, body').removeClass('registration pop_up answer call_back promo');
 		return false;
 	});
 
@@ -513,6 +513,10 @@ $(document).ready(function () {
 		});
 
 		if (!trigger) return false;
+
+		$('html, body').addClass('answer');
+		var _this = '.pop_up__title';
+		regPopHeight(_this);
 	});
 
 	$('.registr_form__forget_pass').click(function () {

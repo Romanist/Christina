@@ -677,6 +677,7 @@ tr.table__title{
 }
 
 .registration,
+.answer,
 .pop_up,
 .call_back{
 	/*overflow: hidden;*/
@@ -685,6 +686,7 @@ tr.table__title{
 }
 
 body.registration,
+body.answer,
 body.pop_up,
 body.call_back{
 	overflow: hidden;
@@ -721,6 +723,11 @@ body.call_back{
 	z-index: 99;	
 }
 
+.answer .anwer_form{
+	opacity: 1;
+	z-index: 99;
+}
+
 .promoPopUp__text{
 	padding-bottom: 50px;
 	text-align: center;
@@ -734,6 +741,7 @@ body.call_back{
 
 .registration .registr_form,
 .pop_up .registr_form,
+.answer .registr_form,
 .call_back .registr_form{
 /*.registr_form{	*/
 	z-index: 100;
