@@ -1371,7 +1371,7 @@
 		padding: 0 17px;
 	}
 	/*.slider__prod > img{*/
-	.slider__prod > img, .slider__prod .link_wr_prod img{
+	.slider__prod > img, .slider__prod .link_wr_product img{
 		position: absolute;
 		top: 30px;
 		right: 0;
