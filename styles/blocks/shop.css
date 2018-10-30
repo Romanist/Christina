@@ -225,6 +225,7 @@ input:checked + .shop_form__item:after{
 }
 
 .slider__prod > img,
+.slider__prod a:first-child img,
 .slider__prod .link_wr_prod img{
 	-webkit-transition: all ease .8s;
 	-o-transition: all ease .8s;
