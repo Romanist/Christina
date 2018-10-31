@@ -44,9 +44,12 @@
 }
 
 .half_btn2{
-	background: var(--bg-color3) url(../../images/bg3.jpg) no-repeat;
+	/*background: var(--bg-color3) url(../../images/bg3.jpg) no-repeat;
 	-webkit-background-size: cover;
-	background-size: cover;
+	background-size: cover;*/
+	background: var(--bg-color3) url(../../images/woman.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
 }
 
 .half__left{
@@ -952,28 +955,12 @@
 	clear: both;
 }
 
-@media screen and (min-width: 1280px) {
-/*	.index_half .half__left{
-		background: var(--bg-color4) url(../../images/bg_face_left.svg) no-repeat right 202px top 0px;
-	}
-	.index_half .half__right {
-	    background: url(../../images/bg_face_right.svg) no-repeat left 188px top 0px;
-	}
-	.half__left .half_btn__form{
-		float: right;
-	    padding-right: 59px;
-	    padding-left: 0;
-	}
-	.half__right .half_btn__form {
-	    padding-right: 200px;
-	    float: left;
-	    padding-left: 53px;
-	    padding-right: 0;
-	}
-*/	.half_btn2{
-		-webkit-background-size: contain;
+@media screen and (min-width: 1600px) {
+	.half_btn2{
+		/*-webkit-background-size: contain;
 		background-size: contain;
-	    background-position-x: center;
+	    background-position-x: center;*/
+	    background-position: 26%;
 	}
 }
 
@@ -1002,10 +989,10 @@
 		background-position-x: 40%;*/
 		/*-webkit-background-size: 108% 100%;
 		background-size: 108% 100%;*/
-		-webkit-background-size: cover;
+		/*-webkit-background-size: cover;
 		background-size: cover;
 		-ms-background-position-x: 10%;
-		background-position-x: 10%;
+		background-position-x: 10%;*/
 	}
 	.half_black__left{
 		padding-right: 40px;
