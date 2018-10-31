@@ -699,7 +699,8 @@ body.call_back{
 	z-index: 99;
 }
 
-.pop_up .call_back_form{
+.pop_up .call_back_form,
+.pop_up .anwer_form{
 	opacity: 0;
 	z-index: -1;
 }
