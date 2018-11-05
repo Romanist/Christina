@@ -52,6 +52,12 @@
 	background-size: contain;
 }
 
+.half_btn3{
+	background: var(--bg-color3) url(../../images/woman2.png) no-repeat;
+	background-size: contain;
+	
+}
+
 .half__left{
 	background: var(--bg-color4) url(../../images/half_face_left.png) no-repeat 0 60px;
 }
@@ -404,6 +410,10 @@
 
 .half_btn2 .half__btn{
 	margin-bottom: 110px;
+}
+
+.half_btn3 .half__btn{
+	margin-bottom: 150px;
 }
 
 .half_slider__mob_contr{
@@ -955,12 +965,74 @@
 	clear: both;
 }
 
+.half_tests{
+	overflow: hidden;
+
+	height: 380px;
+	max-width: 1327px;
+	margin: 0 auto;
+}
+
+.half_btn3{
+	max-width: 1327px;
+	margin: 0 auto;
+}
+
+.half_tests__left{
+	background: #FFCDCD url(../../images/bg12.png);
+
+	position: relative;
+}
+
+.half_tests__right{
+	background: #E3E6FE url(../../images/woman3.png) no-repeat;
+	background-size: contain;
+	-ms-background-position-x: right;
+	background-position-x: right;
+
+	position: relative;
+}
+
+.half_tests__left .half__title,
+.half_tests__right .half__title{
+	max-width: 320px;
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+	padding: 110px 200px 30px 80px;
+
+	font-size: 30px;
+	line-height: 40px;
+
+	position: static;
+}
+
+.half_tests__left .half__btn,
+.half_tests__right .half__btn{
+	position: relative;
+
+	-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	margin: 0 200px 0 80px;
+}
+
 @media screen and (min-width: 1600px) {
 	.half_btn2{
 		/*-webkit-background-size: contain;
 		background-size: contain;
 	    background-position-x: center;*/
 	    background-position: 26%;
+	}
+	.half_btn3{
+		background-position: 0;
 	}
 }
 
@@ -1418,6 +1490,36 @@
 	.half_slider .owl-next{
 		margin-right: 25px;
 	}
+	.half_tests{
+		height: auto;
+	}
+	.half_btn3 .half__right{
+		margin-left: 50%;
+		padding: 30px 0;
+	}
+	.half_btn3{
+		background-image: url(../../images/woman2.png);
+	}
+	.half_tests__left .half__btn{
+		margin: 0 0 50px;
+	}
+	.half_tests__left{
+		text-align: center;
+	}
+	.half_tests__left .half__title{
+		padding: 40px 0 30px;
+		max-width: 100%;
+		width: 100%;
+	}
+	.half_tests__right .half__btn{
+		margin-bottom: 120px;
+	}
+	.half_tests__right .half__title{
+		padding-left: 40px;
+	}
+	.half_tests__right .half__btn{
+		margin-left: 40px;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -1801,6 +1903,38 @@
 	.propeel_half3__link{
 		margin-right: 20px;
 		margin-left: 20px;
+	}
+	.half_btn3{
+		background-image: url(../../images/woman2_mob.png);		
+	}
+	.ch_test .half_btn3 .half__title{
+		padding-left: 0;
+
+		text-align: left;
+
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.half_btn3 .half__btn{
+		bottom: 0;
+		top: 0;
+		margin-top: 30px;
+		margin-bottom: 40px;
+	}
+	.half_btn3 .half__right{
+		text-align: left;
+	}
+	.half_tests__left .half__title, .half_tests__right .half__title{
+		display: block;
+		margin: 0;
+	}
+	.half_tests__right{
+		background-image: url(../../images/woman3_mob.png);
+		-webkit-background-size: 80%;
+		background-size: 80%;
+	}
+	.half_tests__right .half__title{
+		padding: 330px 0 30px 40px;
 	}
 }
 
