@@ -8,7 +8,7 @@
 .nav__item{
 	font-size: 13px;
 	display: inline-block;
-	padding: 10px 40px;
+	padding: 10px 27px;
 	letter-spacing: 1.06px;
 	position: relative;
 }
@@ -399,7 +399,7 @@ a .basket_number{
 
 @media screen and (max-width: 1100px) {
 	.nav__item{
-		padding: 10px 32px;
+		padding: 10px 21px;
 	}
 	.navigation__item{
 		padding: 15px 22px;
