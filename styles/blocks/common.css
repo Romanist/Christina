@@ -384,8 +384,13 @@ html{
 	width: 100%;
 	max-width: 430px;
 	float: none;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	margin-bottom: 50px;
+}
+
+.consult_form__title{
+	text-align: left;
+	padding-bottom: 0;
 }
 
 .consult_write_form .consult_write_form__check{
@@ -400,7 +405,7 @@ html{
 .consult_write_form-dis{
 	float: none;
 	font-size: 16px;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	width: 100%;
 	max-width: 430px;
     white-space: nowrap;
@@ -726,6 +731,7 @@ input:checked + .shop_form__item{
 
 .consult_write_form .consult_write_form__btn{
 	margin-bottom: 110px;
+	float: left;
 }
 
 .big_banner_2{
