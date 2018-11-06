@@ -438,7 +438,7 @@
 	/*padding-bottom: 7px;*/
 	margin-bottom: 13px;
 	font-size: 50px;
-	padding: 24px 123px 14px 0;
+	padding: 24px 40px 14px 0;
 	line-height: 61px;
 }
 
@@ -470,7 +470,7 @@
 	background-color: var(--bg-color13);
 	color: var(--white-color);
 	left: 70%;
-	bottom: 24px;
+	bottom: 10px;
 	-webkit-transition: all ease .4s;
 	-o-transition: all ease .4s;
 	transition: all ease .4s;
@@ -500,7 +500,7 @@
 }
 
 .prod_inf__list{
-	max-width: 340px;
+	/*max-width: 340px;*/
 	padding-bottom: 34px;
 }
 

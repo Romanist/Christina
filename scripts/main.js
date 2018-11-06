@@ -101,6 +101,11 @@ $(document).ready(function () {
 		if (!trigger) {
 			return false;
 		}
+
+		$(this).closest('.form__wr').addClass('form__wr-suc');
+		setTimeout(function() {
+			$('.form__wr').removeClass('form__wr-suc');
+		}, 5000);
 	});
 
 	$('.subs__btn').click(function () {

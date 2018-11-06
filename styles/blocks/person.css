@@ -230,6 +230,31 @@
 	float: left;
 	width: 100%;
 	text-align: center;
+	position: relative;
+}	
+
+.form__wr-suc .common__btn{
+	opacity: 0;
+}
+
+.common__success{
+	position: absolute;
+
+	top: 94px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	
+	opacity: 0;
+
+	transition: all ease .3s;
+}
+
+.form__wr-suc .common__success{
+	opacity: 1;
 }
 
 .table__left{

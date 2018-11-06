@@ -44,6 +44,7 @@
 	-webkit-transition: all ease .4s;
 	-o-transition: all ease .4s;
 	transition: all ease .4s;
+	object-fit: cover;
 }
 
 .news__item_small:hover .news_item__img{
@@ -71,8 +72,18 @@
 }
 
 .news__btn{
-	margin-bottom: 103px;
 	font-family: 'FuturaNewBook-Reg';
+	display: block;
+	clear: both;
+	width: 224px;
+	margin: 100px auto 100px;
+	float: left;
+	position: relative;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 .news__top{
@@ -104,7 +115,7 @@
 	width: 66%;
 }
 
-.news__item:last-child,
+.news__item:nth-child(3n+5),
 .news__item:nth-child(2){
 	margin-right: 0;
 }
