@@ -248,6 +248,11 @@
 	margin-left: 0;
 }
 
+.half__right .procedures_form__inline:nth-child(11){
+	margin-left: 0;
+	margin-right: -12px;
+}
+
 .half__left .procedures_form__text{
 	padding-left: 70px;
 	padding-bottom: 21px;
