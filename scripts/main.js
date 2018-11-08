@@ -3,6 +3,10 @@ $(document).ready(function () {
 		$('.navigation_wr').toggleClass('open')
 	});
 
+	$('.half__btn_mob').click(function () {
+		$("html, body").animate({ scrollTop: $('.index_half .half__block.half__right').offset().top }, 1000);
+		return false;
+	});
 
 	$('.half_slider__contr_minus').click(function (e) {
 		e.preventDefault();
