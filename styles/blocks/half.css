@@ -264,6 +264,11 @@
 	display: none;
 }
 
+.half__btn_mob{
+	background-color: transparent;
+	font-size: 100%;
+}
+
 .half_slider__item{
 	margin-top: 170px;
 	height: 517px;
