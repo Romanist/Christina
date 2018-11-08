@@ -15,6 +15,16 @@
 	/*height: 808px;*/
 }
 
+.index_half__form{
+	overflow: hidden;
+}
+
+.half__btn{
+	background-color: transparent;
+	font-size: 100%;
+	cursor: pointer;
+}
+
 .half__block{
 	float: left;
 	width: 50%;
