@@ -117,10 +117,10 @@ $(document).ready(function () {
 		return false;
 	});
 
-	$('.patients__generate').click(function () {
-		$("html, body").animate({ scrollTop: $('.patients__promo').offset().top }, 1000);
-		return false;
-	});
+	// $('.patients__generate').click(function () {
+	// 	$("html, body").animate({ scrollTop: $('.patients__promo').offset().top }, 1000);
+	// 	return false;
+	// });
 
 	$(document).on('click', '.adress .table__link', function () {
 		$(this).closest('tr').addClass('changing');
@@ -314,6 +314,14 @@ $(document).ready(function () {
 		if (!$('.basket_warn').hasClass('active')) {
 			$('.basket_warn').addClass('active');
 			setTimeout(function() { $('.basket_warn').removeClass('active') }, 2000);
+		}
+		return false;
+	});
+
+	$('.patients__generate').click(function () {
+		if (!$('.basket_warn.promo_warn').hasClass('active')) {
+			$('.basket_warn.promo_warn').addClass('active');
+			setTimeout(function() { $('.basket_warn.promo_warn').removeClass('active') }, 2000);
 		}
 		return false;
 	});
