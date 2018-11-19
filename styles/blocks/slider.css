@@ -952,6 +952,10 @@
     font-family: 'FuturaNewBook-Reg';
 }
 
+.tests_rcmdts .product__price{
+	bottom: 60px;
+}
+
 @media screen and (max-width: 1279px) {
 	.tests_result{
 		background-image: url(../../images/bg11_small.png);		
