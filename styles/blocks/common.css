@@ -628,7 +628,7 @@ input:checked + .find_md__filter_text:after{
 	opacity: 1;
 }
 
-.find_md__filters input{
+.find_md__filters input[type="checkbox"]{
 	width: 0;
 	height: 0;
 	position: absolute;

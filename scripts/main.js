@@ -18,7 +18,7 @@ $(document).ready(function () {
 		$(this).closest('.half_slider__item').addClass('plus');
 	});
 
-	$(document).on ('click', '.table__remove', function () {
+	$(document).on('click', '.table__remove', function () {
 		$(this).closest('tr').remove();
 		$(this).closest('.basket_table__row').remove();
 		return false;
@@ -500,6 +500,19 @@ $(document).ready(function () {
 		$('.input').val('');
 	});
 
+	$(document).on('mouseover', '.circle_wr__text .text1', function () {
+		$('.circle_wr__text').removeClass('hovered');
+		$(this).closest('.circle_wr__text').addClass('hovered');
+	});
+
+	$(document).on('mouseleave', '.circle_wr__text', function () {
+		$('.circle_wr__text').removeClass('hovered');
+	});
+
+	// $('.circle_wr__text .text1').mouseleave(function () {
+	// 	$('.circle_wr__text').removeClass('hovered')
+	// });
+
 	$('.test_form__btn').click(function () {
 		var trigger = true;
 		var form = $(this).closest('form');
@@ -517,7 +530,18 @@ $(document).ready(function () {
 		$('.rcmdts__form').addClass('sent');
 	});
 
+	$('.circle_wr__text').each(function (counter, value) {
+		var textBeforeDash = $(this).text();
+		textBeforeDash = textBeforeDash.split('–')[0];
+		$(this).find('.text1').append(textBeforeDash);
+	});
+
 	$('.consult_write_form__btn').click(function () {
+		$('.consult_write_form__link').addClass('alert');
+		setTimeout(function() {
+			$('.consult_write_form__link').removeClass('alert');
+		}, 1000);
+
 		var trigger = true;
 		var form = $(this).closest('form');
 		// console.log($(form).find('.input'))
