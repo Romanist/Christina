@@ -982,6 +982,42 @@ $(document).ready(function () {
 		});
 	}
 
+	if ($(".patients_table_wr").length) {
+		$(".patients_table_wr").mCustomScrollbar({
+			axis:"x",
+			mouseWheel:{ enable: false },
+			callbacks:{
+	        whileScrolling: function(){
+	          btnManage2(this);
+	        }
+	    }
+		});
+	}
+
+	function btnManage2 (el) {
+		$('.patients__nav_btn').removeClass('active')
+		var percentPos = el.mcs.leftPct
+		if (percentPos < 33) {
+			$('.patients__nav_btn1').addClass('active')
+		}
+		if (percentPos >= 33) {
+			$('.patients__nav_btn2').addClass('active')
+		}
+		if (percentPos >= 66) {
+			$('.patients__nav_btn2').removeClass('active')
+			$('.patients__nav_btn3').addClass('active')
+		}
+	}
+
+	$(document).on('click', '.patients__nav_btn', function () {
+		$('.patients__nav_btn').removeClass('active');
+		$(this).addClass('active');
+		var dataLink = $(this).data('link');
+		dataLink = $(dataLink);
+		$(".patients_table_wr").mCustomScrollbar('scrollTo', dataLink);
+		return false;
+	});
+
 	if ($(".input_drop__down")) {
 		$(".input_drop__down").mCustomScrollbar({
 			axis:"y",

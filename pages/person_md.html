@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="../styles/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="../styles/main.css">
 	<script src="../scripts/libraries/jquery.js"></script>
+	<script src="../scripts/libraries/jquery.mask.min.js"></script>
 	<script src="../scripts/libraries/owl.carousel.min.js"></script>
 	<script src="../scripts/libraries/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
@@ -177,14 +178,14 @@
 				><a href="#" data-pos=".order" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Мои заказы</span></a
 				><a href="#" data-pos=".reviews" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Мои отзывы</span></a
 				><a href="#" data-pos=".subs" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Мои подписки</span></a
-				><a href="#" data-pos=".patients" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Заказы пациентов</span></a
-				><a href="#" data-pos=".answers" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">выдать промокод</span></a>
+				><a href="#" data-pos=".patients" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">Заказы пациентов</span></a>
+				<!-- <a href="#" data-pos=".answers" class="perNavBtn navigator__btn_wr"><span class="navigator__btn">выдать промокод</span></a> -->
 			</div>
 		</div>
 	</section>
 
 	<div class="wrapper">
-		<section class="common active person_item">
+		<section class="common  person_item">
 			<div class="max_width">
 				<h2 class="title common__title">Данные для покупок</h2>
 				<p class="common__desc">Используется для оформления заказов. Никогда и ни при каких обстоятельствах не передаётся третьим лицам.</p>
@@ -567,59 +568,120 @@
 			</div>
 		</section>
 
-		<section class="person_item patients">
+		<section class="person_item active patients">
 			<section class="patients_table">
 				<div class="max_width">
 					<h2 class="title patients__title">Заказы пациентов</h2>
 					<a href="#" class="btn patients__btn patients__generate">Сформировать промо код</a>
-					<table class="active__table patients__table table">
-						<tbody>
-							<tr class="table__title">
-								<td class="">
-									ФИО
-								</td>
-								<td class="">
-									Сумма
-								</td>
-								<td class="">
-									Промо код
-								</td>
-							</tr>
-							<tr>
-								<td class="table-op">
-									Смирнова Екатерина Ивановна
-								</td>
-								<td class="table-bold">
-									15 780 ₽
-								</td>
-								<td class="table-bold">
-									MX-23-AF
-								</td>
-							</tr>
-							<tr>
-								<td class="table-op">
-									Смирнова Екатерина Ивановна
-								</td>
-								<td class="table-bold">
-									15 780 ₽
-								</td>
-								<td class="table-bold">
-									MX-23-AF
-								</td>
-							</tr>
-							<tr>
-								<td class="table-op">
-									Смирнова Екатерина Ивановна
-								</td>
-								<td class="table-bold">
-									15 780 ₽
-								</td>
-								<td class="table-bold">
-									MX-23-AF
-								</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="patients__scroll">
+						<a href="#" data-link=".patients__table1" class="patients__nav_btn patients__nav_btn1 active">Активные коды</a>
+						<a href="#" data-link=".patients__table2" class="patients__nav_btn patients__nav_btn2">Отданные коды</a>
+						<a href="#" data-link=".patients__table3" class="patients__nav_btn patients__nav_btn3">Использованные коды</a>
+					</div>
+					<div class="patients_table_wr">
+						<table class="active__table patients__table patients__table1 table">
+							<tbody>
+								<tr class="table__title">
+									<td class="">
+										Промо код
+									</td>
+									<td class="">
+										Действие
+									</td>
+								</tr>
+								<tr>
+									<td class="table-bold">
+										0779837628021
+									</td>
+									<td class="table-bold">
+										<a href="#" class="w_arr">	Перевести в отданные коды</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="table-bold">
+										0779837628021
+									</td>
+									<td class="table-bold">
+										<a href="#" class="w_arr">	Перевести в отданные коды</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="active__table patients__table patients__table2 table">
+							<tbody>
+								<tr class="table__title">
+									<td class="">
+										Промо код
+									</td>
+								</tr>
+								<tr>
+									<td class="table-bold">
+										0779837628021
+									</td>
+								</tr>
+								<tr>
+									<td class="table-bold">
+										0779837628021
+									</td>
+								</tr>
+								<tr>
+									<td class="table-bold">
+										0779837628021
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="active__table patients__table patients__table3 table">
+							<tbody>
+								<tr class="table__title">
+									<td class="">
+										Промо код
+									</td>
+									<td class="">
+										ФИО
+									</td>
+									<td class="">
+										Сумма заказа
+									</td>
+									<td class="">
+										Сумма бонуса
+									</td>
+								</tr>
+								<tr>
+									<td class="table-bold">
+										<span class="table-mob">Промо код</span>
+										0779837628021
+									</td>
+									<td class="table-op">
+										<span class="table-mob">ФИО</span>
+										Смирнова Екатерина Ивановна
+									</td>
+									<td class="table-bold">
+										<span class="table-mob">Сумма заказа</span>
+										15 780 ₽
+									</td>
+									<td class="table-bold">
+										<span class="table-mob">Сумма бонуса</span>
+										15 780 ₽
+									</td>
+								</tr>
+								<tr>
+									<td class="table-bold">
+										0779837628021
+									</td>
+									<td class="table-op">
+										Смирнова Екатерина Ивановна
+									</td>
+									<td class="table-bold">
+										15 780 ₽
+									</td>
+									<td class="table-bold">
+										15 780 ₽
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 					<a href="#" class="w_arr patients__more">Показать ещё</a>
 				</div>
 			</section>
@@ -955,481 +1017,6 @@
 				</div>
 			</section>
 
-		</section>
-
-		<section class="person_item answers">
-			<!-- <div class="max_width">
-				<h2 class="title common__title">Вопросы косметологу</h2>
-				<h7 class="common__title_low">Всего вопросов 2 </h7>
-				<div class="consult_wr">					
-					<div class="consult_wr__comment comment">
-						<p class="comment__name">Вы спросили</p>
-						<p class="comment__date">27.05.2018</p>
-						<p class="comment__text">Помогите выбрать средства по уходу вокруг глаз. Мне 26 лет</p>
-						<div class="prod_comments__review comment__answer review">
-							<div class="review__top comment__top">
-								<span class="review__name">Мошенская Алена отвечает</span>
-								<div class="review__rait">
-									<img src="../images/rat_icon.svg" alt="">
-									<img src="../images/rat_icon.svg" alt="">
-									<img src="../images/rat_icon.svg" alt="">
-									<img src="../images/rat_icon.svg" alt="">
-									<img width="8px" height="8px" src="../images/rat_icon_empty.svg" alt="">
-								</div>
-							</div>
-							<span class="review__info">тренер-косметолог</span>
-							<span class="review__comment">
-								Добрый день, Катя! <br>
-								Для области вокруг глаз: 1. Гель для кожи вокруг глаз Lumiere — препарат эффективно увлажняет кожу вокруг глаз, разглаживает мелкие морщинки; легкая гелевая текстура быстро впитывается, не оставляя липкости. Препарат обладает также противовоспалительным и омолаживающим действиями. 2. Осветляющий крем для кожи вокруг глаз BioPhyto — увлажняет, смягчает, укрепляет сосуды и обладает лифтинг-эффектом. 3. Маска для разглаживания кожи вокруг глаз Forever Young — убирает темные круги и отеки вокруг глаз, разглаживает морщины, увлажняет кожу, содержит омолаживающие компоненты. 1 или 2 средство на выбор — ежедневно, утром и вечером. 3 препарат 2 раза в неделю. <br>
-								Также ближе к 30 годам можно использовать Крем с ретинолом для зрелой кожи вокруг глаз — это препарат с выраженным омолаживающим эффектом (улучшает текстуру — разглаживает морщины, уплотняет кожу, осветляет), используются в вечернее время, наносятся тонким слоем, 1 − 2 раза в неделю (в остальные ночи другой препарат, не содержащий ретинол). Днем применяйте солнцезащитное средство. Важно: не используйте это средство в период беременности и лактации!
-							</span>
-							<div class="answers__recomend recomend">
-								<h2 class="title common__title">Вопросы косметологу</h2>
-								<div class="slider shop_slider__wr">
-									<div class="owl-carousel slider__wr">
-										<div class="slider__prod product__wr">
-											<img src="../images/prod1.png" alt="">
-											<p class="product_wr__new">
-												новинка
-											</p>
-											<p class="product_wr__name">
-												ProPeel, resurfacer
-											</p>
-											<p class="product_wr__dec">
-												Сывортка для усиления действия пилинга
-											</p>
-											<p class="product__price">
-												1578 ₽
-											</p>
-											<a href="#" class="product__basket">
-												<img src="../images/BasketIcon.svg" alt="">
-											</a>
-										</div>
-										<div class="slider__prod product__wr">
-											<img src="../images/prod1.png" alt="">
-											<p class="product_wr__new">
-												новинка
-											</p>
-											<p class="product_wr__name">
-												ProPeel, resurfacer
-											</p>
-											<p class="product_wr__dec">
-												Сывортка для усиления действия пилинга
-											</p>
-											<p class="product__price">
-												1578 ₽
-											</p>
-											<a href="#" class="product__basket">
-												<img src="../images/BasketIcon.svg" alt="">
-											</a>
-										</div>
-										<div class="slider__prod product__wr">
-											<img src="../images/prod1.png" alt="">
-											<p class="product_wr__new">
-												новинка
-											</p>
-											<p class="product_wr__name">
-												ProPeel, resurfacer
-											</p>
-											<p class="product_wr__dec">
-												Сывортка для усиления действия пилинга
-											</p>
-											<p class="product__price">
-												1578 ₽
-											</p>
-											<a href="#" class="product__basket">
-												<img src="../images/BasketIcon.svg" alt="">
-											</a>
-										</div>
-										<div class="slider__prod product__wr">
-											<img src="../images/prod1.png" alt="">
-											<p class="product_wr__new">
-												новинка
-											</p>
-											<p class="product_wr__name">
-												ProPeel, resurfacer
-											</p>
-											<p class="product_wr__dec">
-												Сывортка для усиления действия пилинга
-											</p>
-											<p class="product__price">
-												1578 ₽
-											</p>
-											<a href="#" class="product__basket">
-												<img src="../images/BasketIcon.svg" alt="">
-											</a>
-										</div>
-									</div>				
-								</div>
-								<a href="#" class="btn recomend__btn">Добавить всё в корзину</a>
-							</div>
-							<div class="review__rating comment__rating">
-								<span>Полезен отзыв?</span>
-								<a href="#" class="review__rating_link" data-sign="-">−</a>
-								<a href="#" class="review__rating_link" data-sign="+">+</a>
-							</div>
-						</div>
-						<a href="#" class="w_arr consult_wr__trigger consult_wr__trigger-open">Читать полностью</a>
-						<a href="#" class="w_arr consult_wr__trigger consult_wr__trigger-close">Скрыть ответ</a>
-					</div>
-					<div class="consult_wr__comment comment close">
-						<p class="comment__name">Вы спросили</p>
-						<p class="comment__date">27.05.2018</p>
-						<p class="comment__text">Добрый день! Хотела бы получить примерную программу ухода. 26 лет. Лечилась эффезелом, в данный момент применяю базирон 5%. Высыпания есть. Кожа жирная, шелушения, постакне пятна, рельеф ровный, цвет лица тусклый. Раз в неделю использую пилинг с витамином Е. Средства желательно безспиртовые и пилинг для более частого применения, если это возможно.</p>
-						<div class="prod_comments__review comment__answer review">
-							<div class="review__top comment__top">
-								<span class="review__name">Мошенская Алена отвечает</span>
-								<div class="review__rait">
-									<img src="../images/rat_icon.svg" alt="">
-									<img src="../images/rat_icon.svg" alt="">
-									<img src="../images/rat_icon.svg" alt="">
-									<img src="../images/rat_icon.svg" alt="">
-									<img width="8px" height="8px" src="../images/rat_icon_empty.svg" alt="">
-								</div>
-							</div>
-							<span class="review__info">тренер-косметолог</span>
-							<span class="review__comment">
-								Сначала выберите очищающее средство. Для демакияжа и повседневного очищения кожи утром и вечером можно использовать рН нейтральный гель или пенку. Любое из этих средств подойдет для зоны вокруг глаз.
-							</span>
-							<div class="review__rating comment__rating">
-								<span>Полезен отзыв?</span>
-								<a href="#" class="review__rating_link" data-sign="-">−</a>
-								<a href="#" class="review__rating_link" data-sign="+">+</a>
-							</div>
-						</div>
-						<a href="#" class="w_arr consult_wr__trigger consult_wr__trigger-open">Читать полностью</a>
-						<a href="#" class="w_arr consult_wr__trigger consult_wr__trigger-close">Скрыть ответ</a>
-					</div>
-				</div>
-			</div> -->
-			<div class="max_width">
-					<h2 class="title patients__title">Выдать промо код</h2>
-					<form action="" autocomplete="off" class="common__form">
-						<div class="inputs common__inputs">
-							<div class="input_wr w_ph">
-								<input id="mail" name="mail" type="text" class="input">
-								<label class="ph" for="mail" class="">E-mail</label>
-								<p class="warning">неверный e-mail</p>
-							</div>
-							<div class="input_wr w_ph">
-								<input id="surname" name="name" type="text" class="input">
-								<label class="ph" for="surname" class="">ФИО пациента</label>
-								<p class="warning">неверное ФИО пациента</p>
-							</div>
-						</div>
-						<button class="btn patients__promo_btn patients__promo_gen">Выдать промо код</button>
-						<button class="btn patients__promo_btn patients__promo_print">Распечатать промо код без рекомендаций</button>
-					</form>
-					<h6 class="patients__promo_desc">Выберите товары, которые вы хотите рекомендовать пациенту:</h6>
-					<div class="news__search_wr">
-						<input type="text" placeholder="Найти по названию или артикулу" class="news__search">
-					</div>
-				</div>	
-
-				<!-- all products here require uniq data-id to allow doctor chose and send recomendations -->
-
-			<section class="slider slider_propeel patients__slider">
-				<div class="max_width">
-					<h1 class="patients__title title">
-						ProSculpt
-					</h1>
-					<div class="owl-carousel sculp-slider slider__wr">
-						<div data-id="1" class="slider__prod product__wr">
-							<img src="../images/prod1.png" alt="">
-							<p class="product_wr__new">
-								новинка
-							</p>
-							<p class="product_wr__name">
-								ProPeel, resurfacer
-							</p>
-							<p class="product_wr__dec">
-								Сывортка для усиления действия пилинга
-							</p>
-							<p class="product__price">
-								1578 ₽
-							</p>
-							<a href="#" class="product__basket">
-								<img src="../images/confirm.svg" alt="">
-							</a>
-						</div>
-						<div data-id="2" class="slider__prod product__wr confirmed">
-							<img src="../images/prod1.png" alt="">
-							<p class="product_wr__new">
-								новинка
-							</p>
-							<p class="product_wr__name">
-								ProPeel, resurfacer
-							</p>
-							<p class="product_wr__dec">
-								Сывортка для усиления действия пилинга
-							</p>
-							<p class="product__price">
-								1578 ₽
-							</p>
-							<a href="#" class="product__basket">
-								<img src="../images/confirm.svg" alt="">
-							</a>
-						</div>		
-						<div data-id="3" class="slider__prod product__wr">
-							<img src="../images/prod1.png" alt="">
-							<p class="product_wr__new">
-								новинка
-							</p>
-							<p class="product_wr__name">
-								ProPeel, resurfacer
-							</p>
-							<p class="product_wr__dec">
-								Сывортка для усиления действия пилинга
-							</p>
-							<p class="product__price">
-								1578 ₽
-							</p>
-							<a href="#" class="product__basket">
-								<img src="../images/confirm.svg" alt="">
-							</a>
-						</div>
-						<div class="slider__prod product__wr">
-							<img src="../images/prod1.png" alt="">
-							<p class="product_wr__new">
-								новинка
-							</p>
-							<p class="product_wr__name">
-								ProPeel, resurfacer
-							</p>
-							<p class="product_wr__dec">
-								Сывортка для усиления действия пилинга
-							</p>
-							<p class="product__price">
-								1578 ₽
-							</p>
-							<a href="#" class="product__basket">
-								<img src="../images/confirm.svg" alt="">
-							</a>
-						</div>
-						<div class="slider__prod product__wr">
-							<img src="../images/prod1.png" alt="">
-							<p class="product_wr__new">
-								новинка
-							</p>
-							<p class="product_wr__name">
-								ProPeel, resurfacer
-							</p>
-							<p class="product_wr__dec">
-								Сывортка для усиления действия пилинга
-							</p>
-							<p class="product__price">
-								1578 ₽
-							</p>
-							<a href="#" class="product__basket">
-								<img src="../images/confirm.svg" alt="">
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="slider slider_propeel patients__slider">
-				<div class="max_width">
-					<h1 class="patients__title title">
-						ProPeel
-					</h1>
-					<div class="owl-carousel slider__wr">
-						<div class="slider__prod product__wr">
-							<img src="../images/prod1.png" alt="">
-							<p class="product_wr__new">
-								новинка
-							</p>
-							<p class="product_wr__name">
-								ProPeel, resurfacer
-							</p>
-							<p class="product_wr__dec">
-								Сывортка для усиления действия пилинга
-							</p>
-							<p class="product__price">
-								1578 ₽
-							</p>
-							<a href="#" class="product__basket">
-								<img src="../images/confirm.svg" alt="">
-							</a>
-						</div>
-						<div class="slider__prod product__wr confirmed">
-							<img src="../images/prod1.png" alt="">
-							<p class="product_wr__new">
-								новинка
-							</p>
-							<p class="product_wr__name">
-								ProPeel, resurfacer
-							</p>
-							<p class="product_wr__dec">
-								Сывортка для усиления действия пилинга
-							</p>
-							<p class="product__price">
-								1578 ₽
-							</p>
-							<a href="#" class="product__basket">
-								<img src="../images/confirm.svg" alt="">
-							</a>
-						</div>		
-						<div class="slider__prod product__wr">
-							<img src="../images/prod1.png" alt="">
-							<p class="product_wr__new">
-								новинка
-							</p>
-							<p class="product_wr__name">
-								ProPeel, resurfacer
-							</p>
-							<p class="product_wr__dec">
-								Сывортка для усиления действия пилинга
-							</p>
-							<p class="product__price">
-								1578 ₽
-							</p>
-							<a href="#" class="product__basket">
-								<img src="../images/confirm.svg" alt="">
-							</a>
-						</div>
-						<div class="slider__prod product__wr">
-							<img src="../images/prod1.png" alt="">
-							<p class="product_wr__new">
-								новинка
-							</p>
-							<p class="product_wr__name">
-								ProPeel, resurfacer
-							</p>
-							<p class="product_wr__dec">
-								Сывортка для усиления действия пилинга
-							</p>
-							<p class="product__price">
-								1578 ₽
-							</p>
-							<a href="#" class="product__basket">
-								<img src="../images/confirm.svg" alt="">
-							</a>
-						</div>
-						<div class="slider__prod product__wr">
-							<img src="../images/prod1.png" alt="">
-							<p class="product_wr__new">
-								новинка
-							</p>
-							<p class="product_wr__name">
-								ProPeel, resurfacer
-							</p>
-							<p class="product_wr__dec">
-								Сывортка для усиления действия пилинга
-							</p>
-							<p class="product__price">
-								1578 ₽
-							</p>
-							<a href="#" class="product__basket">
-								<img src="../images/confirm.svg" alt="">
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- next section contains button! -->
-
-			<section class="slider slider_propeel patients__slider">
-				<div class="max_width">
-					<h1 class="patients__title title">
-						ProClear
-					</h1>
-					<div class="owl-carousel clear-slider slider__wr">
-						<div class="slider__prod product__wr">
-							<img src="../images/prod1.png" alt="">
-							<p class="product_wr__new">
-								новинка
-							</p>
-							<p class="product_wr__name">
-								ProPeel, resurfacer
-							</p>
-							<p class="product_wr__dec">
-								Сывортка для усиления действия пилинга
-							</p>
-							<p class="product__price">
-								1578 ₽
-							</p>
-							<a href="#" class="product__basket">
-								<img src="../images/confirm.svg" alt="">
-							</a>
-						</div>
-						<div class="slider__prod product__wr confirmed">
-							<img src="../images/prod1.png" alt="">
-							<p class="product_wr__new">
-								новинка
-							</p>
-							<p class="product_wr__name">
-								ProPeel, resurfacer
-							</p>
-							<p class="product_wr__dec">
-								Сывортка для усиления действия пилинга
-							</p>
-							<p class="product__price">
-								1578 ₽
-							</p>
-							<a href="#" class="product__basket">
-								<img src="../images/confirm.svg" alt="">
-							</a>
-						</div>		
-						<div class="slider__prod product__wr">
-							<img src="../images/prod1.png" alt="">
-							<p class="product_wr__new">
-								новинка
-							</p>
-							<p class="product_wr__name">
-								ProPeel, resurfacer
-							</p>
-							<p class="product_wr__dec">
-								Сывортка для усиления действия пилинга
-							</p>
-							<p class="product__price">
-								1578 ₽
-							</p>
-							<a href="#" class="product__basket">
-								<img src="../images/confirm.svg" alt="">
-							</a>
-						</div>
-						<div class="slider__prod product__wr">
-							<img src="../images/prod1.png" alt="">
-							<p class="product_wr__new">
-								новинка
-							</p>
-							<p class="product_wr__name">
-								ProPeel, resurfacer
-							</p>
-							<p class="product_wr__dec">
-								Сывортка для усиления действия пилинга
-							</p>
-							<p class="product__price">
-								1578 ₽
-							</p>
-							<a href="#" class="product__basket">
-								<img src="../images/confirm.svg" alt="">
-							</a>
-						</div>
-						<div class="slider__prod product__wr">
-							<img src="../images/prod1.png" alt="">
-							<p class="product_wr__new">
-								новинка
-							</p>
-							<p class="product_wr__name">
-								ProPeel, resurfacer
-							</p>
-							<p class="product_wr__dec">
-								Сывортка для усиления действия пилинга
-							</p>
-							<p class="product__price">
-								1578 ₽
-							</p>
-							<a href="#" class="product__basket">
-								<img src="../images/confirm.svg" alt="">
-							</a>
-						</div>
-					</div>
-					<a href="#" class="btn patients__rec_btn">Отправить рекомендацию</a>
-				</div>
-			</section>		
 		</section>
 	</div>
 

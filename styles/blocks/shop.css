@@ -83,7 +83,7 @@
 	cursor: pointer;
 	margin-right: 20px;
 	position: relative;
-	white-space: nowrap;
+	/*white-space: nowrap;*/
 	opacity: .6;
 	-webkit-transition: all ease .4s;
 	-o-transition: all ease .4s;
@@ -117,7 +117,7 @@
 input:checked + .shop_form__item:after{
 	/*color: red;*/
 	/*display: block;*/
-	opacity: 1;
+	/*opacity: 1;*/
 }
 
 .shop_form__btn{
