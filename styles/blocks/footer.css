@@ -71,12 +71,8 @@
 }
 
 .bot_nav__list_item{
-	width: 17.5%;
+	width: 16%;
 	display: inline-block;
-}
-
-.bot_nav__list_item:last-child{
-	width: 9%;
 }
 
 dt .bot_nav__link{

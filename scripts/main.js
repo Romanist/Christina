@@ -241,13 +241,13 @@ $(document).ready(function () {
 	});
 		
 	$('.propeel_half2__click').click(function () {
-		if ($(this).closest('.propeel_half2__item').hasClass('opened')) {
-			$(this).closest('.propeel_half2__item').removeClass('opened');
-		}
-		else {
-			$('.propeel_half2__item').removeClass('opened');
-			$(this).closest('.propeel_half2__item').addClass('opened');			
-		}		
+		// if ($(this).closest('.propeel_half2__item').hasClass('opened')) {
+		// 	$(this).closest('.propeel_half2__item').removeClass('opened');
+		// }
+		// else {
+		// 	$('.propeel_half2__item').removeClass('opened');
+		// 	$(this).closest('.propeel_half2__item').addClass('opened');			
+		// }		
 		return false;
 	});
 
