@@ -209,7 +209,7 @@ input:checked + .shop_form__item{
 
 .shop_slider .slider__prod{
 	width: auto;
-	height: 450px;
+	/*height: 450px;*/
 }
 
 .shop_slider{
@@ -442,7 +442,6 @@ input:checked + .shop_form__item{
 	.shop_slider .slider__prod{
 		background-color: var(--hover-product-bg-color);
 		width: 256px;
-		height: 396px;
 	}
 	.sculp-slider .slider__prod{
 		background-color: var(--bg-color1);
