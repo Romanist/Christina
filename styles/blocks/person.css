@@ -198,7 +198,7 @@
 
 .basket_form .common__radios{
 	width: 350px;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 }
 
 .check_hid{
@@ -555,6 +555,7 @@ tr.table__title{
 
 .basket_form{
 	background-color: var(--bg-color2);
+	padding-top: 50px;
 }
 
 .basket_form__title{
