@@ -96,8 +96,8 @@
 
 .ban_center{
 	background: var(--bg-color1) url(../../images/bg1.png);	
-	-webkit-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: cover !important;
+	background-size: cover !important;
 	margin-top: 60px;
 }
 
