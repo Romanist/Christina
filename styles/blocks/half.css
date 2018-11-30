@@ -688,7 +688,9 @@
 .propeel_half1__circle_wr{
     position: absolute;
     left: 61%;
-    bottom: 20px;
+    /*bottom: 20px;*/
+    height: 411px;
+    width: 370px;
     top: 88px;
     background: url(../../images/circle.png) no-repeat;
     -webkit-background-size: contain;
@@ -1404,6 +1406,7 @@
     .propeel_half1__circle_wr{
     	position: static;
     	background-image: none;
+    	height: initial;
     }
     .propeel_half1__bg-left,
     .propeel_half1__bg-right{
