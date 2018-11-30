@@ -131,6 +131,8 @@
 	font-size: 16px;
 	line-height: 23px;
 	opacity: .5;
+    max-height: 118px;
+    overflow: hidden;
 }
 
 .news__link{
@@ -583,6 +585,7 @@
 		float: none;
 		padding-top: 10px;
 		padding-bottom: 10px;
+		max-height: inherit;
 	}
 	.news__link{
 		padding-left: 0;
