@@ -72,6 +72,9 @@
 	line-height: 25px;
 	position: relative;
 	overflow: hidden;
+
+	font-size: 14px;
+	line-height: 20px;
 }
 
 .shop_form__grp_inputs input{
@@ -107,12 +110,16 @@
 }
 
 .shop_form__grp{
-	padding-bottom: 28px;
+	/*padding-bottom: 28px;*/
+
+	padding-bottom: 10px;
 }
 
 .shop_form__grp_title{
 	font-family: 'FuturaNewBook-Reg';
-	padding-bottom: 10px;
+	/*padding-bottom: 10px;*/
+
+	padding-bottom: 6px;
 }
 
 input:checked + .shop_form__item{
