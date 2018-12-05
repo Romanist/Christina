@@ -1699,12 +1699,13 @@
 		/*text-align: center;*/
 	}
 	.half_btn2{
-		background-image: url(../../images/bg3_mob.png);
+		background-image: url(../../images/bg3_mob.png) !important;
 	}
 	.half_btn2 .half__right{
 		width: 100%;
 		margin: 350px 0 0;
 		text-align: center;
+		padding-left: 0;
 	}
 	.half_btn2 .half__title{
 		display: block;
