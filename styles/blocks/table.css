@@ -82,6 +82,10 @@
 	border-bottom: none;
 }
 
+.shop .basket__no_prods{
+	padding: 15% 0;
+}
+
 .has_pr,
 .basket_table__pr,
 .basket_table__pr2{

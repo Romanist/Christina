@@ -1100,7 +1100,7 @@ $(document).ready(function () {
         
         var myMap = new ymaps.Map('map', {
             center: [55.76, 37.64],
-            zoom: 10,
+            zoom: 8,
             controls: ['zoomControl']
         });
         // myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
@@ -1118,14 +1118,13 @@ $(document).ready(function () {
 
 		var city = 'москва';
 		var geoServer = 'https://geocode-maps.yandex.ru/1.x/?format=json&geocode=';
-		var variable = 'пушкинская';
-		var metro = 'станция метро'
+		var variable = '';
+		var metro = ''
 		var doctAdress = [
-			'Юго-Западный административный округ, район Южное Бутово, москва',
-			'станция метро сухаревская, москва',
-			'станция метро трубная, москва',
-			'станция метро курская, москва',
-			'козицкий переулок 1а, москва'
+			'Болотниковская ул., 36А строение 10',
+			'Москва, Земляной вал 44',
+			'Земляной вал 44',
+			'Болотниковская ул., 36А строение 10'
 		];
 		var coordinateA = '';
 		var coordinateB = '';
