@@ -423,7 +423,7 @@ $(document).ready(function () {
 		$(".slide_drag__drag").slider({
 		  value: 0,
 		  min: 0,
-		  max: 3,
+		  max: 2,
 		  step: 1,
 		  animate: true,
 		  slide: function( event, ui ) {
@@ -1100,8 +1100,10 @@ $(document).ready(function () {
         
         var myMap = new ymaps.Map('map', {
             center: [55.76, 37.64],
-            zoom: 8,
-            controls: ['zoomControl']
+            zoom: 10,
+            controls: []
+        },{
+        	suppressMapOpenBlock: true
         });
         // myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
         myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
@@ -1109,95 +1111,72 @@ $(document).ready(function () {
         var searchControl = new ymaps.control.SearchControl({
 		        options: {
 		            // Будет производиться поиск и по топонимам и по организациям.
-		            provider: 'yandex#search'
+		            // provider: 'yandex#search'
 		        }
 		    });
 
 		// Добавляем элемент управления на карту.
-		myMap.controls.add(searchControl);
+		// myMap.controls.add(searchControl);
 
-		var city = 'москва';
+		var city = '';
 		var geoServer = 'https://geocode-maps.yandex.ru/1.x/?format=json&geocode=';
 		var variable = '';
 		var metro = ''
 		var doctAdress = [
 			'Болотниковская ул., 36А строение 10',
-			'Москва, Земляной вал 44',
+			'Ленинградское шоссе 145',
 			'Земляной вал 44',
-			'Болотниковская ул., 36А строение 10'
+			'первая парковая 12',
+			'Одесская улица 13'
+		];
+		var doctNames = [
+			'Врач1',
+			'Врач2',
+			'Врач3',
+			'Врач4'
 		];
 		var coordinateA = '';
 		var coordinateB = '';
 
-		// $.ajax({
-		//   	url: geoServer + ',' + city + ',' + variable
-		// }).done(function(data) {
-		// 	var str = data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos;
-		// 	var res = str.split(" ");
-		//   	coordinateA = res[0];
-		//   	coordinateB = res[1];
-
-		  	
-		//   	var geoObj = new ymaps.GeoObject({
-		// 	    geometry: {
-		// 	        type: 'Point', 
-		// 	        coordinates: [coordinateB, coordinateA]
-		// 	    }
-		// 	});
-		// 	myMap.geoObjects.add(geoObj);
-		// });
-
 		var myCollection = new ymaps.GeoObjectCollection();
 
 		function docCoords() {
-			searchControl.search(variable);
+			// searchControl.search(variable);
 			myCollection.removeAll();
 			jQuery.each(doctAdress, function(index, item) {
-				ymaps.route([metro + ' ' + variable + ' ' + city, item]).then(
-			        function (route) {
-			        	var distance = route.getLength();
-			        	// check if near
-			        	if (distance <= 3900) {
-			        		$.ajax({
-							  	url: geoServer + ',' + item
-							}).done(function(data) {
-								// get coords of every doctor to set point at map
-								var str = data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos;
-								var res = str.split(" ");
-							  	coordinateA = res[0];
-							  	coordinateB = res[1];
 
-							  	// setting point
-							 //  	var geoObj = new ymaps.GeoObject({
-								//     geometry: {
-								//         type: 'Point',
-								//         coordinates: [coordinateB, coordinateA],
-								//     },
-								//     fillImageHref: '/images/icon.svg',
-								//     fillOpacity: .5
-								// });
+        		$.ajax({
+				  	url: geoServer + ',' + item
+				}).done(function(data) {
+					// get coords of every doctor to set point at map
+					var str = data.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos;
+					var res = str.split(" ");
+				  	coordinateA = res[0];
+				  	coordinateB = res[1];
 
-								var geoObj = new ymaps.Placemark([coordinateB, coordinateA], {}, {
-							      	iconLayout: 'default#image',
-								    iconImageHref: '../images/circle_viol.svg',
-								    iconImageSize: [24, 24],
-								    iconImageOffset: [0, 0]
-								});
+					var geoObj = new ymaps.Placemark([coordinateB, coordinateA], {
+						hintContent: doctNames[index]
+					}, {
+				      	iconLayout: 'default#image',
+					    iconImageHref: '../images/circle_viol.svg',
+					    iconImageSize: [24, 24],
+					    iconImageOffset: [0, 0]
+					});
+
+					geoObj.events.add('click', function () {
+						$("html, body").animate({ scrollTop: $('.find_me_results__item[data-adress="' + item + '"').offset().top }, 1000);
+					    $('.find_me_results__item[data-adress="' + item + '"] .find_me_results__name').css('color', '#5d6cc5');
+					    setTimeout(function() {
+					    	$('.find_me_results__item[data-adress="' + item + '"] .find_me_results__name').css('color', '#000000');
+					    }, 3000);
+					});
 
 
-							  	myCollection.add(geoObj);
-								myMap.geoObjects.add(myCollection);
-							});
-			        	} else {
-
-			        	}
-			      	},
-				    function (error) {
-				        console.log('Ошибка: ' + error.message); 
-				    }
-			    );
+				  	myCollection.add(geoObj);
+					myMap.geoObjects.add(myCollection);
+				});
 			});
-		}
+		};
 
 		docCoords();
 
@@ -1211,14 +1190,5 @@ $(document).ready(function () {
 			docCoords();
 			return false;
 		});
-
-	 //    ymaps.route([variable + ' ' + city, doctAdress], {
-		//     multiRoute: true
-		// }).done(function (route) {
-		//     route.options.set("mapStateAutoApply", true);
-		//     myMap.geoObjects.add(route);
-		// }, function (err) {
-		//     throw err;
-		// }, this);
     }
 })

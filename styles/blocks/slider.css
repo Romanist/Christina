@@ -641,6 +641,7 @@
 
 .slide_drag__cont{
 	max-width: 1000px;
+	max-width: 770px;
 	margin: 0 auto;
 	position: relative;
 	display: -webkit-flex;
@@ -658,6 +659,7 @@
 
 .slide_drag__drag{
 	max-width: 760px;
+	max-width: 516px;
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
@@ -709,6 +711,7 @@
 
 .slide_drag__points{
 	width: 25%;
+	width: 33.3%;
 	text-align: center;
 	padding: 0 25px;
 	margin-top: -5px;
@@ -1225,6 +1228,7 @@
 	}
 	.slide_drag__cont{
 		max-width: 430px;
+		max-width: 492px;
 	}
 	.mob_active{
 		display: block;
@@ -1547,7 +1551,7 @@
 	}
 	.slide_drag__drag{
 		/*max-width: 254px;*/
-		max-width: 76%;
+		max-width: 68%;
 	}
 	.slide_drag__cont{
 		max-width: 100%;
