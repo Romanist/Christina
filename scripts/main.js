@@ -413,6 +413,7 @@ $(document).ready(function () {
 
 	$('.slide_blocks__block').click(function () {
 		$(this).toggleClass('choosen');
+		chooseAnswer(this);
 	});
 
 	$('.tests__check').click(function (e) {
@@ -444,7 +445,41 @@ $(document).ready(function () {
 	    	$('.active .slide_drag__desc_mob .slide_drag__desc').removeClass('mob_active');
 	    	$('.active .slide_drag__desc_mob .slide_drag__desc').eq(dataNumber).addClass('mob_active');
 	    }
+		chooseAnswer(this);
 	});
+
+	function chooseAnswer(answer_block){
+		var test_answer_input = $(answer_block).find(".test_answer_input")[0];
+		var test_answer_input = $(test_answer_input);
+		if (test_answer_input.prop('checked') == true){
+			test_answer_input.prop('checked', false);
+		}else {
+			test_answer_input.prop('checked', true);
+		}
+	}
+
+	function testResult(){
+		var result = [0, 0, 0, 0];
+		$(".test_answer_input").each(function( index ) {
+			var _this = this;
+			if ($(_this).prop('checked') == true){
+				result[parseInt($(_this).val())]++;
+			}
+		});
+		var maxResultValue = Math.max.apply(null, result);
+		var countMaxValue = 0;
+		result.forEach(function(item, index, array) {
+			if(maxResultValue == item){
+				countMaxValue++;
+			}
+		});
+		var resultVariant = 0;
+		if (countMaxValue == 1){
+			resultVariant = result.indexOf(maxResultValue);
+		}
+		//show
+		$('.test_result_' + resultVariant).show();
+	}
 
 	$(window).on('load', function(){
 		$('#preloader').fadeOut(1000);
@@ -716,6 +751,7 @@ $(document).ready(function () {
 		e.preventDefault();
 		if (!boolTogle) owlTest.trigger('next.owl.carousel');
 		else{
+			testResult();
 			$('.tests').hide();
 			$('.results_section').show();
 			$("html, body").animate({ scrollTop: $('.results_section').offset().top }, 1000);
