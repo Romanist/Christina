@@ -1044,7 +1044,7 @@ body.call_back{
 
 .textarea + .ph,
 .textarea_wr.wrong:after{
-	top: 84%;
+	top: 60%;
 }
 
 .registr_form .registr_form__mess.person_item{
@@ -1172,6 +1172,9 @@ body.call_back{
 		float: none;
 		width: auto;
 	}
+	.form__wr{
+		float: left;
+	}
 	.common__inputs{
 		padding-bottom: 40px;
 		max-width: 451px;
@@ -1227,6 +1230,15 @@ body.call_back{
 	}
 	.basket_form__title{
 		padding-top: 50px;
+	}
+	.prod_comments__left .btn{
+		width: 224px;
+	    margin: 30px auto 0;
+	    display: block;
+	}
+	#resfilter{
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 

@@ -289,7 +289,12 @@ a .basket_number{
 }
 
 .header__search{
-	all: unset;
+	/*all: unset;*/
+	background: none;
+	border: none;
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
 	width: 0;
 	/*position: absolute;*/
 	-webkit-transition: all ease .4s;
@@ -474,6 +479,7 @@ a .basket_number{
 	}
 	.navigation__item{
 		display: block;
+		width: 100%;
 		padding: 0;
 		line-height: 38px;
 		letter-spacing: 3px;
@@ -495,6 +501,11 @@ a .basket_number{
 		text-align: center;
 		height: 0;
 		font-size: 16px;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
 	}
 	.open .navigation{
 		height: auto;

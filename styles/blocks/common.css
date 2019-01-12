@@ -484,6 +484,11 @@ html{
 	padding: 0;
 	overflow: visible;
 	margin-left: 0;
+	font-size: 100%;
+}
+
+.search-page font.notetext{
+	color: #000;
 }
 
 .input_drop__op{
@@ -1201,7 +1206,8 @@ input:checked + .shop_form__item{
 		text-align: center;
 	}
 	.delivery_bot{
-		padding-left: 0;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 	.find_md{
 		padding: 0 20px;

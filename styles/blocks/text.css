@@ -649,6 +649,7 @@
 .prod_text__img_wr{
 	float: left;
 	width: 50%;
+	min-height: 600px;
 	overflow: hidden;
 }
 
@@ -1203,6 +1204,7 @@
 	.prod_text__img_left .prod_text__img_wr,
 	.prod_text__img_wr{
 		text-align: center;
+		min-height: inherit;
 	}
 	.prod_text__img_right .prod_text__abs{
 		padding-left: 0;
@@ -1231,6 +1233,7 @@
 		display: block;
 		float: left;
 		width: 49%;
+		min-height: inherit;
 		margin-left: -40px;
 	}
 	.partner_img .prod_text__img_left{		
