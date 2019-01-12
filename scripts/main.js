@@ -256,18 +256,61 @@ $(document).ready(function () {
 		var dataCh = $(this).data('check');
 		var count = $(this).closest('.prod_inf__counter').find('.counter__number').data('counter');
 		if (sign == "+") {
+
+			var curBon = Number($('.bonJs').text());
+			if (count >= curBon) return false;
+
 			$(this).closest('.prod_inf__counter').find('.counter__number').text(count + 1);
 			$('.hid_inp[data-check="' + dataCh + '"]').val(count+1);
 			$(this).closest('.prod_inf__counter').find('.counter__number').data('counter', count + 1);
+
+			if ($(this).hasClass('bon_count')) {
+
+				var curBon = Number($('.bonJs').text());
+				if ((count + 10) >= curBon) return false;
+
+				$(this).closest('.prod_inf__counter').find('.counter__number').text(count + 10);
+				$('.hid_inp[data-check="' + dataCh + '"]').val(count+10);
+				$(this).closest('.prod_inf__counter').find('.counter__number').data('counter', count + 10);
+			}
 		}
 		if (sign == "-") {
+
 			if (!count) return false;
+
 			$(this).closest('.prod_inf__counter').find('.counter__number').text(count - 1);
 			$('.hid_inp[data-check="' + dataCh + '"]').val(count-1);
 			$(this).closest('.prod_inf__counter').find('.counter__number').data('counter', count - 1);
+
+			if ($(this).hasClass('bon_count')) {
+
+				if (count < 10) return false;
+
+				$(this).closest('.prod_inf__counter').find('.counter__number').text(count - 10);
+				$('.hid_inp[data-check="' + dataCh + '"]').val(count-10);
+				$(this).closest('.prod_inf__counter').find('.counter__number').data('counter', count - 10);
+			}
 		}
-		console.log($('.hid_inp[data-check="' + dataCh + '"]').val())
+		// console.log($('.hid_inp[data-check="' + dataCh + '"]').val())
 		return false;
+	});
+
+	if ($('.basket__summ .bold').lenght) {
+		(function () {
+			var curSum = $('.basket__summ .bold').text();
+			curSum = curSum.match(/\d/g);
+			curSum = Number(curSum.join(""));
+			$('.basket__summ .bold').attr('data-fullSum', curSum)
+		}())
+	}
+
+	$('.basket__bonus .counter__btn').click(function () {
+		var curBon = Number($('.basket__bonus .counter__number').text());
+		var text = " ₽"
+		var curSum = $('.basket__summ .bold').attr('data-fullSum');
+		var newSum = curSum - curBon;
+		newSum = newSum + text;
+		$('.basket__summ .bold').text(newSum);
 	});
 
 	function scrollCont() {

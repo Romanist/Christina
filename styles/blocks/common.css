@@ -859,6 +859,48 @@ input:checked + .shop_form__item{
 	font-weight: bold;
 }
 
+.basket__bon{
+	float: left;
+
+	padding-top: 20px;
+}
+
+.basket__bon-left{
+	padding-right: 20px;	
+}
+
+.basket__bonus .counter__btn:hover{
+	border-bottom: none;
+}
+
+.basket__bonus .counter__btn{
+	width: 20px;
+}
+
+.bask_bon_wr .op,
+.bask_bon_wr .bold{
+	padding: 0;
+}
+
+.bask_bon_wr .op{
+	padding-right: 5px;
+}
+
+.basket__bonus .counter__number{
+	border: none;
+	width: auto;
+}
+
+.basket__bonus .counter__btn[data-sign="-"]{
+	vertical-align: text-bottom;
+}
+
+.person__bon{
+	position: absolute;
+	right: 40px;
+	top: 80px;
+}
+
 @media screen and (min-width: 1280px) {
 	.big_banner .smpl_btn_cont__product{
 		left: 65%;
@@ -923,6 +965,9 @@ input:checked + .shop_form__item{
 }
 
 @media screen and (max-width: 1023px) {
+	.person__bon{
+		right: 0;
+	}
 	.consult_write_form .consult_write_form__btn{
 		margin-top: 60px;
 	}
@@ -1116,9 +1161,23 @@ input:checked + .shop_form__item{
 	.big_banner_2{
 		height: 512px;
 	}
+	.bask_bon_wr{
+		overflow: hidden;
+	}
+	.basket__bon{
+		padding-top: 0;
+	}
 }
 
 @media screen and (max-width: 767px) {
+	.person__bon{
+		position: static;
+		padding-bottom: 20px;
+		margin-left: -10px;
+	}
+	.basket__bonus{
+		display: block !important;
+	}
 	.HDIW .navigator__menu{
 		display: none;
 	}
