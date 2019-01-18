@@ -237,7 +237,7 @@
 	background-color: #fff;
 	color: #000;
 	border-bottom: 1px solid rgba(0, 0, 0, .2);
-	height: 700px;
+	height: 550px;
 }
 
 .partner_columns .columns__title{
@@ -253,7 +253,7 @@
 
 .partner_columns .columns__column:after{
 	background-color: rgba(0, 0, 0, .2);
-	height: 530px;
+	height: 380px;
 }
 
 .delivery_columns{

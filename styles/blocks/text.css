@@ -744,14 +744,17 @@
 
 .doctor__photo{
 	height: 415px;
+	height: 370px;
 	margin-right: 40px;
+	float: left;
+	margin-bottom: 30px;
 }
 
 .doctor__wr{
 	position: relative;
 	margin-bottom: 42px;
-	display: flex;
-    align-items: center;
+	/*display: flex;*/
+    /*align-items: center;*/
 }
 
 .doctor__title{
@@ -761,9 +764,9 @@
 	padding-top: 0;
 }
 
-.doctor__about{
+/*.doctor__about{
 	max-width: 471px;
-}
+}*/
 
 .doctor__item{
 	padding-bottom: 10px;
@@ -1261,6 +1264,7 @@
 	}
 	.doctor__photo_tablet{
 		display: block;
+		max-width: 400px;
 	}
 }
 

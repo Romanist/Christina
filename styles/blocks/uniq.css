@@ -23,7 +23,7 @@
 
 .uniq_news__owl_item{
 	width: 200px;
-	height: 100px;
+	height: 200px;
 }
 
 .uniq_news__link{
@@ -363,6 +363,14 @@
     padding-right: 0;
     padding-left: 20px;
     max-width: 170px;
+}
+
+.prod_circle .circle_wr__text1 .text1,
+.prod_circle .circle_wr__text4 .text1,
+.prod_circle .circle_wr__text12 .text1,
+.prod_circle .circle_wr__text2 .text1,
+.prod_circle .circle_wr__text7 .text1{
+	right: 30px;
 }
 
 .prod_circle .circle_wr__text1{
