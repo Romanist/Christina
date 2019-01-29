@@ -700,7 +700,7 @@ input:checked + .shop_form__item{
 
 .basket_warn{
 	position: fixed;
-	top: 0;
+	/*top: 0;*/
 	left: 0;
 	right: 0;
 	text-align: center;
@@ -715,7 +715,7 @@ input:checked + .shop_form__item{
 	
 	/*EXO*/
 	background-color: #fafafae6;
-	top: 10%;
+	bottom: 10%;
 	font-size: 29px;
 	font-weight: bold;
 	height: 120px;
@@ -927,6 +927,11 @@ input:checked + .shop_form__item{
 	position: absolute;
 	right: 40px;
 	top: 80px;
+}
+
+.header__right .afterReg{
+	vertical-align: super;
+	margin-right: 20px;
 }
 
 @media screen and (min-width: 1280px) {

@@ -727,7 +727,10 @@ tr.table__title{
 .registration,
 .answer,
 .pop_up,
-.call_back{
+.promoget,
+.promo_give_code_user,
+.call_back,
+.call_back_new{
 	/*overflow: hidden;*/
 	/*position: relative;*/
     overflow-x: hidden;
@@ -736,22 +739,46 @@ tr.table__title{
 body.registration,
 body.answer,
 body.pop_up,
-body.call_back{
+body.promoget,
+body.promo_give_code_user,
+body.call_back,
+body.call_back_new{
 	overflow: hidden;
 }
 
 .registration .registr_op_wrapper,
-.pop_up .popup_op_wrapper{
+.pop_up .popup_op_wrapper
+{
 /*.registr_op_wrapper{*/
 	opacity: 1;
 	z-index: 99;
 }
+
+.call_back_new .call_back_new__active, 
+.call_back_new .call_back_new__active {
+	opacity: 1;
+	z-index: 99;
+	text-align: center;
+}
+
 
 .pop_up .call_back_form,
 .pop_up .anwer_form{
 	opacity: 0;
 	z-index: -1;
 }
+
+
+.promoget .promoget_form{
+	opacity: 0;
+	z-index: -1;
+}
+
+.promo_give_code_user .promo_give_user_form{
+	opacity: 0;
+	z-index: -1;
+}
+
 
 .call_back .call_back_form{
 	opacity: 1;
@@ -777,6 +804,16 @@ body.call_back{
 	z-index: 99;
 }
 
+.promoget .promoget_form{
+	opacity: 1;
+	z-index: 99;
+}
+
+.promo_give_code_user .promo_give_user_form{
+	opacity: 1;
+	z-index: 99;
+}
+
 .promoPopUp__text{
 	padding-bottom: 50px;
 	text-align: center;
@@ -790,6 +827,8 @@ body.call_back{
 
 .registration .registr_form,
 .pop_up .registr_form,
+.promoget .registr_form,
+.promo_give_code_user .registr_form,
 .answer .registr_form,
 .call_back .registr_form{
 /*.registr_form{	*/
@@ -1389,3 +1428,7 @@ body.call_back{
 		font-size: 30px;
 	}
 }
+
+.promo-list-block-user{display: none;}
+#print_frame{display: none;}
+.no-show{display: none;}
